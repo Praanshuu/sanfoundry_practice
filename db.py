@@ -93,6 +93,7 @@ class Storage:
         self.client = None
         self.db = None
         self.mongo_connected = False
+        self.last_error: str | None = None
         self._connect()
 
     def _connect(self) -> None:
@@ -100,6 +101,7 @@ class Storage:
             self.client = None
             self.db = None
             self.mongo_connected = False
+            self.last_error = "MONGO_URI environment variable is not set in Vercel project settings"
             return
         try:
             import pymongo
@@ -110,9 +112,11 @@ class Storage:
             self.client = client
             self.db = client[self.db_name]
             self.mongo_connected = True
+            self.last_error = None
             self._ensure_indexes()
         except Exception as exc:
-            print(f"[db] Primary MongoDB unavailable ({_mask_uri(str(exc))}).")
+            self.last_error = _mask_uri(str(exc))
+            print(f"[db] Primary MongoDB unavailable ({self.last_error}).")
             # If a cloud URI failed while running locally, try local MongoDB (127.0.0.1:27017) before JSON fallback
             local_uri = "mongodb://127.0.0.1:27017/"
             if not os.environ.get("VERCEL") and self.uri != local_uri:
