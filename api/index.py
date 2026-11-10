@@ -5,7 +5,7 @@ import http.server
 import json
 import sys
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
@@ -39,6 +39,25 @@ class handler(http.server.BaseHTTPRequestHandler):
         self.send_response(204)
         self.end_headers()
 
+    def _resolve_path(self) -> str:
+        parsed = urlparse(self.path)
+        qs = parse_qs(parsed.query)
+        if "__path" in qs and qs["__path"]:
+            p = unquote(qs["__path"][0]).strip()
+            if not p.startswith("/"):
+                p = "/" + p
+            return p
+
+        for hdr in ("x-invoke-path", "x-matched-path"):
+            val = self.headers.get(hdr)
+            if val and not val.startswith("/api/index"):
+                return val
+
+        raw_path = parsed.path or "/"
+        if raw_path in ("/api/index.py", "/api/index"):
+            return "/"
+        return raw_path
+
     def _send_json(self, data: dict, status: int = 200) -> None:
         raw = json.dumps(data, ensure_ascii=False).encode("utf-8")
         self.send_response(status)
@@ -62,7 +81,7 @@ class handler(http.server.BaseHTTPRequestHandler):
         self.wfile.write(raw)
 
     def do_GET(self) -> None:
-        clean_path = urlparse(self.path).path or "/"
+        clean_path = self._resolve_path()
 
         if clean_path.startswith("/api/status"):
             if not STORAGE.mongo_connected:
@@ -90,8 +109,8 @@ class handler(http.server.BaseHTTPRequestHandler):
         self._send_static("index.html", "text/html; charset=utf-8")
 
     def do_POST(self) -> None:
-        clean_path = urlparse(self.path).path or "/"
-        if clean_path.startswith("/api/progress"):
+        clean_path = self._resolve_path()
+        if clean_path.startswith("/api/progress") or clean_path == "/":
             length = int(self.headers.get("Content-Length", "0"))
             body = self.rfile.read(length) if length > 0 else b"{}"
             try:

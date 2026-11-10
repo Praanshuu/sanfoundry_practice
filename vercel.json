@@ -1,6 +1,11 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.py" },
-    { "source": "/(.*)", "destination": "/api/index.py" }
+    { "source": "/api/progress", "destination": "/api/index.py?__path=/api/progress" },
+    { "source": "/api/status", "destination": "/api/index.py?__path=/api/status" },
+    { "source": "/styles.css", "destination": "/api/index.py?__path=/styles.css" },
+    { "source": "/app.js", "destination": "/api/index.py?__path=/app.js" },
+    { "source": "/questions_data.js", "destination": "/api/index.py?__path=/questions_data.js" },
+    { "source": "/progress.json", "destination": "/api/index.py?__path=/progress.json" },
+    { "source": "/(.*)", "destination": "/api/index.py?__path=/" }
   ]
 }
