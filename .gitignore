@@ -1,0 +1,19 @@
+# Secrets & Environment Variables (NEVER commit)
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Raw scraped HTML dumps
+SQLSaved/

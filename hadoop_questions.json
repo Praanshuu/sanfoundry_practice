@@ -1,0 +1,427 @@
+{
+  "subject": "Hadoop",
+  "source": "Sanfoundry",
+  "total_questions": 30,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Avro",
+      "question": "Avro schemas are defined with _____",
+      "options": {
+        "A": "JSON",
+        "B": "XML",
+        "C": "JAVA",
+        "D": "All of the mentioned"
+      },
+      "correct_answer": "A",
+      "explanation": "JSON implementation facilitates implementation in languages that already have JSON libraries.",
+      "source_url": "tests/fixtures/avro_1.html"
+    },
+    {
+      "id": 2,
+      "topic": "Avro",
+      "question": "Point out the correct statement.",
+      "options": {
+        "A": "Avro provides functionality similar to systems such as Thrift",
+        "B": "When Avro is used in RPC, the client and server exchange data in the connection handshake",
+        "C": "Apache Avro, Avro, Apache, and the Avro and Apache logos are trademarks of The Java Foundation",
+        "D": "None of the mentioned"
+      },
+      "correct_answer": "A",
+      "explanation": "Avro differs from these systems in the fundamental aspects like untagged data.",
+      "source_url": "tests/fixtures/avro_1.html"
+    },
+    {
+      "id": 3,
+      "topic": "Avro",
+      "question": "__________ facilitates construction of generic data-processing systems and languages.",
+      "options": {
+        "A": "Untagged data",
+        "B": "Dynamic typing",
+        "C": "No manually-assigned field IDs",
+        "D": "All of the mentioned"
+      },
+      "correct_answer": "B",
+      "explanation": "Avro does not require that code be generated.",
+      "source_url": "tests/fixtures/avro_1.html"
+    },
+    {
+      "id": 4,
+      "topic": "Avro",
+      "question": "With ______ we can store data and read it easily with various programming languages.",
+      "options": {
+        "A": "Thrift",
+        "B": "Protocol Buffers",
+        "C": "Avro",
+        "D": "None of the mentioned"
+      },
+      "correct_answer": "C",
+      "explanation": "Avro is optimized to minimize the disk space needed by our data and it is flexible.",
+      "source_url": "tests/fixtures/avro_1.html"
+    },
+    {
+      "id": 5,
+      "topic": "Avro",
+      "question": "Point out the wrong statement.",
+      "options": {
+        "A": "Apache Avro™ is a data serialization system",
+        "B": "Avro provides simple integration with dynamic languages",
+        "C": "Avro provides rich data structures",
+        "D": "All of the mentioned"
+      },
+      "correct_answer": "D",
+      "explanation": "Code generation is not required to read or write data files nor to use or implement RPC protocols in Avro.",
+      "source_url": "tests/fixtures/avro_1.html"
+    },
+    {
+      "id": 6,
+      "topic": "Avro",
+      "question": "________ are a way of encoding structured data in an efficient yet extensible format.",
+      "options": {
+        "A": "Thrift",
+        "B": "Protocol Buffers",
+        "C": "Avro",
+        "D": "None of the mentioned"
+      },
+      "correct_answer": "B",
+      "explanation": "Google uses Protocol Buffers for almost all of its internal RPC protocols and file formats.",
+      "source_url": "tests/fixtures/avro_1.html"
+    },
+    {
+      "id": 7,
+      "topic": "Avro",
+      "question": "Thrift resolves possible conflicts through _________ of the field.",
+      "options": {
+        "A": "Name",
+        "B": "Static number",
+        "C": "UID",
+        "D": "None of the mentioned"
+      },
+      "correct_answer": "B",
+      "explanation": "Avro resolves possible conflicts through the name of the field.",
+      "source_url": "tests/fixtures/avro_1.html"
+    },
+    {
+      "id": 8,
+      "topic": "Avro",
+      "question": "Avro is said to be the future _______ layer of Hadoop.",
+      "options": {
+        "A": "RMC",
+        "B": "RPC",
+        "C": "RDC",
+        "D": "All of the mentioned"
+      },
+      "correct_answer": "B",
+      "explanation": "When Avro is used in RPC, the client and server exchange schemas in the connection handshake.",
+      "source_url": "tests/fixtures/avro_1.html"
+    },
+    {
+      "id": 9,
+      "topic": "Avro",
+      "question": "When using reflection to automatically build our schemas without code generation, we need to configure Avro using?",
+      "options": {
+        "A": "AvroJob.Reflect(jConf);",
+        "B": "AvroJob.setReflect(jConf);",
+        "C": "Job.setReflect(jConf);",
+        "D": "None of the mentioned"
+      },
+      "correct_answer": "C",
+      "explanation": "For strongly typed languages like Java, it also provides a generation code layer, including RPC services code generation.",
+      "source_url": "tests/fixtures/avro_1.html"
+    },
+    {
+      "id": 10,
+      "topic": "Avro",
+      "question": "We can declare the schema of our data either in a ______ file.",
+      "options": {
+        "A": "JSON",
+        "B": "XML",
+        "C": "SQL",
+        "D": "R"
+      },
+      "correct_answer": "C",
+      "explanation": "Schema can be declared using an IDL or simply through Java beans by using reflection-based schema building.",
+      "source_url": "tests/fixtures/avro_1.html"
+    },
+    {
+      "id": 11,
+      "topic": "Mapreduce Development",
+      "question": "The Mapper implementation processes one line at a time via _________ method.",
+      "options": {
+        "A": "map",
+        "B": "reduce",
+        "C": "mapper",
+        "D": "reducer"
+      },
+      "correct_answer": "A",
+      "explanation": "The Mapper outputs are sorted and then partitioned per Reducer.",
+      "source_url": "tests/fixtures/mapreduce_dev_2.html"
+    },
+    {
+      "id": 12,
+      "topic": "Mapreduce Development",
+      "question": "Point out the correct statement.",
+      "options": {
+        "A": "Mapper maps input key/value pairs to a set of intermediate key/value pairs",
+        "B": "Applications typically implement the Mapper and Reducer interfaces to provide the map and reduce methods",
+        "C": "Mapper and Reducer interfaces form the core of the job",
+        "D": "None of the mentioned"
+      },
+      "correct_answer": "D",
+      "explanation": "The transformed intermediate records do not need to be of the same type as the input records.",
+      "source_url": "tests/fixtures/mapreduce_dev_2.html"
+    },
+    {
+      "id": 13,
+      "topic": "Mapreduce Development",
+      "question": "The Hadoop MapReduce framework spawns one map task for each __________ generated by the InputFormat for the job.",
+      "options": {
+        "A": "OutputSplit",
+        "B": "InputSplit",
+        "C": "InputSplitStream",
+        "D": "All of the mentioned"
+      },
+      "correct_answer": "B",
+      "explanation": "Mapper implementations are passed the JobConf for the job via the JobConfigurable.configure(JobConf) method and override it to initialize themselves.",
+      "source_url": "tests/fixtures/mapreduce_dev_2.html"
+    },
+    {
+      "id": 14,
+      "topic": "Mapreduce Development",
+      "question": "Users can control which keys (and hence records) go to which Reducer by implementing a custom?",
+      "options": {
+        "A": "Partitioner",
+        "B": "OutputSplit",
+        "C": "Reporter",
+        "D": "All of the mentioned"
+      },
+      "correct_answer": "A",
+      "explanation": "Users can control the grouping by specifying a Comparator via JobConf.setOutputKeyComparatorClass(Class).",
+      "source_url": "tests/fixtures/mapreduce_dev_2.html"
+    },
+    {
+      "id": 15,
+      "topic": "Mapreduce Development",
+      "question": "Point out the wrong statement.",
+      "options": {
+        "A": "The Mapper outputs are sorted and then partitioned per Reducer",
+        "B": "The total number of partitions is the same as the number of reduce tasks for the job",
+        "C": "The intermediate, sorted outputs are always stored in a simple (key-len, key, value-len, value) format",
+        "D": "None of the mentioned"
+      },
+      "correct_answer": "D",
+      "explanation": "All intermediate values associated with a given output key are subsequently grouped by the framework, and passed to the Reducer(s) to determine the final output.",
+      "source_url": "tests/fixtures/mapreduce_dev_2.html"
+    },
+    {
+      "id": 16,
+      "topic": "Mapreduce Development",
+      "question": "Applications can use the ____________ to report progress and set application-level status messages.",
+      "options": {
+        "A": "Partitioner",
+        "B": "OutputSplit",
+        "C": "Reporter",
+        "D": "All of the mentioned"
+      },
+      "correct_answer": "C",
+      "explanation": "Reporter is also used to update Counters, or just indicate that they are alive.",
+      "source_url": "tests/fixtures/mapreduce_dev_2.html"
+    },
+    {
+      "id": 17,
+      "topic": "Mapreduce Development",
+      "question": "The right level of parallelism for maps seems to be around _________ maps per-node.",
+      "options": {
+        "A": "1-10",
+        "B": "10-100",
+        "C": "100-150",
+        "D": "150-200"
+      },
+      "correct_answer": "B",
+      "explanation": "Task setup takes a while, so it is best if the maps take at least a minute to execute.",
+      "source_url": "tests/fixtures/mapreduce_dev_2.html"
+    },
+    {
+      "id": 18,
+      "topic": "Mapreduce Development",
+      "question": "The number of reduces for the job is set by the user via _________",
+      "options": {
+        "A": "JobConf.setNumTasks(int)",
+        "B": "JobConf.setNumReduceTasks(int)",
+        "C": "JobConf.setNumMapTasks(int)",
+        "D": "All of the mentioned"
+      },
+      "correct_answer": "B",
+      "explanation": "Reducer has 3 primary phases: shuffle, sort and reduce.",
+      "source_url": "tests/fixtures/mapreduce_dev_2.html"
+    },
+    {
+      "id": 19,
+      "topic": "Mapreduce Development",
+      "question": "The framework groups Reducer inputs by key in _________ stage.",
+      "options": {
+        "A": "sort",
+        "B": "shuffle",
+        "C": "reduce",
+        "D": "none of the mentioned"
+      },
+      "correct_answer": "A",
+      "explanation": "The shuffle and sort phases occur simultaneously; while map-outputs are being fetched they are merged.",
+      "source_url": "tests/fixtures/mapreduce_dev_2.html"
+    },
+    {
+      "id": 20,
+      "topic": "Mapreduce Development",
+      "question": "The output of the reduce task is typically written to the FileSystem via _____________",
+      "options": {
+        "A": "OutputCollector.collect",
+        "B": "OutputCollector.get",
+        "C": "OutputCollector.receive",
+        "D": "OutputCollector.put"
+      },
+      "correct_answer": "A",
+      "explanation": "The output of the Reducer is not sorted.",
+      "source_url": "tests/fixtures/mapreduce_dev_2.html"
+    },
+    {
+      "id": 21,
+      "topic": "YARN",
+      "question": "Yarn commands are invoked by the ________ script.",
+      "options": {
+        "A": "hive",
+        "B": "bin",
+        "C": "hadoop",
+        "D": "home"
+      },
+      "correct_answer": "B",
+      "explanation": "Running the yarn script without any arguments prints the description for all commands.",
+      "source_url": "tests/fixtures/yarn_2.html"
+    },
+    {
+      "id": 22,
+      "topic": "YARN",
+      "question": "Point out the correct statement.",
+      "options": {
+        "A": "Each queue has strict ACLs which controls which users can submit applications to individual queues",
+        "B": "Hierarchy of queues is supported to ensure resources are shared among the sub-queues of an organization",
+        "C": "Queues are allocated a fraction of the capacity of the grid in the sense that a certain capacity of resources will be at their disposal",
+        "D": "All of the mentioned"
+      },
+      "correct_answer": "D",
+      "explanation": "All applications submitted to a queue will have access to the capacity allocated to the queue.",
+      "source_url": "tests/fixtures/yarn_2.html"
+    },
+    {
+      "id": 23,
+      "topic": "YARN",
+      "question": "The queue definitions and properties such as ________ ACLs can be changed, at runtime.",
+      "options": {
+        "A": "tolerant",
+        "B": "capacity",
+        "C": "speed",
+        "D": "all of the mentioned"
+      },
+      "correct_answer": "B",
+      "explanation": "Administrators can add additional queues at runtime, but queues cannot be deleted at runtime.",
+      "source_url": "tests/fixtures/yarn_2.html"
+    },
+    {
+      "id": 24,
+      "topic": "YARN",
+      "question": "The CapacityScheduler has a predefined queue called _________",
+      "options": {
+        "A": "domain",
+        "B": "root",
+        "C": "rear",
+        "D": "all of the mentioned"
+      },
+      "correct_answer": "B",
+      "explanation": "All queues in the system are children of the root queue.",
+      "source_url": "tests/fixtures/yarn_2.html"
+    },
+    {
+      "id": 25,
+      "topic": "YARN",
+      "question": "Point out the wrong statement.",
+      "options": {
+        "A": "The multiple of the queue capacity which can be configured to allow a single user to acquire more resources",
+        "B": "Changing queue properties and adding new queues is very simple",
+        "C": "Queues cannot be deleted, only addition of new queues is supported",
+        "D": "None of the mentioned"
+      },
+      "correct_answer": "D",
+      "explanation": "You need to edit conf/capacity-scheduler.xml and run yarn rmadmin -refreshQueues for changing queue properties.",
+      "source_url": "tests/fixtures/yarn_2.html"
+    },
+    {
+      "id": 26,
+      "topic": "YARN",
+      "question": "The updated queue configuration should be a valid one i.e. queue-capacity at each level should be equal to _________",
+      "options": {
+        "A": "50%",
+        "B": "75%",
+        "C": "100%",
+        "D": "0%"
+      },
+      "correct_answer": "C",
+      "explanation": "Queues cannot be deleted, only the addition of new queues is supported.",
+      "source_url": "tests/fixtures/yarn_2.html"
+    },
+    {
+      "id": 27,
+      "topic": "YARN",
+      "question": "Users can bundle their Yarn code in a _________ file and execute it using jar command.",
+      "options": {
+        "A": "java",
+        "B": "jar",
+        "C": "C code",
+        "D": "xml"
+      },
+      "correct_answer": "B",
+      "explanation": "Usage: yarn jar <jar> [mainClass] args…",
+      "source_url": "tests/fixtures/yarn_2.html"
+    },
+    {
+      "id": 28,
+      "topic": "YARN",
+      "question": "Which of the following command is used to dump the log container?",
+      "options": {
+        "A": "logs",
+        "B": "log",
+        "C": "dump",
+        "D": "all of the mentioned"
+      },
+      "correct_answer": "A",
+      "explanation": "Usage: yarn logs -applicationId <application ID> <options>.",
+      "source_url": "tests/fixtures/yarn_2.html"
+    },
+    {
+      "id": 29,
+      "topic": "YARN",
+      "question": "__________ will clear the RMStateStore and is useful if past applications are no longer needed.",
+      "options": {
+        "A": "-format-state",
+        "B": "-form-state-store",
+        "C": "-format-state-store",
+        "D": "none of the mentioned"
+      },
+      "correct_answer": "C",
+      "explanation": "-format-state-store formats the RMStateStore.",
+      "source_url": "tests/fixtures/yarn_2.html"
+    },
+    {
+      "id": 30,
+      "topic": "YARN",
+      "question": "Which of the following command runs ResourceManager admin client?",
+      "options": {
+        "A": "proxyserver",
+        "B": "run",
+        "C": "admin",
+        "D": "rmadmin"
+      },
+      "correct_answer": "D",
+      "explanation": "proxyserver command starts the web proxy server.",
+      "source_url": "tests/fixtures/yarn_2.html"
+    }
+  ]
+}

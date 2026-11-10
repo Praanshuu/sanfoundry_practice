@@ -1,0 +1,431 @@
+# Complete DBMS syllabus — Session-wise
+
+## 1. Introduction to DBMS
+
+Session 1
+
+- Database Concepts
+- Database Storage Structure
+  - Table Space
+  - Control File
+  - Data File
+- Structured and Unstructured Data
+- OLTP vs OLAP
+- Introduction to Data Collection
+- Tools used for Gathering Data in a Systematic Fashion
+
+Source: Page 1
+
+## 2. SQL Fundamentals and Transaction Management
+
+Sessions 2 & 3
+
+- Introduction to SQL
+- DDL Commands
+- DML Commands
+- DCL Commands
+- ACID Properties
+- Transaction Management
+
+Practical topics:
+
+- CREATE, ALTER, DROP
+- GRANT, REVOKE
+- SELECT, INSERT, UPDATE, DELETE, TRUNCATE
+- ROLLBACK, COMMIT
+- Creating database users
+- Granting and revoking privileges
+- Verifying user privileges through DML queries
+- Table creation
+- Data types
+- Constraints
+- Primary Key
+- SAVEPOINT
+- Transaction control and data consistency
+
+Source: Pages 1–2
+
+## 3. Grouping, Sorting and Subqueries
+
+Session 4
+
+- GROUP BY
+- HAVING
+- ORDER BY
+- Advanced Subqueries
+  - Correlated Subqueries
+  - Outer Joins
+
+Practical topics:
+
+- GROUP BY with HAVING
+- Counting records per group
+- LIKE pattern matching
+- Start/end character patterns
+- Subqueries
+- Correlated Queries
+- OUTER JOIN
+- Matching and unmatched records (NULL)
+
+Source: Page 2
+
+## 4. SQL Constructs, CTE and Database Design
+
+Sessions 5 & 6
+
+- Constructs in SQL
+- Common Table Expressions (CTE)
+- Non-recursive CTEs
+- Recursive CTEs
+- Data Collection
+- Designing Database Schema
+- Normal Forms
+- ER Diagram
+- Relational Database Modelling
+- Gathering Data in Systematic Fashion
+
+Practical topics:
+
+- GROUP BY and HAVING
+- LIKE pattern matching
+- OUTER JOIN on related tables
+
+Source: Pages 2–3
+
+## 5. Views, PL-SQL, Window Functions and Optimization
+
+Session 7
+
+- Views
+- Introduction to PL-SQL
+  - Triggers
+- Window Functions
+- CASE Statement
+- Indexing Strategies
+- Query Optimization Concepts
+
+Practical topics:
+
+- Creating Views
+- Finding the top record in each group
+- Joining lookup tables
+- Aggregate conditions
+- Maximum count of related records
+- Ranking records within groups using Window Functions
+
+Source: Page 3
+
+## 6. Data Warehousing
+
+Sessions 8 & 9
+
+- Data Warehousing Concepts
+- Tools Related to Data Warehousing
+- Different Algorithms Related to Data Warehouse
+- Importance and Applications of Data Warehousing
+- Slowly Changing Dimensions (SCD)
+
+Practical topics:
+
+- Slowly Changing Dimension Type 2
+- Tracking historical changes
+- Effective-date columns
+
+Source: Page 3
+
+## 7. Introduction to NoSQL
+
+Session 10
+
+- Introduction to NoSQL
+- Difference between RDBMS and NoSQL Database
+- Understanding Storage Architecture
+- Working with Column-Oriented Databases
+- Document Store Internals
+
+Source: Page 3
+
+## 8. Practical Design of NoSQL
+
+Session 11
+
+- Practical Design of NoSQL
+- NoSQL
+  - Schema Structure for Oracle NoSQL Database
+  - Changing Document Databases
+  - Schema Evolution in Column-Oriented Databases
+  - Data Evolution in Key/Value Stores
+
+Practical topics:
+
+- Schema Design
+- Schema Evolution in Column-Oriented Databases
+
+Source: Page 4
+
+## 9. MongoDB Fundamentals and Database Connectivity
+
+Session 12
+
+- Introduction to MongoDB (NoSQL)
+- CRUD Operations
+- Creating Records
+- Accessing Data
+- Updating Data
+- Deleting Data
+- Working with Language Bindings
+- Querying NoSQL Stores
+- Similarities Between SQL and MongoDB Query Features
+- Accessing Data from Column-Oriented Databases Like HBase
+- Querying Redis Data Stores
+
+Practical topics:
+
+\- CRUD Operations on MongoDB Collections
+
+Source: Page 4
+
+## 10. MongoDB Internals and Indexing
+
+Sessions 13 & 14
+
+- Introduction to MongoDB
+- MongoDB Internals
+- Essential Concepts Behind a Database Index
+- Indexing and Ordering in MongoDB
+- Creating and Using Indexes in MongoDB
+
+Practical topics:
+
+- Creating MongoDB Indexes
+- Using Indexes
+- Comparing Query Performance With and Without Indexes
+
+Source: Page 4
+
+## 11. MongoDB Queries and Aggregation
+
+Session 15
+
+\- MongoDB Queries
+
+- Create Operations
+- Read Operations
+- Data Aggregation Operations
+- Update Operations
+
+Explicit practical topics:
+
+- Insert
+- Find
+- FindOne
+- Logical Operators
+- Distinct
+- Group
+- Upsert
+- Update
+- Remove
+- Creating Databases
+- Creating Collections
+- Numeric Comparison Operators (e.g. `$gt`)
+- Negation Operators (`$ne`, `$nin`)
+- Multiple AND Conditions
+- Range Conditions
+- Exclusion and Equality Conditions
+- Sorting Results in Descending Order
+
+Source: Page 5
+
+## 12. Data Engineering and Data Lakes
+
+Session 16
+
+- Introduction to Data Engineering
+- Data Lakes
+  - Introduction to Data Lake
+  - Need for Data Lakes
+  - Data Lake vs Data Warehouse
+  - Data Lake Architecture
+  - Storage Layers:
+    - Raw Zone
+    - Curated Zone
+    - Refined Zone
+  - Common Use Cases
+  - Challenges:
+    - Data Swamps
+    - Governance
+
+Source: Page 5
+
+## 13. Lakehouse Platform
+
+Session 17
+
+- Lakehouse Platform
+- Lakehouse Architecture
+  - Combining Data Lake Flexibility with Data Warehouse Reliability
+- Open Table Formats
+- ACID Transactions on Lake Storage
+- Overview of Popular Lakehouse Platforms
+- Data Lake vs Data Warehouse vs Lakehouse
+
+Practical topics:
+
+- Exploring a Lakehouse Platform
+- Loading Sample Datasets into Lake Storage
+- Basic Read/Query Operations
+- Comparing Lake Table Queries with Traditional Warehouse Table Queries
+
+Source: Page 5
+
+## 14. Snowflake Architecture
+
+Session 18
+
+- Introduction to Snowflake
+- Snowflake Architecture
+  - Storage Layer
+  - Compute Layer (Virtual Warehouses)
+  - Cloud Services Layer
+- Snowflake vs Traditional RDBMS
+- Snowflake vs Traditional Data Warehouse
+- Data Sharing
+- Scalability Concepts
+
+Practical topics:
+
+- Snowflake Account Setup
+- Virtual Warehouse Setup
+- Database Creation
+- Schema Creation
+- Running SQL Queries in Snowflake Worksheet
+
+Source: Page 6
+
+## 15. Snowflake Data Loading and Querying
+
+Session 19
+
+- Staging Data
+- Bulk Loading Data into Snowflake Tables
+- Querying Loaded Data
+- Filtering Loaded Data
+- Aggregating Loaded Data
+- Cost Considerations
+- Performance Considerations
+  - Warehouse Sizing
+  - Auto-Suspend
+
+Practical topics:
+
+- Loading Data Using a Stage
+- Analytical SQL Queries
+  - GROUP BY
+  - JOIN
+  - CTE
+- Resizing Virtual Warehouses
+- Observing Query Execution Time
+
+Source: Page 6
+
+## 16. Apache Cassandra
+
+Session 20
+
+- Introduction to Cassandra
+- Comparison Between Cassandra and MongoDB
+
+Source: Page 6
+
+## 17. Connecting Databases with Python
+
+Session 21
+
+- Python Database Connectivity Libraries
+  - DB-API
+  - PyMongo
+- Connecting to Relational Databases
+- Connecting to NoSQL Databases
+- Executing Queries from Python
+- Handling Query Results from Python
+
+Practical topics:
+
+- Python Script for Database Connectivity
+- SELECT Query Execution
+- INSERT Query Execution
+- Printing Query Results
+
+Source: Page 6
+
+## 18. Data-Driven Decisions and Enterprise Data Management
+
+Session 22
+
+- Data-Driven Decisions
+- Enterprise Data Management
+
+Practical topics:
+
+- Working with Raw/Sample Datasets
+- Identifying Required Fields
+- Basic Data Transformations
+- Preparing Data for Analysis
+- Summarizing Data Preparation Steps
+
+Source: Page 7
+
+# Master topic index for Sanfoundry mapping
+
+This is the consolidated index. Use it to classify extracted questions, including questions that appear under multiple related syllabus topics.
+
+| No. | Major subject          | Topics to map                                                                                                      |
+| --- | ---------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| 1   | DBMS Fundamentals      | Database concepts, storage structure, tablespace, control file, data file, structured/unstructured data, OLTP/OLAP |
+| 2   | SQL Fundamentals       | SQL, DDL, DML, DCL                                                                                                 |
+| 3   | Transactions           | ACID, transaction management, COMMIT, ROLLBACK, SAVEPOINT                                                          |
+| 4   | SQL Clauses            | GROUP BY, HAVING, ORDER BY, LIKE                                                                                   |
+| 5   | SQL Joins              | Outer joins                                                                                                        |
+| 6   | SQL Subqueries         | Subqueries, correlated subqueries                                                                                  |
+| 7   | SQL Constructs         | SQL constructs, CTE, recursive and non-recursive CTE                                                               |
+| 8   | Database Design        | Schema design, data types, constraints, primary key, ER diagrams, relational modelling                             |
+| 9   | Normalization          | Normal forms                                                                                                       |
+| 10  | Views                  | SQL Views                                                                                                          |
+| 11  | PL-SQL                 | Introduction to PL-SQL, triggers                                                                                   |
+| 12  | Advanced SQL           | Window functions, CASE statement                                                                                   |
+| 13  | Optimization           | Indexing strategies, query optimization                                                                            |
+| 14  | Data Warehousing       | Concepts, tools, algorithms, importance, applications, SCD                                                         |
+| 15  | NoSQL Fundamentals     | RDBMS vs NoSQL, storage architecture                                                                               |
+| 16  | NoSQL Database Types   | Column-oriented databases, document stores, key/value stores                                                       |
+| 17  | NoSQL Design           | Oracle NoSQL schema, schema design, schema evolution, data evolution                                               |
+| 18  | MongoDB Fundamentals   | CRUD, language bindings, SQL vs MongoDB, MongoDB internals                                                         |
+| 19  | MongoDB Indexing       | Database indexes, indexing, ordering, query performance                                                            |
+| 20  | MongoDB Queries        | Create, Read, Update, Delete, logical operators, comparison operators                                              |
+| 21  | MongoDB Aggregation    | Aggregation, Distinct, Group, filtering, sorting, Upsert                                                           |
+| 22  | Other NoSQL Stores     | HBase, Redis                                                                                                       |
+| 23  | Data Engineering       | Introduction to Data Engineering                                                                                   |
+| 24  | Data Lakes             | Architecture, zones, use cases, data swamps, governance                                                            |
+| 25  | Lakehouse              | Architecture, open table formats, ACID, platforms                                                                  |
+| 26  | Snowflake              | Architecture, storage, compute, cloud services, data sharing, scalability                                          |
+| 27  | Snowflake Operations   | Staging, bulk loading, querying, filtering, aggregation, warehouse sizing, auto-suspend                            |
+| 28  | Cassandra              | Fundamentals, comparison with MongoDB                                                                              |
+| 29  | Python DB Connectivity | DB-API, PyMongo, query execution, result handling                                                                  |
+| 30  | Enterprise Data        | Data-driven decisions, enterprise data management, data preparation                                                |
+
+## Important: Lab topics are part of the syllabus too
+
+Don't overlook these while mapping Sanfoundry questions:
+
+1. DDL, DML and DCL practical commands.
+2. User privileges: GRANT and REVOKE.
+3. Transactions: SAVEPOINT, COMMIT and ROLLBACK.
+4. GROUP BY, HAVING, LIKE and OUTER JOIN.
+5. Views, Window Functions and ranking.
+6. SCD Type 2 implementation.
+7. NoSQL schema design and evolution.
+8. MongoDB CRUD and indexing.
+9. MongoDB filtering, logical operators, aggregation and sorting.
+10. Lakehouse data loading and querying.
+11. Snowflake setup, staging, analytical queries and warehouse sizing.
+12. Python database connectivity.
+13. Data preparation and transformations.

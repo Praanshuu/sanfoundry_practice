@@ -1,0 +1,717 @@
+Question ID,Sanfoundry Topic,Recommendation,Question,Correct Answer,Source URL
+16,PL/SQL Conditions,KEEP,Which of the following part of the IF-THEN statement gets executed if the condition is false or NULL?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-conditions/
+17,PL/SQL Conditions,KEEP,"Consider the PL/SQL code below and select the appropriate output –
+DECLARE
+     n NUMBER(3) := 100;
+BEGIN
+     n:= 100;
+     IF( n<50 ) THEN
+         dbms_output.put_line('n is less than 50 ' );
+     END IF;
+         dbms_output.put_line('value of n is : ' || n);
+END;
+/",C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-conditions/
+18,PL/SQL Conditions,KEEP,Which of the following part of the IF-THEN-ELSE statement gets executed if the condition is false or NULL?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-conditions/
+19,PL/SQL Conditions,KEEP,"Consider the PL/SQL code below and select the appropriate output.
+DECLARE
+     n NUMBER(3) := 100;
+BEGIN
+     n:= 100;
+     IF( n < 50 ) THEN
+         dbms_output.put_line('n is less than 50 ' );
+     ELSE
+         dbms.output.put_line(‘n IS greater than 50’);
+     END IF;
+         dbms_output.put_line('value of n is : ' || n);
+END;
+/",B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-conditions/
+20,PL/SQL Conditions,KEEP,How many ELSIF’s can an IF-THEN-ELSIF statement contain in PL/SQL?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-conditions/
+21,PL/SQL Conditions,KEEP,"Consider the PL/SQL code below and select the appropriate output.
+DECLARE
+     n NUMBER(2) := 40;
+BEGIN
+     IF( n = 10 ) THEN
+         dbms_output.put_line('Value of n is 10 ' );
+     ELSE IF ( n = 20 ) THEN
+         dbms_output.put_line('Value of n is 20' );
+     ELSE IF ( n = 30 ) THEN
+         dbms_output.put_line('Value of n is 30' );
+     ELSE IF ( n = 40 ) THEN
+         dbms_output.put_line('Value of n is 40' );
+     ELSE
+         dbms.output.put_line(‘VALUE OF n NOT known’);
+     END IF;
+         dbms_output.put_line('value of n is : ' || n);
+END;
+/",A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-conditions/
+22,PL/SQL Conditions,KEEP,What is the expression called which is used by the CASE statement to select one statement to execute from the given statements.,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-conditions/
+23,PL/SQL Conditions,KEEP,Which of the following is the correct syntax for the CASE statement?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-conditions/
+24,PL/SQL Conditions,KEEP,What is the CASE statement called when it has no selector and the WHEN clause of the statement contain search conditions.,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-conditions/
+25,PL/SQL Conditions,KEEP,We can use nested IF-ELSE statements in PL/SQL.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-conditions/
+26,PL/SQL Constants and Literals,KEEP SELECTIVELY,How many types of literals are present in PL/SQL?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-constants-literals/
+27,PL/SQL Constants and Literals,KEEP SELECTIVELY,In PL/SQL we can change the value of a constant later on in the program.,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-constants-literals/
+28,PL/SQL Constants and Literals,KEEP SELECTIVELY,"A literal is an explicit numeric, character, string, or boolean value not represented by an identifier.",A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-constants-literals/
+29,PL/SQL Constants and Literals,KEEP SELECTIVELY,"In PL/SQL, the string literals are always enclosed within which symbol?",B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-constants-literals/
+30,PL/SQL Constants and Literals,KEEP SELECTIVELY,"In PL/SQL, a numeric literal can hold up-to how many digits?",C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-constants-literals/
+31,PL/SQL Constants and Literals,KEEP SELECTIVELY,Which of the following function is used to convert a literal into a date?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-constants-literals/
+32,PL/SQL Constants and Literals,KEEP SELECTIVELY,"In PL/SQL, we can also use digits in place of characters for character literals.",A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-constants-literals/
+43,PL/SQL Data Types,KEEP SELECTIVELY,Which of the following is not a category of datatype in PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-data-types/
+44,PL/SQL Data Types,KEEP SELECTIVELY,The Numeric datatype comes under the category of Scalar datatypes in PL/SQL.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-data-types/
+45,PL/SQL Data Types,KEEP SELECTIVELY,Which of the following datatype is not within the subcategory of Character datatypes?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-data-types/
+46,PL/SQL Data Types,KEEP SELECTIVELY,"In PL/SQL, the logical values are the Boolean values 0 and 1 and the value NULL.",B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-data-types/
+47,PL/SQL Data Types,KEEP SELECTIVELY,Which of the following is the correct date range for the DATETIME datatype in PL/SQL?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-data-types/
+48,PL/SQL Data Types,KEEP SELECTIVELY,Which of the following is the correct full-form for the LOB datatype category in PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-data-types/
+49,PL/SQL Data Types,KEEP SELECTIVELY,"In PL/SQL, which of the following datatype is used to store large blocks of character data in the database?",D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-data-types/
+50,PL/SQL Data Types,KEEP SELECTIVELY,The NULL in PL/SQL is represented by which of the following symbol?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-data-types/
+51,PL/SQL Data Types,KEEP SELECTIVELY,Which of the following statement can be used to define a user defined datatype in PL/SQL?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-data-types/
+52,PL/SQL Data Types,KEEP SELECTIVELY,"In PL/SQL, how many bytes does each character in the AL16UTF16 encoding takes?",B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-data-types/
+53,PL/SQL Date and Time,KEEP SELECTIVELY,How many classes of date and time related data types are present in PL/SQL?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-date-time/
+54,PL/SQL Date and Time,KEEP SELECTIVELY,Which of the following datatypes is not part of the Datetime datatypes class?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-date-time/
+55,PL/SQL Date and Time,KEEP SELECTIVELY,How many datatypes are present within the Datetime datatype class?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-date-time/
+56,PL/SQL Date and Time,KEEP SELECTIVELY,What is the valid datetime value for theHOUR field in the datetime datatypes?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-date-time/
+57,PL/SQL Date and Time,KEEP SELECTIVELY,Which of the following datetime datatype includes a time-zone region name in its value?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-date-time/
+58,PL/SQL Date and Time,KEEP SELECTIVELY,Which of the followingdatetime function is used to return the time value from a time zone specified by the user?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-date-time/
+59,PL/SQL Date and Time,KEEP SELECTIVELY,Which of the following interval function is used to convert a number x to an INTERVAL YEAR TO MONTH?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-date-time/
+67,PL/SQL Exceptions,KEEP SELECTIVELY,How many types of exceptions are present in PL/SQL?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-exceptions/
+68,PL/SQL Exceptions,KEEP SELECTIVELY,Exception handling can be performed under which of the following PL/SQL program block?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-exceptions/
+69,PL/SQL Exceptions,KEEP SELECTIVELY,Which of the following is the correct is the correct syntax for exception handling?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-exceptions/
+70,PL/SQL Exceptions,KEEP SELECTIVELY,Which of the following command can be used to raise an exception explicitly by a user?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-exceptions/
+71,PL/SQL Exceptions,KEEP SELECTIVELY,Raising an exception can be performed under which of the following PL/SQL program block?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-exceptions/
+72,PL/SQL Exceptions,KEEP SELECTIVELY,Which of the following syntax is correct for raising an exception explicitly?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-exceptions/
+73,PL/SQL Exceptions,KEEP SELECTIVELY,A user-defined exception is not automatically raised by the database server.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-exceptions/
+74,PL/SQL Exceptions,KEEP SELECTIVELY,Which of the following is raised when a null object is automatically assigned a value?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-exceptions/
+75,PL/SQL Exceptions,KEEP SELECTIVELY,Which of the following is raised when a SELECT INTO statement returns no rows?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-exceptions/
+76,PL/SQL Exceptions,KEEP SELECTIVELY,Which of the following is raised when PL/SQL ran out of memory or memory was corrupted?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-exceptions/
+77,PL/SQL Function,KEEP,Which of the following is the main difference between a function and a procedure in PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-function/
+78,PL/SQL Function,KEEP,Which of the following is the correct syntax for creating a function in PL/SQL?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-function/
+79,PL/SQL Function,KEEP,The “ OR REPLACE” option in the definition of a function in PL/SQL is used to modify an existing function.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-function/
+80,PL/SQL Function,KEEP,The ‘IS’ keyword is used instead of the ‘AS’ keyword when creating a standalone function in PL/SQL.,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-function/
+81,PL/SQL Function,KEEP,"In PL/SQL, a function is called inside which of the following code blocks?",C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-function/
+82,PL/SQL Function,KEEP,Which of the following keyword is a must have when creating a function in PL/SQL?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-function/
+83,PL/SQL Function,KEEP,Which of the following statement is true?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-function/
+84,PL/SQL Loops,KEEP,Which of the following symbol is used to label a loop in PL/SQL?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-loops/
+85,PL/SQL Loops,KEEP,Which of the following statement is used to come out of the loop when encountered and pass the program control to the statement following the loop?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-loops/
+86,PL/SQL Loops,KEEP,Which of the following statement is used to skip the remaining part of the loop when encountered and forces the next iteration of the loop to take place?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-loops/
+87,PL/SQL Loops,KEEP,Which of the following is the correct syntax for the basic loop statement in PL/SQL?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-loops/
+88,PL/SQL Loops,KEEP,"What will be the output of the following PL/SQL code?
+DECLARE
+    x NUMBER := 1;
+BEGIN
+    LOOP
+        dbms_output.put_line(x);
+        x := x + 1;
+        IF x > 3 THEN
+            exit;
+        END IF;
+    END LOOP;
+    dbms_output.put_line('After Exit x is: ' || x);
+END;
+/",D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-loops/
+89,PL/SQL Loops,KEEP,Which of the following is the correct syntax for the for-loop statement in PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-loops/
+90,PL/SQL Loops,KEEP,We can reverse the for loop using the REVERSE keyword.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-loops/
+91,PL/SQL Loops,KEEP,"What will be the correct output for the following PL/SQL code?
+DECLARE
+    a NUMBER(1) := 1;
+BEGIN
+    WHILE a <5 LOOP
+        dbms_output.put_line('value of a: ' || a);
+        a := a + 1;
+    END LOOP;
+END;
+/",A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-loops/
+92,PL/SQL Loops,KEEP,What is the correct syntax for the NESTED LOOP Statements in PL/SQL?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-loops/
+93,PL/SQL Loops,KEEP,Which of the following statements is used to provide an unconditional jump from the statement to any specified label in the same subprogram?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-loops/
+94,PL/SQL Operators,KEEP SELECTIVELY,In PL/SQL which of the following operator is used to raise the power of an operand exponentially?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-operators/
+95,PL/SQL Operators,KEEP SELECTIVELY,Relational operators returns their result in form of true and false.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-operators/
+96,PL/SQL Operators,KEEP SELECTIVELY,Which of the following operator is used to match a single character or group of characters (string) to a given string?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-operators/
+97,PL/SQL Operators,KEEP SELECTIVELY,Which of the following operator is used to see if the operand value is null or not?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-operators/
+98,PL/SQL Operators,KEEP SELECTIVELY,"What will be the output of the following PL/SQL statement?
+📌 Limited Seats! Register Now - Free AI-ML Certification (November 2026)
+SELECT * FROM student WHERE city NOT IN ('Delhi','Mumbai','Chennai');",D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-operators/
+109,PL/SQL Procedure,KEEP,Which of the following method is defined as combining different sub-programs to make a larger program?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-procedure/
+110,PL/SQL Procedure,KEEP,Which of the following statement can be used to create a sub-program at a schema level?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-procedure/
+111,PL/SQL Procedure,KEEP,What is a sub-program called when it is created inside a package?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-procedure/
+112,PL/SQL Procedure,KEEP,A sub-program is called as which of the following when it does not return any value directly?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-procedure/
+113,PL/SQL Procedure,KEEP,In how many parts does a PL/SQL sub-program is divided into?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-procedure/
+114,PL/SQL Procedure,KEEP,Which of the following are the 3 parameter modes for a procedure in PL/SQL?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-procedure/
+115,PL/SQL Procedure,KEEP,Which of the following keyword is used to call a standalone procedure?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-procedure/
+116,PL/SQL Procedure,KEEP,Which of the following is the correct syntax for deleting a procedure?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-procedure/
+117,PL/SQL Procedure,KEEP,Which of the following is a default mode for a parameter when it’s mode is not specified?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-procedure/
+118,PL/SQL Procedure,KEEP,Which of the following symbol is used in the Named Notation method for passing parameters?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-procedure/
+119,PL/SQL Basics,KEEP,What is the full form of PL in PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-basics/
+120,PL/SQL Basics,KEEP,PL/SQL can execute a number of queries in one single block using a single command.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-basics/
+121,PL/SQL Basics,KEEP,Which of the following feature is provided by PL/SQL to handle the exceptions occurred in the PL/SQL block?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-basics/
+122,PL/SQL Basics,KEEP,PL/SQL cannot contain SQL code inside it.,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-basics/
+123,PL/SQL Basics,KEEP,Which of the following option represent the correct structure of a block in PL/SQL?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-basics/
+124,PL/SQL Basics,KEEP,Which of the following pair of block structures is mandatory to include in a PL/SQL block?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-basics/
+135,PL/SQL Strings,KEEP SELECTIVELY,How many different types of strings are found in PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-strings/
+136,PL/SQL Strings,KEEP SELECTIVELY,"In PL/SQL, a variable or a literal is called as a string if it is placed inside which of the following symbol?",C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-strings/
+137,PL/SQL Strings,KEEP SELECTIVELY,Which of the following method can be used to include a single quote inside a string in PL/SQL?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-strings/
+138,PL/SQL Strings,KEEP SELECTIVELY,Which of the following datatype can be used to declare a fixed-length string in PL/SQL?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-strings/
+139,PL/SQL Strings,KEEP SELECTIVELY,"In PL/SQL, the ASCII(x) function is used to return the character with the ASCII value x.",B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-strings/
+140,PL/SQL Strings,KEEP SELECTIVELY,"Select the correct output for the following PL/SQL code.
+DECLARE
+   var1 varchar2(20) := 'hello sanfoundry';
+BEGIN
+   dbms_output.put_line(INITCAP(var1));
+END;
+/",C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-strings/
+141,PL/SQL Strings,KEEP SELECTIVELY,"Select the correct output for the following PL/SQL code.
+DECLARE
+   var1 varchar2(20) := 'hello sanfoundry';
+BEGIN
+   dbms_output.put_line(INSTR(var1, ‘s’));
+END;
+/",D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-strings/
+142,PL/SQL Strings,KEEP SELECTIVELY,"Select the correct output for the following PL/SQL code.
+DECLARE
+   var1 varchar2(30) := '????hello sanfoundry????';
+BEGIN
+   dbms_output.put_line(TRIM(‘?’ FROM var1));
+END;
+/",A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-strings/
+143,PL/SQL Strings,KEEP SELECTIVELY,"Select the correct output for the following PL/SQL code.
+DECLARE
+   var1 varchar2(20) := 'hello sanfoundry';
+BEGIN
+   dbms_output.put_line(SUBSTR (var1, 8, 4));
+END;
+/",C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-strings/
+144,PL/SQL Strings,KEEP SELECTIVELY,"In PL/SQL, the UPPER(x) function is used to convert the string x to uppercase and return it as output.",A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-strings/
+145,PL/SQL Syntax,KEEP,Which of the following syntax is correct way to declare a variable in PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-syntax/
+146,PL/SQL Syntax,KEEP,Which of the following statement is used to initialise a variable in PL/SQL?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-syntax/
+147,PL/SQL Syntax,KEEP,Which of the following statement is used to take input from the user in PL/SQL?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-syntax/
+148,PL/SQL Syntax,KEEP,"What will be the output of the following PL/SQL code?
+SQL> SET SERVEROUTPUT ON;
+SQL> DECLARE
+    a varchar2(20) := 'Sanfoundry' ;
+BEGIN
+    dbms_output.put_line(a);
+END;
+/",C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-syntax/
+149,PL/SQL Syntax,KEEP,The slash (/) tells the SQL*Plus to execute the block written.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-syntax/
+150,PL/SQL Transactions,KEEP,Which of the following is an atomic unit of work that may consist of one or more related SQL statements?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-transactions/
+151,PL/SQL Transactions,KEEP,Which of the following event starts a transaction?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-transactions/
+152,PL/SQL Transactions,KEEP,In SQL*PLUS a commit is automatically performed.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-transactions/
+153,PL/SQL Transactions,KEEP,"Which of the following command is used to make the changes done in a database, permanent in PL/SQL?",A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-transactions/
+154,PL/SQL Transactions,KEEP,Which of the following command is used to undo the changes done to the database in PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-transactions/
+155,PL/SQL Transactions,KEEP,Which of the following syntax is correct for creating a savepoint in PL/SQL?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-transactions/
+156,PL/SQL Transactions,KEEP,Which of the following environment variable is set to execute a COMMIT automatically whenever a DML command is executed?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-transactions/
+157,PL/SQL Triggers,KEEP,Triggers are automatically executed.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-triggers/
+158,PL/SQL Triggers,KEEP,Which of the following can execute a trigger in PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-triggers/
+159,PL/SQL Triggers,KEEP,Which of the following syntax is correct way to create a trigger in PL/SQL?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-triggers/
+160,PL/SQL Triggers,KEEP,Which of the following types of statement can trigger a trigger execution?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-triggers/
+161,PL/SQL Triggers,KEEP,Which keyword is used to recreate a trigger if it already exists?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-triggers/
+162,PL/SQL Triggers,KEEP,Which of the following statement does not execute a trigger?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-triggers/
+163,PL/SQL Triggers,KEEP,Which of the following statement is false regarding Triggers?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-triggers/
+164,PL/SQL Triggers,KEEP,How many times does a statement/table level trigger is executed for each transaction?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-triggers/
+165,PL/SQL Triggers,KEEP,Which of the following clause is used to create a row level trigger?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-triggers/
+166,PL/SQL Triggers,KEEP,Triggers can be used to prevent invalid transactions.,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-triggers/
+167,PL/SQL Variables,KEEP,Which of the following variable name is valid in PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-variables/
+168,PL/SQL Variables,KEEP,Which of the following is an incorrect variable declaration in PL/SQL?,D,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-variables/
+169,PL/SQL Variables,KEEP,Which of the following is not a valid variable type in PL/SQL?,A,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-variables/
+170,PL/SQL Variables,KEEP,Which of the following is the DEFAULT value of an uninitialized variable in PL/SQL?,C,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-variables/
+171,PL/SQL Variables,KEEP,Which of the following variable is declared in the outermost block or package of PL/SQL?,B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-variables/
+172,PL/SQL Variables,KEEP,"What will be the output of the following PL/SQL code?
+DECLARE
+   a INTEGER := 30;
+   b INTEGER := 40;
+   c INTEGER;
+   d REAL;
+BEGIN
+   c := a + b;
+   dbms_output.put_line('Value of c: ' || c);
+   d := 70.0/3.0;
+   dbms_output.put_line('Value of d: ' || d);
+END;
+/",B,https://www.sanfoundry.com/pl-sql-questions-answers-pl-sql-variables/
+173,SQL Aliases,KEEP,Temporary names given to a table or a column for the purpose of a particular SQL query are known as __________,A,https://www.sanfoundry.com/sql-questions-answers-sql-aliases/
+174,SQL Aliases,KEEP,An SQL ALIAS exists even after the execution of a query.,B,https://www.sanfoundry.com/sql-questions-answers-sql-aliases/
+175,SQL Aliases,KEEP,Which of the following is used to rename a table or a column in a specific SQL statement?,C,https://www.sanfoundry.com/sql-questions-answers-sql-aliases/
+176,SQL Aliases,KEEP,What is the basic syntax for a column alias?,A,https://www.sanfoundry.com/sql-questions-answers-sql-aliases/
+177,SQL Aliases,KEEP,What is the basis syntax for a table alias?,C,https://www.sanfoundry.com/sql-questions-answers-sql-aliases/
+178,SQL Aliases,KEEP,Alias name should not contain any spaces.,B,https://www.sanfoundry.com/sql-questions-answers-sql-aliases/
+179,SQL Aliases,KEEP,ALIAS can be used with which of the following clause(s)?,C,https://www.sanfoundry.com/sql-questions-answers-sql-aliases/
+180,SQL Aliases,KEEP,When creating table aliases _______,A,https://www.sanfoundry.com/sql-questions-answers-sql-aliases/
+181,SQL Aliases,KEEP,"During the execution of a query, the temporary names of columns or tables can be used for ______",C,https://www.sanfoundry.com/sql-questions-answers-sql-aliases/
+182,SQL Alter Table,KEEP,Which of the following command is used to modify the structure of a table in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+183,SQL Alter Table,KEEP,"In SQL, the ALTER command can be put under which of the following category?",A,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+184,SQL Alter Table,KEEP,"In SQL, the ALTER command cannot be used to perform which of the following task?",D,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+185,SQL Alter Table,KEEP,"In SQL, which of the following statement can be used to add a column to an existing table using the ALTER command?",A,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+186,SQL Alter Table,KEEP,"In SQL, which of the following statement can be used to drop a column from an existing table using the ALTER command?",C,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+187,SQL Alter Table,KEEP,"In SQL, which of the following statement can be used to modify a column in an existing table using the ALTER command?",A,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+188,SQL Alter Table,KEEP,"In SQL, the ALTER command can be used to add and drop various constraints on an existing table.",A,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+189,SQL Alter Table,KEEP,"In SQL, which of the following statement can be used to add a constraint in an existing table using the ALTER command?",B,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+190,SQL Alter Table,KEEP,"In SQL, which of the following statement can be used to drop a constraint from an existing table using the ALTER command?",A,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+191,SQL Alter Table,KEEP,"In SQL, which of the following statement can be used to rename an existing table using the ALTER command?",D,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+192,SQL Alter Table,KEEP,"In SQL, which of the following statement can be used to rename a column in an existing table using the ALTER command?",D,https://www.sanfoundry.com/sql-questions-answers-sql-alter-table/
+193,SQL Any & All,KEEP,ANY and ALL operators are used with which of the following clauses in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-any-all/
+194,SQL Any & All,KEEP,ANY operator returns true if ______,B,https://www.sanfoundry.com/sql-questions-answers-sql-any-all/
+195,SQL Any & All,KEEP,ALL operator returns true if  ______,A,https://www.sanfoundry.com/sql-questions-answers-sql-any-all/
+196,SQL Any & All,KEEP,ANY and ALL operators must be preceded by which of the following in SQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-any-all/
+197,SQL Any & All,KEEP,What is the correct syntax for using ALL operator in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-any-all/
+198,SQL Any & All,KEEP,If subquery of a query with ALL operator returns zero rows then the condition evaluates to be _______,C,https://www.sanfoundry.com/sql-questions-answers-sql-any-all/
+199,SQL Any & All,KEEP,If a subquery of ANY operator returns zero rows then the condition evaluates to be _______,C,https://www.sanfoundry.com/sql-questions-answers-sql-any-all/
+200,SQL Auto Increment,KEEP SELECTIVELY,Which of the following is used to generate a unique number whenever a new row is entered in a table in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-auto-increment/
+201,SQL Auto Increment,KEEP SELECTIVELY,"In SQL, which of the following statement can be used to apply the AUTO INCREMENT field on a column?",D,https://www.sanfoundry.com/sql-questions-answers-sql-auto-increment/
+202,SQL Auto Increment,KEEP SELECTIVELY,What is the default value by which a record will be increased when the AUTO INCREMENT field is applied on it?,A,https://www.sanfoundry.com/sql-questions-answers-sql-auto-increment/
+203,SQL Auto Increment,KEEP SELECTIVELY,We can change the default value of the AUTO INCREMENT field by which a record will be increased?,A,https://www.sanfoundry.com/sql-questions-answers-sql-auto-increment/
+204,SQL Auto Increment,KEEP SELECTIVELY,Which of the following statement is used to change the default value of the AUTO INCREMENT field?,B,https://www.sanfoundry.com/sql-questions-answers-sql-auto-increment/
+205,SQL Auto Increment,KEEP SELECTIVELY,"We have to insert a new record into a table, we will have to specify a value for the column on which the AUTO INCREMENT field is applied.",B,https://www.sanfoundry.com/sql-questions-answers-sql-auto-increment/
+206,SQL Auto Increment,KEEP SELECTIVELY,Which of the following statement is used to apply the AUTO INCREMENT field on a column with a starting value other than 1?,C,https://www.sanfoundry.com/sql-questions-answers-sql-auto-increment/
+207,SQL Avg & Sum Functions,KEEP,Which function returns the average value of a numeric expression?,B,https://www.sanfoundry.com/sql-questions-answers-sql-avg-sum-functions/
+208,SQL Avg & Sum Functions,KEEP,Which of the following function returns the total sum of a numeric column?,C,https://www.sanfoundry.com/sql-questions-answers-sql-avg-sum-functions/
+209,SQL Avg & Sum Functions,KEEP,"If one or more columns are there in a SELECT statement in addition to the SUM or AVG function, these columns need to be a part of _______",B,https://www.sanfoundry.com/sql-questions-answers-sql-avg-sum-functions/
+210,SQL Avg & Sum Functions,KEEP,Arithmetic operations cannot be used inside SUM function.,B,https://www.sanfoundry.com/sql-questions-answers-sql-avg-sum-functions/
+211,SQL Avg & Sum Functions,KEEP,Which of the following is a correct syntax for sum( ) function?,B,https://www.sanfoundry.com/sql-questions-answers-sql-avg-sum-functions/
+212,SQL Avg & Sum Functions,KEEP,Which of the following cannot be used as an argument for SUM function? ( Column1 and column2 are numeric fields of a table),B,https://www.sanfoundry.com/sql-questions-answers-sql-avg-sum-functions/
+213,SQL Avg & Sum Functions,KEEP,What is the syntax for basic SQL AVG function?,A,https://www.sanfoundry.com/sql-questions-answers-sql-avg-sum-functions/
+214,SQL Avg & Sum Functions,KEEP,How many arguments does AVG and SUM have?,A,https://www.sanfoundry.com/sql-questions-answers-sql-avg-sum-functions/
+215,SQL Avg & Sum Functions,KEEP,AVG and SUM functions returns average and sum of numeric fields only.,A,https://www.sanfoundry.com/sql-questions-answers-sql-avg-sum-functions/
+216,SQL Avg & Sum Functions,KEEP,AVG and SUM can be used with which of the following clause(s)?,A,https://www.sanfoundry.com/sql-questions-answers-sql-avg-sum-functions/
+217,SQL Between Operator,KEEP,Which of the following operator is used to retrieve values within a given range?,C,https://www.sanfoundry.com/sql-questions-answers-sql-between-operator/
+218,SQL Between Operator,KEEP,BETWEEN operator in SQL _____,D,https://www.sanfoundry.com/sql-questions-answers-sql-between-operator/
+219,SQL Between Operator,KEEP,Which of the following operator has to be paired with BETWEEN in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-between-operator/
+220,SQL Between Operator,KEEP,SQL BETWEEN operator is used with which of the following clause(s)?,B,https://www.sanfoundry.com/sql-questions-answers-sql-between-operator/
+221,SQL Between Operator,KEEP,BETWEEN operator can be used as a shorthand for which of the following operations?,A,https://www.sanfoundry.com/sql-questions-answers-sql-between-operator/
+222,SQL Between Operator,KEEP,NOT BETWEEN is not a valid operator in SQL.,B,https://www.sanfoundry.com/sql-questions-answers-sql-between-operator/
+223,SQL Between Operator,KEEP,Which of the following is a correct syntax for using BETWEEN operator?,B,https://www.sanfoundry.com/sql-questions-answers-sql-between-operator/
+224,SQL Between Operator,KEEP,"Consider the following query:
+SELECT column_list
+FROM TABLE_NAME
+WHERE column_name BETWEEN max_value AND min_value;
+This query returns which of the following records?",A,https://www.sanfoundry.com/sql-questions-answers-sql-between-operator/
+225,SQL Between Operator,KEEP,DATE values cannot be used with BETWEEN operators.,B,https://www.sanfoundry.com/sql-questions-answers-sql-between-operator/
+226,SQL Between Operator,KEEP,Which of the following operator is used to exclude those records whose values fall in a given specific range of values?,B,https://www.sanfoundry.com/sql-questions-answers-sql-between-operator/
+227,SQL Comments,KEEP SELECTIVELY,Which of the following correctly defines a stored procedure in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-comments/
+228,SQL Comments,KEEP SELECTIVELY,"If we have an SQL query that we write over and over again, which of the following is a better idea to make it less complex?",B,https://www.sanfoundry.com/sql-questions-answers-sql-comments/
+229,SQL Comments,KEEP SELECTIVELY,We cannot pass parameters to a stored procedure.,B,https://www.sanfoundry.com/sql-questions-answers-sql-comments/
+230,SQL Comments,KEEP SELECTIVELY,What is the syntax to create a stored procedure?,A,https://www.sanfoundry.com/sql-questions-answers-sql-comments/
+231,SQL Comments,KEEP SELECTIVELY,Which of the following statement(s) is used to execute a stored procedure?,C,https://www.sanfoundry.com/sql-questions-answers-sql-comments/
+232,SQL Comments,KEEP SELECTIVELY,A stored procedure is able to call another stored procedure.,A,https://www.sanfoundry.com/sql-questions-answers-sql-comments/
+233,SQL Comments,KEEP SELECTIVELY,How many parameters can be passed to a stored procedure in SQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-comments/
+234,SQL Comments,KEEP SELECTIVELY,Where the stored procedures are stored in a database?,A,https://www.sanfoundry.com/sql-questions-answers-sql-comments/
+235,SQL Comments,KEEP SELECTIVELY,Which of the following statements creates a stored procedure ‘MONEY’ with a parameter ‘note’?,C,https://www.sanfoundry.com/sql-questions-answers-sql-comments/
+236,SQL Comments,KEEP SELECTIVELY,How many SQL statements can be written in a stored procedure?,D,https://www.sanfoundry.com/sql-questions-answers-sql-comments/
+237,SQL Constraints,KEEP,SQL constraints are rules used to limit the type of data that is entered in a table.,A,https://www.sanfoundry.com/sql-questions-answers-sql-constraints/
+238,SQL Constraints,KEEP,How many types of constraints are present in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-constraints/
+239,SQL Constraints,KEEP,"In SQL, constraints can be divided into which of the following level?",C,https://www.sanfoundry.com/sql-questions-answers-sql-constraints/
+240,SQL Constraints,KEEP,Which of the following is a constraint in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-constraints/
+241,SQL Constraints,KEEP,Which of the following statement can be used to apply column level constraints to a table in SQL?,A,https://www.sanfoundry.com/sql-questions-answers-sql-constraints/
+242,SQL Constraints,KEEP,"In SQL, which of the following constraint cannot be applied at the table level?",D,https://www.sanfoundry.com/sql-questions-answers-sql-constraints/
+243,SQL Count Function,KEEP,Which function is used to get the number of rows that matches specified criteria?,B,https://www.sanfoundry.com/sql-questions-answers-sql-count-function/
+244,SQL Count Function,KEEP,The SQL COUNT function is used to count the number of rows returned in which of the following statement?,A,https://www.sanfoundry.com/sql-questions-answers-sql-count-function/
+245,SQL Count Function,KEEP,Which of the following queries returns the number of records in a table named hospital?,B,https://www.sanfoundry.com/sql-questions-answers-sql-count-function/
+246,SQL Count Function,KEEP,SELECT COUNT(*) returns  the total of all records returned in the result set ______,B,https://www.sanfoundry.com/sql-questions-answers-sql-count-function/
+247,SQL Count Function,KEEP,"Using SELECT COUNT(column_name), we can count the number of non-NULL items in the specified column. (column_name is not *)",A,https://www.sanfoundry.com/sql-questions-answers-sql-count-function/
+248,SQL Count Function,KEEP,It is not possible to have any other columns in addition to COUNT function when it is used in SELECT statement.,B,https://www.sanfoundry.com/sql-questions-answers-sql-count-function/
+249,SQL Count Function,KEEP,"If any other columns are written along with COUNT in a SELECT statement, then _____",C,https://www.sanfoundry.com/sql-questions-answers-sql-count-function/
+250,SQL Count Function,KEEP,Which of the following clauses when used with COUNT function calculates the number of unique values of a specified column?,D,https://www.sanfoundry.com/sql-questions-answers-sql-count-function/
+251,SQL Count Function,KEEP,SQL COUNT( ) function with DISTINCT clause _________ the repetitive appearance of the same data.,B,https://www.sanfoundry.com/sql-questions-answers-sql-count-function/
+252,SQL Count Function,KEEP,"With which of the following clause(s), COUNT( ) function cannot be used?",D,https://www.sanfoundry.com/sql-questions-answers-sql-count-function/
+253,SQL Create Table,KEEP,Which of the following command is used to create a table in SQL?,A,https://www.sanfoundry.com/sql-questions-answers-sql-create-table/
+254,SQL Create Table,KEEP,"In SQL, the CREATE command can be put under which of the following category?",A,https://www.sanfoundry.com/sql-questions-answers-sql-create-table/
+255,SQL Create Table,KEEP,"Consider the following syntax and tell whether it is the correct way to create a table in SQL or not.
+CREATE TABLE TABLE_NAME
+column1 datatype CONSTRAINT
+column2 datatype CONSTRAINT
+column3 datatype CONSTRAINT
+.
+.
+.
+columnn datatype CONSTRAINT",B,https://www.sanfoundry.com/sql-questions-answers-sql-create-table/
+256,SQL Create Table,KEEP,It is necessary to specify a constraint for each column.,B,https://www.sanfoundry.com/sql-questions-answers-sql-create-table/
+257,SQL Create Table,KEEP,Which of the following constraint are not present in SQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-create-table/
+258,SQL Create Table,KEEP,Which of the following is not a valid datatype in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-create-table/
+259,SQL Create Table,KEEP,"In SQL, a column having the UNIQUE constraint can have two null values.",A,https://www.sanfoundry.com/sql-questions-answers-sql-create-table/
+260,SQL Create Table,KEEP,"According to the following SQL statement, which of the column is specified as the primary key?
+CREATE TABLE STUDENTS
+(ID INT PRIMARY KEY,
+NAME VARCHAR (15) NOT NULL,
+AGE INTNOT NULL,
+ADDRESS CHAR (25));",A,https://www.sanfoundry.com/sql-questions-answers-sql-create-table/
+261,SQL Create Table,KEEP,"How many columns will be created when the following SQL statement will get executed?
+CREATE TABLE Employee
+(Eid INT,
+FName VARCHAR (50),
+LName VARCHAR (50),
+Email VARCHAR (50),
+Address VARCHAR (50),
+City VARCHAR (50));",C,https://www.sanfoundry.com/sql-questions-answers-sql-create-table/
+262,SQL Create Table,KEEP,Which of the following SQL statement is used to create a table by copying only the selected columns from another table?,B,https://www.sanfoundry.com/sql-questions-answers-sql-create-table/
+263,SQL Data Types,KEEP,"What is the maximum value that can be stored in the datatype DECIMAL (5,2)?",C,https://www.sanfoundry.com/sql-questions-answers-sql-data-types/
+264,SQL Data Types,KEEP,Which of the following command can be used to create a user defined datatype in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-data-types/
+265,SQL Data Types,KEEP,Which of the following datatype is used to display a combination of date and time information?,A,https://www.sanfoundry.com/sql-questions-answers-sql-data-types/
+266,SQL Data Types,KEEP,"In SQL, which of the following datatypes has a maximum length of 255 characters?",B,https://www.sanfoundry.com/sql-questions-answers-sql-data-types/
+267,SQL Data Types,KEEP,"In SQL, if a value is entered in CHAR datatype which does not occupy all the length spaces then the remaining spaces will be occupied with blank spaces.",A,https://www.sanfoundry.com/sql-questions-answers-sql-data-types/
+268,SQL Data Types,KEEP,Which of the following datatype is used for storing a maximum of one element from a predefined list consisting a maximum of 65535 elements?,D,https://www.sanfoundry.com/sql-questions-answers-sql-data-types/
+269,SQL Data Types,KEEP,What is the default size of n in a column that has the datatype VARCHAR(n)?,C,https://www.sanfoundry.com/sql-questions-answers-sql-data-types/
+270,SQL Data Types,KEEP,"Which of the following will be the most suitable data type for the given column?
+COLUMN Name: Id, Description: Nine-digit roll NUMBER starting WITH R, Example: R100218066",B,https://www.sanfoundry.com/sql-questions-answers-sql-data-types/
+271,SQL Data Types,KEEP,"Which of the following will be the most suitable datatype for the given column?
+COLUMN Name: Student_Photo, Description: Image OF every student",C,https://www.sanfoundry.com/sql-questions-answers-sql-data-types/
+272,SQL Data Types,KEEP,"Which of the following will be the most suitable datatype for the given column?
+COLUMN Name: Contact_Number, Description: Telephone NUMBER OF every student",A,https://www.sanfoundry.com/sql-questions-answers-sql-data-types/
+273,SQL Database,KEEP SELECTIVELY,Which of the following does a database comprise of?,B,https://www.sanfoundry.com/sql-questions-answers-sql-database/
+274,SQL Database,KEEP SELECTIVELY,Which of the following command is used to create a database in SQL?,A,https://www.sanfoundry.com/sql-questions-answers-sql-database/
+275,SQL Database,KEEP SELECTIVELY,Which of the following syntax correctly represents the method to create a database in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-database/
+276,SQL Database,KEEP SELECTIVELY,Which of the following statement can be used to list all the databases in the SQL server?,A,https://www.sanfoundry.com/sql-questions-answers-sql-database/
+277,SQL Database,KEEP SELECTIVELY,Which of the following command let us instruct the SQL server to check the existence of a database with a similar name before creating a database?,C,https://www.sanfoundry.com/sql-questions-answers-sql-database/
+278,SQL Database,KEEP SELECTIVELY,The “AS COPY OF” command is used to create a database as a copy of another source database.,A,https://www.sanfoundry.com/sql-questions-answers-sql-database/
+279,SQL Dates,KEEP,"What will the output of the following statement?
+SELECT DATE_ADD('1998-01-02', INTERVAL 31 DAY);",C,https://www.sanfoundry.com/sql-questions-answers-sql-dates/
+280,SQL Dates,KEEP,"What will be the output of the following statement?
+SELECT ADDTIME('1998-12-30 23:59:59.999998','1 1:1:1.000002');",A,https://www.sanfoundry.com/sql-questions-answers-sql-dates/
+281,SQL Dates,KEEP,Which of the following function is used to return the current date of our system?,D,https://www.sanfoundry.com/sql-questions-answers-sql-dates/
+282,SQL Dates,KEEP,Which of the following function is used to return the current time of our system?,B,https://www.sanfoundry.com/sql-questions-answers-sql-dates/
+283,SQL Dates,KEEP,"What will be the output of the following statement?
+SELECT DATEDIFF('2020-11-30 23:59:59','2020-11-29');",C,https://www.sanfoundry.com/sql-questions-answers-sql-dates/
+284,SQL Dates,KEEP,The %c format string in the DATE_FORMAT() function is used to specify which of the following format?,C,https://www.sanfoundry.com/sql-questions-answers-sql-dates/
+285,SQL Dates,KEEP,Which of the following function is used to get the weekday index value for a specified date?,B,https://www.sanfoundry.com/sql-questions-answers-sql-dates/
+286,SQL Dates,KEEP,The NOW() function is used to return the current date and time in which of the following format?,D,https://www.sanfoundry.com/sql-questions-answers-sql-dates/
+287,SQL Dates,KEEP,"What will be the output of the following statement?
+SELECT QUARTER('2020-05-07');",B,https://www.sanfoundry.com/sql-questions-answers-sql-dates/
+288,SQL Dates,KEEP,Which of the following function is used to convert the given time into seconds?,A,https://www.sanfoundry.com/sql-questions-answers-sql-dates/
+289,SQL Default Constraint,KEEP,Which of the following constraint is used to provide a default value to a column in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-default-constraint/
+290,SQL Default Constraint,KEEP,Which of the following statement is used to apply the DEAFULT constraint to a column in SQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-default-constraint/
+291,SQL Default Constraint,KEEP,Which of the following statement can be used to apply the DEFAULT constraint on a column in an existing table?,A,https://www.sanfoundry.com/sql-questions-answers-sql-default-constraint/
+292,SQL Default Constraint,KEEP,Which of the following statement is used to delete the DEFAULT constraint from a column in an existing column?,C,https://www.sanfoundry.com/sql-questions-answers-sql-default-constraint/
+293,SQL Default Constraint,KEEP,"In SQL, the DEFAULT constraint can also be applied as a table level constraint.",B,https://www.sanfoundry.com/sql-questions-answers-sql-default-constraint/
+294,SQL Delete Statement,KEEP,Which clause is used to delete existing records of a table?,A,https://www.sanfoundry.com/sql-questions-answers-sql-delete-statement/
+295,SQL Delete Statement,KEEP,Which of the following clause is used in delete statement to remove only specific records of a table?,C,https://www.sanfoundry.com/sql-questions-answers-sql-delete-statement/
+296,SQL Delete Statement,KEEP,Which of the following is a correct syntax for delete statement?,A,https://www.sanfoundry.com/sql-questions-answers-sql-delete-statement/
+297,SQL Delete Statement,KEEP,Which of the following clause is omitted from a delete statement to remove all the records of a table?,C,https://www.sanfoundry.com/sql-questions-answers-sql-delete-statement/
+298,SQL Delete Statement,KEEP,It is not possible to delete all rows in a table without deleting the table.,B,https://www.sanfoundry.com/sql-questions-answers-sql-delete-statement/
+299,SQL Delete Statement,KEEP,"By using DELETE statement, which of the following is/are not deleted permanently from a table?",C,https://www.sanfoundry.com/sql-questions-answers-sql-delete-statement/
+300,SQL Delete Statement,KEEP,Multiple tables can be deleted using a single DELETE statement.,B,https://www.sanfoundry.com/sql-questions-answers-sql-delete-statement/
+301,SQL Delete Statement,KEEP,"To delete records in one table based on values in another table, which clause is used?",B,https://www.sanfoundry.com/sql-questions-answers-sql-delete-statement/
+302,SQL Delete Statement,KEEP,"After performing a delete operation using DELETE statement, which of the following is used to undo the changes made by it?",C,https://www.sanfoundry.com/sql-questions-answers-sql-delete-statement/
+303,SQL Delete Statement,KEEP,DELETE is a _________ command.,B,https://www.sanfoundry.com/sql-questions-answers-sql-delete-statement/
+304,SQL Drop DB,KEEP SELECTIVELY,Which of the following command is used to delete a database in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-drop-db/
+305,SQL Drop DB,KEEP SELECTIVELY,Which of the following statement is used to delete a database in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-drop-db/
+306,SQL Drop DB,KEEP SELECTIVELY,Can a database be dropped regardless of its state?,A,https://www.sanfoundry.com/sql-questions-answers-sql-drop-db/
+307,SQL Drop DB,KEEP SELECTIVELY,"After dropping a database snapshot in SQL, it can be re-created by restoring a backup.",B,https://www.sanfoundry.com/sql-questions-answers-sql-drop-db/
+308,SQL Drop DB,KEEP SELECTIVELY,Which of the following statement can be used to drop multiple databases at once?,D,https://www.sanfoundry.com/sql-questions-answers-sql-drop-db/
+309,SQL Drop DB,KEEP SELECTIVELY,"In SQL, a database that is currently in use cannot be dropped.",A,https://www.sanfoundry.com/sql-questions-answers-sql-drop-db/
+310,SQL Drop DB,KEEP SELECTIVELY,Which of the following statement is used to conditionally drop a database that already exists?,B,https://www.sanfoundry.com/sql-questions-answers-sql-drop-db/
+311,SQL Drop Table,KEEP,Which of the following command is used to delete the structure of a table in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-drop-table/
+312,SQL Drop Table,KEEP,"In SQL, the DROP command can be put under which of the following category?",A,https://www.sanfoundry.com/sql-questions-answers-sql-drop-table/
+313,SQL Drop Table,KEEP,Which of the following statement is used to delete a table in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-drop-table/
+314,SQL Drop Table,KEEP,Which of the following statement is used to drop multiple tables at once in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-drop-table/
+315,SQL Drop Table,KEEP,"In SQL, which of the following statement is used to conditionally drop a table that already exists?",A,https://www.sanfoundry.com/sql-questions-answers-sql-drop-table/
+316,SQL Drop Table,KEEP,The DROP command cannot be used to drop a table that is referenced by a FOREIGN KEY constraint.,A,https://www.sanfoundry.com/sql-questions-answers-sql-drop-table/
+317,SQL Drop Table,KEEP,Which of the following statement is used to drop a table present in another database?,D,https://www.sanfoundry.com/sql-questions-answers-sql-drop-table/
+318,SQL Exists,KEEP,Which operator is used to check the existence of a record in a subquery?,B,https://www.sanfoundry.com/sql-questions-answers-sql-exists/
+319,SQL Exists,KEEP,The result of EXISTS is _______,C,https://www.sanfoundry.com/sql-questions-answers-sql-exists/
+320,SQL Exists,KEEP,The EXISTS operator returns true if the subquery returns no records.,B,https://www.sanfoundry.com/sql-questions-answers-sql-exists/
+321,SQL Exists,KEEP,EXISTS condition is used in combination with which of the following?,A,https://www.sanfoundry.com/sql-questions-answers-sql-exists/
+322,SQL Exists,KEEP,How many records must be matched with the given criteria to return TRUE from EXISTS condition in SQL?,A,https://www.sanfoundry.com/sql-questions-answers-sql-exists/
+323,SQL Exists,KEEP,EXISTS operator is used with WHICH of the following clause(s)?,C,https://www.sanfoundry.com/sql-questions-answers-sql-exists/
+324,SQL Exists,KEEP,What is the basic syntax of EXISTS operator in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-exists/
+325,SQL Exists,KEEP,The process of sub query execution repeat as many number of times as there are main query rows when EXISTS operator is used.,A,https://www.sanfoundry.com/sql-questions-answers-sql-exists/
+326,SQL Exists,KEEP,EXISTS operator can be prefixed with which of the following operators?,B,https://www.sanfoundry.com/sql-questions-answers-sql-exists/
+327,SQL Exists,KEEP,The WHERE clause with NOT EXISTS operator is satisfied if how many rows are returned by the subquery?,C,https://www.sanfoundry.com/sql-questions-answers-sql-exists/
+328,SQL Foreign Key,KEEP,"In SQL, which of the following constraint is used to establish a link between two tables?",C,https://www.sanfoundry.com/sql-questions-answers-sql-foreign-key/
+329,SQL Foreign Key,KEEP,"In SQL, the FOREIGN KEY of one table is the PRIMARY KEY of another table.",A,https://www.sanfoundry.com/sql-questions-answers-sql-foreign-key/
+330,SQL Foreign Key,KEEP,The table that defines the FOREIGN KEY is called as the parent table.,B,https://www.sanfoundry.com/sql-questions-answers-sql-foreign-key/
+331,SQL Foreign Key,KEEP,Which of the following statement can be used to apply the FOREIGN KEY constraint in SQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-foreign-key/
+332,SQL Foreign Key,KEEP,Which of the following statement is used to create the FOREIGN KEY constraint on an already existing table?,C,https://www.sanfoundry.com/sql-questions-answers-sql-foreign-key/
+333,SQL Foreign Key,KEEP,Which of the following statement can be used to delete the FOREIGN KEY constraint from a table?,A,https://www.sanfoundry.com/sql-questions-answers-sql-foreign-key/
+334,SQL Foreign Key,KEEP,"In SQL, a table can have more than one column with the FOREIGN KEY constraints.",A,https://www.sanfoundry.com/sql-questions-answers-sql-foreign-key/
+335,SQL Foreign Key,KEEP,Which of the following statement can be used to apply the FOREIGN KEY constraint on more than on column in a table?,C,https://www.sanfoundry.com/sql-questions-answers-sql-foreign-key/
+336,SQL Full Join,KEEP,Which of the following joins return very large result-sets when compared with other joins?,D,https://www.sanfoundry.com/sql-questions-answers-sql-full-join/
+337,SQL Full Join,KEEP,Which of the following sets represents the result-set of Table1 FULL JOIN Table2?,B,https://www.sanfoundry.com/sql-questions-answers-sql-full-join/
+338,SQL Full Join,KEEP,"For the missing matches of any table joined by using FULL JOIN, the result-set contains _______",C,https://www.sanfoundry.com/sql-questions-answers-sql-full-join/
+339,SQL Full Join,KEEP,Full join is a type of INNER JOIN.,B,https://www.sanfoundry.com/sql-questions-answers-sql-full-join/
+340,SQL Group By,KEEP,Which clause is used to group the result set based on a common value present in a table?,D,https://www.sanfoundry.com/sql-questions-answers-sql-group-by/
+341,SQL Group By,KEEP,GROUP BY clause is used with which of the following statements?,C,https://www.sanfoundry.com/sql-questions-answers-sql-group-by/
+342,SQL Group By,KEEP,GROUP BY statement cannot be used with aggregate functions.,B,https://www.sanfoundry.com/sql-questions-answers-sql-group-by/
+343,SQL Group By,KEEP,How many columns or functions can be specified or included in a single GROUP BY clause?,D,https://www.sanfoundry.com/sql-questions-answers-sql-group-by/
+344,SQL Group By,KEEP,All non aggregate function columns in the SELECT statement must be included in which of the following clause(s)?,A,https://www.sanfoundry.com/sql-questions-answers-sql-group-by/
+345,SQL Group By,KEEP,Which of the following provides a correct order of clauses used in SQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-group-by/
+346,SQL Group By,KEEP,Which of the following is a correct syntax of GROUP BY clause?,C,https://www.sanfoundry.com/sql-questions-answers-sql-group-by/
+347,SQL Group By,KEEP,In the GROUP BY Clause the grouping is done using the values present in the _________,B,https://www.sanfoundry.com/sql-questions-answers-sql-group-by/
+348,SQL Group By,KEEP,WHERE clause is used to restrict the groups grouped using GROUP BY.,B,https://www.sanfoundry.com/sql-questions-answers-sql-group-by/
+349,SQL Having Clause,KEEP,Which clause is used in SQL to specify a filter condition for a group?,C,https://www.sanfoundry.com/sql-questions-answers-sql-having-clause/
+350,SQL Having Clause,KEEP,HAVING clause can be used with which of the following statements?,B,https://www.sanfoundry.com/sql-questions-answers-sql-having-clause/
+351,SQL Having Clause,KEEP,Which of the following order is valid in SQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-having-clause/
+352,SQL Having Clause,KEEP,A SELECT statement cannot contain both WHERE and HAVING clauses in a single query.,B,https://www.sanfoundry.com/sql-questions-answers-sql-having-clause/
+353,SQL Having Clause,KEEP,HAVING clause is used in combination with which of the following clause(s)?,C,https://www.sanfoundry.com/sql-questions-answers-sql-having-clause/
+354,SQL Having Clause,KEEP,A HAVING clause works like a WHERE clause if it is not used with the GROUP BY clause.,A,https://www.sanfoundry.com/sql-questions-answers-sql-having-clause/
+360,SQL In Operator,KEEP,Which of the following operators allows us to specify multiple values in a WHERE clause?,C,https://www.sanfoundry.com/sql-questions-answers-sql-in-operator/
+361,SQL In Operator,KEEP,IN operator can be used as shorthand for which of the following operators?,A,https://www.sanfoundry.com/sql-questions-answers-sql-in-operator/
+362,SQL In Operator,KEEP,IN operator is used with which of the following clause(s)?,B,https://www.sanfoundry.com/sql-questions-answers-sql-in-operator/
+363,SQL In Operator,KEEP,Which type of arguments can be used with IN operator?,D,https://www.sanfoundry.com/sql-questions-answers-sql-in-operator/
+364,SQL In Operator,KEEP,NOT IN is not a valid operator in SQL.,B,https://www.sanfoundry.com/sql-questions-answers-sql-in-operator/
+365,SQL In Operator,KEEP,Which of the following is a correct syntax for IN operator?,A,https://www.sanfoundry.com/sql-questions-answers-sql-in-operator/
+366,SQL In Operator,KEEP,Any number of values can be listed in an IN operator.,A,https://www.sanfoundry.com/sql-questions-answers-sql-in-operator/
+367,SQL In Operator,KEEP,Which of the following statement(s) can be used in place of list of values in an IN operator?,C,https://www.sanfoundry.com/sql-questions-answers-sql-in-operator/
+368,SQL Index,KEEP,Which of the following optional structure is used to improve the performance of a query performed on a table in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-index/
+369,SQL Index,KEEP,Which of the following statement can be used to create an INDEX in SQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-index/
+370,SQL Index,KEEP,Which of the following index is created on only one column of a table.,C,https://www.sanfoundry.com/sql-questions-answers-sql-index/
+371,SQL Index,KEEP,Which of the following index is created on more than one column of a table.,D,https://www.sanfoundry.com/sql-questions-answers-sql-index/
+372,SQL Index,KEEP,Which of the following statement is used to create a UNIQUE Index in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-index/
+373,SQL Index,KEEP,How many types of indexes are present in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-index/
+374,SQL Index,KEEP,"In SQL, Indexes can also be used on the columns containing null values.",B,https://www.sanfoundry.com/sql-questions-answers-sql-index/
+375,SQL Index,KEEP,Which of the following statement is used to create a BIT-MAP Index in SQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-index/
+376,SQL Index,KEEP,Which of the following statement can be used to delete an INDEX in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-index/
+377,SQL Index,KEEP,Which of the following pair of indexes can be created when there is a partition in a table?,A,https://www.sanfoundry.com/sql-questions-answers-sql-index/
+388,SQL Inner Join,KEEP,"When there are no matching values between two tables of a database, which of the following join returns zero records?",C,https://www.sanfoundry.com/sql-questions-answers-sql-inner-join/
+389,SQL Inner Join,KEEP,Which of the following keyword can be used along with INNER JOIN in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-inner-join/
+390,SQL Inner Join,KEEP,"Where the join condition should be mentioned, if ON keyword is not used in a query?",C,https://www.sanfoundry.com/sql-questions-answers-sql-inner-join/
+391,SQL Inner Join,KEEP,What is the basic syntax for using INNER JOIN?,A,https://www.sanfoundry.com/sql-questions-answers-sql-inner-join/
+392,SQL Inner Join,KEEP,Which of the following sets is similar to table1 INNER JOIN table2?,C,https://www.sanfoundry.com/sql-questions-answers-sql-inner-join/
+393,SQL Joins,KEEP,"Which clause is used to fetch data from two or more tables, based on conditions between tables?",B,https://www.sanfoundry.com/sql-questions-answers-sql-joins/
+394,SQL Joins,KEEP,Which of the following type of join returns a list of rows for which there is a match in both of the specified tables?,D,https://www.sanfoundry.com/sql-questions-answers-sql-joins/
+395,SQL Joins,KEEP,Which of the following is a default join type?,B,https://www.sanfoundry.com/sql-questions-answers-sql-joins/
+396,SQL Joins,KEEP,"Which type of join returns all the records from the left table, and the matched records from the right table?",C,https://www.sanfoundry.com/sql-questions-answers-sql-joins/
+397,SQL Joins,KEEP,Which type of join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join?,A,https://www.sanfoundry.com/sql-questions-answers-sql-joins/
+398,SQL Joins,KEEP,Which type of join returns all the records when there is a match in either left or right table?,B,https://www.sanfoundry.com/sql-questions-answers-sql-joins/
+399,SQL Joins,KEEP,How many conditions are required to join N number of tables?,D,https://www.sanfoundry.com/sql-questions-answers-sql-joins/
+400,SQL Joins,KEEP,"In a query, JOIN condition can be used for only one time.",B,https://www.sanfoundry.com/sql-questions-answers-sql-joins/
+401,SQL Left Join,KEEP,Table1 LEFT JOIN Table2 returns _____,B,https://www.sanfoundry.com/sql-questions-answers-sql-left-join/
+402,SQL Left Join,KEEP,"If there is no matching row on right side table of LEFT JOIN, the result-set contains ____",D,https://www.sanfoundry.com/sql-questions-answers-sql-left-join/
+403,SQL Left Join,KEEP,"Instead of LEFT JOIN, which of the following can be used to produce same result?",B,https://www.sanfoundry.com/sql-questions-answers-sql-left-join/
+404,SQL Left Join,KEEP,Which of the following sets represents table1 LEFT JOIN table2?,A,https://www.sanfoundry.com/sql-questions-answers-sql-left-join/
+405,SQL Like Operator,KEEP,Which operator is used to search for a specified pattern in a column?,C,https://www.sanfoundry.com/sql-questions-answers-sql-like-operator/
+406,SQL Like Operator,KEEP,The SQL LIKE operator is used in which of the following clause?,D,https://www.sanfoundry.com/sql-questions-answers-sql-like-operator/
+407,SQL Like Operator,KEEP,Which of the following wildcards are used in conjunction with the LIKE operator?,A,https://www.sanfoundry.com/sql-questions-answers-sql-like-operator/
+408,SQL Like Operator,KEEP,"To search for a value in a database table, when we don’t have an exact value to search for, which of the following is used?",A,https://www.sanfoundry.com/sql-questions-answers-sql-like-operator/
+409,SQL Like Operator,KEEP,The percent sign (%) represents which of the following?,A,https://www.sanfoundry.com/sql-questions-answers-sql-like-operator/
+410,SQL Like Operator,KEEP,The underscore ( _ ) represents which of the following?,D,https://www.sanfoundry.com/sql-questions-answers-sql-like-operator/
+411,SQL Like Operator,KEEP,The percent sign and the underscore cannot be used in combinations.,B,https://www.sanfoundry.com/sql-questions-answers-sql-like-operator/
+412,SQL Like Operator,KEEP,Which of the following pattern matches strings which contain the substring ‘xxx’ in them at any position?,D,https://www.sanfoundry.com/sql-questions-answers-sql-like-operator/
+413,SQL Like Operator,KEEP,The pattern used in LIKE clause must be enclosed in single quotations.,A,https://www.sanfoundry.com/sql-questions-answers-sql-like-operator/
+414,SQL Like Operator,KEEP,The pattern ‘x_%_%’ matches which of the following strings?,C,https://www.sanfoundry.com/sql-questions-answers-sql-like-operator/
+415,SQL Min and Max Functions,KEEP,Which of the following terms is used to get the smallest value of the selected field?,C,https://www.sanfoundry.com/sql-questions-answers-sql-min-max-functions/
+416,SQL Min and Max Functions,KEEP,Which function is used to find out the record with maximum value among a record set?,B,https://www.sanfoundry.com/sql-questions-answers-sql-min-max-functions/
+417,SQL Min and Max Functions,KEEP,"When a date field is used in min( ) function, it returns _________",A,https://www.sanfoundry.com/sql-questions-answers-sql-min-max-functions/
+418,SQL Min and Max Functions,KEEP,"If min( ) function is used on a field with non-numerical values, the function returns that record which is _________",B,https://www.sanfoundry.com/sql-questions-answers-sql-min-max-functions/
+419,SQL Min and Max Functions,KEEP,"When a date field is used with max( ) function, it returns _________",C,https://www.sanfoundry.com/sql-questions-answers-sql-min-max-functions/
+420,SQL Min and Max Functions,KEEP,"If a non-numerical values field is used in max( ) function, it returns that record which _________",C,https://www.sanfoundry.com/sql-questions-answers-sql-min-max-functions/
+421,SQL Min and Max Functions,KEEP,How many arguments does a MIN or MAX function can have?,B,https://www.sanfoundry.com/sql-questions-answers-sql-min-max-functions/
+422,SQL Min and Max Functions,KEEP,What is the syntax to get minimum value of a field?,A,https://www.sanfoundry.com/sql-questions-answers-sql-min-max-functions/
+423,SQL Min and Max Functions,KEEP,What is the syntax to get maximum value of a field?,C,https://www.sanfoundry.com/sql-questions-answers-sql-min-max-functions/
+424,SQL Min and Max Functions,KEEP,Max and MIN functions cannot be used at a time in a single Select statement.,B,https://www.sanfoundry.com/sql-questions-answers-sql-min-max-functions/
+425,SQL Not Null,KEEP,"In SQL, which of the following constraint is used to ensure that the data present in a column of a table is not empty?",C,https://www.sanfoundry.com/sql-questions-answers-sql-not-null/
+426,SQL Not Null,KEEP,"In SQL, a NULL value is the same as a zero value.",B,https://www.sanfoundry.com/sql-questions-answers-sql-not-null/
+427,SQL Not Null,KEEP,"In SQL, the NOT NULL constraint can be written as a table level constraint.",B,https://www.sanfoundry.com/sql-questions-answers-sql-not-null/
+428,SQL Not Null,KEEP,Which of the following statement is used to apply the NOT NULL constraint?,A,https://www.sanfoundry.com/sql-questions-answers-sql-not-null/
+429,SQL Not Null,KEEP,Which of the following combination of statements can be used to add the NOT NULL constraint to an existing column?,A,https://www.sanfoundry.com/sql-questions-answers-sql-not-null/
+430,SQL Not Null,KEEP,Which of the following statement can be used to remove the NOT NULL constraint from an existing column?,D,https://www.sanfoundry.com/sql-questions-answers-sql-not-null/
+431,SQL Not Null,KEEP,Which of the following operator is used to test a column for empty values in SQL?,A,https://www.sanfoundry.com/sql-questions-answers-sql-not-null/
+432,SQL Null Functions,KEEP SELECTIVELY,IS NULL( ) function in SQL server is used to _______,B,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+433,SQL Null Functions,KEEP SELECTIVELY,What is the syntax of ISNULL ( ) function used in SQL server?,A,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+434,SQL Null Functions,KEEP SELECTIVELY,In MySQL ISNULL ( ) function is used to _____,C,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+435,SQL Null Functions,KEEP SELECTIVELY,What is the syntax of ISNULL ( ) function used in MySQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+436,SQL Null Functions,KEEP SELECTIVELY,IFNULL ( ) function is available in which of the following environment?,C,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+437,SQL Null Functions,KEEP SELECTIVELY,"If the first argument of IFNULL ( ) function is NULL, the function returns the second argument.",A,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+438,SQL Null Functions,KEEP SELECTIVELY,What is the syntax of IFNULL ( ) function?,B,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+439,SQL Null Functions,KEEP SELECTIVELY,COALESCE ( ) function in SQL returns which of the following?,D,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+440,SQL Null Functions,KEEP SELECTIVELY,"If all the expressions of a COALESCE ( ) function are evaluated to be NULL, then it returns ______",C,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+441,SQL Null Functions,KEEP SELECTIVELY,What is the syntax of COALESCE ( ) function?,A,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+442,SQL Null Functions,KEEP SELECTIVELY,NULLIF ( ) function returns _______ if both the arguments of the function are equal.,C,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+443,SQL Null Functions,KEEP SELECTIVELY,How many arguments are there for NULLIF ( ) function?,C,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+444,SQL Null Functions,KEEP SELECTIVELY,What is the syntax of NULLIF ( ) function?,B,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+445,SQL Null Functions,KEEP SELECTIVELY,Expressions used in NULLIF ( ) function may or may not be of same data types.,B,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+446,SQL Null Functions,KEEP SELECTIVELY,NVL ( ) function is similar to which of the following function(s)?,A,https://www.sanfoundry.com/sql-questions-answers-sql-null-functions/
+447,SQL Null Values,KEEP,NULL value is different from a zero value.,A,https://www.sanfoundry.com/sql-questions-answers-sql-null-values/
+448,SQL Null Values,KEEP,NULL signifies _________,C,https://www.sanfoundry.com/sql-questions-answers-sql-null-values/
+449,SQL Null Values,KEEP,Which of the following is not correct about an SQL NULL value?,D,https://www.sanfoundry.com/sql-questions-answers-sql-null-values/
+450,SQL Null Values,KEEP,Is it possible to test for NULL values using comparison operators?,B,https://www.sanfoundry.com/sql-questions-answers-sql-null-values/
+451,SQL Null Values,KEEP,Which keyword is used to look for NULL values?,B,https://www.sanfoundry.com/sql-questions-answers-sql-null-values/
+452,SQL Null Values,KEEP,NULL value can be assigned to which type of fields?,D,https://www.sanfoundry.com/sql-questions-answers-sql-null-values/
+453,SQL Null Values,KEEP,IS NULL and IS NOT NULL operators are used with which of the following?,C,https://www.sanfoundry.com/sql-questions-answers-sql-null-values/
+454,SQL Null Values,KEEP,Any comparison with NULL returns ______,C,https://www.sanfoundry.com/sql-questions-answers-sql-null-values/
+455,SQL Null Values,KEEP,Which of the following keyword when used with a column name  while creating  the table signifies that it should always accept an explicit value of the given column data type?,C,https://www.sanfoundry.com/sql-questions-answers-sql-null-values/
+456,SQL Null Values,KEEP,"When a known value is added to a NULL value, the result is _______",A,https://www.sanfoundry.com/sql-questions-answers-sql-null-values/
+457,SQL Operators,KEEP,"In SQL, operators are used with which of the following clause?",D,https://www.sanfoundry.com/sql-questions-answers-sql-operators/
+458,SQL Operators,KEEP,Which of the following operators are used to perform mathematical operations?,C,https://www.sanfoundry.com/sql-questions-answers-sql-operators/
+459,SQL Operators,KEEP,"What will be the output of the following SQL statement?
+SELECT 100 + 50;
+SELECT 100 - 50;
+SELECT 100 * 50;
+SELECT 100 / 50;
+SELECT 100 % 50;",C,https://www.sanfoundry.com/sql-questions-answers-sql-operators/
+460,SQL Operators,KEEP,The operator <> is used for which of the following comparison operation?,A,https://www.sanfoundry.com/sql-questions-answers-sql-operators/
+461,SQL Operators,KEEP,Which of the following operator is used to compare a value to a list of literal values that have been specified?,B,https://www.sanfoundry.com/sql-questions-answers-sql-operators/
+462,SQL Operators,KEEP,Which of the following operator is used to negate the meaning of the logical operator with which it is used?,A,https://www.sanfoundry.com/sql-questions-answers-sql-operators/
+463,SQL Operators,KEEP,Which of the following operator is used to search a value between a range of values where the maximum and minimum values are specified?,D,https://www.sanfoundry.com/sql-questions-answers-sql-operators/
+464,SQL Operators,KEEP,"What will be the output of the following statement?
+IF a = 10, b = 20
+SELECT (a!=b);",A,https://www.sanfoundry.com/sql-questions-answers-sql-operators/
+465,SQL Operators,KEEP,"Consider the following statement and answer the question that follows:
+SELECT column_name
+FROM TABLE_NAME
+WHERE column_name BETWEEN 10 AND 20;
+When using the BETWEEN operator, the output range is –",C,https://www.sanfoundry.com/sql-questions-answers-sql-operators/
+466,SQL Operators,KEEP,Which of the following operator is used to search for the presence of a row in a specified table.,B,https://www.sanfoundry.com/sql-questions-answers-sql-operators/
+467,SQL Order By Clause,KEEP,Which SQL keyword is used to sort the data returned by a SELECT statement?,A,https://www.sanfoundry.com/sql-questions-answers-sql-order-by-clause/
+468,SQL Order By Clause,KEEP,What is the default ordering of data using ORDER BY clause?,C,https://www.sanfoundry.com/sql-questions-answers-sql-order-by-clause/
+469,SQL Order By Clause,KEEP,"To sort the records in descending order, which keyword is used?",C,https://www.sanfoundry.com/sql-questions-answers-sql-order-by-clause/
+470,SQL Order By Clause,KEEP,Which one of the following sorts rows in SQL?,D,https://www.sanfoundry.com/sql-questions-answers-sql-order-by-clause/
+471,SQL Order By Clause,KEEP,The columns specified in ORDER BY clause may or may not be the columns specified in the SELECT column list.,A,https://www.sanfoundry.com/sql-questions-answers-sql-order-by-clause/
+472,SQL Order By Clause,KEEP,Aliases defined in the SELECT Statement can be used in ORDER BY Clause.,A,https://www.sanfoundry.com/sql-questions-answers-sql-order-by-clause/
+473,SQL Order By Clause,KEEP,Which of the following can be used with the ORDER BY clause in place of column name?,C,https://www.sanfoundry.com/sql-questions-answers-sql-order-by-clause/
+474,SQL Order By Clause,KEEP,"To sort the result with respect to multiple columns, they must be separated using ____",B,https://www.sanfoundry.com/sql-questions-answers-sql-order-by-clause/
+475,SQL Order By Clause,KEEP,"When sorting the result set using the SQL ORDER BY clause, we can use ___________ attributes in a single SELECT statement.",D,https://www.sanfoundry.com/sql-questions-answers-sql-order-by-clause/
+476,SQL Order By Clause,KEEP,Which of the following order is valid and yields correct results in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-order-by-clause/
+477,SQL Primary Key,KEEP,"In SQL, which of the following constraint is used to uniquely identify each record in a table?",B,https://www.sanfoundry.com/sql-questions-answers-sql-primary-key/
+478,SQL Primary Key,KEEP,"In SQL, a table can have more than one primary key.",B,https://www.sanfoundry.com/sql-questions-answers-sql-primary-key/
+479,SQL Primary Key,KEEP,"In SQL, the PRIMARY KEY constraint can be defined while creating a table and also while altering the table’s structure.",A,https://www.sanfoundry.com/sql-questions-answers-sql-primary-key/
+480,SQL Primary Key,KEEP,Which of the following statement can be used to apply the primary key constraint to a column?,A,https://www.sanfoundry.com/sql-questions-answers-sql-primary-key/
+481,SQL Primary Key,KEEP,Which of the following statement can be used to make a composite PRIMARY KEY?,D,https://www.sanfoundry.com/sql-questions-answers-sql-primary-key/
+482,SQL Primary Key,KEEP,Which of the following statement can be used to apply the PRIMARY KEY constraint to a column of an existing table?,C,https://www.sanfoundry.com/sql-questions-answers-sql-primary-key/
+483,SQL Primary Key,KEEP,Which of the following statement can be used to drop the PRIMARY KEY constraint form a table?,A,https://www.sanfoundry.com/sql-questions-answers-sql-primary-key/
+484,"SQL And, Or, Not",KEEP,The AND operator displays a record if ____________,B,https://www.sanfoundry.com/sql-questions-answers-sql-and-or-not/
+485,"SQL And, Or, Not",KEEP,The OR operator displays a record if ________,A,https://www.sanfoundry.com/sql-questions-answers-sql-and-or-not/
+486,"SQL And, Or, Not",KEEP,The NOT operator displays a record if the condition(s) is NOT FALSE.,B,https://www.sanfoundry.com/sql-questions-answers-sql-and-or-not/
+487,"SQL And, Or, Not",KEEP,What is the basic AND syntax?,C,https://www.sanfoundry.com/sql-questions-answers-sql-and-or-not/
+488,"SQL And, Or, Not",KEEP,Which of the following is the correct syntax to use OR operator?,A,https://www.sanfoundry.com/sql-questions-answers-sql-and-or-not/
+489,"SQL And, Or, Not",KEEP,"With SQL, how do you select all fields from “Customers” table whose country is NOT “Germany” and NOT “USA”?",D,https://www.sanfoundry.com/sql-questions-answers-sql-and-or-not/
+490,"SQL And, Or, Not",KEEP,"When three or more AND and OR conditions are combined, which keyword is used to replace the query simple?",D,https://www.sanfoundry.com/sql-questions-answers-sql-and-or-not/
+491,SQL Insert Into Select,KEEP,Which of the following statement(s) can be used in SQL to copy and insert data from one table to another table?,D,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-select/
+492,SQL Insert Into Select,KEEP,"In an INSERT INTO SELECT statement, which of the following must match in both source and target table?",C,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-select/
+493,SQL Insert Into Select,KEEP,"When an INSERT INTO SELECT statement is used, the existing records of the target table _________",A,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-select/
+494,SQL Insert Into Select,KEEP,What is the syntax of INSERT INTO SELECT statement?,B,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-select/
+495,SQL Insert Into Select,KEEP,"The SELECT statement of an INSERT INTO SELECT statement can contain HAVING, GROUP BY and WHERE clauses.",A,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-select/
+496,SQL Insert Into Select,KEEP,Using INSERT INTO SELECT statement it is not possible to copy only specific columns from a table.,B,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-select/
+497,SQL Insert Into Select,KEEP,Using which of the following clause(s) we can copy only specific rows from the source table in an INSERT INTO SELECT statement?,C,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-select/
+498,SQL Insert Into Statement,KEEP,Which clause is used along with INSERT INTO statement to add new rows to a table?,C,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-statement/
+499,SQL Insert Into Statement,KEEP,Which of the following is/are not necessary to write an INSERT INTO statement?,D,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-statement/
+500,SQL Insert Into Statement,KEEP,How many rows can be inserted at a time using INSERT INTO statement with VALUES clause?,B,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-statement/
+501,SQL Insert Into Statement,KEEP,Which of the following value(s) must be enclosed within single quotations when used with VALUES clause?,A,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-statement/
+502,SQL Insert Into Statement,KEEP,NULL values can be inserted into a table using INSERT INTO statement.,A,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-statement/
+503,SQL Insert Into Statement,KEEP,Rows can be copied from one table to another table using INSERT INTO statement.,A,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-statement/
+504,SQL Insert Into Statement,KEEP,"Consider the following relation:
+Instructor (Id, Name, City, Country);
+Using SQL, how to insert a row with Id number 5, name Ravi.",D,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-statement/
+505,SQL Insert Into Statement,KEEP,Which of the following statements can be used with INSERT INTO statement?,B,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-statement/
+506,SQL Insert Into Statement,KEEP,Which of the following is/are omitted from INSERT INTO statement when SELECT statement is used with it?,A,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-statement/
+507,SQL Insert Into Statement,KEEP,"Using SQL, how can we copy all the data of a table and insert into in a different table if both the tables has same attributes?",B,https://www.sanfoundry.com/sql-questions-answers-sql-insert-into-statement/
+508,SQL Right Join,KEEP,Table1 RIGHT JOIN Table2 returns _____,A,https://www.sanfoundry.com/sql-questions-answers-sql-right-join/
+509,SQL Right Join,KEEP,"If no match exists on the left side of RIGHT JOIN, the result-set will contain ____",C,https://www.sanfoundry.com/sql-questions-answers-sql-right-join/
+510,SQL Right Join,KEEP,Which of the following sets represents table1 RIGHT JOIN table2?,C,https://www.sanfoundry.com/sql-questions-answers-sql-right-join/
+511,SQL Right Join,KEEP,"Instead of RIGHT JOIN, which of the following can be used to produce same result?",C,https://www.sanfoundry.com/sql-questions-answers-sql-right-join/
+512,SQL Select Distinct,KEEP,Which keyword is used in conjunction with DISTINCT keyword?,B,https://www.sanfoundry.com/sql-questions-answers-sql-select-distinct/
+513,SQL Select Distinct,KEEP,Which SQL statement is used to return only different values?,C,https://www.sanfoundry.com/sql-questions-answers-sql-select-distinct/
+514,SQL Select Distinct,KEEP,A column of a database table must not contain duplicate values.,B,https://www.sanfoundry.com/sql-questions-answers-sql-select-distinct/
+515,SQL Select Distinct,KEEP,Which of the following SQL statement selects only unique values from ‘section’ column of table ‘school’?,C,https://www.sanfoundry.com/sql-questions-answers-sql-select-distinct/
+516,SQL Select Distinct,KEEP,"When more than one expression is provided in the DISTINCT clause, the query will retrieve _________",B,https://www.sanfoundry.com/sql-questions-answers-sql-select-distinct/
+517,SQL Select Distinct,KEEP,"In SQL, the DISTINCT clause ignores NULL values.",B,https://www.sanfoundry.com/sql-questions-answers-sql-select-distinct/
+518,SQL Select Distinct,KEEP,DISTINCT clause considers NULL as ________,B,https://www.sanfoundry.com/sql-questions-answers-sql-select-distinct/
+519,SQL Select Statement,KEEP,SELECT statement retrieves _________,B,https://www.sanfoundry.com/sql-questions-answers-sql-select-statement/
+520,SQL Select Statement,KEEP,Which character in the select clause denotes “ALL ATTRIBUTES”?,C,https://www.sanfoundry.com/sql-questions-answers-sql-select-statement/
+521,SQL Select Statement,KEEP,Where the data retrieved by SELECT statement is stored?,C,https://www.sanfoundry.com/sql-questions-answers-sql-select-statement/
+522,SQL Select Statement,KEEP,What is the syntax for SELECT statement?,B,https://www.sanfoundry.com/sql-questions-answers-sql-select-statement/
+523,SQL Select Statement,KEEP,Which statement(s) are mandatory in a simple SQL SELECT statement?,C,https://www.sanfoundry.com/sql-questions-answers-sql-select-statement/
+524,SQL Select Statement,KEEP,"To create a simple SQL SELECT statement, which of the following are necessary?",B,https://www.sanfoundry.com/sql-questions-answers-sql-select-statement/
+525,SQL Select Statement,KEEP,Arithmetic expressions cannot be used in Select clause.,B,https://www.sanfoundry.com/sql-questions-answers-sql-select-statement/
+526,SQL Select Statement,KEEP,SELECT clause corresponds to __________,A,https://www.sanfoundry.com/sql-questions-answers-sql-select-statement/
+527,SQL Select Statement,KEEP,"Consider the relation:
+Instructor (Id, Salary);
+Which of the following query retrieves the total salary of all instructors after receiving a bonus of 200/-?",C,https://www.sanfoundry.com/sql-questions-answers-sql-select-statement/
+528,SQL Select Statement,KEEP,SELECT eliminates duplicate rows by default.,B,https://www.sanfoundry.com/sql-questions-answers-sql-select-statement/
+529,SQL Select Top Clause,KEEP SELECTIVELY,Which clause is used in SQL to fetch limited number of records from a table?,C,https://www.sanfoundry.com/sql-questions-answers-sql-select-top-clause/
+530,SQL Select Top Clause,KEEP SELECTIVELY,Mysql supports which of the following clause to select a limited number of rows from a table?,D,https://www.sanfoundry.com/sql-questions-answers-sql-select-top-clause/
+531,SQL Select Top Clause,KEEP SELECTIVELY,Which clause is used by ORACLE to fetch limited number of rows from a database?,C,https://www.sanfoundry.com/sql-questions-answers-sql-select-top-clause/
+532,SQL Select Top Clause,KEEP SELECTIVELY,ROWNUM clause is used with which of the following clause?,C,https://www.sanfoundry.com/sql-questions-answers-sql-select-top-clause/
+533,SQL Select Top Clause,KEEP SELECTIVELY,SELECT TOP clause is used in the place of __________,A,https://www.sanfoundry.com/sql-questions-answers-sql-select-top-clause/
+534,SQL Select Top Clause,KEEP SELECTIVELY,Select top retrieves records from original database table not from the result table.,B,https://www.sanfoundry.com/sql-questions-answers-sql-select-top-clause/
+535,SQL Select Top Clause,KEEP SELECTIVELY,Which clause is used with SELECT TOP statement to retrieve given percentage of record from a table of the database?,C,https://www.sanfoundry.com/sql-questions-answers-sql-select-top-clause/
+536,SQL Select Top Clause,KEEP SELECTIVELY,Which of the following query retrieves top 30 percent records with all attributes of a table named student?,D,https://www.sanfoundry.com/sql-questions-answers-sql-select-top-clause/
+537,SQL Select Top Clause,KEEP SELECTIVELY,The TOP clause of SELECT TOP statement specifies _____________,C,https://www.sanfoundry.com/sql-questions-answers-sql-select-top-clause/
+538,SQL Select Top Clause,KEEP SELECTIVELY,Where the number or percentage of rows is specified in a SELECT TOP statement?,A,https://www.sanfoundry.com/sql-questions-answers-sql-select-top-clause/
+539,SQL Self Join,KEEP,What is a SELF JOIN?,B,https://www.sanfoundry.com/sql-questions-answers-sql-self-join/
+540,SQL Self Join,KEEP,Self joins are used to ________,A,https://www.sanfoundry.com/sql-questions-answers-sql-self-join/
+541,SQL Self Join,KEEP,SELF JOIN is a keyword in SQL.,B,https://www.sanfoundry.com/sql-questions-answers-sql-self-join/
+542,SQL Self Join,KEEP,Which of the following is necessary for a SELF JOIN in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-self-join/
+543,SQL Self Join,KEEP,What is the syntax for self join?,D,https://www.sanfoundry.com/sql-questions-answers-sql-self-join/
+544,SQL Self Join,KEEP,"To construct a SELF JOIN, how many times the same table is selected by a SELECT statement?",B,https://www.sanfoundry.com/sql-questions-answers-sql-self-join/
+545,SQL Subqueries,KEEP,Which of the following statement(s) copies data from one table into a new table?,C,https://www.sanfoundry.com/sql-questions-answers-sql-subqueries/
+546,SQL Subqueries,KEEP,How many columns can be copied using a SELECT INTO statement?,D,https://www.sanfoundry.com/sql-questions-answers-sql-subqueries/
+547,SQL Subqueries,KEEP,WHERE clause must be used along with a SELECT INTO statement.,B,https://www.sanfoundry.com/sql-questions-answers-sql-subqueries/
+548,SQL Subqueries,KEEP,SELECT INTO statement cannot be used in conjunction with which of the following clause(s)?,A,https://www.sanfoundry.com/sql-questions-answers-sql-subqueries/
+549,SQL Subqueries,KEEP,"If the condition in WHERE clause of a SELECT INTO statement returns no data, then ______",C,https://www.sanfoundry.com/sql-questions-answers-sql-subqueries/
+550,SQL Subqueries,KEEP,Which of the following can be done using a SELECT INTO statement?,B,https://www.sanfoundry.com/sql-questions-answers-sql-subqueries/
+551,SQL Subqueries,KEEP,Which of the following statement(s) create a new empty table?,B,https://www.sanfoundry.com/sql-questions-answers-sql-subqueries/
+552,SQL Subqueries,KEEP,"When using the SELECT INTO statement in SQL, the new table must not already exist.",A,https://www.sanfoundry.com/sql-questions-answers-sql-subqueries/
+553,SQL Subqueries,KEEP,We can ________ some of the columns within new table rather than using them from old table of a SELECT INTO statement.,C,https://www.sanfoundry.com/sql-questions-answers-sql-subqueries/
+554,SQL Syntax,KEEP,SQL keywords are case sensitive.,B,https://www.sanfoundry.com/sql-questions-answers-sql-syntax/
+555,SQL Syntax,KEEP,Which character is used to separate SQL statements in database systems?,B,https://www.sanfoundry.com/sql-questions-answers-sql-syntax/
+556,SQL Syntax,KEEP,Which of the following SQL command(s) retrieves information from a Database?,C,https://www.sanfoundry.com/sql-questions-answers-sql-syntax/
+557,SQL Syntax,KEEP,Using which command one can delete existing data from database without deleting the table?,B,https://www.sanfoundry.com/sql-questions-answers-sql-syntax/
+558,SQL Syntax,KEEP,Which SQL command is used to modify data in a Database?,D,https://www.sanfoundry.com/sql-questions-answers-sql-syntax/
+559,SQL Syntax,KEEP,"To insert new data into a database, which of the following SQL command is used?",B,https://www.sanfoundry.com/sql-questions-answers-sql-syntax/
+560,SQL Syntax,KEEP,Which command is used to eliminate a table from a database?,A,https://www.sanfoundry.com/sql-questions-answers-sql-syntax/
+561,SQL Syntax,KEEP,Which of the following is used to modify an existing table?,B,https://www.sanfoundry.com/sql-questions-answers-sql-syntax/
+562,SQL Syntax,KEEP,"To create a new table, which of the following command is used?",C,https://www.sanfoundry.com/sql-questions-answers-sql-syntax/
+563,SQL Syntax,KEEP,Which of the following is a valid SQL command for an Index?,A,https://www.sanfoundry.com/sql-questions-answers-sql-syntax/
+564,SQL Union,KEEP SELECTIVELY,Which operator is used to combine the result-set of two or more SELECT statements?,C,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+565,SQL Union,KEEP SELECTIVELY,"By default, the UNION operator selects ______",B,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+566,SQL Union,KEEP SELECTIVELY,How many result-sets can be combined using UNION operator?,C,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+567,SQL Union,KEEP SELECTIVELY,Each SELECT statement within UNION can have any number of columns.,B,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+568,SQL Union,KEEP SELECTIVELY,The columns in each SELECT statement with UNION operator should be in ____________,C,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+569,SQL Union,KEEP SELECTIVELY,Data types of the corresponding columns of SELECT statements with UNION operator _______,B,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+570,SQL Union,KEEP SELECTIVELY,Which of the following conditions are required to make a set of SELECT statements as union-compatible?,A,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+571,SQL Union,KEEP SELECTIVELY,"To fetch duplicate values along with the distinct values while combining the result-sets of two or more tables, which operator is used?",C,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+572,SQL Union,KEEP SELECTIVELY,Column names must be same in the SELECT statements with UNION operator.,B,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+573,SQL Union,KEEP SELECTIVELY,Column names in the resultset of a UNION are ______,A,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+574,SQL Union,KEEP SELECTIVELY,What is the basic syntax used in SQL to combine the result-set of two tables?,B,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+575,SQL Union,KEEP SELECTIVELY,What is the basic syntax of a UNION ALL operator?,D,https://www.sanfoundry.com/sql-questions-answers-sql-union/
+576,SQL Unique Constraint,KEEP,"In SQL, which of the following constraint can be used to ensure that all the values in a column are different?",B,https://www.sanfoundry.com/sql-questions-answers-sql-unique-constraint/
+577,SQL Unique Constraint,KEEP,Which of the following statement can be used to apply the UNIQUE constraint to a column?,A,https://www.sanfoundry.com/sql-questions-answers-sql-unique-constraint/
+578,SQL Unique Constraint,KEEP,Which of the following statement can be used to apply the UNIQUE constraint to a column of an existing table?,C,https://www.sanfoundry.com/sql-questions-answers-sql-unique-constraint/
+579,SQL Unique Constraint,KEEP,Which of the following statement can be used to apply the UNIQUE constraint to multiple columns of an existing table?,D,https://www.sanfoundry.com/sql-questions-answers-sql-unique-constraint/
+580,SQL Unique Constraint,KEEP,Which of the following statement can be used to delete the UNIQUE constraint from a column?,B,https://www.sanfoundry.com/sql-questions-answers-sql-unique-constraint/
+581,SQL Update Statement,KEEP,Which clause is used in an update statement to modify only specific records of a table?,B,https://www.sanfoundry.com/sql-questions-answers-sql-update-statement/
+582,SQL Update Statement,KEEP,Which of the following provides a correct syntax for UPDATE statement?,A,https://www.sanfoundry.com/sql-questions-answers-sql-update-statement/
+583,SQL Update Statement,KEEP,"To update all the records of a table, which of the following clause is omitted from an UPDATE statement?",C,https://www.sanfoundry.com/sql-questions-answers-sql-update-statement/
+584,SQL Update Statement,KEEP,SET keyword in an UPDATE statement is used to ______,C,https://www.sanfoundry.com/sql-questions-answers-sql-update-statement/
+585,SQL Update Statement,KEEP,"Using UPDATE statement, multiple tables can be updated at a time.",B,https://www.sanfoundry.com/sql-questions-answers-sql-update-statement/
+586,SQL Update Statement,KEEP,How many columns can be modified using a single UPDATE statement?,D,https://www.sanfoundry.com/sql-questions-answers-sql-update-statement/
+587,SQL Update Statement,KEEP,Which of the following clause is used with SQL UPDATE statement when updating a table with data from another table?,A,https://www.sanfoundry.com/sql-questions-answers-sql-update-statement/
+588,SQL Update Statement,KEEP,UPDATE is a _________ command.,B,https://www.sanfoundry.com/sql-questions-answers-sql-update-statement/
+589,SQL Views,KEEP,"In SQL, views can also call as which of the following?",B,https://www.sanfoundry.com/sql-questions-answers-sql-views/
+590,SQL Views,KEEP,Which of the following statement is true about views in SQL?,A,https://www.sanfoundry.com/sql-questions-answers-sql-views/
+591,SQL Views,KEEP,Which of the following creates a virtual relation for storing a query?,C,https://www.sanfoundry.com/sql-questions-answers-sql-views/
+592,SQL Views,KEEP,"In SQL, which of the following statement can be used to create a view?",D,https://www.sanfoundry.com/sql-questions-answers-sql-views/
+593,SQL Views,KEEP,Which of the following can be used to ensure that all the update and insert satisfy the conditions in the view definition?,B,https://www.sanfoundry.com/sql-questions-answers-sql-views/
+594,SQL Views,KEEP,All NOT NULL columns from the base table must be included in the view in order for the INSERT command to function.,A,https://www.sanfoundry.com/sql-questions-answers-sql-views/
+595,SQL Views,KEEP,"In SQL, we can insert rows in a view in a similar way as we insert them in a table.",A,https://www.sanfoundry.com/sql-questions-answers-sql-views/
+596,SQL Views,KEEP,Which of the following statement can be used to delete rows from a view?,B,https://www.sanfoundry.com/sql-questions-answers-sql-views/
+597,SQL Views,KEEP,Which of the following statement can be used to drop a view in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-views/
+598,SQL Views,KEEP,"On the basis of number of tables constituted, a view can be classified in how many categories?",A,https://www.sanfoundry.com/sql-questions-answers-sql-views/
+599,SQL Where Clause,KEEP,WHERE clause is used to filter ________,A,https://www.sanfoundry.com/sql-questions-answers-sql-where-clause/
+600,SQL Where Clause,KEEP,Which of the following is used to extract only those records that fulfill a specified condition?,B,https://www.sanfoundry.com/sql-questions-answers-sql-where-clause/
+601,SQL Where Clause,KEEP,WHERE keyword can be used to filter data by matching patterns.,A,https://www.sanfoundry.com/sql-questions-answers-sql-where-clause/
+602,SQL Where Clause,KEEP,Which of the following is the correct order of clauses in a basic SQL statement?,C,https://www.sanfoundry.com/sql-questions-answers-sql-where-clause/
+603,SQL Where Clause,KEEP,WHERE clause cannot be used with _________,C,https://www.sanfoundry.com/sql-questions-answers-sql-where-clause/
+604,SQL Where Clause,KEEP,Operators can be used in WHERE clause.,A,https://www.sanfoundry.com/sql-questions-answers-sql-where-clause/
+605,SQL Where Clause,KEEP,Which of the following requires single quotes in SQL?,C,https://www.sanfoundry.com/sql-questions-answers-sql-where-clause/
+606,SQL Where Clause,KEEP,Which operator in the where clause signifies “Not Equal”?,A,https://www.sanfoundry.com/sql-questions-answers-sql-where-clause/
+607,SQL Where Clause,KEEP,Which operator is used to search for a pattern?,C,https://www.sanfoundry.com/sql-questions-answers-sql-where-clause/
+608,SQL Where Clause,KEEP,Which of the following is not a valid operator and is not used in WHERE clause?,B,https://www.sanfoundry.com/sql-questions-answers-sql-where-clause/
+609,SQL Wildcards,KEEP,A wildcard operator is used to _________ any other character(s) in a string.,A,https://www.sanfoundry.com/sql-questions-answers-sql-wildcards/
+610,SQL Wildcards,KEEP,Wildcard characters are used with which of the following operators?,D,https://www.sanfoundry.com/sql-questions-answers-sql-wildcards/
+611,SQL Wildcards,KEEP,How many wildcards can be used with LIKE operator in SQL?,B,https://www.sanfoundry.com/sql-questions-answers-sql-wildcards/
+612,SQL Wildcards,KEEP,Which of the following wildcards can be used in MS Access and SQL server?,B,https://www.sanfoundry.com/sql-questions-answers-sql-wildcards/
+613,SQL Wildcards,KEEP,[char list] wildcard represents _______,C,https://www.sanfoundry.com/sql-questions-answers-sql-wildcards/
+614,SQL Wildcards,KEEP,[^ char list] is used to fetch ___________ set or range of characters specified in the char list.,B,https://www.sanfoundry.com/sql-questions-answers-sql-wildcards/
+615,SQL Wildcards,KEEP,Which of the following is a correct syntax that uses [char list] wildcard?,A,https://www.sanfoundry.com/sql-questions-answers-sql-wildcards/
+616,SQL Wildcards,KEEP,Which of the following pattern is used to search for a string which doesn’t starts with letters from m to r and ends with at least 2 characters?,B,https://www.sanfoundry.com/sql-questions-answers-sql-wildcards/
+617,SQL Wildcards,KEEP,Wildcards cannot be used as a substitute for special characters i.e. characters other than alphabets.,B,https://www.sanfoundry.com/sql-questions-answers-sql-wildcards/
+618,SQL MCQ (Multiple Choice Questions),KEEP,What does SQL stand for?,A,https://www.sanfoundry.com/1000-sql-questions-answers/
+619,SQL MCQ (Multiple Choice Questions),KEEP,Which of the following is NOT a valid keyword in SQL?,D,https://www.sanfoundry.com/1000-sql-questions-answers/
+620,SQL MCQ (Multiple Choice Questions),KEEP,Which of the following operators is used to compare two values in SQL?,C,https://www.sanfoundry.com/1000-sql-questions-answers/
+621,SQL MCQ (Multiple Choice Questions),KEEP,What is the purpose of the SQL keyword “DISTINCT” in a SELECT statement?,A,https://www.sanfoundry.com/1000-sql-questions-answers/
+622,SQL MCQ (Multiple Choice Questions),KEEP SELECTIVELY,Which of the following tasks CANNOT be accomplished using SQL?,B,https://www.sanfoundry.com/1000-sql-questions-answers/
+624,SQL MCQ (Multiple Choice Questions),KEEP,Which statement(s) are mandatory in a simple SQL SELECT statement?,A,https://www.sanfoundry.com/1000-sql-questions-answers/
+625,SQL MCQ (Multiple Choice Questions),KEEP SELECTIVELY,Which of the following is a default join type?,C,https://www.sanfoundry.com/1000-sql-questions-answers/
+626,SQL MCQ (Multiple Choice Questions),KEEP,Which of the following command is used to create a database in SQL?,B,https://www.sanfoundry.com/1000-sql-questions-answers/
+627,SQL MCQ (Multiple Choice Questions),KEEP,Which of the following statement is true about views in SQL?,D,https://www.sanfoundry.com/1000-sql-questions-answers/
+628,SQL MCQ (Multiple Choice Questions),KEEP,What is the full form of PL in PL/SQL?,C,https://www.sanfoundry.com/1000-sql-questions-answers/
+629,SQL MCQ (Multiple Choice Questions),KEEP,Which of the following can execute a trigger in PL/SQL?,A,https://www.sanfoundry.com/1000-sql-questions-answers/
+630,SQL MCQ (Multiple Choice Questions),KEEP,Which of the following SQL statement selects only unique values from ‘section’ column of table ‘school’?,B,https://www.sanfoundry.com/1000-sql-questions-answers/
+631,SQL MCQ (Multiple Choice Questions),KEEP,Which SQL keyword is used to sort the data returned by a SELECT statement?,D,https://www.sanfoundry.com/1000-sql-questions-answers/
+632,SQL MCQ (Multiple Choice Questions),KEEP,The SQL LIKE operator is used in which of the following clause?,C,https://www.sanfoundry.com/1000-sql-questions-answers/

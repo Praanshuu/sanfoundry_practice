@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Practice Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Minimal Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="brand">PracticeHub</span>
+      <select id="subjectSelect" class="subject-select" title="Switch Subject"></select>
+    </div>
+
+    <nav class="nav-tabs" id="mainNavTabs">
+      <button class="nav-tab active" data-tab="practice">Practice</button>
+      <button class="nav-tab" data-tab="topics">Topics</button>
+      <button class="nav-tab" data-tab="overview">Overview &amp; Syllabus</button>
+    </nav>
+
+    <div class="nav-right">
+      <span class="quick-score" id="storageBadge" title="Active storage backend">💾 Local</span>
+      <span class="quick-score" id="quickScorePill" title="Attempted and Accuracy in current subject">0 done</span>
+      <button id="btnTheme" class="icon-btn" title="Toggle Dark/Light Theme">🌙</button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container">
+    <!-- TAB 1: PRACTICE VIEW -->
+    <section id="viewPractice" class="view-section">
+      <!-- Single Compact Filter Bar -->
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <select id="scopeSelect" class="control-select" title="Priority Scope"></select>
+          <select id="statusSelect" class="control-select" title="Filter by Status">
+            <option value="ALL">All Questions</option>
+            <option value="UNATTEMPTED">Unattempted</option>
+            <option value="INCORRECT">Incorrect Only</option>
+            <option value="MARKED">★ Bookmarked</option>
+            <option value="ATTEMPTED">Attempted</option>
+          </select>
+          <button id="activeTopicChip" class="topic-chip hidden" title="Click to clear active topic filter"></button>
+        </div>
+
+        <div class="toolbar-right">
+          <input
+            type="search"
+            id="searchInput"
+            class="control-search"
+            placeholder="Search or #ID..."
+          />
+          <button id="btnRandomSet" class="btn btn-outline" title="Practice 20 random questions from current filter">
+            🎲 Random 20
+          </button>
+          <button id="btnLayoutToggle" class="btn btn-outline" title="Switch between Single Card and Scroll List">
+            List View
+          </button>
+          <button id="btnTogglePalette" class="btn btn-outline" title="Show/Hide Question Navigator">
+            ☷ Navigator
+          </button>
+        </div>
+      </div>
+
+      <!-- Balanced Two-Column Workspace -->
+      <div class="practice-workspace" id="practiceWorkspace">
+        <div class="question-column" id="questionArea"></div>
+
+        <!-- Proportionate Question Navigator Side Panel -->
+        <aside class="palette-panel" id="palettePanel">
+          <div class="palette-header">
+            <div class="palette-title-row">
+              <span class="palette-title">Navigator</span>
+              <span class="palette-count" id="paletteTotalBadge">0 Qs</span>
+            </div>
+            <select id="quickTopicSelect" class="control-select palette-topic-select" title="Filter by Topic">
+              <option value="ALL">All Topics in Scope</option>
+            </select>
+          </div>
+
+          <!-- Compact Status Legend -->
+          <div class="palette-legend">
+            <span class="legend-item" title="Correct"><i class="ldot ldot-correct"></i> <b id="palCorrect">0</b></span>
+            <span class="legend-item" title="Incorrect"><i class="ldot ldot-wrong"></i> <b id="palWrong">0</b></span>
+            <span class="legend-item" title="Bookmarked"><i class="ldot ldot-marked"></i> <b id="palMarked">0</b> ★</span>
+            <span class="legend-item" title="Remaining"><i class="ldot ldot-todo"></i> <b id="palLeft">0</b> left</span>
+          </div>
+
+          <!-- Compact 6-Column Question Grid (matched height with MCQ card) -->
+          <div class="palette-grid" id="paletteGrid"></div>
+
+          <!-- Clean Footer -->
+          <div class="palette-footer">
+            <button class="btn btn-outline btn-xs" id="btnJumpUnattempted" style="width:100%" title="Jump to next unattempted question">
+              Next Unattempted →
+            </button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TAB 2: TOPICS & SYLLABUS BROWSER -->
+    <section id="viewTopics" class="view-section hidden">
+      <div class="topics-toolbar">
+        <div class="segmented" id="topicGroupMode">
+          <button class="seg-btn active" data-mode="syllabus" id="btnGroupSyllabus">By Syllabus Topic</button>
+          <button class="seg-btn" data-mode="sanfoundry">By Sanfoundry Topic</button>
+        </div>
+
+        <div class="topics-toolbar-right">
+          <select id="topicScopeFilter" class="control-select">
+            <option value="ALL">All Scopes</option>
+            <option value="KEEP">Keep Only</option>
+            <option value="SELECTIVE">Selective Only</option>
+            <option value="REMOVE">Remove Only</option>
+          </select>
+          <input
+            type="search"
+            id="topicSearchInput"
+            class="control-search"
+            placeholder="Filter topics..."
+          />
+        </div>
+      </div>
+
+      <div id="topicsGrid" class="topics-grid"></div>
+    </section>
+
+    <!-- TAB 3: OVERVIEW, REVISION & SYLLABUS -->
+    <section id="viewOverview" class="view-section hidden">
+      <div id="overviewContent"></div>
+    </section>
+  </main>
+
+  <script src="questions_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
