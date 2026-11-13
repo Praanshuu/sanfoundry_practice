@@ -2,6 +2,7 @@
 .env.*
 .git/
 SQLSaved/
+HadoopSaved/
 Resource/
 tests/
 __pycache__/

@@ -223,6 +223,73 @@ def build_dbms_subject() -> dict:
     }
 
 
+HADOOP_SYLLABUS_MD = """# Big Data Technologies — PGCP-BDA (ACTS, Pune)
+**Duration:** 180 Hours (66 Theory + 84 Lab + 30 Self Learning)  
+**Evaluation:** Theory Exam – 40%, Lab Exam – 40%, Internal Assessment – 20%  
+**Reference Books:**
+1. *Hadoop: The Definitive Guide*, 4th Edition, Tom White / O'Reilly
+2. *Spark: The Definitive Guide*, Bill Chambers, Matei Zaharia / O'Reilly
+
+---
+
+## Sessions 1 & 2: Big Data Overview (4T + 2SL)
+- Big Data - Beyond the Hype, Skills & Sources of Big Data, Big Data Adoption
+- Data Repositories, Data Sharing & Reuse Practices, Repository Data Curation
+
+## Session 3: Introduction to Hadoop (2T + 2L)
+- A Brief History & Evolution of Hadoop
+- Introduction to Hadoop and its components (HDFS, YARN, MapReduce, Hive, HBase, Spark, Kafka)
+- Comparison with Other Systems, Hadoop Releases, Distributions and Vendors
+
+## Sessions 4, 5 & 8: Hadoop Distributed File System — HDFS (6T + 6L)
+- Core components of HDFS, HDFS Daemons (NameNode, Secondary NameNode, DataNode)
+- HDFS Architecture, Scaling & Rebalancing, Replication, Rack Awareness, Data Pipelining
+- Node Failure Management & HDFS High Availability (NameNode)
+- HDFS Data Storage Process, Anatomy of Reading & Writing Files in HDFS, Handling Read/Write Failures
+- HDFS User & Admin Commands, Web Interface, Java Interfaces to HDFS & HDFS Java API Overview
+
+## Sessions 6 & 7: Hadoop Cluster, Configuration, Security & Architecture (4T + 6L + 2SL)
+- Hadoop Operation Modes, Setting up Single & Multi-Node Clusters
+- Hadoop Configuration, Security in Hadoop, Administering Hadoop
+- HDFS Monitoring & Maintenance, Hadoop Benchmarks, Hadoop in the Cloud
+- Common Hadoop Shell Commands, Analyzing Data with Hadoop
+
+## Session 9: MapReduce (2T + 2L + 2SL)
+- Hadoop MapReduce Paradigm, Map and Reduce Tasks
+- Shuffle and Sort, Task Execution (Conceptual Overview), MapReduce Features
+
+## Session 10: HBase (2T + 2L)
+- Overview of HBase, HBase Architecture, Comparison with Traditional RDBMS
+
+## Sessions 11, 12, 13 & 14: Apache Hive & HiveQL (8T + 10L + 6SL)
+- Introduction to Hive, Hive Architecture & Metastore, Comparison with Traditional Databases
+- HiveQL Datatypes, Operators, Functions, Managed & External Tables, Partitions & Bucketing
+- Sorting, Indexing, Storage Formats, Altering & Dropping Tables
+- Querying with HiveQL: Sorting, Aggregating, MapReduce Scripts, Joins (Inner, Outer, Map-side, Reduce-side), Subqueries, Views
+- Data Manipulation with Hive, UDFs, Appending Data, Writing HQL Scripts
+
+## Sessions 15, 16, 17 & 18: Data Warehousing, Data Lakes & Apache Airflow (8T + 10L + 2SL)
+- Data Warehousing & Data Lakes for ETL Pipelines, ETL vs ELT
+- Fundamentals of Apache Airflow (DAGs, Operators, Scheduler, Sensors, Hooks, Connections)
+- Automating Data Pipelines with Airflow / Informatica, Running Airflow on Cloud
+
+## Sessions 19, 20, 21, 22, 23 & 24: Apache Spark & PySpark EDA (12T + 16L + 2SL)
+- Apache Spark APIs, Initializing Spark, RDDs vs DataFrames vs Datasets
+- DataFrame Operations, Structured Spark Streaming, Key-Value Pairs & Shuffle Operations
+- Job Optimization: Partitioning, Caching/Persistence, Broadcast Variables, Shared Variables
+- MapReduce with Spark, Spark with/without Hadoop, PySpark Data Preprocessing & EDA
+
+## Sessions 25, 26, 27 & 28: Apache Kafka & Spark Streaming (8T + 12L + 4SL)
+- Introduction to Kafka, Kafka Producer & Consumer, Kafka Connect API
+- Working with Kafka using Spark, Spark Streaming Architecture & APIs, Managed Cloud Kafka
+
+## Sessions 29, 30, 31 & 32: Spark SQL, Spark MLlib & Cloud Deployment (8T + 14L + 8SL)
+- Spark SQL & Window Functions
+- Spark MLlib & Predictive Analysis
+- Deploying Spark on the Cloud (Databricks, AWS EMR), Cluster Autoscaling & Cost Considerations
+"""
+
+
 def build_generic_subject(json_path: Path) -> dict | None:
     """Convert any scraper output `*_questions.json` file into a subject entry."""
     try:
@@ -234,44 +301,77 @@ def build_generic_subject(json_path: Path) -> dict | None:
 
     subj_name = str(data.get("subject") or json_path.stem.replace("_questions", "").title()).strip()
     subj_id = re.sub(r"[^a-z0-9]+", "-", subj_name.lower()).strip("-") or json_path.stem
+    is_hadoop = "hadoop" in subj_id or "big-data" in subj_id
+
+    url_syllabus_map: dict[str, dict[str, str]] = {}
+    topic_name_map: dict[str, dict[str, str]] = {}
+    if is_hadoop:
+        subj_id = "hadoop"
+        subj_name = "Big Data — Hadoop, Hive, HBase, Spark & Kafka"
+        try:
+            from open_hadoop_pages import TOPIC_SYLLABUS_MAP
+
+            url_syllabus_map = TOPIC_SYLLABUS_MAP
+            for u, m in TOPIC_SYLLABUS_MAP.items():
+                topic_name_map[m["topic"].lower()] = m
+        except Exception:
+            pass
 
     questions = []
     topic_counts: Counter[str] = Counter()
+    topic_info: dict[str, dict[str, str]] = {}
+
     for idx, q in enumerate(data["questions"], start=1):
-        topic = str(q.get("topic") or "General").strip()
-        cat = str(q.get("category") or "KEEP").upper()
+        src_url = str(q.get("source_url") or "").strip()
+        norm_url = (src_url.rstrip("/") + "/") if src_url.startswith("http") else ""
+        raw_topic = str(q.get("topic") or "General").strip()
+
+        mapped = url_syllabus_map.get(norm_url) or topic_name_map.get(raw_topic.lower()) or {}
+
+        topic = mapped.get("topic") or raw_topic
+        cat = str(q.get("category") or mapped.get("category") or "KEEP").upper()
         if cat not in ("KEEP", "SELECTIVE", "REMOVE"):
             cat = "KEEP"
-        syl = str(q.get("syllabus_topic") or topic).strip()
+        syl = str(q.get("syllabus_topic") or mapped.get("syllabus_topic") or topic).strip()
+        reason = str(q.get("reason") or mapped.get("reason") or "")
+
         topic_counts[topic] += 1
+        topic_info[topic] = {"category": cat, "reason": reason, "syllabus_topic": syl}
+
         questions.append(
             {
                 "id": int(q.get("id") or idx),
                 "topic": topic,
                 "category": cat,
                 "syllabus_topic": syl,
-                "syllabus_detail": str(q.get("syllabus_detail") or topic),
-                "reason": q.get("reason") or "",
-                "faculty_alignment": q.get("faculty_alignment") or "",
+                "syllabus_detail": str(q.get("syllabus_detail") or syl),
+                "reason": reason,
+                "faculty_alignment": q.get("faculty_alignment") or syl,
                 "warning": q.get("warning"),
                 "question": q.get("question") or "",
                 "options": q.get("options") or {},
                 "correct_answer": q.get("correct_answer"),
                 "explanation": q.get("explanation"),
-                "source_url": q.get("source_url") or "",
+                "source_url": src_url,
             }
         )
 
     topics = [
-        {"topic": t, "count": c, "category": "KEEP", "reason": "", "faculty_alignment": ""}
+        {
+            "topic": t,
+            "count": c,
+            "category": topic_info.get(t, {}).get("category", "KEEP"),
+            "reason": topic_info.get(t, {}).get("reason", ""),
+            "faculty_alignment": topic_info.get(t, {}).get("syllabus_topic", ""),
+        }
         for t, c in sorted(topic_counts.items())
     ]
 
     return {
         "id": subj_id,
         "name": subj_name,
-        "has_priority_categories": any(q["category"] != "KEEP" for q in questions),
-        "has_syllabus_mapping": any(q["syllabus_topic"] != q["topic"] for q in questions),
+        "has_priority_categories": is_hadoop or any(q["category"] != "KEEP" for q in questions),
+        "has_syllabus_mapping": is_hadoop or any(q["syllabus_topic"] != q["topic"] for q in questions),
         "total_questions": len(questions),
         "counts": {
             "KEEP": sum(1 for q in questions if q["category"] == "KEEP"),
@@ -279,7 +379,7 @@ def build_generic_subject(json_path: Path) -> dict | None:
             "REMOVE": sum(1 for q in questions if q["category"] == "REMOVE"),
         },
         "topics": topics,
-        "syllabus_markdown": data.get("syllabus_markdown") or "",
+        "syllabus_markdown": data.get("syllabus_markdown") or (HADOOP_SYLLABUS_MD if is_hadoop else ""),
         "questions": questions,
     }
 
