@@ -34,7 +34,33 @@
         "579": true
       },
       "notes": {}
+    },
+    "hadoop": {
+      "attempts": {
+        "7": "C",
+        "10": "C",
+        "9": "A",
+        "8": "B",
+        "6": "C",
+        "5": "A",
+        "4": "B",
+        "3": "D",
+        "2": "D",
+        "11": "A"
+      },
+      "marked": {
+        "10": true,
+        "9": true,
+        "4": true,
+        "3": true,
+        "2": true,
+        "11": true
+      },
+      "notes": {
+        "10": "yahoo",
+        "4": "hadoop is for big data management & processing"
+      }
     }
   },
-  "updated_at": "2026-11-10T06:48:41Z"
+  "updated_at": "2026-11-13T05:50:45Z"
 }

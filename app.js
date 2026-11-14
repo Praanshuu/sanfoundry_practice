@@ -263,6 +263,13 @@
     populateQuickTopicSelect();
   }
 
+  function extractTopicOrder(name) {
+    const s = String(name || "");
+    if (/^(excluded|out of scope)/i.test(s)) return 9999;
+    const m = s.match(/(\d+)/);
+    return m ? parseInt(m[1], 10) : 999;
+  }
+
   function populateQuickTopicSelect() {
     const subj = getCurrentSubject();
     const scopedQs = subj.questions.filter((q) => matchesScope(q, state.scope));
@@ -277,8 +284,8 @@
     let html = `<option value="ALL">All Topics in Scope (${scopedQs.length})</option>`;
     if (subj.has_syllabus_mapping && sylMap.size > 0) {
       const sylEntries = Array.from(sylMap.entries()).sort((a, b) => {
-        const na = parseInt(a[0], 10) || 999;
-        const nb = parseInt(b[0], 10) || 999;
+        const na = extractTopicOrder(a[0]);
+        const nb = extractTopicOrder(b[0]);
         return na - nb || a[0].localeCompare(b[0]);
       });
       html += `<optgroup label="By Syllabus Topic">`;
@@ -673,8 +680,8 @@
 
     const entries = Array.from(groups.values()).filter((g) => !query || g.name.toLowerCase().includes(query));
     entries.sort((a, b) => {
-      const na = parseInt(a.name, 10) || 999;
-      const nb = parseInt(b.name, 10) || 999;
+      const na = state.topicGroupMode === "syllabus" ? extractTopicOrder(a.name) : 999;
+      const nb = state.topicGroupMode === "syllabus" ? extractTopicOrder(b.name) : 999;
       return na - nb || a.name.localeCompare(b.name);
     });
 
@@ -780,16 +787,30 @@
         `
         : "";
 
+    const subjExtraNotes =
+      subj.id === "dbms-sql"
+        ? `
+            • <strong>Note on SQL Comments (#227–#236)</strong>: Contains stored-procedure questions — do not discard blindly.<br/>
+            • <strong>MySQL Dialect Caveat</strong>: Retain your faculty's exact MySQL syntax for procedures, functions, and triggers.
+          `
+        : subj.id === "java"
+        ? `
+            • <strong>Java 17 (LTS) Standard</strong>: Mapped against the PGCP-BDA (ACTS, Pune) 17-Session Core Java syllabus.<br/>
+            • <strong>Syllabus Coverage</strong>: Covers JVM/JDK, Data Types &amp; Operators, OOP &amp; Polymorphism, Exception Handling, Strings &amp; Regex, Generics &amp; Collections, Enums &amp; Wrappers, Lambdas &amp; Streams, Multithreading, <code>java.io</code> Serialization, and JDBC.
+          `
+        : `
+            • <strong>Syllabus Alignment</strong>: Mapped against the PGCP-BDA (ACTS, Pune) course syllabus sessions.
+          `;
+
     const scopeNoteHtml = subj.has_priority_categories
       ? `
         <div class="overview-panel">
           <h3>Preparation Priority Plan (${escapeHtml(subj.name)})</h3>
           <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:10px;">
             • <strong>${subj.counts.KEEP} KEEP</strong>: Main practice bank — solve these first alongside your assignments.<br/>
-            • <strong>${subj.counts.SELECTIVE} SELECTIVE</strong>: Lower-priority or dialect-specific — solve after the main bank.<br/>
+            • <strong>${subj.counts.SELECTIVE} SELECTIVE</strong>: Lower-priority or optional extra practice — solve after the main bank.<br/>
             • <strong>${subj.counts.REMOVE} REMOVE</strong>: Excluded from current revision scope.<br/>
-            • <strong>Note on SQL Comments (#227–#236)</strong>: Contains stored-procedure questions — do not discard blindly.<br/>
-            • <strong>MySQL Dialect Caveat</strong>: Retain your faculty's exact MySQL syntax for procedures, functions, and triggers.
+            ${subjExtraNotes}
           </p>
         </div>
       `

@@ -163,6 +163,11 @@ def _text_lines(tag: Tag) -> list[str]:
     preserve = tag.name == "pre" or tag.find("pre") is not None
     for br in tag.find_all("br"):
         br.replace_with(NavigableString("\n"))
+    for pre in tag.find_all("pre"):
+        pre.append(NavigableString("\n"))
+    for li in tag.find_all("li"):
+        if li.find("pre") is None:
+            li.append(NavigableString("\n"))
     text = tag.get_text()
     lines: list[str] = []
     for ln in text.replace("\r", "").split("\n"):
@@ -270,9 +275,69 @@ def _extract_canonical_url(soup: BeautifulSoup) -> str | None:
     return None
 
 
+_BLOCK_CONTAINERS = {
+    "div", "article", "main", "section", "header", "footer", "nav", "aside",
+    "blockquote", "ul", "ol", "li", "table", "thead", "tbody", "tfoot", "tr",
+    "td", "th", "dl", "dd", "dt", "form", "fieldset", "details", "figure", "figcaption",
+}
+_P_CLOSERS = _BLOCK_CONTAINERS | {"p", "pre", "h1", "h2", "h3", "h4", "h5", "h6", "hr", "address"}
+_VOID_OR_RAW_TAGS = {
+    "script", "style", "br", "img", "hr", "meta", "link", "input", "wbr",
+    "area", "base", "col", "embed", "param", "source", "track",
+}
+_TAG_RE = re.compile(r"<(/?)([a-zA-Z][a-zA-Z0-9]*)\b([^>]*?)(/?)>", re.S)
+
+
+def _normalize_html_p_tags(html: bytes | str) -> str:
+    """Apply HTML5 implicit <p> closing rules so Python's html.parser does not nest <p> or close <div> on stray </p>."""
+    text = html.decode("utf-8", errors="ignore") if isinstance(html, bytes) else html
+    stack: list[str] = []
+    out: list[str] = []
+    last = 0
+    for m in _TAG_RE.finditer(text):
+        out.append(text[last : m.start()])
+        last = m.end()
+        slash, name, _attrs, self_close = m.group(1), m.group(2).lower(), m.group(3), m.group(4)
+        raw_tag = m.group(0)
+        if name in _VOID_OR_RAW_TAGS:
+            if name == "hr" and not slash and stack and stack[-1] == "p":
+                out.append("</p>")
+                stack.pop()
+            out.append(raw_tag)
+            continue
+        if not slash:
+            if name in _P_CLOSERS and stack and stack[-1] == "p":
+                out.append("</p>")
+                stack.pop()
+            if not self_close:
+                if name == "p":
+                    stack.append("p")
+                elif name in _BLOCK_CONTAINERS:
+                    stack.append(name)
+            out.append(raw_tag)
+        else:
+            if name == "p":
+                if stack and stack[-1] == "p":
+                    stack.pop()
+                    out.append(raw_tag)
+                else:
+                    out.append("<br />")
+            elif name in _BLOCK_CONTAINERS:
+                if stack and stack[-1] == "p":
+                    out.append("</p>")
+                    stack.pop()
+                if stack and stack[-1] == name:
+                    stack.pop()
+                out.append(raw_tag)
+            else:
+                out.append(raw_tag)
+    out.append(text[last:])
+    return "".join(out)
+
+
 def parse_page(html: bytes | str, url: str = "") -> ParsedPage:
     """Parse a Sanfoundry HTML page into questions, topic metadata, and pagination/hub links."""
-    soup = BeautifulSoup(html, "html.parser")
+    soup = BeautifulSoup(_normalize_html_p_tags(html), "html.parser")
     effective_url = url
     if not url or urlparse(url).scheme not in ("http", "https"):
         canonical = _extract_canonical_url(soup)
