@@ -21,6 +21,7 @@
     subjectId: BANK.subjects[0].id,
     tab: "practice", // practice | topics | overview
     scope: "KEEP", // KEEP | SELECTIVE | KEEP_SELECTIVE | REMOVE | ALL
+    difficulty: "ALL", // ALL | Basic | Moderate | Hard
     status: "ALL", // ALL | UNATTEMPTED | INCORRECT | MARKED | ATTEMPTED
     topicFilterType: null, // null | "syllabus" | "sanfoundry"
     topicFilterValue: null,
@@ -194,6 +195,7 @@
   const elViewOverview = document.getElementById("viewOverview");
 
   const elScopeSelect = document.getElementById("scopeSelect");
+  const elDifficultySelect = document.getElementById("difficultySelect");
   const elStatusSelect = document.getElementById("statusSelect");
   const elActiveTopicChip = document.getElementById("activeTopicChip");
   const elSearchInput = document.getElementById("searchInput");
@@ -234,10 +236,11 @@
     const subj = getCurrentSubject();
     if (subj.has_priority_categories) {
       const c = subj.counts;
+      const keepLabel = subj.id === "python" ? `Keep — Must-Practice Shortlist (${c.KEEP})` : `Keep — Main Bank (${c.KEEP})`;
       elScopeSelect.classList.remove("hidden");
       elTopicScopeFilter.classList.remove("hidden");
       elScopeSelect.innerHTML = `
-        <option value="KEEP">Keep — Main Bank (${c.KEEP})</option>
+        <option value="KEEP">${keepLabel}</option>
         <option value="SELECTIVE">Selective — Priority 2 (${c.SELECTIVE})</option>
         <option value="KEEP_SELECTIVE">Keep + Selective (${c.KEEP + c.SELECTIVE})</option>
         <option value="REMOVE">Remove — Excluded (${c.REMOVE})</option>
@@ -253,6 +256,8 @@
       elTopicScopeFilter.classList.add("hidden");
     }
 
+    populateDifficultySelect();
+
     if (subj.has_syllabus_mapping) {
       elBtnGroupSyllabus.classList.remove("hidden");
     } else {
@@ -261,6 +266,36 @@
       syncTopicModeButtons();
     }
     populateQuickTopicSelect();
+  }
+
+  function populateDifficultySelect() {
+    if (!elDifficultySelect) return;
+    const subj = getCurrentSubject();
+    if (!subj.has_difficulty_levels) {
+      state.difficulty = "ALL";
+      elDifficultySelect.classList.add("hidden");
+      return;
+    }
+    elDifficultySelect.classList.remove("hidden");
+    const scopedQs = subj.questions.filter((q) => matchesScope(q, state.scope));
+    let nBasic = 0;
+    let nMod = 0;
+    let nHard = 0;
+    for (const q of scopedQs) {
+      if (q.difficulty === "Basic") nBasic++;
+      else if (q.difficulty === "Moderate") nMod++;
+      else if (q.difficulty === "Hard") nHard++;
+    }
+    elDifficultySelect.innerHTML = `
+      <option value="ALL">All Levels (${scopedQs.length})</option>
+      <option value="Basic">Basic (${nBasic})</option>
+      <option value="Moderate">Moderate (${nMod})</option>
+      <option value="Hard">Hard (${nHard})</option>
+    `;
+    if (!["ALL", "Basic", "Moderate", "Hard"].includes(state.difficulty)) {
+      state.difficulty = "ALL";
+    }
+    elDifficultySelect.value = state.difficulty;
   }
 
   function extractTopicOrder(name) {
@@ -272,7 +307,9 @@
 
   function populateQuickTopicSelect() {
     const subj = getCurrentSubject();
-    const scopedQs = subj.questions.filter((q) => matchesScope(q, state.scope));
+    const scopedQs = subj.questions.filter(
+      (q) => matchesScope(q, state.scope) && (state.difficulty === "ALL" || q.difficulty === state.difficulty)
+    );
 
     const sylMap = new Map();
     const sfMap = new Map();
@@ -348,6 +385,7 @@
     const qSearch = state.search.trim().toLowerCase();
     return all.filter((q) => {
       if (!matchesScope(q, state.scope)) return false;
+      if (state.difficulty !== "ALL" && q.difficulty !== state.difficulty) return false;
       if (!matchesStatus(q, state.status, prog)) return false;
       if (state.topicFilterType === "syllabus" && q.syllabus_topic !== state.topicFilterValue) return false;
       if (state.topicFilterType === "sanfoundry" && q.topic !== state.topicFilterValue) return false;
@@ -469,6 +507,7 @@
 
     const warnHtml = q.warning ? `<div class="note-banner">⚠️ ${escapeHtml(q.warning)}</div>` : "";
     const catBadge = subj.has_priority_categories ? `<span class="tag tag-${q.category}">${q.category}</span>` : "";
+    const diffBadge = q.difficulty ? `<span class="tag tag-diff-${escapeAttr(q.difficulty)}">${escapeHtml(q.difficulty)}</span>` : "";
     const posBadge =
       typeof posIndex === "number" ? `<span class="q-number">Q${posIndex + 1}/${totalCount}</span>` : "";
 
@@ -480,6 +519,7 @@
             <span class="q-number">#${q.id}</span>
             <span class="tag tag-topic">${escapeHtml(q.topic)}</span>
             ${catBadge}
+            ${diffBadge}
           </div>
           <div class="q-meta-right">
             <button
@@ -577,6 +617,7 @@
 
   // Render Practice Tab
   function renderPractice() {
+    populateDifficultySelect();
     populateQuickTopicSelect();
 
     if (state.topicFilterValue) {
@@ -603,12 +644,14 @@
       `;
       document.getElementById("btnResetPracticeFilters").addEventListener("click", () => {
         state.scope = getCurrentSubject().has_priority_categories ? "KEEP" : "ALL";
+        state.difficulty = "ALL";
         state.status = "ALL";
         state.topicFilterType = null;
         state.topicFilterValue = null;
         state.search = "";
         state.randomIds = null;
         elScopeSelect.value = state.scope;
+        if (elDifficultySelect) elDifficultySelect.value = "ALL";
         elStatusSelect.value = "ALL";
         elSearchInput.value = "";
         render();
@@ -797,6 +840,11 @@
         ? `
             • <strong>Java 17 (LTS) Standard</strong>: Mapped against the PGCP-BDA (ACTS, Pune) 17-Session Core Java syllabus.<br/>
             • <strong>Syllabus Coverage</strong>: Covers JVM/JDK, Data Types &amp; Operators, OOP &amp; Polymorphism, Exception Handling, Strings &amp; Regex, Generics &amp; Collections, Enums &amp; Wrappers, Lambdas &amp; Streams, Multithreading, <code>java.io</code> Serialization, and JDBC.
+          `
+        : subj.id === "python" && subj.difficulty_counts
+        ? `
+            • <strong>Must-Practice Shortlist (${subj.counts.KEEP} Hand-Picked MCQs)</strong>: Curated across all difficulty levels — <strong>${subj.difficulty_counts.KEEP.Basic} Basic</strong>, <strong>${subj.difficulty_counts.KEEP.Moderate} Moderate</strong>, and <strong>${subj.difficulty_counts.KEEP.Hard} Hard</strong> MCQs — so you can master every PGCP-BDA Python session without getting overwhelmed by all ${subj.total_questions} questions.<br/>
+            • <strong>Faculty Material Alignment</strong>: Mapped directly to your Day 1–7 Lecture Notes, Code Demos (<code>stringdemo.py</code>, <code>listdemos.py</code>, <code>dictinarydemo.py</code>, <code>setdemo.py</code>, <code>filtermapdemo.py</code>, <code>regexpdemo.py</code>, <code>studentclass_basic.py</code>, <code>accountclass.py</code>), and Assignments 1–8.
           `
         : `
             • <strong>Syllabus Alignment</strong>: Mapped against the PGCP-BDA (ACTS, Pune) course syllabus sessions.
@@ -1011,6 +1059,7 @@
   // Event Listeners
   elSubjectSelect.addEventListener("change", () => {
     state.subjectId = elSubjectSelect.value;
+    state.difficulty = "ALL";
     state.topicFilterType = null;
     state.topicFilterValue = null;
     state.randomIds = null;
@@ -1031,6 +1080,15 @@
     state.index = 0;
     renderPractice();
   });
+
+  if (elDifficultySelect) {
+    elDifficultySelect.addEventListener("change", () => {
+      state.difficulty = elDifficultySelect.value;
+      state.randomIds = null;
+      state.index = 0;
+      renderPractice();
+    });
+  }
 
   elStatusSelect.addEventListener("change", () => {
     state.status = elStatusSelect.value;

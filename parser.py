@@ -21,6 +21,7 @@ SELECTORS = {
     "answer_block": ".collapseomatic_content",
     "junk": (
         ".sf-mobile-ads, .sf-desktop-ads, ._ap_apex_ad, "
+        ".sf-wa-inline, .sf-bottom-nav, "
         "[id^='sf-ads-'], [data-aa-adunit], [data-aaad], "
         "script, style, noscript"
     ),
@@ -40,7 +41,13 @@ HUB_LINK_EXCLUDE_PATH_PREFIXES = (
 )
 
 QUESTION_START = re.compile(r"^\s*(\d{1,4})\s*[\.\)]\s+(\S.*)$", re.S)
-OPTION_LINE = re.compile(r"^\s*\(?([a-hA-H])[\)\.]\s*(.*)$", re.S)
+OPTION_LINE = re.compile(r"^\s*\(?([a-hA-H])(?:\)\s*|\.\s+)(.*)$", re.S)
+PROMO_TEXT_RE = re.compile(
+    r"(?:Enroll\s+(?:Now\s+)?for\s+Free|Register\s+Today\s+for\s+Free|Claim\s+Your\s+Free|"
+    r"Hurry!\s+Secure\s+Your\s+Free|Join\s+Sanfoundry|official\s+WhatsApp\s*(?:&|and)\s*Telegram|"
+    r"Planning\s+to\s+Study\s+Abroad|Study\s+Abroad\s*[\u2013\u2014\-])",
+    re.I,
+)
 ANSWER_RE = re.compile(r"Answer\s*[:\-]\s*(.+?)(?:\n|$)", re.I)
 EXPLANATION_RE = re.compile(r"Explanation\s*[:\-]\s*(.*)$", re.I | re.S)
 SEP = r"[\u2013\u2014\-\u00ef\u00bf\u00bd\ufffd:|]"
@@ -375,13 +382,16 @@ def parse_page(html: bytes | str, url: str = "") -> ParsedPage:
     # Remove advertisements, inline ad labels, and promo banners before parsing question blocks
     for junk in content.select(SELECTORS["junk"]):
         junk.decompose()
-    for div in list(content.find_all("div")):
+    for div in list(content.find_all(["div", "p"])):
         if div.parent is None:
             continue
         txt = _clean(div.get_text())
         if txt.lower() == "advertisement":
             div.decompose()
-        elif div.find("a", href=re.compile(r"sanfoundry\.com/study-abroad", re.I)) and len(txt) < 300:
+        elif len(txt) < 350 and (
+            div.find("a", href=re.compile(r"sanfoundry\.com/(?:study-abroad|certification|contests)|t\.me/|whatsapp\.com|youtube\.com", re.I))
+            or PROMO_TEXT_RE.search(txt)
+        ):
             div.decompose()
 
     drafts: list[_DraftQuestion] = []
@@ -413,9 +423,13 @@ def parse_page(html: bytes | str, url: str = "") -> ParsedPage:
         else:
             if current is None or current.closed:
                 return
+            is_code_box = "hk1_style-wrap5" in (tag.get("class") or [])
+            if is_code_box and not current.options:
+                current.q_lines.extend(lines)
+                return
             m_opt = OPTION_LINE.match(first)
             starts_expected_option = bool(m_opt and m_opt.group(1).upper() == current.expected_label())
-            has_pre = tag.name == "pre" or tag.find("pre") is not None
+            has_pre = tag.name == "pre" or tag.find("pre") is not None or is_code_box
             waiting_for_option_body = bool(current.options and not current.options[-1][1])
             if (
                 len(current.options) >= 2

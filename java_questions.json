@@ -1209,7 +1209,7 @@
       "reason": "char/boolean primitives from Sessions 1 & 2.",
       "faculty_alignment": "Sessions 1 & 2: Working with Data Types",
       "warning": null,
-      "question": "What will be the output of the following Java program?\n🔥 Enroll for Free Data Structure Certification - November 2026\n    class array_output {\n        public static void main(String args[])\n        {\n            char array_variable [] = new char[10];\n\t    for (int i = 0; i < 10; ++i) {\n                array_variable[i] = 'i';\n                System.out.print(array_variable[i] + \" \" );\n                i++;\n            }\n        }\n    }",
+      "question": "What will be the output of the following Java program?\n    class array_output {\n        public static void main(String args[])\n        {\n            char array_variable [] = new char[10];\n\t    for (int i = 0; i < 10; ++i) {\n                array_variable[i] = 'i';\n                System.out.print(array_variable[i] + \" \" );\n                i++;\n            }\n        }\n    }",
       "options": {
         "A": "i i i i i",
         "B": "0 1 2 3 4",
@@ -4405,14 +4405,12 @@
       "reason": "Class inheritance hierarchy.",
       "faculty_alignment": "Session 4: Class Inheritance",
       "warning": null,
-      "question": "Which two classes use the Shape class correctly?",
+      "question": "Which two classes use the Shape class correctly?\nA. public class Circle implements Shape\n   {\n    private int radius;\n   }\nB. public abstract class Circle extends Shape\n   {\n    private int radius;\n   }\nC. public class Circle extends Shape\n   {\n   private int radius;\n   public void draw();\n   }\nD. public abstract class Circle implements Shape\n   {\n    private int radius;\n    public void draw();\n   }\nE. public class Circle extends Shape\n   {\n    private int radius;\n    public void draw()\n    {\n     /* code here */\n    }\n   }\nF. public abstract class Circle implements Shape\n   {\n     private int radius;\n     public void draw()\n     {\n      /* code here */\n     }\n   }",
       "options": {
-        "A": "public class Circle implements Shape\n{\nprivate int radius;\n}",
-        "B": "public abstract class Circle extends Shape\n{\nprivate int radius;\n}",
-        "C": "public class Circle extends Shape\n{\nprivate int radius;\npublic void draw();\n}",
-        "D": "public abstract class Circle implements Shape\n{\nprivate int radius;\npublic void draw();\n}",
-        "E": "public class Circle extends Shape\n{\nprivate int radius;\npublic void draw()\n{\n/* code here */\n}\n}",
-        "F": "public abstract class Circle implements Shape\n{\nprivate int radius;\npublic void draw()\n{\n/* code here */\n}\n}"
+        "A": "B,E",
+        "B": "A,C",
+        "C": "C,E",
+        "D": "T,H"
       },
       "correct_answer": "A",
       "explanation": "If one is extending any class, then they should use the extends keyword, not implements. {for A, D, F}\nClasses cannot have a declaration of a method without a body if it is not abstract. {for C}",
@@ -4770,8 +4768,8 @@
         "C": "class manager imports salary {}",
         "D": "none of the mentioned"
       },
-      "correct_answer": "B",
-      "explanation": "implements keyword is used to inherit an interface in a class.\n\nSyntax:\n\n\n\n    👉 Join Sanfoundry classes at Telegram or Youtube\n\n\n\nclass <ClassName> implements <InterfaceName>\n{           // body\t\t}",
+      "correct_answer": null,
+      "explanation": null,
       "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces"
     },
     {
@@ -5697,7 +5695,7 @@
       "reason": "throw, throws, nested try.",
       "faculty_alignment": "Session 5: Nested try (throw, throws, finally)",
       "warning": null,
-      "question": "What will be the output of the following Java code?\n🎓 Register Today for Free C++ Certification - November 2026\n   class exception_handling\n   {\n       public static void main(String args[])\n       {\n           try\n           {\n               int a = args.length;\n               int b = 10 / a;\n               System.out.print(a);\n               try\n               {\n                   if (a == 1)\n                       a = a / a - a;\n                   if (a == 2)\n                   {\n                       int []c = {1};\n                       c[8] = 9;\n                   }\n               }\n               catch (ArrayIndexOutOfBoundException e)\n               {\n                   System.out.println(\"TypeA\");\n               }\n           }\n           catch (ArithmeticException e)\n           {\n               System.out.println(\"TypeB\");\n           }\n       }\n   }",
+      "question": "What will be the output of the following Java code?\n   class exception_handling\n   {\n       public static void main(String args[])\n       {\n           try\n           {\n               int a = args.length;\n               int b = 10 / a;\n               System.out.print(a);\n               try\n               {\n                   if (a == 1)\n                       a = a / a - a;\n                   if (a == 2)\n                   {\n                       int []c = {1};\n                       c[8] = 9;\n                   }\n               }\n               catch (ArrayIndexOutOfBoundException e)\n               {\n                   System.out.println(\"TypeA\");\n               }\n           }\n           catch (ArithmeticException e)\n           {\n               System.out.println(\"TypeB\");\n           }\n       }\n   }",
       "options": {
         "A": "TypeA",
         "B": "TypeB",
@@ -5857,7 +5855,7 @@
       "reason": "finally and built-in exceptions.",
       "faculty_alignment": "Session 5: finally & Built-in Exceptions",
       "warning": null,
-      "question": "What will be the output of the following Java code?\n⚡ Hurry! Secure Your Free Cyber Security Certification - November 2026\n    class exception_handling\n    {\n        public static void main(String args[])\n        {\n            try\n            {\n                int a = args.length;\n                int b = 10 / a;\n                System.out.print(a);\n            }\n            catch (ArithmeticException e)\n            {\n                    System.out.println(\"1\");\n            }\n        }\n    }\nNote : Execution command line : $ java exception_handling",
+      "question": "What will be the output of the following Java code?\n    class exception_handling\n    {\n        public static void main(String args[])\n        {\n            try\n            {\n                int a = args.length;\n                int b = 10 / a;\n                System.out.print(a);\n            }\n            catch (ArithmeticException e)\n            {\n                    System.out.println(\"1\");\n            }\n        }\n    }\nNote : Execution command line : $ java exception_handling",
       "options": {
         "A": "0",
         "B": "1",
@@ -7835,7 +7833,7 @@
       "reason": "Generics for EntityManager<T> lab.",
       "faculty_alignment": "Sessions 7 & 8: Introduction to generics",
       "warning": null,
-      "question": "What will be the output of the following Java code?\n👉 Apply Now for Free C Certification - November 2026\n    import java.util.*;\n    public class genericstack <E>\n    {\n        Stack <E> stk = new Stack <E>();\n\tpublic void push(E obj)\n        {\n            stk.push(obj);\n\t}\n\tpublic E pop()\n        {\n            E obj = stk.pop();\n\t    return obj;\n\t}\n    }\n    class Output\n    {\n        public static void main(String args[])\n        {\n            genericstack <Integer> gs = new genericstack<Integer>();\n            gs.push(36);\n            System.out.println(gs.pop());\n        }\n    }",
+      "question": "What will be the output of the following Java code?\n    import java.util.*;\n    public class genericstack <E>\n    {\n        Stack <E> stk = new Stack <E>();\n\tpublic void push(E obj)\n        {\n            stk.push(obj);\n\t}\n\tpublic E pop()\n        {\n            E obj = stk.pop();\n\t    return obj;\n\t}\n    }\n    class Output\n    {\n        public static void main(String args[])\n        {\n            genericstack <Integer> gs = new genericstack<Integer>();\n            gs.push(36);\n            System.out.println(gs.pop());\n        }\n    }",
       "options": {
         "A": "0",
         "B": "36",
@@ -10109,7 +10107,7 @@
       "reason": "Arrays utility for sorting/searching.",
       "faculty_alignment": "Session 9 Lab: Arrays utility class",
       "warning": null,
-      "question": "What will be the output of the following Java program?\n🔥 Enroll Now for Free Python Certification - November 2026\n    import java.util.*;\n    class Arraylist\n    {\n        public static void main(String args[])\n        {\n            ArrayList obj1 = new ArrayList();\n            ArrayList obj2 = new ArrayList();\n            obj1.add(\"A\");\n            obj1.add(\"B\");\n            obj2.add(\"A\");\n            obj2.add(1, \"B\");\n            System.out.println(obj1.equals(obj2));\n        }\n    }",
+      "question": "What will be the output of the following Java program?\n    import java.util.*;\n    class Arraylist\n    {\n        public static void main(String args[])\n        {\n            ArrayList obj1 = new ArrayList();\n            ArrayList obj2 = new ArrayList();\n            obj1.add(\"A\");\n            obj1.add(\"B\");\n            obj2.add(\"A\");\n            obj2.add(1, \"B\");\n            System.out.println(obj1.equals(obj2));\n        }\n    }",
       "options": {
         "A": "0",
         "B": "1",
@@ -11005,7 +11003,7 @@
       "reason": "Additional wrappers used with collections.",
       "faculty_alignment": "Session 9: Wrapper classes / Autoboxing",
       "warning": "Java 17 LTS Note: Wrapper constructors like new Integer(x) are deprecated since Java 9; understand them for MCQs, and use valueOf() or autoboxing in lab code.",
-      "question": "What will be the output of the following Java code?\n👉 Join Sanfoundry classes at Telegram or Youtube\n    class Output\n    {\n        public static void main(String args[])\n        {\n            Double i = new Double(257.5);\n            Double x = i.MAX_VALUE;\n            System.out.print(x);\n        }\n    }",
+      "question": "What will be the output of the following Java code?\n    class Output\n    {\n        public static void main(String args[])\n        {\n            Double i = new Double(257.5);\n            Double x = i.MAX_VALUE;\n            System.out.print(x);\n        }\n    }",
       "options": {
         "A": "0",
         "B": "1.7976931348623157E308",
@@ -12544,8 +12542,8 @@
         "C": "parallel and random",
         "D": "random and synchronized"
       },
-      "correct_answer": "A",
-      "explanation": "Sequential stream and parallel stream are two types of stream provided by java.\n\n\n\n    🔥 Enroll Now for Free Python Certification - November 2026\n\n\n\nStream<Integer> sequentialStream = myList.stream();\nStream<Integer> parallelStream = myList.parallelStream();",
+      "correct_answer": null,
+      "explanation": null,
       "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
     },
     {
@@ -13222,8 +13220,8 @@
         "C": "Thread[main,5,main]",
         "D": "Thread[New Thread,5,main]"
       },
-      "correct_answer": "D",
-      "explanation": "When t is printed it displays all the details of the thread, But setName() changes the thread name from main to “New Thread”.\n\nOutput:\n\n\n\n    👉 Apply Now for Free C Certification - November 2026\n\n\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nThread[New Thread,5,main]",
+      "correct_answer": null,
+      "explanation": null,
       "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class"
     },
     {

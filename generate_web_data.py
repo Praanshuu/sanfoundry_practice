@@ -695,6 +695,947 @@ def build_java_questions_json() -> Path | None:
     return out_path
 
 
+PYTHON_SYLLABUS_MD = """# Python Programming — PGCP-BDA (ACTS, Pune)
+**Duration:** 120 Hours (36 Theory + 44 Lab + 40 Self Learning — Python: 28T + 36L)  
+**Evaluation:** Theory Exam – 40%, Lab Exam – 40%, Internal Assessment – 20%  
+**Text Book:** *Python for Everybody*, 1st Edition, Charles R. Severance / Shroff  
+**Reference Books:**
+1. *Data Wrangling Using Python*, Jacqueline Kazil, Katharine Jarmul
+2. *Introduction to Computer Science Using Python*, Charles / Wiley
+3. *Learn Python the Hard Way*, 2018 Edition, Zed A. Shaw / Pearson
+
+---
+
+## Session 1: Python Fundamentals, Data Types, Operators & Control Flow (2T + 4L + 2SL)
+- Introduction to Python, PVM Bytecode Execution, Basic Syntax, Data Types, Variables, Operators, Input/Output (`input()`, `print()`)
+- Flow of Control: `if`, `if-else`, `if-elif-else`, Nested `if-else`, `match-case` (Python 3.10+)
+- Looping: `for`, `while`, Nested Loops, `for-else` & `while-else` constructs, Uses of `break`, `continue`, and `pass`
+- Bitwise Operators (`<<`, `>>`, `&`, `|`, `^`, `~`), Operator Precedence & Associativity, Boolean Truthiness
+- **Faculty Materials:** `Day_01a_Intro_PVM_and_Operators.pdf`, `Day_01b_Syntax_DataTypes_IfElse_and_Print.pdf`, `Day_02_Bitwise_and_Loops_For_While.pdf`, `loopdemo.py`, `Assignment_01_Loops`, `Assignment_02_If_Statements`
+- **Lab:** Compute `0!` to `10!` using `for` loop and `while` loop (`< 2 billion`)
+
+## Session 2: Strings, Slicing, String Methods & String Formatting (2T + 2L + 2SL)
+- Strings and Tuples, Accessing Strings, Basic Operations, Assigning Multiple Values at Once
+- String Slices (`s[start:stop:step]`, `s[::-1]`), String Immutability
+- String Methods (`find`, `rfind`, `index`, `rindex`, `strip`, `lstrip`, `rstrip`, `split`, `join`, `replace`, `count`, `isalnum`, `isalpha`, `isdigit`, `isdecimal`, `partition`, `translate`, `maketrans`)
+- Formatting Strings (`%` formatting, `str.format()`, f-strings, alignment & precision specifiers)
+- **Faculty Materials:** `Day_03_MatchCase_Functions_Math_and_Strings.pdf`, `stringdemo.py`, `Assignment_03_Strings`
+- **Lab:** Monthly calendar generator, integer `histogram()`, phrase palindrome recognizer, pangram checker
+
+## Session 3: Dictionaries, Dictionary Comprehension & Sets (2T + 2L + 2SL)
+- Defining Dictionaries, Modifying Dictionaries, Deleting Items (`del`, `pop`, `popitem`, `clear`)
+- Dictionary Methods (`get`, `setdefault`, `update`, `fromkeys`, `keys`, `values`, `items`, `copy`) & `collections` (`Counter`, `defaultdict`, `OrderedDict`)
+- Dictionary Comprehension (`{k: v for ...}`)
+- Sets & `frozenset`: Set Operations & Venn Diagrams (`add`, `update`, `remove` vs `discard`, `union` `|`, `intersection` `&`, `difference` `-`, `symmetric_difference` `^`, `issubset`, `issuperset`, `isdisjoint`, Set Comprehensions)
+- **Faculty Materials:** `Day_06_Sets_and_Dictionaries.pdf`, `dictinarydemo.py`, `setdemo.py`, `SLA_Consolidated_Lab_Questions.pdf`
+- **Lab:** ROT-13 Caesar cipher encoder/decoder using dictionary mapping
+
+## Session 4: Lists, List Operations, Shallow/Deep Copy & List Comprehension (2T + 2L + 2SL)
+- Defining Lists, Declaring, Assigning, and Retrieving Values from Lists, Accessing & Slicing Lists
+- Operations on Lists: `append`, `extend`, `insert`, `index`, `pop`, `remove`, `reverse`, `sort(key=..., reverse=...)`, `copy()`
+- Object Identity (`id()`, `is`), Aliasing vs Shallow Copy (`list.copy()`, `[:]`) vs Deep Copy (`copy.deepcopy()`)
+- Searching Lists, Deleting List Elements, Joining Lists & Splitting Strings (`split`, `join`)
+- Mapping Lists & List Comprehension (`[expr for x in iterable if cond]`, nested/2D matrix comprehensions)
+- **Faculty Materials:** `Day_04_Lists_and_Tuples.pdf`, `listdemos.py`, `listdemo1.py`, `coursemgntsystem_full.py`
+- **Lab:** Find largest and smallest number in a list; create and manipulate multiple lists
+
+## Session 5: Functions, Argument Passing, Lambda/Map/Filter, Built-ins & Modules (2T + 4L + 4SL)
+- Defining and Calling Functions, Types of Functions, Function Arguments (Positional, Default, Keyword, `*args`, `**kwargs`)
+- Argument Passing (Pass-by-Object-Reference, Mutable Default Argument Trap `def f(x=[])`)
+- Global and Local Variables (`global`, `nonlocal`, LEGB Namespace Order), Recursion
+- Anonymous Functions & Functional Tools (`lambda`, `map()`, `filter()`, `functools.reduce()`, `zip()`, `enumerate()`, `sorted()`, `reversed()`)
+- Built-In Functions (`type`, `str`, `dir`, `id`, `len`, `sum`, `min`, `max`, `all`, `any`, `round`, `pow`, `divmod`, `eval`, `chr`, `ord`, `hex`, `oct`)
+- Concepts of Modules & Packages (`import`, `from ... import`, `math` module, `datetime` module, `sys.argv`), Pickling (`pickle` serialization)
+- **Faculty Materials:** `Day_03_MatchCase_Functions_Math_and_Strings.pdf`, `Day_05_Iterables_Lambda_Filter_Reduce.pdf`, `functiondemo.py`, `filtermapdemo.py`, `zipenumeratedemo.py`, `03_Modules_and_Packages`, `Assignment_04_Functions_and_Lists`
+- **Lab:** Student favourite colours dictionary manipulation, Swedish "rövarspråket" translator, factorial table `1..20`, recursive `sum(1..x)`, `overlapping()`, `find_longest_word()`, `filter_long_words()`, `correct()` spacing, `make_ing_form()`
+
+## Session 6: Tuples (2T + 2L + 2SL)
+- Introducing Tuples, Single-Element Tuple Syntax `(x,)`, Tuple Packing & Unpacking (`x, y, z = a`)
+- Accessing & Slicing Tuples, Tuple Immutability, Returning Multiple Values from Functions, `zip()` with Tuples
+- **Faculty Materials:** `Day_04_Lists_and_Tuples.pdf`, `tupledemo1.py`, `coursemgntsystem_full.py`
+- **Lab:** Find repeated items of a tuple, sort a list of tuples by float element, count elements in a list until an element is a tuple, element-wise sum of tuples using `zip()`
+
+## Sessions 7 & 8: Advanced Python — OOP, Inheritance, Polymorphism, Regex, Generators & Decorators (4T + 4L + 5SL)
+- OOP Concepts: Class and Object, `__init__` constructor, `__str__` & `__repr__`, Object References, `@staticmethod`, Class/Static Variables
+- Encapsulation & Data Hiding: Private (`__var`), Name Mangling (`_ClassName__var`), Protected (`_var`), Getters & Setters
+- Attributes & Inheritance: Single, Multilevel, Multiple, Hierarchical Inheritance, `super().__init__()`, `isinstance()`, `issubclass()`, Abstract Base Classes (`abc.ABC`, `@abstractmethod`)
+- Polymorphism: Duck Typing, Method Overriding, Operator Overloading (`__add__`, `__eq__`, `__lt__`, `__floordiv__`, `__or__`, `__invert__`, `__format__`)
+- Regular Expressions Using Python (`re.search`, `re.match`, `re.findall`, `re.finditer`, `re.sub`, `re.split`, `re.compile`, Greedy `.*` vs Non-Greedy `.*?`, Capturing Groups `m.group()`, Flags `re.I|re.M`)
+- Generators (`yield`, `next()`, generator expressions) & Decorators (`@decorator`, higher-order function wrappers)
+- **Faculty Materials:** `Day_07_Regex_OOP_Inheritance_and_FileHandling.pdf`, `studentclass_basic.py`, `studentclass_static_id.py`, `accountclass.py`, `bankmgntsystem.py`, `regexpdemo.py`, `Assignment_05_OOP`
+- **Lab:** Menu-driven `Student` class with marks dictionary & GPA calculation, `NumberSeries` even-number generator, `@log_method_call` decorator
+
+## Session 9: Exception Handling & Logging (2T + 2L + 2SL)
+- Operations Exception, Exception Handling (`try`, `except`, multiple `except (E1, E2)`, `else`, `try-finally`, `raise`, `assert`)
+- Built-in Exceptions (`IndexError`, `NameError`, `TypeError`, `ValueError`, `KeyError`, `ZeroDivisionError`, `IOError`) & User-Defined Exceptions
+- Logging in Python (`logging` module)
+- **Faculty Materials:** `Assignment_05_OOP` (Custom Exceptions)
+
+## Sessions 10 & 11: Data Analysis, Web Scraping & Visualization — NumPy, Pandas, Pillow, BeautifulSoup, Matplotlib, Seaborn & Plotly (4T + 8L + 4SL)
+- Working with NumPy (`ndarray`, `ndim`, `shape`, `dtype`, `arange`, `reshape`, `zeros`, `ones`, `eye`, `dot`, boolean filtering, `where`, `sum`/`mean` with `axis`, `hstack`/`vstack`, `flip`, `linspace`) & Pillow (`PIL.Image`)
+- Working & Data Wrangling with Pandas (`Series`, `DataFrame`, `iloc`, `loc`, `info`, `describe`, `groupby`, `merge`, `concat`, `fillna`, `dropna`, `interpolate`, `replace`)
+- Working with BeautifulSoup & Visualizing Using Matplotlib, Seaborn, ggplot, and Plotly
+- **Faculty Materials:** `06_NumPy_and_Pillow_Images/numpydemoall.py`, `07_Pandas_Data_Wrangling/pandasdemo1.py`, `08_Data_Visualization/`, `Assignment_07_NumPy_and_Movie_Analysis`
+
+## Session 12: File Handling, CSV, JSON & Context Managers (2T + 2L + 3SL)
+- File Handling: `open()`, Modes (`r`, `w`, `a`, `r+`, `w+`, `rb`, `wb`, `wb+`), `read()`, `readline()`, `readlines()`, `write()`, `writelines()`, `flush()`, `close()`
+- File Pointer Navigation: `seek(offset, whence)`, `tell()`, `truncate()`, File Attributes (`name`, `mode`, `closed`), `os.rename()`, `os.remove()`
+- Working with Text, CSV, and JSON Files; Context Managers (`with open(...) as f:`)
+- **Faculty Materials:** `Day_07_Regex_OOP_Inheritance_and_FileHandling.pdf`, `Assignment_06_File_Handling_and_OOP`
+
+## Session 13: Virtual Environments, Database Connectivity (PyMongo / SQL) & FastAPI (4T + 4L + 4SL)
+- Creation of Python Virtual Environments (`venv`, `conda`, `pip`)
+- Connecting & Manipulating Databases with Python (`pymongo.MongoClient` CRUD operations: `insert_one`, `find`, `update_one`, `delete_many`)
+- Introduction to FastAPI, Creating REST APIs, Path & Query Parameters, Request/Response Models, Postman/Swagger UI
+- **Faculty Materials:** `Setup_Virtual_Environments_Conda_Venv.pdf`, `05_Database_MongoDB/mongodbpython.py`
+"""
+
+# Question-level curation for all 78 core Sanfoundry Python topic pages:
+# - "must_practice": Top ~325 Must-Practice Shortlist (assigned category="KEEP") across Basic, Moderate, and Hard levels
+# - "basic" / "moderate" / "hard": Explicit per-question difficulty classification
+PYTHON_PAGE_CURATION: dict[str, dict[str, set[int]]] = {
+    # --- Session 1: Fundamentals, Variables, Operators, Bitwise, Boolean, Loops ---
+    "https://www.sanfoundry.com/python-questions-answers-variable-names/": {
+        "must_practice": {1, 4, 6, 9},
+        "basic": {1, 2, 4, 7, 8, 10},
+        "moderate": {3, 5, 6},
+        "hard": {9},
+    },
+    "https://www.sanfoundry.com/python-mcqs-basic-operators/": {
+        "must_practice": {1, 2, 3, 6},
+        "basic": {1, 2, 4, 5, 8, 9, 10},
+        "moderate": {3, 7},
+        "hard": {6},
+    },
+    "https://www.sanfoundry.com/python-mcqs-core-datatypes/": {
+        "must_practice": {1, 2, 7, 11},
+        "basic": {1, 2, 3, 4, 5, 9, 10, 13, 15},
+        "moderate": {6, 7, 8, 12, 14},
+        "hard": {11},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-numeric-types/": {
+        "must_practice": {1, 4, 9, 10},
+        "basic": {2, 3},
+        "moderate": {4, 5, 6, 8, 10},
+        "hard": {1, 9},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-precedence-associativity-1/": {
+        "must_practice": {4, 8, 9},
+        "basic": {2, 3, 7},
+        "moderate": {1, 4, 5, 6, 9, 10},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-precedence-associativity-2/": {
+        "must_practice": {4, 8},
+        "basic": {1, 5, 7, 10},
+        "moderate": {2, 3, 4, 6, 9},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-bitwise-1/": {
+        "must_practice": {1, 5, 6, 7},
+        "basic": {1, 2, 4, 8, 9},
+        "moderate": {3, 5, 6, 10},
+        "hard": {7},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-bitwise-2/": {
+        "must_practice": {5, 7, 8, 10},
+        "basic": {2, 3, 4},
+        "moderate": {1, 5, 6, 7, 10},
+        "hard": {8, 9},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-boolean/": {
+        "must_practice": {1, 2, 5, 6},
+        "basic": {3, 7, 8, 10},
+        "moderate": {1, 2, 4, 5, 9},
+        "hard": {6},
+    },
+    "https://www.sanfoundry.com/tough-python-questions-answers/": {  # While & For Loops - 3
+        "must_practice": {1, 3, 7, 10},
+        "basic": {2, 3, 4},
+        "moderate": {1, 5, 6, 7, 8, 9},
+        "hard": {10},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-freshers/": {  # While & For Loops - 4
+        "must_practice": {1, 2, 4, 7, 10},
+        "basic": {1, 2, 4, 5, 6, 9, 11},
+        "moderate": {3, 8},
+        "hard": {7, 10},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-experienced/": {  # While & For Loops - 5
+        "must_practice": {1, 5, 9},
+        "basic": {2, 5, 7, 8},
+        "moderate": {1, 3, 4, 6},
+        "hard": {9, 10},
+    },
+    "https://www.sanfoundry.com/python-technical-questions-answers/": {  # While & For Loops - 6
+        "must_practice": {1, 2, 4, 7},
+        "basic": {3, 5, 6},
+        "moderate": {1, 2, 9, 10},
+        "hard": {4, 7, 8},
+    },
+    # --- Session 2: Strings & Formatting ---
+    "https://www.sanfoundry.com/python-mcqs-strings-1/": {
+        "must_practice": {2, 6, 9},
+        "basic": {1, 2, 4, 5, 9},
+        "moderate": {3, 6, 7, 10},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/advanced-python-interview-questions-answers/": {  # Strings - 2
+        "must_practice": {1, 4, 7, 8},
+        "basic": {3, 5, 6, 7},
+        "moderate": {4, 8, 9, 10},
+        "hard": {1, 2},
+    },
+    "https://www.sanfoundry.com/python-technical-interview-questions-answers/": {  # Strings - 3
+        "must_practice": {2, 4, 7},
+        "basic": {1, 4, 5, 6, 7, 10},
+        "moderate": {2, 3, 8, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-coding-questions-answers/": {  # Strings - 4
+        "must_practice": {1, 4, 7},
+        "basic": {1, 3, 9},
+        "moderate": {2, 4, 5, 6, 10},
+        "hard": {7, 8},
+    },
+    "https://www.sanfoundry.com/basic-python-questions-answers/": {  # Strings - 5
+        "must_practice": {2, 6, 10},
+        "basic": {1, 3, 4},
+        "moderate": {2, 5, 6, 7, 8, 9},
+        "hard": {10},
+    },
+    "https://www.sanfoundry.com/python-quiz/": {  # Strings - 6
+        "must_practice": {1, 3, 7},
+        "basic": {1, 8, 9},
+        "moderate": {2, 3, 4, 5, 7, 10},
+        "hard": {6},
+    },
+    "https://www.sanfoundry.com/python-quiz-online/": {  # Strings - 7
+        "must_practice": {4, 8, 10},
+        "basic": {5, 6, 7, 9},
+        "moderate": {1, 2, 3, 8, 10},
+        "hard": {4},
+    },
+    "https://www.sanfoundry.com/python-multiple-choice-questions-answers/": {  # Strings - 8
+        "must_practice": {2, 4, 6, 7},
+        "basic": {1, 5},
+        "moderate": {3, 4, 6, 7, 8},
+        "hard": {2, 9, 10},
+    },
+    "https://www.sanfoundry.com/python-mcqs/": {  # Strings - 9
+        "must_practice": {2, 3, 6, 7},
+        "basic": {3, 5, 8},
+        "moderate": {1, 2, 4, 6, 9, 10},
+        "hard": {7},
+    },
+    "https://www.sanfoundry.com/python-test/": {  # Strings - 10
+        "must_practice": {1, 5, 9},
+        "basic": {2, 4, 8, 10},
+        "moderate": {3, 5, 6, 7, 9},
+        "hard": {1},
+    },
+    "https://www.sanfoundry.com/python-online-test/": {  # Strings - 11
+        "must_practice": {4, 5, 8},
+        "basic": {2, 3},
+        "moderate": {1, 6, 7, 8, 9, 10},
+        "hard": {4, 5},
+    },
+    "https://www.sanfoundry.com/python-problems/": {  # Strings - 12
+        "must_practice": {3, 6, 8},
+        "basic": {3, 4, 5},
+        "moderate": {1, 2, 7, 8, 10},
+        "hard": {6, 9},
+    },
+    "https://www.sanfoundry.com/python-question-bank/": {  # Strings - 13
+        "must_practice": {1, 2, 8, 10},
+        "basic": {2, 3, 4, 9},
+        "moderate": {1, 5, 6, 7, 10},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-formatting-1/": {
+        "must_practice": {4, 5, 8},
+        "basic": {4, 7, 8},
+        "moderate": {1, 2, 3, 5, 9},
+        "hard": {6, 10},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-formatting-2/": {
+        "must_practice": {5, 7, 12},
+        "basic": {9, 10, 13, 15},
+        "moderate": {1, 2, 4, 6, 7, 11, 12, 14},
+        "hard": {3, 5, 8},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-advanced-formatting/": {
+        "must_practice": {2, 7, 8},
+        "basic": {5, 6},
+        "moderate": {1, 2, 3, 4, 7, 10, 12},
+        "hard": {8, 9, 11},
+    },
+    # --- Session 3: Dictionaries & Sets ---
+    "https://www.sanfoundry.com/python-mcqs-dictionary-1/": {
+        "must_practice": {1, 3, 7, 10},
+        "basic": {1, 2, 3, 4, 6, 7, 8, 9},
+        "moderate": {5, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-questions-answers-dictionary-2/": {
+        "must_practice": {3, 4, 5, 7, 8, 12, 13},
+        "basic": {1, 3, 10, 11, 14, 15},
+        "moderate": {2, 4, 5, 6, 7, 8, 9, 12, 13},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-questions-answers-dictionary-3/": {
+        "must_practice": {3, 4, 9, 11, 12},
+        "basic": {1, 2, 3, 7, 10},
+        "moderate": {4, 5, 6, 8, 11, 12, 13},
+        "hard": {9, 14, 15},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-dictionary-4/": {
+        "must_practice": {2, 4, 5, 6, 7, 9, 12},
+        "basic": {3, 4, 5, 10, 11},
+        "moderate": {2, 6, 8, 9, 12, 13, 15},
+        "hard": {1, 7, 14},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-sets-1/": {
+        "must_practice": {1, 2, 5, 7, 10, 11, 14, 15},
+        "basic": {1, 3, 5, 8, 13, 14},
+        "moderate": {2, 4, 6, 7, 9, 10, 11, 12},
+        "hard": {15},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-sets-2/": {
+        "must_practice": {1, 3, 5, 7, 8, 9, 12},
+        "basic": {1, 2, 4, 14, 15},
+        "moderate": {3, 5, 6, 7, 8, 10, 11, 12, 13},
+        "hard": {9},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-sets-3/": {
+        "must_practice": {2, 8, 10},
+        "basic": {1, 3, 5, 6, 7},
+        "moderate": {2, 4, 8, 9},
+        "hard": {10},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-sets-4/": {
+        "must_practice": {3, 4, 8, 9},
+        "basic": {1, 2, 5, 10},
+        "moderate": {3, 6, 7, 8, 9},
+        "hard": {4},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-sets-5/": {
+        "must_practice": {3, 5, 8, 10},
+        "basic": {3, 4, 6, 7, 9},
+        "moderate": {1, 2, 5, 8, 10},
+        "hard": set(),
+    },
+    # --- Session 4: Lists & List Comprehension ---
+    "https://www.sanfoundry.com/python-mcqs-lists-1/": {
+        "must_practice": {2, 4, 9, 10},
+        "basic": {1, 2, 3, 4, 5, 6, 9},
+        "moderate": {7, 8, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-coding-interview-questions-answers/": {  # Lists - 2
+        "must_practice": {1, 2, 5, 7, 8, 9},
+        "basic": {3, 4, 6, 8, 9, 10},
+        "moderate": {1, 5, 7},
+        "hard": {2},
+    },
+    "https://www.sanfoundry.com/python-programming-questions-answers/": {  # Lists - 3
+        "must_practice": {1, 2, 3, 5, 8, 10},
+        "basic": {1, 2, 3, 4, 5, 6},
+        "moderate": {7, 9, 10},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/python-programming-interview-questions-answers/": {  # Lists - 4
+        "must_practice": {1, 4, 7, 8},
+        "basic": {2, 5, 6},
+        "moderate": {3, 4, 7, 8, 9, 10},
+        "hard": {1},
+    },
+    "https://www.sanfoundry.com/python-question-papers/": {  # Lists - 5
+        "must_practice": {1, 5, 8, 10},
+        "basic": {8},
+        "moderate": {1, 2, 3, 4, 5, 6, 7, 10},
+        "hard": {9},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-lists-6/": {
+        "must_practice": {1, 2, 3, 8, 9, 10},
+        "basic": {6},
+        "moderate": {2, 4, 5, 7, 9, 10},
+        "hard": {1, 3, 8},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-lists-7/": {
+        "must_practice": {1, 2, 4, 5, 6, 7, 10, 12, 14, 15},
+        "basic": {1, 2, 15},
+        "moderate": {3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14},
+        "hard": {5},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-list-comprehension/": {
+        "must_practice": {2, 4, 7, 8, 9, 10},
+        "basic": {4, 6},
+        "moderate": {1, 3, 5, 7, 8, 10},
+        "hard": {2, 9},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-list-comprehension-1/": {
+        "must_practice": {1, 2, 3, 4, 6, 8},
+        "basic": {3, 7},
+        "moderate": {1, 2, 4, 5, 6, 9, 10},
+        "hard": {8},
+    },
+    # --- Session 5: Functions, Argument Passing, Global/Local, Built-ins, Modules ---
+    "https://www.sanfoundry.com/python-mcqs-function-1/": {
+        "must_practice": {5, 6, 7, 8},
+        "basic": {1, 2, 3, 4, 7, 9, 10},
+        "moderate": {5, 6, 8},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-questions-entrance-exams/": {  # Function - 2
+        "must_practice": {4, 5, 10},
+        "basic": {1, 2, 3, 4, 5, 6, 7, 8},
+        "moderate": {9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-questions-campus-interview/": {  # Function - 3 (Lambda)
+        "must_practice": {1, 2, 4, 8, 9, 10},
+        "basic": {1, 2, 3, 7},
+        "moderate": {4, 5, 6, 9, 10},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-function-4/": {
+        "must_practice": {3, 4, 5, 6, 7, 8, 10},
+        "basic": {1, 2, 8, 9},
+        "moderate": {3, 5, 6, 7, 10},
+        "hard": {4},
+    },
+    "https://www.sanfoundry.com/python-puzzles/": {  # Argument Passing - 1
+        "must_practice": {3, 6, 7, 8, 9, 10},
+        "basic": {1, 4, 5},
+        "moderate": {2, 3, 6, 7, 9},
+        "hard": {8, 10},
+    },
+    "https://www.sanfoundry.com/tricky-python-questions-answers/": {  # Argument Passing - 2
+        "must_practice": {1, 4, 5, 8, 10},
+        "basic": {2, 4, 5, 6, 7, 9},
+        "moderate": {1, 3, 8},
+        "hard": {10},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-global-local-variables-1/": {
+        "must_practice": {1, 5, 6, 7, 10, 12},
+        "basic": {1, 3, 9, 13},
+        "moderate": {2, 4, 7, 8, 10, 11, 12},
+        "hard": {5, 6},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-built-in-functions-1/": {
+        "must_practice": {1, 3, 4, 6, 8, 10},
+        "basic": {1, 2, 6, 7},
+        "moderate": {3, 4, 5, 8, 9},
+        "hard": {10},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-built-in-functions-2/": {
+        "must_practice": {1, 4, 7, 8},
+        "basic": {1, 2, 3, 4, 7, 10},
+        "moderate": {5, 6, 9},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-built-in-functions-3/": {
+        "must_practice": {2, 4, 7, 10},
+        "basic": {1, 4, 7, 8, 9},
+        "moderate": {2, 3, 5, 6, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-objective-questions-answers/": {  # Math Module - 1
+        "must_practice": {1, 2, 5, 7, 9},
+        "basic": {1, 2, 4, 7},
+        "moderate": {3, 5, 6, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-questions-answers-datetime-module-1/": {
+        "must_practice": {1, 2, 8},
+        "basic": {1, 3, 4},
+        "moderate": {5, 6, 7, 8, 9, 10},
+        "hard": {2},
+    },
+    # --- Session 6: Tuples ---
+    "https://www.sanfoundry.com/python-mcqs-tuples/": {  # Tuples - 1
+        "must_practice": {1, 2, 4, 7, 8, 9, 10},
+        "basic": {1, 2, 3, 6, 7, 9},
+        "moderate": {4, 5, 8},
+        "hard": {10},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-tuples-2/": {
+        "must_practice": {1, 4, 6, 7, 8, 10},
+        "basic": {2, 5, 8},
+        "moderate": {1, 3, 4, 6, 7, 9, 10},
+        "hard": set(),
+    },
+    # --- Sessions 7 & 8: Advanced Python (OOP, Inheritance, Polymorphism, Encapsulation, Decorators, Regex) ---
+    "https://www.sanfoundry.com/python-questions-answers-classes-objects-1/": {
+        "must_practice": {2, 3, 4, 5, 7, 9, 11, 12},
+        "basic": {1, 2, 3, 4, 5, 8, 10},
+        "moderate": {6, 7, 11, 12},
+        "hard": {9},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-encapsulation/": {
+        "must_practice": {2, 3, 5, 6, 8, 10, 13},
+        "basic": {1, 2, 5, 7, 9, 10},
+        "moderate": {3, 4, 6, 11, 12, 13, 14},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-inheritance-1/": {
+        "must_practice": {1, 2, 4, 8, 10, 14, 15},
+        "basic": {1, 2, 5, 11, 12, 13, 15},
+        "moderate": {6, 7, 8, 9, 10},
+        "hard": {3, 4, 14},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-inheritance-2/": {
+        "must_practice": {1, 3, 6, 8, 9, 10, 13},
+        "basic": {1, 2, 6, 8},
+        "moderate": {3, 4, 5, 7, 9, 10, 11, 12},
+        "hard": {13},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-polymorphism/": {
+        "must_practice": {1, 3, 4, 6, 8, 9, 12, 14},
+        "basic": {1, 2, 3, 6, 7, 15},
+        "moderate": {4, 5, 10, 13, 14},
+        "hard": {8, 9, 11, 12},
+    },
+    "https://www.sanfoundry.com/python-interview-questions-answers-experienced/": {  # Operator Overloading
+        "must_practice": {1, 2, 3, 5, 8, 10},
+        "basic": {3, 5, 9, 10},
+        "moderate": {1, 2, 4, 6, 7},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-decorators/": {
+        "must_practice": {1, 3, 5, 7, 8, 9, 13, 14, 15},
+        "basic": {2, 3, 6, 11},
+        "moderate": {1, 4, 5, 7, 9, 10, 12, 13, 14},
+        "hard": {8, 15},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-regular-expressions-1/": {
+        "must_practice": {1, 2, 3, 5, 6, 7, 10},
+        "basic": {1, 2, 3, 10},
+        "moderate": {4, 5, 7, 8, 9},
+        "hard": {6},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-regular-expressions-3/": {
+        "must_practice": {1, 2, 3, 5, 6, 8, 13},
+        "basic": {2, 3, 6, 10},
+        "moderate": {4, 7, 9, 11, 12},
+        "hard": {1, 5, 8, 13},
+    },
+    # --- Session 9: Exception Handling & Generators ---
+    "https://www.sanfoundry.com/python-questions-answers-exception-handling/": {
+        "must_practice": {2, 3, 5, 6, 7, 9},
+        "basic": {1, 3, 4, 6, 8, 10},
+        "moderate": {2, 5},
+        "hard": {7, 9},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-exception-handling-2/": {
+        "must_practice": {2, 3, 4, 5, 6, 7, 8, 10},
+        "basic": {1, 9},
+        "moderate": {2, 3, 4, 7, 10},
+        "hard": {5, 6, 8},
+    },
+    "https://www.sanfoundry.com/python-questions-answers-exception-handling-3/": {
+        "must_practice": {2, 3, 4, 5, 7, 8, 13, 14},
+        "basic": {2, 3, 4, 11, 12, 13, 14, 15},
+        "moderate": {1, 5, 6, 7, 9, 10},
+        "hard": {8},
+    },
+    # --- Session 12: File Handling ---
+    "https://www.sanfoundry.com/python-mcqs-files-1/": {
+        "must_practice": {1, 4, 5, 6, 7, 8, 10},
+        "basic": {1, 2, 3, 5, 6, 8, 9, 10},
+        "moderate": {4},
+        "hard": {7},
+    },
+    "https://www.sanfoundry.com/python-certification-questions-answers/": {  # Files - 2
+        "must_practice": {4, 5, 8, 9, 10},
+        "basic": {1, 2, 6, 7},
+        "moderate": {3, 4, 5, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-scripting-questions-answers/": {  # Files - 3
+        "must_practice": {4, 5, 6, 8, 9},
+        "basic": {1, 4, 5, 6, 7},
+        "moderate": {2, 3, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-scripting-interview-questions-answers/": {  # Files - 4
+        "must_practice": {10},
+        "basic": {1, 2, 3, 4, 5, 6, 7, 8, 9},
+        "moderate": {10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/python-written-test-questions-answers/": {  # Files - 5
+        "must_practice": {1, 2, 4, 7, 8, 9},
+        "basic": {3, 5, 6, 7, 8},
+        "moderate": {1, 4, 9, 10},
+        "hard": {2},
+    },
+}
+
+
+def consolidate_python_syllabus_topic(raw_syl: str, sf_topic: str, category: str) -> str:
+    """Map detailed Python session labels into consolidated PGCP-BDA Syllabus Session groups."""
+    if category == "REMOVE" or raw_syl.startswith("Excluded"):
+        return "Excluded / Out of Syllabus (Turtle Graphics, Low-Level OS Calls & Python 2 Obsolete)"
+    s = raw_syl.lower()
+    if "session 13" in s or "virtual environment" in s or "pip" in s:
+        return "Session 13: Virtual Environments, PIP, Database Connectivity (PyMongo) & Packaging"
+    if "session 12" in s or sf_topic.startswith("Files"):
+        return "Session 12: File Handling (Read, Write, Seek, Tell, Modes & Context Managers)"
+    if "session 9" in s or sf_topic.startswith("Exception Handling"):
+        return "Session 9: Exception Handling, Assertions, Generators & Standard Exceptions"
+    if (
+        "sessions 7 & 8" in s
+        or "sessions 7–8" in s
+        or sf_topic in ("Classes & Objects-1", "Classes & Objects-2", "Encapsulation", "Inheritance-1", "Inheritance-2", "Polymorphism", "Operator Overloading", "Decorators")
+        or sf_topic.startswith("Regular Expressions")
+    ):
+        return "Sessions 7 & 8: Advanced Python — OOP, Inheritance, Polymorphism, Regex & Decorators"
+    if "session 6" in s or sf_topic.startswith("Tuples"):
+        return "Session 6: Tuples, Tuple Packing/Unpacking & Zip Operations"
+    if (
+        "session 5" in s
+        or sf_topic.startswith("Functions")
+        or sf_topic.startswith("Argument Passing")
+        or sf_topic.startswith("Global vs Local")
+        or sf_topic.startswith("Built-in Functions")
+        or sf_topic.startswith("Math Module")
+        or sf_topic.startswith("Datetime Module")
+    ):
+        return "Session 5: Functions, Argument Passing, Lambda/Map/Filter, Built-ins & Modules"
+    if "session 4" in s or sf_topic.startswith("Lists") or sf_topic.startswith("List Comprehension"):
+        return "Session 4: Lists, List Operations, Shallow/Deep Copy & List Comprehension"
+    if "session 3" in s or sf_topic.startswith("Dictionary") or sf_topic.startswith("Sets"):
+        return "Session 3: Dictionaries, Dictionary Comprehension & Sets"
+    if "session 2" in s or sf_topic.startswith("Strings") or sf_topic.startswith("Formatting") or sf_topic == "Advanced Formatting":
+        return "Session 2: Strings, Slicing, String Methods & String Formatting"
+    return "Session 1: Python Fundamentals, Data Types, Operators & Control Flow (If-Else, Loops)"
+
+
+def infer_python_warning(question_text: str, sf_topic: str) -> str | None:
+    """Attach a helpful Python 3.10+ / Faculty Study Note where relevant."""
+    if "cmp(" in question_text:
+        return (
+            "Python 3 Note: Built-in cmp(a, b) was removed in Python 3; use (a > b) - (a < b) or relational operators."
+        )
+    if "round(" in question_text:
+        return (
+            "Python 3 Note: round() uses round-half-to-even (banker's rounding) in Python 3, e.g. round(0.5) == 0 and round(1.5) == 2."
+        )
+    if sf_topic.startswith("Encapsulation") or "__" in question_text and "class " in question_text and "__init__" in question_text:
+        if re.search(r"self\.__[a-zA-Z0-9]+\b", question_text):
+            return (
+                "Faculty OOP Note (studentclass_basic.py / accountclass.py): Attributes prefixed with __ (like self.__sid) "
+                "are private via name mangling (_ClassName__attr) and accessed via getters/setters."
+            )
+    if "match" in sf_topic.lower() or "re.match" in question_text or "re.search" in question_text:
+        return (
+            "Faculty Regex Note (regexpdemo.py): re.match() checks only at the beginning of the string (index 0), "
+            "whereas re.search() scans anywhere in the string."
+        )
+    return None
+
+
+def build_python_questions_json() -> Path | None:
+    """Extract all saved HTML pages in `PythonSaved/`, map them to the PGCP-BDA Python syllabus,
+    short-pick the best Must-Practice MCQs across Basic/Moderate/Hard levels, and write `python_questions.json`."""
+    python_dir = ROOT / "PythonSaved"
+    if not python_dir.is_dir():
+        return None
+    html_files = sorted(python_dir.glob("*.html"))
+    if not html_files:
+        return None
+
+    from open_python_pages import HUB_HTML, TOPIC_SYLLABUS_MAP, get_ordered_topics
+    from parser import parse_page
+    from scraper import normalize_text
+
+    pages_by_url: dict[str, Any] = {}
+    hub_page = None
+    for f in html_files:
+        parsed = parse_page(f.read_bytes(), url=f.as_posix())
+        if not parsed.questions:
+            continue
+        if f.name == HUB_HTML.name:
+            hub_page = parsed
+            continue
+        norm_u = (parsed.url or "").rstrip("/") + "/"
+        pages_by_url[norm_u] = parsed
+
+    ordered_urls = [item["url"] for item in get_ordered_topics() if item["url"] in pages_by_url]
+    for u in sorted(pages_by_url.keys()):
+        if u not in ordered_urls:
+            ordered_urls.append(u)
+
+    raw_records: list[dict[str, Any]] = []
+    seen_exact: set[tuple[str, str]] = set()
+    seen_loose: set[tuple[str, frozenset[str]]] = set()
+
+    def register_question(
+        q_obj: Any,
+        *,
+        src_url: str,
+        sf_topic: str,
+        cat: str,
+        raw_syl: str,
+        reason: str,
+        difficulty: str,
+    ) -> None:
+        exact_sig = (
+            q_obj.question.strip(),
+            "|".join(f"{k}:{normalize_text(v)}" for k, v in sorted(q_obj.options.items())),
+        )
+        loose_q = re.sub(r"\bthe\b", " ", normalize_text(q_obj.question))
+        loose_q = re.sub(r"\s+", " ", loose_q).strip()
+        loose_sig = (loose_q, frozenset(normalize_text(v) for v in q_obj.options.values()))
+
+        if exact_sig in seen_exact or loose_sig in seen_loose:
+            return
+        seen_exact.add(exact_sig)
+        seen_loose.add(loose_sig)
+
+        syl_group = consolidate_python_syllabus_topic(raw_syl, sf_topic, cat)
+        raw_records.append(
+            {
+                "topic": sf_topic,
+                "category": cat,
+                "difficulty": difficulty,
+                "must_practice": cat == "KEEP",
+                "syllabus_topic": syl_group,
+                "syllabus_detail": raw_syl,
+                "reason": reason,
+                "faculty_alignment": raw_syl,
+                "warning": infer_python_warning(q_obj.question, sf_topic),
+                "question": q_obj.question,
+                "options": q_obj.options,
+                "correct_answer": q_obj.correct_answer,
+                "explanation": q_obj.explanation,
+                "source_url": src_url,
+            }
+        )
+
+    # 1. Process all 80 saved topic pages in chronological PGCP-BDA syllabus order
+    for norm_u in ordered_urls:
+        page = pages_by_url[norm_u]
+        meta = TOPIC_SYLLABUS_MAP.get(norm_u, {})
+        base_topic = meta.get("topic") or page.topic or "Core Python"
+        base_cat = meta.get("category", "SELECTIVE")
+        base_syl = meta.get("syllabus_topic", base_topic)
+        base_reason = meta.get("reason", "")
+        curation = PYTHON_PAGE_CURATION.get(norm_u)
+
+        for q in page.questions:
+            qnum = int(q.number or 0)
+            q_topic = base_topic
+            q_syl = base_syl
+            q_reason = base_reason
+
+            # Determine difficulty (Basic / Moderate / Hard)
+            if curation:
+                if qnum in curation["hard"]:
+                    diff = "Hard"
+                elif qnum in curation["moderate"]:
+                    diff = "Moderate"
+                else:
+                    diff = "Basic"
+            else:
+                diff = "Moderate" if "\n" in q.question else "Basic"
+
+            # Determine category (KEEP = Must-Practice Shortlist, SELECTIVE = Priority 2 Extra Practice, REMOVE = Excluded)
+            if base_cat == "REMOVE":
+                if norm_u == "https://www.sanfoundry.com/python-exam-questions-answers/" and qnum in (1, 7, 9):
+                    q_cat = "SELECTIVE"
+                    q_syl = "Session 12: File & Directory Handling (os.name, os.getcwd, os.mkdir)"
+                    q_reason = "os.getcwd() and os.mkdir() are useful directory operations alongside Session 12 File Handling."
+                    diff = "Basic"
+                else:
+                    q_cat = "REMOVE"
+            elif norm_u == "https://www.sanfoundry.com/python-questions-answers-numeric-types/" and qnum == 7:
+                q_cat = "REMOVE"
+                q_syl = "Excluded (Python 2 Obsolete cmp() function)"
+                q_reason = "Built-in cmp(3, 1) was removed in Python 3."
+                diff = "Basic"
+            elif curation:
+                if qnum in curation["must_practice"]:
+                    q_cat = "KEEP"
+                    q_reason = f"[Must-Practice {diff} MCQ] {base_reason}"
+                else:
+                    q_cat = "SELECTIVE"
+                    q_reason = f"[Extra Practice — {diff}] {base_reason}"
+            else:
+                q_cat = base_cat
+
+            register_question(
+                q,
+                src_url=norm_u.rstrip("/"),
+                sf_topic=q_topic,
+                cat=q_cat,
+                raw_syl=q_syl,
+                reason=q_reason,
+                difficulty=diff,
+            )
+
+    # 2. Process unique questions from the 1000 Python MCQ hub page
+    if hub_page and hub_page.questions:
+        hub_url = (hub_page.url or "https://www.sanfoundry.com/1000-python-questions-answers/").rstrip("/")
+        # qnum -> (topic, category, difficulty, syllabus_detail, reason)
+        hub_q_map: dict[int, tuple[str, str, str, str, str]] = {
+            1: ("Python Overview & PVM", "KEEP", "Basic", "Session 1 & Day 1a Notes: Introduction to Python", "[Must-Practice Basic MCQ] Creator of Python (Guido van Rossum) — Day 1a Notes."),
+            2: ("Python Overview & PVM", "KEEP", "Basic", "Session 1 & Day 1a Notes: Features of Python", "[Must-Practice Basic MCQ] Python supports procedural, OOP, and functional programming."),
+            4: ("Python Overview & PVM", "SELECTIVE", "Basic", "Session 1: Python File Extension (.py)", "[Extra Practice — Basic] Standard .py source file extension."),
+            5: ("Python Overview & PVM", "KEEP", "Moderate", "Session 1 & Day 1a Notes: PVM Bytecode Compilation & Interpretation", "[Must-Practice Moderate MCQ] Python is both compiled (.pyc bytecode) and interpreted by PVM (Day 1a Notes)."),
+            7: ("Precedence & Associativity-1", "SELECTIVE", "Basic", "Session 1: Operator Precedence", "[Extra Practice — Basic] Modulo % has higher precedence than addition +."),
+            8: ("Core Data Types", "KEEP", "Basic", "Session 1 & Day 1b Notes: Indentation for Code Blocks", "[Must-Practice Basic MCQ] Python uses indentation to define code blocks (Day 1b Notes)."),
+            9: ("Functions-1", "SELECTIVE", "Basic", "Session 5: Defining Functions with def", "[Extra Practice — Basic] The def keyword defines a function."),
+            10: ("Python Overview & PVM", "SELECTIVE", "Basic", "Session 1: Comments in Python (#)", "[Extra Practice — Basic] Single-line comments use #."),
+            11: ("While & For Loops-3", "KEEP", "Moderate", "Session 1: while Loop & Compound Assignment (+=)", "[Must-Practice Moderate MCQ] Space inside '+ =' raises SyntaxError."),
+            12: ("Python Overview & PVM", "SELECTIVE", "Basic", "Session 5: sys.version", "[Extra Practice — Basic] Checking Python version via sys.version."),
+            14: ("Basic Operators", "SELECTIVE", "Basic", "Session 1: PEMDAS Operator Precedence", "[Extra Practice — Basic] Parentheses -> Exponential -> Multiplication/Division -> Addition/Subtraction."),
+            16: ("Virtual Environments & PIP", "KEEP", "Basic", "Session 13 & Setup Notes: pip Package Installer", "[Must-Practice Basic MCQ] pip (Preferred Installer Program) used in Session 13 Virtual Environments."),
+            19: ("Basic Operators", "SELECTIVE", "Basic", "Session 1: Floor / Truncation Division (//)", "[Extra Practice — Basic] // is the floor/truncation division operator."),
+            23: ("Decorators", "SELECTIVE", "Moderate", "Sessions 7 & 8: Decorator Wrapper (*args, **kwargs)", "[Extra Practice — Moderate] *args and **kwargs allow a decorator to accept any number of parameters."),
+            25: ("Core Data Types", "SELECTIVE", "Basic", "Session 1: Core Data Types vs User Class", "[Extra Practice — Basic] Class is a user-defined type, not a built-in core data type."),
+            26: ("Formatting-1", "SELECTIVE", "Basic", "Session 2: %.2f Rounding in String Formatting", "[Extra Practice — Basic] %.2f rounds 56.236 to 56.24."),
+            27: ("Modules & Packages", "KEEP", "Basic", "Session 5 & 03_Modules_and_Packages: Python Packages", "[Must-Practice Basic MCQ] Definition of a Python package (folder containing modules and __init__.py)."),
+            30: ("Global vs Local Variables-1", "KEEP", "Moderate", "Session 5: LEGB Namespace Lookup Order", "[Must-Practice Moderate MCQ] Python resolves identifiers in Local -> Enclosing -> Global -> Built-in order."),
+            33: ("Operator Overloading", "SELECTIVE", "Moderate", "Sessions 7 & 8: format(obj) invokes __format__()", "[Extra Practice — Moderate] Built-in format() dispatches to __format__()."),
+            34: ("Variable Names", "SELECTIVE", "Basic", "Session 1: Python Keywords vs Built-in eval()", "[Extra Practice — Basic] pass, assert, and nonlocal are keywords; eval is a built-in function."),
+            36: ("Argument Passing-2", "SELECTIVE", "Moderate", "Session 5: In-Place List Mutation Preserves id(x)", "[Extra Practice — Moderate] Mutating list elements in-place keeps the same object identity id(x)."),
+            38: ("Sets-4", "SELECTIVE", "Moderate", "Session 3: set.add() vs set.update()", "[Extra Practice — Moderate] add() inserts a single element; update() iterates over an iterable."),
+            39: ("Strings-1", "SELECTIVE", "Basic", "Session 2: String Operators (+ and * allowed, - invalid)", "[Extra Practice — Basic] Strings support + concatenation and * repetition, but not - subtraction."),
+            41: ("Sets-1", "SELECTIVE", "Basic", "Session 3: Creating an Empty Set with set()", "[Extra Practice — Basic] set() creates an empty set ({} creates an empty dictionary)."),
+            42: ("List Comprehension-2", "KEEP", "Hard", "Session 4: Chained List Comprehension Filtering", "[Must-Practice Hard MCQ] Traces two-stage list comprehension filtering non-overlapping elements."),
+            43: ("Lists-2", "SELECTIVE", "Basic", "Session 4: list.append()", "[Extra Practice — Basic] append() adds a single element to the end of a list."),
+            46: ("Functions-1", "SELECTIVE", "Basic", "Session 5: Purpose of Functions", "[Extra Practice — Basic] Functions provide reusable, modular code blocks."),
+            47: ("Lists-5", "KEEP", "Basic", "Session 4: 2D Matrix Indexing A[1][2]", "[Must-Practice Basic MCQ] 0-based row and column indexing in a 2D nested list."),
+            48: ("Variable Names", "SELECTIVE", "Basic", "Session 1: Identifier Length Rules", "[Extra Practice — Basic] Python identifiers can be of unlimited length."),
+            49: ("While & For Loops-6", "KEEP", "Moderate", "Session 1 & Day 2 Notes: while-else with break", "[Must-Practice Moderate MCQ] The else block of a while loop is skipped when the loop terminates via break."),
+            51: ("Functions-2", "SELECTIVE", "Basic", "Session 5: Built-in vs User-Defined Functions", "[Extra Practice — Basic] Two main categories of functions in Python."),
+            52: ("Lists-4", "SELECTIVE", "Moderate", "Session 4 & Session 5: In-Place += on List Parameter", "[Extra Practice — Moderate] listParam += [1] mutates the caller's list in-place."),
+            56: ("Functions-1", "SELECTIVE", "Basic", "Session 5: Python Docstrings (__doc__)", "[Extra Practice — Basic] Docstrings document functions/classes and are accessed via __doc__."),
+            58: ("Math Module-1", "KEEP", "Moderate", "Session 5 & Day 3 Notes: math.pow(3, 2) Returns Float", "[Must-Practice Moderate MCQ] Unlike built-in 3**2 (int 9), math.pow(3, 2) always returns a float (9.0)."),
+            59: ("Core Data Types", "SELECTIVE", "Basic", "Session 1 & Day 3 Notes: id() Object Identity", "[Extra Practice — Basic] id() returns the unique memory identity of an object."),
+            60: ("Lists-7", "KEEP", "Hard", "Session 4, Session 5 & Session 6: map(str, x), join() & Single-Element Tuple", "[Must-Practice Hard MCQ] Combines map(str, [[0], [1]]), ' '.join(), and trailing-comma tuple syntax ('[0] [1]',)."),
+            61: ("Files-3 & Pickling", "KEEP", "Basic", "Session 5: Pickling (Object Serialization)", "[Must-Practice Basic MCQ] Pickling converts a Python object hierarchy into a byte stream (explicitly in Session 5)."),
+        }
+        for q in hub_page.questions:
+            qnum = int(q.number or 0)
+            t_name, cat, diff, raw_syl, reason = hub_q_map.get(
+                qnum,
+                ("Python Overview & PVM", "SELECTIVE", "Basic", "Session 1: Introduction to Python", "Core Python overview question."),
+            )
+            register_question(
+                q,
+                src_url=hub_url,
+                sf_topic=t_name,
+                cat=cat,
+                raw_syl=raw_syl,
+                reason=reason,
+                difficulty=diff,
+            )
+
+    # Sort questions by consolidated syllabus session order -> priority (KEEP -> SELECTIVE -> REMOVE) -> difficulty (Basic -> Moderate -> Hard)
+    session_order_list = [
+        "Session 1: Python Fundamentals, Data Types, Operators & Control Flow (If-Else, Loops)",
+        "Session 2: Strings, Slicing, String Methods & String Formatting",
+        "Session 3: Dictionaries, Dictionary Comprehension & Sets",
+        "Session 4: Lists, List Operations, Shallow/Deep Copy & List Comprehension",
+        "Session 5: Functions, Argument Passing, Lambda/Map/Filter, Built-ins & Modules",
+        "Session 6: Tuples, Tuple Packing/Unpacking & Zip Operations",
+        "Sessions 7 & 8: Advanced Python — OOP, Inheritance, Polymorphism, Regex & Decorators",
+        "Session 9: Exception Handling, Assertions, Generators & Standard Exceptions",
+        "Session 12: File Handling (Read, Write, Seek, Tell, Modes & Context Managers)",
+        "Session 13: Virtual Environments, PIP, Database Connectivity (PyMongo) & Packaging",
+        "Excluded / Out of Syllabus (Turtle Graphics, Low-Level OS Calls & Python 2 Obsolete)",
+    ]
+    order_index = {name: i for i, name in enumerate(session_order_list)}
+    cat_order = {"KEEP": 0, "SELECTIVE": 1, "REMOVE": 2}
+    diff_order = {"Basic": 0, "Moderate": 1, "Hard": 2}
+
+    raw_records.sort(
+        key=lambda r: (
+            order_index.get(r["syllabus_topic"], 99),
+            cat_order.get(r["category"], 9),
+            diff_order.get(r["difficulty"], 9),
+        )
+    )
+
+    topic_counts: Counter[str] = Counter()
+    topic_meta_map: dict[str, dict[str, str]] = {}
+    questions: list[dict[str, Any]] = []
+
+    for idx, rec in enumerate(raw_records, start=1):
+        rec_with_id = {"id": idx, **rec}
+        questions.append(rec_with_id)
+        t = rec["topic"]
+        topic_counts[t] += 1
+        if t not in topic_meta_map or rec["category"] == "KEEP":
+            topic_meta_map[t] = {
+                "category": rec["category"],
+                "reason": rec["reason"],
+                "faculty_alignment": rec["syllabus_detail"],
+                "syllabus_topic": rec["syllabus_topic"],
+            }
+
+    topics = [
+        {
+            "topic": t,
+            "count": c,
+            "category": topic_meta_map[t]["category"],
+            "syllabus_topic": topic_meta_map[t]["syllabus_topic"],
+            "reason": topic_meta_map[t]["reason"],
+            "faculty_alignment": topic_meta_map[t]["faculty_alignment"],
+        }
+        for t, c in sorted(topic_counts.items())
+    ]
+
+    keep_qs = [q for q in questions if q["category"] == "KEEP"]
+    python_json_data = {
+        "subject": "Python Programming — Fundamentals, Data Structures, Functional, Regex, OOP, Exceptions & File I/O",
+        "syllabus": "PGCP-BDA (ACTS, Pune) — Python Programming (Sessions 1–13)",
+        "source": "Sanfoundry",
+        "total_questions": len(questions),
+        "counts": {
+            "KEEP": len(keep_qs),
+            "SELECTIVE": sum(1 for q in questions if q["category"] == "SELECTIVE"),
+            "REMOVE": sum(1 for q in questions if q["category"] == "REMOVE"),
+        },
+        "difficulty_counts": {
+            "ALL": {
+                "Basic": sum(1 for q in questions if q["difficulty"] == "Basic"),
+                "Moderate": sum(1 for q in questions if q["difficulty"] == "Moderate"),
+                "Hard": sum(1 for q in questions if q["difficulty"] == "Hard"),
+            },
+            "KEEP": {
+                "Basic": sum(1 for q in keep_qs if q["difficulty"] == "Basic"),
+                "Moderate": sum(1 for q in keep_qs if q["difficulty"] == "Moderate"),
+                "Hard": sum(1 for q in keep_qs if q["difficulty"] == "Hard"),
+            },
+        },
+        "topics": topics,
+        "syllabus_markdown": PYTHON_SYLLABUS_MD,
+        "questions": questions,
+    }
+
+    out_path = ROOT / "python_questions.json"
+    out_path.write_text(json.dumps(python_json_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Also write the standalone Must-Practice Shortlist CSV and Markdown study guide in Resource/
+    res_dir = ROOT / "Resource"
+    res_dir.mkdir(parents=True, exist_ok=True)
+    csv_path = res_dir / "Python_Must_Practice_Shortlist.csv"
+    with csv_path.open("w", encoding="utf-8-sig", newline="") as f_csv:
+        writer = csv.writer(f_csv)
+        writer.writerow(["Question ID", "Difficulty", "Syllabus Session", "Sanfoundry Topic", "Question Stem", "Correct Answer", "Faculty Alignment"])
+        for q in keep_qs:
+            stem_one_line = " | ".join(ln.strip() for ln in q["question"].splitlines() if ln.strip())
+            writer.writerow([q["id"], q["difficulty"], q["syllabus_topic"], q["topic"], stem_one_line, q["correct_answer"], q["syllabus_detail"]])
+
+    return out_path
+
+
+
 def build_generic_subject(json_path: Path) -> dict | None:
     """Convert any scraper output `*_questions.json` file into a subject entry."""
     try:
@@ -708,6 +1649,7 @@ def build_generic_subject(json_path: Path) -> dict | None:
     subj_id = re.sub(r"[^a-z0-9]+", "-", subj_name.lower()).strip("-") or json_path.stem
     is_hadoop = "hadoop" in subj_id or "big-data" in subj_id
     is_java = json_path.name == "java_questions.json" or subj_id.startswith("java")
+    is_python = json_path.name == "python_questions.json" or subj_id.startswith("python")
 
     url_syllabus_map: dict[str, dict[str, str]] = {}
     topic_name_map: dict[str, dict[str, str]] = {}
@@ -725,6 +1667,9 @@ def build_generic_subject(json_path: Path) -> dict | None:
     elif is_java:
         subj_id = "java"
         subj_name = "Java Programming — Core Java, OOP, Collections, Streams, Multithreading, I/O & JDBC"
+    elif is_python:
+        subj_id = "python"
+        subj_name = "Python Programming — Fundamentals, Data Structures, Functional, Regex, OOP, Exceptions & File I/O"
 
     questions = []
     topic_counts: Counter[str] = Counter()
@@ -743,27 +1688,31 @@ def build_generic_subject(json_path: Path) -> dict | None:
             cat = "KEEP"
         syl = str(q.get("syllabus_topic") or mapped.get("syllabus_topic") or topic).strip()
         reason = str(q.get("reason") or mapped.get("reason") or "")
+        diff = q.get("difficulty")
 
         topic_counts[topic] += 1
         topic_info[topic] = {"category": cat, "reason": reason, "syllabus_topic": syl}
 
-        questions.append(
-            {
-                "id": int(q.get("id") or idx),
-                "topic": topic,
-                "category": cat,
-                "syllabus_topic": syl,
-                "syllabus_detail": str(q.get("syllabus_detail") or syl),
-                "reason": reason,
-                "faculty_alignment": q.get("faculty_alignment") or syl,
-                "warning": q.get("warning"),
-                "question": q.get("question") or "",
-                "options": q.get("options") or {},
-                "correct_answer": q.get("correct_answer"),
-                "explanation": q.get("explanation"),
-                "source_url": src_url,
-            }
-        )
+        q_entry: dict[str, Any] = {
+            "id": int(q.get("id") or idx),
+            "topic": topic,
+            "category": cat,
+            "syllabus_topic": syl,
+            "syllabus_detail": str(q.get("syllabus_detail") or syl),
+            "reason": reason,
+            "faculty_alignment": q.get("faculty_alignment") or syl,
+            "warning": q.get("warning"),
+            "question": q.get("question") or "",
+            "options": q.get("options") or {},
+            "correct_answer": q.get("correct_answer"),
+            "explanation": q.get("explanation"),
+            "source_url": src_url,
+        }
+        if diff:
+            q_entry["difficulty"] = str(diff)
+        if "must_practice" in q:
+            q_entry["must_practice"] = bool(q["must_practice"])
+        questions.append(q_entry)
 
     topics = [
         {
@@ -776,11 +1725,13 @@ def build_generic_subject(json_path: Path) -> dict | None:
         for t, c in sorted(topic_counts.items())
     ]
 
-    return {
+    has_diff = any(q.get("difficulty") for q in questions)
+    subj_obj: dict[str, Any] = {
         "id": subj_id,
         "name": subj_name,
         "has_priority_categories": is_hadoop or any(q["category"] != "KEEP" for q in questions),
         "has_syllabus_mapping": is_hadoop or any(q["syllabus_topic"] != q["topic"] for q in questions),
+        "has_difficulty_levels": has_diff,
         "total_questions": len(questions),
         "counts": {
             "KEEP": sum(1 for q in questions if q["category"] == "KEEP"),
@@ -791,12 +1742,30 @@ def build_generic_subject(json_path: Path) -> dict | None:
         "syllabus_markdown": data.get("syllabus_markdown") or (HADOOP_SYLLABUS_MD if is_hadoop else ""),
         "questions": questions,
     }
+    if has_diff:
+        subj_obj["difficulty_counts"] = {
+            "ALL": {
+                "Basic": sum(1 for q in questions if q.get("difficulty") == "Basic"),
+                "Moderate": sum(1 for q in questions if q.get("difficulty") == "Moderate"),
+                "Hard": sum(1 for q in questions if q.get("difficulty") == "Hard"),
+            },
+            "KEEP": {
+                "Basic": sum(1 for q in questions if q["category"] == "KEEP" and q.get("difficulty") == "Basic"),
+                "Moderate": sum(1 for q in questions if q["category"] == "KEEP" and q.get("difficulty") == "Moderate"),
+                "Hard": sum(1 for q in questions if q["category"] == "KEEP" and q.get("difficulty") == "Hard"),
+            },
+        }
+    return subj_obj
 
 
 def main() -> None:
     java_out = build_java_questions_json()
     if java_out:
         print(f"Built {java_out.name} from JavaSaved/ HTML files.")
+
+    python_out = build_python_questions_json()
+    if python_out:
+        print(f"Built {python_out.name} from PythonSaved/ HTML files.")
 
     subjects = [build_dbms_subject()]
     seen_ids = {"dbms-sql"}

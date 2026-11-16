@@ -511,6 +511,21 @@ body {
   color: var(--remove);
 }
 
+.tag-diff-Basic {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.tag-diff-Moderate {
+  background: var(--selective-soft);
+  color: var(--selective);
+}
+
+.tag-diff-Hard {
+  background: var(--remove-soft);
+  color: var(--remove);
+}
+
 .bookmark-btn {
   background: var(--surface-subtle);
   border: 1px solid var(--border);
