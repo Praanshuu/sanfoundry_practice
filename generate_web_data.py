@@ -1635,6 +1635,1053 @@ def build_python_questions_json() -> Path | None:
     return out_path
 
 
+LINUX_CLOUD_SYLLABUS_MD = """# Linux Programming & Cloud Computing — PGCP-BDA (ACTS, Pune)
+**Duration:** 60 Hours (28 Theory + 22 Lab + 10 Self Learning — Linux: 8T + 10L + 2SL, Cloud: 20T + 12L + 8SL)  
+**Evaluation:** Theory Exam – 40%, Lab Exam – 40%, Internal Assessment – 20%  
+**Reference Books:**
+1. *Operating System Concepts*, Global Edition, Abraham Silberschatz, Peter B. Galvin, Greg Gagne / Wiley
+2. *Pro Git*, 2nd Edition, Scott Chacon, Ben Straub / O'Reilly
+3. *Docker Deep Dive*, 2020 Edition, Nigel Poulton / O'Reilly
+
+---
+
+# I. Linux Programming (8T + 10L + 2SL)
+
+## Linux Session 1: Linux Fundamentals and Basic Commands (2T + 4L)
+- Linux History and Operations
+- Installing and Configuring Linux (Ubuntu): Installation & Media Types, Custom Linux Server Installation, Run Levels (`0–6`, `S`, `/etc/inittab`, `init` PID 1) & Startup/Shutdown Sequence, Logging In & Out (`su`, `sudo`, `who`, `whoami`, `passwd`, `/etc/passwd`, `/etc/shadow`)
+- Basic Commands: `ls`, `cp`, `mv`, `sort`, `grep`, `cat`, `head`, `tail`, `man`, `locate`, `find`, `diff`, `file`, `rm`, `mkdir`, `rmdir`, `cd`, `pwd`, `ln` and `ln -s` (Hard vs Symbolic Links & Inodes), `gzip` and `gunzip`, `zip` and `unzip`, `tar` and its variants, `touch`, `echo`, `who`, `whoami`, `ps`, `kill`, `makefile` (`make`), etc.
+- **Lab:** Getting acquainted with the Linux environment; as `root`, create directory `dbda/test` and create 100 files `file1..file100` using a single command (`mkdir -p dbda/test && touch dbda/test/file{1..100}`)
+
+## Linux Session 2: Linux File Management and Permissions (2T + 2L)
+- Gaining Confidence with Linux: Access Control Lists (`setfacl`, `getfacl`) and `chmod` (octal `764`, `755`, symbolic `u/g/o/a`, `umask`, SUID `4000`, SGID `2000`, Sticky Bit `1000`/`+t`), `chown` and `chgrp` commands
+- Remote Commands: `telnet`, `ftp`, `ssh`, and `sftp`
+- Basics of I/O System with `mount` and `unmount` (`df`, `du`, `/etc/fstab`, `ext4` journaling, `/dev`, `/mnt`, `/media`)
+- `vi` / `vim` / `gedit` Editor: Features & modes of `vi` (Command, Insert, Ex/Last-line), editing, find and replace (`/` and `?`, `:s`), cut-copy-paste (`yy`, `dd`, `p`, `x`, `X`), `:set nu`, `:set ai`, `:wq`, `:q!`
+- **Lab:** Create `/tmp/acl_file`; allow Larry and Curly `rwx`, deny Moe (`---`), and allow group `stooges` (except Moe) `rw-` using ACLs
+
+## Linux Sessions 3 & 4: Shell Programming (4T + 4L + 2SL)
+- Introduction to Shells: Types of Linux shells, Bourne Again Shell (`bash`), Shell variables (environment `env`/`export` and user-defined), Shell startup files (`.bashrc`, `.profile`, `.bash_profile`, `.bash_logout`, `/etc/profile`), Positional parameters (`$0`, `$1..$9`, `$#`, `$*`, `$@`, `$?`, `$$`, `$!`)
+- Simple Scripts: User variables, single vs double quotes, `expr` arithmetic, multiple commands, Wildcards (`*` and `?`), Command-line arguments, `read` and `echo` commands, `tput` command
+- Taking Decisions & Loops: `if-then-fi`, `if-then-else-fi`, Nested `if-else`, `test` / `[ ... ]` command (file tests `-e`, `-f`, `-d`; string tests `-n`, `-z`, `=`; numeric tests `-eq`, `-gt`, `-lt`), `case` control structure, `while`, `until`, and `for` loops, `break` and `continue` statements
+- Advanced Shell Features: Shell metacharacters & I/O redirection (`>`, `>>`, `<`, `2>`, `2>&1`, `/dev/null`, `|`), Command-line expansion, Directory stacks manipulation (`dirs`, `pushd`, `popd`), Job control, history, and processes (`bg`, `fg`, `&`, `jobs`, `wait`, `nohup`, `kill`), Built-ins (`alias`, `export`, `eval`, `exec`, `type`, `ulimit`) and Shell functions
+- **Lab:** Change shell of `user3` to `nologin` and test `su - user3`; create `dbda/filewithacl` with ACLs so only `user5` has `rw` access
+
+---
+
+# II. Cloud Computing & DevOps (20T + 12L + 8SL)
+
+## Cloud Session 1: Git and GitHub Fundamentals (2T + 2L + 1SL)
+- Introduction to Version Control Systems (VCS)
+- Creating a GitHub repository, Using Git & Git CLI workflow (`git init`, `git status`, `git add .`, `git add -u`, `git commit -m`, `git log`, `git diff`, `git branch`, `git checkout -b`, `git merge`, `git rebase`, `git push`, `git clone`, GitHub Forking)
+- **Lab:** Local Git repo creation, staging/committing, branch creation/switching/merging, conflict resolution, pushing & cloning with GitHub
+
+## Cloud Session 2: Introduction to Cloud Computing (2T)
+- Introduction to Cloud paradigms, Definition, Characteristics and Components (On-demand self-service, Broad network access, Resource pooling, Rapid elasticity, Measured / Pay-as-you-go utility service)
+- Benefits & Limitations (CapEx to OpEx shift, TCO, SLAs, WAN latency, security/privacy)
+- Understanding Cloud Vendors (AWS, Microsoft Azure, Google Cloud Platform) & Deployment Models (Public, Private, Community, Hybrid)
+
+## Cloud Sessions 3 & 4: Cloud Service Models and Virtualization (4T + 1SL)
+- Service Models (SPI Model):
+  - **SaaS:** Introduction, Pros & Cons, Traditional Packaged Software vs SaaS, Multi-tenancy, Subscription licensing, Examples (Salesforce, Google Workspace, Dropbox)
+  - **PaaS:** Introduction, Development frameworks, Vendor lock-in considerations, Examples (AWS Elastic Beanstalk, Google App Engine, Heroku, Azure)
+  - **IaaS:** Introduction, Virtualized compute/storage/network, Workloads & Availability Zones, Examples (AWS EC2, Rackspace, DigitalOcean)
+- Virtualization & Hypervisors:
+  - Introduction to Virtualization, Types & Uses (Hardware/Full Virtualization, Paravirtualization, Emulation, OS/Container Virtualization, Storage/Network Virtualization)
+  - Hypervisors (VMM): Type 1 Bare-Metal (Xen, KVM, VMware ESXi, Microsoft Hyper-V) vs Type 2 Hosted (VirtualBox, VMware Player)
+  - Virtual Machine Provisioning (AMIs, OVF Virtual Appliances) & VM Live Migration Services (VMware VMotion, Storage VMotion)
+  - Private Cloud Deployment, Challenges of Cloud Environment, Comparisons of Web Services (`REST` vs `SOAP`/`WSDL`), Organizational Scenarios
+
+## Cloud Sessions 5 & 6: Cloud Services and Application Deployment (4T + 4L + 1SL)
+- Administering & Monitoring Cloud Services (Capacity planning, baseline metrics, load testing, CloudWatch, Ganglia/Zabbix, SLAs/QoS)
+- Benefits and Limitations, Deploying Applications over the Cloud (Application attributes, LAMP stack AMIs, virtual appliances/containers)
+- Comparison among SaaS, PaaS, and IaaS; Cloud Products, Compute & Storage Solutions (Managed vs Unmanaged storage, Point-in-time snapshots, 3-2-1 backup rule)
+
+## Cloud Session 7: Cloud Architecture (2T + 1SL)
+- Overview of Cloud Architecture (Front-end client vs Back-end cloud stack, stateless composable services)
+- Key Architectural Principles: Scalability (Horizontal Scale-Out vs Vertical Scale-Up), High Availability, Fault Tolerance & Redundancy ($1 - (1 - r)^n$)
+- Multi-tier Architecture in Cloud, Serverless vs Microservices vs Monolithic Architecture
+- Cloud Design Patterns: Load Balancing (ADC, weighted load balancing, Elastic Load Balancing), Auto-Scaling, Caching (CDN)
+- Shared Responsibility Model & Security Service Boundary across IaaS, PaaS, and SaaS
+
+## Cloud Sessions 8 & 9: AWS & Microsoft Azure (4T + 4L + 2SL)
+- **Amazon Web Services (AWS):**
+  - Elastic Compute Cloud (**EC2**): AMIs, Instance types (`Micro`, `Small`, `High-CPU`, `High-Memory`), Launching & accessing Linux and Windows Server VMs
+  - **Virtual Private Cloud (VPC)** setup, Subnets, Security Groups, Regions & Availability Zones
+  - AWS Core Services: **EC2**, **AWS Lambda** (Serverless), **Amazon S3** (Object Storage), **EBS** (Elastic Block Store), **RDS**, **CloudFront** (CDN), **Auto Scaling**, **CloudWatch**, **SQS/SNS**, **EMR** (Hadoop on EC2)
+- **Introduction to Microsoft Azure:**
+  - Azure Platform Overview (Compute Web Role & Worker Role, Fabric Controller)
+  - Azure Data Services (**SQL Azure** relational database)
+  - **Azure Storage** (Blobs, Tables, Queues — 3x replication, Azure CDN) & **Azure Functions**
+- **Lab:** Create AWS EC2 instance, AWS Lambda, Amazon S3 bucket, AWS VPC, and deploy an application on AWS using GitHub
+
+## Cloud Session 10: Introduction to DevOps & Docker (2T + 2L + 2SL)
+- DevOps Lifecycle Overview (`Plan` → `Code` → `Build` → `Test` → `Deploy` → `Monitor`), Agile vs DevOps, Introduction to CI/CD
+- Introduction to Containerization (**Docker**): Images vs Containers, `Dockerfile`, Basic Docker commands (`docker build`, `docker run`, `docker stop`, `docker ps`, `docker pull`, `docker push`, `docker exec`)
+- **Lab:** Set up Docker, write a `Dockerfile` for an ML application, build image, run container & test ML API endpoint, push image to Docker Hub
+"""
+
+
+# Question-level curation for all core Linux & Cloud Sanfoundry pages:
+# - "must_practice": Hand-picked Must-Practice Shortlist (assigned category="KEEP") across Basic, Moderate, and Hard levels
+# - "basic" / "moderate" / "hard": Explicit per-question difficulty classification
+# - "remove": Broken figure-dependent questions (with blank A/B/C options) or out-of-scope questions on otherwise good pages
+LINUX_CLOUD_PAGE_CURATION: dict[str, dict[str, set[int]]] = {
+    # =========================================================================
+    # PART I: LINUX PROGRAMMING (Sessions 1–4)
+    # =========================================================================
+    # --- Linux Session 1: Linux Fundamentals, Boot/Run Levels & Basic Commands ---
+    "https://www.sanfoundry.com/linux-administration-questions-startup-shutdown/": {
+        "must_practice": {1, 2, 3, 6, 7, 10, 11, 12},
+        "basic": {3, 4, 5, 7, 11},
+        "moderate": {1, 2, 6, 8, 9, 10, 12},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/linux-filesystem-hierarchy-questions-answers-1/": {
+        "must_practice": {1, 2, 3, 4, 5, 7, 9},
+        "basic": {3, 5, 8, 9, 10},
+        "moderate": {1, 2, 4, 6, 7},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/linux-filesystem-hierarchy-questions-answers-2/": {
+        "must_practice": {2, 3, 4, 5, 6, 8, 10},
+        "basic": {1, 2, 3, 6},
+        "moderate": {4, 5, 7, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/linux-administration-multiple-choice-questions-2/": {
+        "must_practice": {1, 3, 4, 6, 7, 8, 9, 10},
+        "basic": {4, 5, 7, 8},
+        "moderate": {1, 2, 3, 6, 10},
+        "hard": {9},
+    },
+    "https://www.sanfoundry.com/linux-administration-questions-freshers/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 10, 11},
+        "basic": {1, 8, 9, 11},
+        "moderate": {2, 3, 5, 6, 7, 10},
+        "hard": {4},
+    },
+    "https://www.sanfoundry.com/linux-administration-quiz-file-types/": {
+        "must_practice": {1, 2, 5, 6, 7, 8, 9},
+        "basic": {2, 4, 6, 9, 12},
+        "moderate": {1, 3, 5, 7, 10, 11},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/linux-administration-questions-process-mgmt/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12},
+        "basic": {2, 3, 4, 5},
+        "moderate": {1, 6, 7, 8, 10, 11, 12},
+        "hard": {9},
+    },
+    "https://www.sanfoundry.com/linux-administration-questions-account-mgmt/": {
+        "must_practice": {1, 2, 3, 4, 6, 7, 8, 9, 11, 12},
+        "basic": {2, 6, 7, 8},
+        "moderate": {1, 3, 4, 5, 9, 10, 11},
+        "hard": {12},
+    },
+    "https://www.sanfoundry.com/linux-questions-search-pattern-matching/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12},
+        "basic": {1, 11, 12},
+        "moderate": {2, 3, 4, 5, 6, 7, 8, 10},
+        "hard": {9},
+    },
+    "https://www.sanfoundry.com/makefile-questions-answers-1/": {
+        "must_practice": {1, 2, 3, 6, 7, 10},
+        "basic": {1, 3, 5},
+        "moderate": {2, 4, 6, 7, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/linux-interview-questions-experienced/": {
+        "must_practice": {1, 3, 4, 5, 10, 11},
+        "basic": {1, 4},
+        "moderate": {2, 3, 5, 7, 10, 11, 12, 13},
+        "hard": {6, 8, 9},
+    },
+    "https://www.sanfoundry.com/unix-internals-interview-questions/": {
+        "must_practice": {1, 2, 4, 5, 6, 13, 15},
+        "basic": {1, 2},
+        "moderate": {3, 4, 5, 6, 7, 8, 9, 13, 15},
+        "hard": {10, 11, 12, 14},
+    },
+    "https://www.sanfoundry.com/unix-interview-questions-answers/": {
+        "must_practice": {2, 3, 4, 5, 6, 10},
+        "basic": {2, 3, 10},
+        "moderate": {1, 4, 5, 6, 7, 8, 9},
+        "hard": {11},
+    },
+
+    # --- Linux Session 2: File Management, Permissions (chmod/umask/ACL) & Vi Editor ---
+    "https://www.sanfoundry.com/linux-questions-file-modes-permissions/": {
+        "must_practice": {1, 2, 3, 4, 5, 8, 9, 10, 11},
+        "basic": {1, 2, 11},
+        "moderate": {3, 4, 5, 8, 9, 10},
+        "hard": {6, 7},
+    },
+    "https://www.sanfoundry.com/linux-dumps-redhat-ubuntu-suse/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11},
+        "basic": {3, 4, 5, 6, 8},
+        "moderate": {1, 2, 7, 11},
+        "hard": {9, 10},
+    },
+    "https://www.sanfoundry.com/linux-questions-file-systems/": {
+        "must_practice": {1, 2, 5, 6, 7, 8},
+        "basic": {1, 6, 7},
+        "moderate": {2, 3, 4, 5, 8},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/linux-questions-answers-vi-editor/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 10},
+        "basic": {1, 2, 4, 7, 10},
+        "moderate": {3, 5, 6, 8, 9},
+        "hard": set(),
+    },
+
+    # --- Linux Sessions 3 & 4: Shell Programming (Bash, Redirection, Variables, Loops) ---
+    "https://www.sanfoundry.com/linux-administration-questions-bash-shell/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8},
+        "basic": {1, 7, 8},
+        "moderate": {2, 3, 4, 5, 6},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/linux-shell-environment-mcq-2/": {
+        "must_practice": {2, 4, 5, 6, 7, 8},
+        "basic": {4, 5, 7},
+        "moderate": {1, 2, 3, 6, 8},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/linux-administration-interview-questions-shell/": {
+        "must_practice": {1, 2, 3, 4, 5, 8},
+        "basic": {1, 4, 5},
+        "moderate": {3, 6, 7, 8},
+        "hard": {2, 9},
+    },
+    "https://www.sanfoundry.com/unix-administration-interview-questions-shell/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+        "basic": {4, 5, 6, 8},
+        "moderate": {1, 2, 3, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/linux-shell-programming-mcq-1/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12},
+        "basic": {2, 4, 5},
+        "moderate": {1, 3, 6, 8, 11, 12},
+        "hard": {7, 9, 10},
+    },
+    "https://www.sanfoundry.com/bash-questions-answers-built-in-command-1/": {
+        "must_practice": {1, 4, 5, 8, 9},
+        "basic": {1, 4, 8},
+        "moderate": {2, 3, 5, 6, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/bash-questions-answers-built-in-command-2/": {
+        "must_practice": {1, 2, 4, 5, 7, 8, 9},
+        "basic": {1, 4, 8, 9},
+        "moderate": {2, 3, 5, 6, 7, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/bash-questions-answers-built-in-command-3/": {
+        "must_practice": {1, 2, 4, 5, 6, 7, 8, 9, 10},
+        "basic": {1, 4, 7, 8},
+        "moderate": {2, 3, 6, 9, 10},
+        "hard": {5},
+    },
+    "https://www.sanfoundry.com/linux-questions-answers-sed-editor/": {
+        "must_practice": {1, 6, 7, 8, 9},
+        "basic": {1, 3, 4, 5},
+        "moderate": {2, 6, 7, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/awk-programming-questions-answers-basics/": {
+        "must_practice": {4, 5, 7, 10},
+        "basic": {1, 2, 4, 5, 7},
+        "moderate": {3, 6, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/awk-programming-questions-answers-variables-array/": {
+        "must_practice": {1, 2},
+        "basic": {1, 2},
+        "moderate": {3, 4, 5, 6, 7, 8, 9, 10},
+        "hard": set(),
+    },
+
+    # =========================================================================
+    # PART II: CLOUD COMPUTING & DEVOPS (Sessions 1–10)
+    # =========================================================================
+    # --- Cloud Session 1: Git and GitHub Fundamentals ---
+    "https://www.sanfoundry.com/data-science-questions-answers-cli-git-workflow-1/": {
+        "must_practice": {1, 2, 3, 4, 6, 7, 8, 9, 10},
+        "basic": {1, 2, 3, 4, 6, 7, 8, 9, 10},
+        "moderate": {5},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/data-science-interview-questions-answers/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+        "basic": {1, 2, 4, 5, 6, 10},
+        "moderate": {3, 7, 8, 9},
+        "hard": set(),
+    },
+
+    # --- Cloud Session 2: Introduction to Cloud Computing ---
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-introduction/": {
+        "must_practice": {1, 3, 4, 5, 6, 9, 10},
+        "basic": {1, 3, 6, 9, 10},
+        "moderate": {2, 4, 5, 7, 8},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-attributes/": {
+        "must_practice": {1, 2, 4, 6, 7, 8, 9, 10},
+        "basic": {1, 4, 8},
+        "moderate": {2, 3, 5, 6, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-benefits-drawbacks/": {
+        "must_practice": {3, 4, 6, 7, 8, 10},
+        "basic": {4, 8},
+        "moderate": {1, 2, 3, 5, 6, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-cloud-types-1/": {
+        "must_practice": {1, 2, 3, 4, 6, 7, 8},
+        "basic": {1, 3, 4, 6},
+        "moderate": {2, 5, 7, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-interview-questions-answers/": {
+        "must_practice": {2, 5, 8, 9, 10},
+        "basic": {8, 9, 10},
+        "moderate": {1, 2, 3, 4, 5, 6, 7},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-entrance-exams/": {
+        "must_practice": {1, 3, 4, 5, 6, 7, 8, 10},
+        "basic": {1, 3, 4, 6, 7, 10},
+        "moderate": {2, 5, 8, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-laws-cloudonomics/": {
+        "must_practice": {1, 8, 10},
+        "basic": {1},
+        "moderate": {2, 3, 4, 5, 6, 7, 9, 10},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-cloud-computing-costs-1/": {
+        "must_practice": {2, 8, 10},
+        "basic": {8, 10},
+        "moderate": {1, 2, 3, 4, 5, 6, 7, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-freshers/": {
+        "must_practice": {1, 3, 6, 7, 9},
+        "basic": {3, 6, 9},
+        "moderate": {1, 2, 4, 5, 7, 8, 10},
+        "hard": set(),
+    },
+
+    # --- Cloud Sessions 3 & 4: Cloud Service Models (SaaS, PaaS, IaaS) & Virtualization ---
+    "https://www.sanfoundry.com/cloud-computing-saas-interview-questions-answers/": {
+        "must_practice": {1, 2, 4, 6, 8, 9, 10},
+        "basic": {1, 4, 9},
+        "moderate": {2, 3, 5, 6, 7, 8, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-paas-interview-questions-answers/": {
+        "must_practice": {1, 2, 3, 4, 5, 7, 8, 10},
+        "basic": {1, 4, 8, 10},
+        "moderate": {2, 3, 5, 6, 7, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-iaas-interview-questions-answers/": {
+        "must_practice": {1, 3, 6, 7, 8},
+        "basic": {1, 6, 7},
+        "moderate": {2, 3, 4, 5, 8, 9},
+        "hard": set(),
+        "remove": {10},  # Blank image-only options
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-experienced/": {
+        "must_practice": {2, 6, 8, 10},
+        "basic": {6, 10},
+        "moderate": {1, 2, 3, 4, 5, 7, 8, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-challenges-obstacles/": {
+        "must_practice": {1, 2, 4, 7, 9, 10},
+        "basic": {1, 9, 10},
+        "moderate": {2, 3, 4, 5, 6, 7, 8},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-virtualization-technologies/": {
+        "must_practice": {2, 3, 4, 5, 6, 7, 9},
+        "basic": {3, 4},
+        "moderate": {2, 5, 6, 7, 8, 9, 10},
+        "hard": set(),
+        "remove": {1},  # Blank image-only options
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-hypervisors-1/": {
+        "must_practice": {2, 3, 4, 5, 6, 7, 8, 9},
+        "basic": {3, 4, 6},
+        "moderate": {1, 2, 5, 7, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-test/": {
+        "must_practice": {2, 3, 4, 5, 6, 8, 9, 10},
+        "basic": {4, 6},
+        "moderate": {1, 2, 3, 7, 8, 9, 10},
+        "hard": {5},
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-machine-imaging/": {
+        "must_practice": {1, 3, 4, 6, 7, 8, 9, 10},
+        "basic": {3, 6, 8},
+        "moderate": {1, 2, 4, 5, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-caas-interview-questions-answers/": {
+        "must_practice": {7, 10},
+        "basic": {7, 10},
+        "moderate": {1, 2, 3, 4, 5, 6, 8, 9},
+        "hard": set(),
+    },
+
+    # --- Cloud Sessions 5 & 6: Cloud Services & Application Deployment ---
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-cloud-computing-stack-1/": {
+        "must_practice": {2, 3, 4, 7, 8, 9},
+        "basic": {7, 8},
+        "moderate": {1, 2, 3, 4, 5, 6, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-interviews-questions-answers-freshers/": {
+        "must_practice": {1, 2, 3, 4, 6, 7, 10},
+        "basic": {1, 3, 4},
+        "moderate": {2, 5, 6, 7, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-connecting-cloud/": {
+        "must_practice": {1, 3, 8, 10},
+        "basic": {3, 8},
+        "moderate": {1, 2, 4, 5, 6, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-application-attributes/": {
+        "must_practice": {1, 2, 3, 5, 8},
+        "basic": {1, 3},
+        "moderate": {2, 4, 5, 6, 7, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-applications-clouds/": {
+        "must_practice": {1, 3, 6},
+        "basic": {1, 3},
+        "moderate": {2, 4, 5, 6, 7, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-campus-interviews/": {
+        "must_practice": {1, 2, 4, 7, 8},
+        "basic": {1, 4},
+        "moderate": {2, 3, 5, 6, 7, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-porting-applications/": {
+        "must_practice": {2, 6, 7, 9, 10},
+        "basic": {9, 10},
+        "moderate": {1, 2, 3, 4, 5, 6, 7, 8},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-capacity-planning/": {
+        "must_practice": {2, 4, 6, 8, 9},
+        "basic": {4, 8},
+        "moderate": {1, 2, 3, 5, 6, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-baseline-measurements/": {
+        "must_practice": {3, 7, 10},
+        "basic": {3, 10},
+        "moderate": {1, 2, 4, 5, 6, 7, 8, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-resource-ceilings/": {
+        "must_practice": {1, 4, 5},
+        "basic": {1, 4},
+        "moderate": {2, 3, 5, 6, 7, 8, 9, 10},
+        "hard": set(),
+    },
+
+    # --- Cloud Session 7: Cloud Architecture & Shared Responsibility Model ---
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-network-capacity/": {
+        "must_practice": {2, 6, 7, 8, 10},
+        "basic": {6, 8, 10},
+        "moderate": {1, 2, 3, 4, 5, 7, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-online-test/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 8},
+        "basic": {1, 6, 8},
+        "moderate": {2, 3, 4, 5, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-cloud-security/": {
+        "must_practice": {1, 2, 3, 7, 8},
+        "basic": {1, 3, 8},
+        "moderate": {2, 4, 5, 6, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-securing-data/": {
+        "must_practice": {1, 2, 3, 6},
+        "basic": {1, 3, 6},
+        "moderate": {2, 4, 5, 7, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-virtual-storage-containers/": {
+        "must_practice": {1, 5, 6},
+        "basic": {1},
+        "moderate": {2, 3, 4, 5, 6, 7, 8, 9, 10},
+        "hard": set(),
+    },
+
+    # --- Cloud Sessions 8 & 9: AWS & Microsoft Azure ---
+    "https://www.sanfoundry.com/cloud-computing-mcqs/": {
+        "must_practice": {2, 3, 4, 5, 6, 7, 8, 9, 10},
+        "basic": {3, 6, 7, 10},
+        "moderate": {2, 4, 5, 8, 9},
+        "hard": set(),
+        "remove": {1},  # Blank image-only options
+    },
+    "https://www.sanfoundry.com/cloud-computing-aws-interview-questions-answers/": {
+        "must_practice": {2, 3, 4, 5, 6, 10},
+        "basic": {3, 4, 10},
+        "moderate": {1, 2, 5, 6, 7, 8, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-server-instance-types/": {
+        "must_practice": {2, 4, 7, 10},
+        "basic": {4, 10},
+        "moderate": {1, 2, 3, 5, 7, 8, 9},
+        "hard": set(),
+        "remove": {6},  # Blank image-only options
+    },
+    "https://www.sanfoundry.com/cloud-computing-windows-azure-interview-questions-answers/": {
+        "must_practice": {1, 3, 4, 6, 7, 8, 9},
+        "basic": {1, 4, 8, 9},
+        "moderate": {2, 3, 5, 6, 7, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-azure-content-delivery-network/": {
+        "must_practice": {1, 3, 6, 9, 10},
+        "basic": {1, 3, 6, 9},
+        "moderate": {2, 4, 5, 7, 8, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-windows-azureapp-fabric/": {
+        "must_practice": {5, 6, 7, 8},
+        "basic": {7},
+        "moderate": {1, 2, 3, 4, 5, 6, 8, 9, 10},
+        "hard": set(),
+    },
+
+    # --- Secondary Storage / Backup / Identity Pages ---
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-provisioning-cloud-storage-1/": {
+        "must_practice": {1, 9},
+        "basic": {1, 9},
+        "moderate": {2, 3, 4, 5, 6, 7, 8, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-aptitude-test/": {
+        "must_practice": {2, 6, 7, 8},
+        "basic": {6, 8},
+        "moderate": {1, 2, 3, 4, 5, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-cloud-backup-solutions/": {
+        "must_practice": {1, 7, 9, 10},
+        "basic": {1, 7, 10},
+        "moderate": {2, 4, 5, 6, 8, 9},
+        "hard": set(),
+        "remove": {3},  # Blank image-only options
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-backup-types/": {
+        "must_practice": {3, 9, 10},
+        "basic": {3, 10},
+        "moderate": {1, 2, 4, 5, 6, 7, 8, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-cloud-backup-features/": {
+        "must_practice": {2, 3, 7},
+        "basic": {3, 7},
+        "moderate": {1, 2, 4, 5, 6, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/cloud-computing-questions-answers-identity-protocol-standards/": {
+        "must_practice": {1, 4, 6, 8},
+        "basic": {1, 8},
+        "moderate": {2, 3, 4, 5, 6, 7, 9, 10},
+        "hard": set(),
+    },
+}
+
+
+def consolidate_linux_cloud_syllabus_topic(raw_syl: str, sf_topic: str, category: str) -> str:
+    """Map detailed Linux & Cloud session labels into consolidated PGCP-BDA Syllabus Session groups."""
+    if category == "REMOVE" or raw_syl.startswith("Excluded"):
+        return "Excluded / Out of Syllabus (C System Calls, Kernel Internals, GDB/GCC & Legacy Cloud)"
+    s = raw_syl.lower()
+    if "cloud session 10" in s or "devops" in s or "docker" in s:
+        return "Cloud Session 10: Introduction to DevOps, CI/CD & Containerization (Docker)"
+    if "cloud sessions 8 & 9" in s or "cloud sessions 8" in s or "aws" in s or "azure" in s or "ec2" in s:
+        return "Cloud Sessions 8 & 9: AWS (EC2, VPC, S3, EBS, RDS, CloudWatch, EMR) & Microsoft Azure"
+    if "cloud session 7" in s or "shared responsibility" in s or "security boundary" in s or "horizontal scaling" in s:
+        return "Cloud Session 7: Cloud Architecture, Scaling, Load Balancing, Security & Shared Responsibility"
+    if "cloud sessions 5" in s or "deploying applications" in s or "capacity planning" in s or "cloud backup" in s or "cloud storage provisioning" in s:
+        return "Cloud Sessions 5 & 6: Cloud Services, Application Deployment, Monitoring & Cloud Storage"
+    if "cloud sessions 3" in s or "saas" in s or "paas" in s or "iaas" in s or "hypervisor" in s or "virtualization" in s:
+        return "Cloud Sessions 3 & 4: Cloud Service Models (SaaS, PaaS, IaaS), Virtualization & Hypervisors"
+    if "cloud session 2" in s or "cloud economics" in s or "characteristics & benefits" in s:
+        return "Cloud Session 2: Introduction to Cloud Computing (Paradigms, Characteristics, Benefits & Types)"
+    if "cloud session 1" in s or "git" in s:
+        return "Cloud Session 1: Git & GitHub Fundamentals (Version Control & CLI Workflow)"
+    if "linux sessions 3 & 4" in s or "linux sessions 1–4" in s or "shell" in s or "awk" in s or "sed" in s:
+        return "Linux Sessions 3 & 4: Shell Programming (Bash Environment, Variables, Redirection, Loops & Filters)"
+    if "linux session 2" in s or "permission" in s or "vi/vim" in s or "mount" in s:
+        return "Linux Session 2: Linux File Management, Permissions (chmod/umask/ACL), Mounting & Vi Editor"
+    return "Linux Session 1: Linux Fundamentals, Boot/Run Levels, FHS, Users, Processes & Basic Commands"
+
+
+def infer_linux_cloud_warning(question_text: str, sf_topic: str, syl_group: str) -> str | None:
+    """Attach a helpful PGCP-BDA Exam / Lab Tip where relevant."""
+    ql = question_text.lower()
+    if "umask" in ql or "sticky" in ql or "4744" in ql or "2754" in ql or "1755" in ql:
+        return (
+            "Linux Session 2 Permission Tip: Default base permissions are 666 for regular files and 777 for directories "
+            "(subtract umask). Special bits: SUID = 4000 (s on user), SGID = 2000 (s on group), Sticky Bit = 1000 (+t on dir)."
+        )
+    if "hard link" in ql or "soft link" in ql or "softlink" in ql or "ln " in ql:
+        return (
+            "Linux Session 1 Link Tip: Hard links (ln) share the same inode number and cannot cross filesystem partitions; "
+            "Symbolic/soft links (ln -s) have a new inode, point to the filename path, and can span across partitions."
+        )
+    if "2>&1" in question_text or "2>" in question_text or "/dev/null" in question_text:
+        return (
+            "Bash Redirection Tip (Sessions 3 & 4): File descriptors are 0 (stdin), 1 (stdout), and 2 (stderr). "
+            "Use 'cmd > file 2>&1' to send both stdout and stderr to 'file', and '2> /dev/null' to discard errors."
+        )
+    if "git " in ql or "github" in ql:
+        return (
+            "Cloud Session 1 Git Lab Tip: 'git add .' stages new/modified files, 'git commit -m' records a snapshot locally, "
+            "'git checkout -b <branch>' creates and switches to a new branch, and 'git push' uploads commits to GitHub."
+        )
+    if "hypervisor" in ql or "paravirtualization" in ql or "type 1" in ql or "type 2" in ql:
+        return (
+            "Cloud Sessions 3 & 4 Virtualization Tip: Type 1 (bare-metal) hypervisors run directly on hardware (Xen, KVM, ESXi, Hyper-V); "
+            "Type 2 (hosted) hypervisors run on top of a host OS (VirtualBox, VMware Workstation/Player)."
+        )
+    if "security boundary" in ql or "least amount of built in security" in ql or "highest level of service" in ql:
+        return (
+            "Cloud Session 7 Shared Responsibility Tip: SaaS provides the most built-in vendor security/management; "
+            "in PaaS the vendor manages up to the runtime/middleware; in IaaS the customer secures the OS, middleware, and app."
+        )
+    return None
+
+
+def build_linux_cloud_questions_json() -> Path | None:
+    """Extract all saved HTML pages in `LinuxSaved/` and `LinuxSaved/cloud/`, map them to the PGCP-BDA
+    Linux Programming & Cloud Computing syllabus, curate the Must-Practice shortlist, and write `linux_cloud_questions.json`."""
+    linux_dir = ROOT / "LinuxSaved"
+    if not linux_dir.is_dir():
+        return None
+    cloud_dir = linux_dir / "cloud"
+    html_files = sorted(linux_dir.glob("*.html")) + (sorted(cloud_dir.glob("*.html")) if cloud_dir.is_dir() else [])
+    if not html_files:
+        return None
+
+    from open_linux_cloud_pages import CLOUD_HUB_HTML, LINUX_HUB_HTML, TOPIC_SYLLABUS_MAP, get_ordered_topics
+    from parser import parse_page
+    from scraper import normalize_text
+
+    pages_by_url: dict[str, Any] = {}
+    linux_hub_page = None
+    cloud_hub_page = None
+
+    for f in html_files:
+        parsed = parse_page(f.read_bytes(), url=f.as_posix())
+        if not parsed.questions:
+            continue
+        if f.name == LINUX_HUB_HTML.name:
+            linux_hub_page = parsed
+            continue
+        if f.name == CLOUD_HUB_HTML.name:
+            cloud_hub_page = parsed
+            continue
+        norm_u = (parsed.url or "").rstrip("/") + "/"
+        pages_by_url[norm_u] = parsed
+
+    ordered_urls = [item["url"] for item in get_ordered_topics() if item["url"] in pages_by_url]
+    for u in sorted(pages_by_url.keys()):
+        if u not in ordered_urls:
+            ordered_urls.append(u)
+
+    raw_records: list[dict[str, Any]] = []
+    seen_exact: set[tuple[str, str]] = set()
+    seen_loose: set[tuple[str, frozenset[str]]] = set()
+
+    def register_question(
+        q_obj: Any,
+        *,
+        src_url: str,
+        sf_topic: str,
+        cat: str,
+        raw_syl: str,
+        reason: str,
+        difficulty: str,
+    ) -> None:
+        exact_sig = (
+            q_obj.question.strip(),
+            "|".join(f"{k}:{normalize_text(v)}" for k, v in sorted(q_obj.options.items())),
+        )
+        loose_q = re.sub(r"\bthe\b", " ", normalize_text(q_obj.question))
+        loose_q = re.sub(r"\s+", " ", loose_q).strip()
+        loose_sig = (loose_q, frozenset(normalize_text(v) for v in q_obj.options.values()))
+
+        if exact_sig in seen_exact or loose_sig in seen_loose:
+            return
+        seen_exact.add(exact_sig)
+        seen_loose.add(loose_sig)
+
+        syl_group = consolidate_linux_cloud_syllabus_topic(raw_syl, sf_topic, cat)
+        raw_records.append(
+            {
+                "topic": sf_topic,
+                "category": cat,
+                "difficulty": difficulty,
+                "must_practice": cat == "KEEP",
+                "syllabus_topic": syl_group,
+                "syllabus_detail": raw_syl,
+                "reason": reason,
+                "faculty_alignment": raw_syl,
+                "warning": infer_linux_cloud_warning(q_obj.question, sf_topic, syl_group),
+                "question": q_obj.question,
+                "options": q_obj.options,
+                "correct_answer": q_obj.correct_answer,
+                "explanation": q_obj.explanation,
+                "source_url": src_url,
+            }
+        )
+
+    # 1. Process all 128 topic pages in chronological PGCP-BDA syllabus order
+    for norm_u in ordered_urls:
+        page = pages_by_url[norm_u]
+        meta = TOPIC_SYLLABUS_MAP.get(norm_u, {})
+        base_topic = meta.get("topic") or page.topic or "Linux & Cloud"
+        base_cat = meta.get("category", "SELECTIVE")
+        base_syl = meta.get("syllabus_topic", base_topic)
+        base_reason = meta.get("reason", "")
+        curation = LINUX_CLOUD_PAGE_CURATION.get(norm_u)
+
+        for q in page.questions:
+            qnum = int(q.number or 0)
+            q_topic = base_topic
+            q_syl = base_syl
+            q_reason = base_reason
+
+            # Determine difficulty (Basic / Moderate / Hard)
+            if curation:
+                if qnum in curation.get("hard", set()):
+                    diff = "Hard"
+                elif qnum in curation.get("moderate", set()):
+                    diff = "Moderate"
+                else:
+                    diff = "Basic"
+            else:
+                diff = "Moderate" if "\n" in q.question else "Basic"
+
+            # Check if options are blank (missing image options in Cloud HTML)
+            empty_opts = [k for k, v in q.options.items() if not v.strip()]
+            if empty_opts or (curation and qnum in curation.get("remove", set())):
+                q_cat = "REMOVE"
+                q_syl = "Excluded (Image-Only Options Missing in Saved HTML)"
+                q_reason = "Original Sanfoundry question used image-only options (A/B/C) that are not text-searchable."
+            elif base_cat == "REMOVE":
+                # Rescue specific syllabus-relevant questions from otherwise excluded pages
+                if norm_u == "https://www.sanfoundry.com/gcc-compiler-questions-answers-stages-of-compilation-2/" and qnum == 2:
+                    q_cat = "KEEP"
+                    q_topic = "File Permissions & Modes (chmod, umask, SUID/SGID/Sticky)-1"
+                    q_syl = "Linux Session 2: File Permissions (chmod +x and chmod 777 executable permissions)"
+                    diff = "Basic"
+                    q_reason = "[Must-Practice Basic MCQ] Providing executable permissions with chmod +x and chmod 777 (Linux Session 2)."
+                elif norm_u == "https://www.sanfoundry.com/cloud-computing-idaas-interview-questions-answers/" and qnum == 1:
+                    q_cat = "KEEP"
+                    q_topic = "SaaS — Software as a Service"
+                    q_syl = "Cloud Sessions 3 & 4: SaaS Examples (Salesforce CRM)"
+                    diff = "Basic"
+                    q_reason = "[Must-Practice Basic MCQ] Salesforce.com is the largest SaaS provider of CRM software (Cloud Sessions 3 & 4)."
+                elif norm_u == "https://www.sanfoundry.com/cloud-computing-questions-answers-open-cloud-computing-interface/" and qnum == 10:
+                    q_cat = "SELECTIVE"
+                    q_topic = "Provisioning Cloud Storage-1"
+                    q_syl = "Cloud Sessions 5 & 6: Thin Provisioning of On-Demand Storage"
+                    diff = "Moderate"
+                    q_reason = "[Extra Practice — Moderate] Thin provisioning provides storage on demand from a shared storage pool."
+                else:
+                    q_cat = "REMOVE"
+            elif curation:
+                if qnum in curation["must_practice"]:
+                    q_cat = "KEEP"
+                    q_reason = f"[Must-Practice {diff} MCQ] {base_reason}"
+                else:
+                    q_cat = "SELECTIVE"
+                    q_reason = f"[Extra Practice — {diff}] {base_reason}"
+            else:
+                q_cat = base_cat
+
+            register_question(
+                q,
+                src_url=norm_u.rstrip("/"),
+                sf_topic=q_topic,
+                cat=q_cat,
+                raw_syl=q_syl,
+                reason=q_reason,
+                difficulty=diff,
+            )
+
+    # 2. Process unique questions from the 1000 Linux MCQ hub page (44 foundational Linux command MCQs!)
+    if linux_hub_page and linux_hub_page.questions:
+        hub_url = (linux_hub_page.url or "https://www.sanfoundry.com/technical-interview-questions/").rstrip("/")
+        # Every single one of the 44 questions on the Linux hub page is a clean foundational Linux MCQ!
+        linux_hub_map: dict[int, tuple[str, str, str, str, str]] = {
+            1: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Linux History and Operations", "[Must-Practice Basic MCQ] Linux is an open-source operating system."),
+            2: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Linux History (Linus Torvalds)", "[Must-Practice Basic MCQ] Creator of the Linux kernel (Linus Torvalds)."),
+            3: ("Linux Fundamentals & Hub Essentials", "SELECTIVE", "Basic", "Linux Session 1: Linux Open-Source Operations", "[Extra Practice — Basic] Linux is an open-source operating system."),
+            4: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Installing and Configuring Linux (Ubuntu)", "[Must-Practice Basic MCQ] Ubuntu is the Linux distribution specified in Session 1."),
+            5: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Role of the Linux Kernel", "[Must-Practice Basic MCQ] The Linux kernel manages system resources and hardware communication."),
+            6: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (uname -r)", "[Must-Practice Basic MCQ] uname -r displays the running Linux kernel version."),
+            7: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Installing and Configuring Ubuntu (apt-get update)", "[Must-Practice Basic MCQ] apt-get update refreshes the package index on Debian/Ubuntu systems."),
+            8: ("User Account Management (who, passwd, /etc/passwd)", "KEEP", "Basic", "Linux Session 1: Root User Privileges (Lab)", "[Must-Practice Basic MCQ] The root user is the system administrator with full privileges."),
+            9: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (ls -a hidden files)", "[Must-Practice Basic MCQ] ls -a lists all files including hidden dot-files."),
+            10: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (cd)", "[Must-Practice Basic MCQ] cd changes the current working directory."),
+            11: ("Linux Fundamentals & Hub Essentials", "SELECTIVE", "Basic", "Linux Session 1: Basic Commands (ls)", "[Extra Practice — Basic] ls lists files and directories."),
+            12: ("File Permissions & Modes (chmod, umask, SUID/SGID/Sticky)-1", "KEEP", "Basic", "Linux Session 2: chown Command (File Ownership)", "[Must-Practice Basic MCQ] chown changes the ownership of a file in Linux (explicitly in Session 2)."),
+            13: ("User Account Management (who, passwd, /etc/passwd)", "KEEP", "Basic", "Linux Session 1: /etc/passwd User List", "[Must-Practice Basic MCQ] /etc/passwd contains the list of users in a Linux system."),
+            14: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (pwd)", "[Must-Practice Basic MCQ] pwd displays the current working directory."),
+            15: ("Linux Fundamentals & Hub Essentials", "SELECTIVE", "Basic", "Linux Session 1: Basic Commands (cp)", "[Extra Practice — Basic] cp copies files in Linux."),
+            16: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (cat)", "[Must-Practice Basic MCQ] cat displays and concatenates file contents."),
+            17: ("Search & Pattern Matching (grep, sort, uniq, cut, comm)", "KEEP", "Basic", "Linux Session 1: Basic Commands (grep)", "[Must-Practice Basic MCQ] grep searches for a specific text pattern in a file."),
+            18: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (cd ~)", "[Must-Practice Basic MCQ] cd ~ changes to the user's home directory."),
+            19: ("File Permissions & Modes (chmod, umask, SUID/SGID/Sticky)-1", "SELECTIVE", "Basic", "Linux Session 2: chmod Command", "[Extra Practice — Basic] chmod changes file permissions."),
+            20: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (mkdir — Lab)", "[Must-Practice Basic MCQ] mkdir creates a new directory (used in Session 1 dbda/test lab)."),
+            21: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (tail)", "[Must-Practice Basic MCQ] tail displays the last lines of a file."),
+            22: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (gzip compression)", "[Must-Practice Basic MCQ] gzip compresses files in Linux (explicitly listed in Session 1)."),
+            23: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (man pages)", "[Must-Practice Basic MCQ] man displays the manual page for a command."),
+            24: ("Linux Fundamentals & Hub Essentials", "SELECTIVE", "Basic", "Linux Session 1: Ubuntu Package Installation (apt-get)", "[Extra Practice — Basic] apt-get installs packages in Debian/Ubuntu distributions."),
+            25: ("Filesystem Overview (mount, df, /etc/fstab, ext4)", "SELECTIVE", "Basic", "Linux Session 2: df Command (Free Disk Space)", "[Extra Practice — Basic] df displays free disk space on mounted filesystems."),
+            26: ("Linux Fundamentals & Hub Essentials", "SELECTIVE", "Basic", "Linux Session 1: Basic Commands (rm)", "[Extra Practice — Basic] rm removes files in Linux."),
+            27: ("Process Management & Job Control (ps, kill, bg, fg)", "SELECTIVE", "Basic", "Linux Session 1: Basic Commands (ps)", "[Extra Practice — Basic] ps shows currently running processes."),
+            28: ("Linux Startup & Shutdown (Run Levels)", "KEEP", "Moderate", "Linux Session 1: Boot Loader Configuration (/boot/grub/grub.cfg)", "[Must-Practice Moderate MCQ] /boot/grub/grub.cfg holds the GRUB bootloader configuration."),
+            29: ("Process Management & Job Control (ps, kill, bg, fg)", "KEEP", "Basic", "Linux Session 1: Real-Time Process Monitoring (top)", "[Must-Practice Basic MCQ] top monitors real-time system processes and CPU/memory usage."),
+            30: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (ls -l long listing)", "[Must-Practice Basic MCQ] ls -l views directory contents in detailed long format (permissions, links, owner, size)."),
+            31: ("Linux Fundamentals & Hub Essentials", "SELECTIVE", "Basic", "Linux Session 1: Ubuntu Distribution", "[Extra Practice — Basic] Ubuntu is a Linux distribution."),
+            32: ("Bash Shell Environment-1", "KEEP", "Basic", "Linux Sessions 3 & 4: Default Linux Shell (bash)", "[Must-Practice Basic MCQ] bash (Bourne Again Shell) is the default shell for most Linux distributions."),
+            33: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1 & Session 2: Network Connectivity (ping)", "[Must-Practice Basic MCQ] ping checks network connectivity to a host."),
+            34: ("User Account Management (who, passwd, /etc/passwd)", "KEEP", "Basic", "Linux Session 1: sudo Command (Superuser Execution)", "[Must-Practice Basic MCQ] sudo executes a command with superuser privileges."),
+            35: ("Linux Fundamentals & Hub Essentials", "KEEP", "Basic", "Linux Session 1: Basic Commands (gunzip decompression)", "[Must-Practice Basic MCQ] gunzip decompresses .gz files (explicitly listed in Session 1)."),
+            36: ("Bash Shell Environment-1", "KEEP", "Moderate", "Linux Sessions 3 & 4: System-Wide Environment Variable Files (/etc/environment, /etc/profile, /etc/bashrc)", "[Must-Practice Moderate MCQ] System-wide environment variables are configured in /etc/environment, /etc/profile, and /etc/bashrc."),
+            37: ("Process Management & Job Control (ps, kill, bg, fg)", "SELECTIVE", "Basic", "Linux Session 1: Basic Commands (kill)", "[Extra Practice — Basic] kill terminates processes by sending signals."),
+            38: ("Filesystem Overview (mount, df, /etc/fstab, ext4)", "KEEP", "Basic", "Linux Session 1 & Session 2: Disk Usage (du vs df)", "[Must-Practice Basic MCQ] du displays disk usage of files and directories (whereas df shows free filesystem space)."),
+            39: ("Linux Filesystem Hierarchy (FHS)-1", "SELECTIVE", "Basic", "Linux Session 1: /etc Configuration Directory", "[Extra Practice — Basic] /etc contains system configuration files."),
+            40: ("User Account Management (who, passwd, /etc/passwd)", "SELECTIVE", "Basic", "Linux Session 1: su Command", "[Extra Practice — Basic] su switches to the root user."),
+            41: ("User Account Management (who, passwd, /etc/passwd)", "KEEP", "Basic", "Linux Session 1: User Account Management (useradd, adduser, usermod)", "[Must-Practice Basic MCQ] useradd, adduser, and usermod manage user accounts in Linux."),
+            42: ("Process Management & Job Control (ps, kill, bg, fg)", "SELECTIVE", "Moderate", "Linux Session 1: Performance Monitoring (vmstat, top, htop)", "[Extra Practice — Moderate] vmstat, top, and htop monitor system performance and resource usage."),
+            43: ("Process Management & Job Control (ps, kill, bg, fg)", "KEEP", "Moderate", "Linux Session 1 & Sessions 3–4: Task Scheduling (at and cron)", "[Must-Practice Moderate MCQ] at and cron schedule one-time and recurring tasks in Linux."),
+            44: ("Linux Filesystem Hierarchy (FHS)-2", "KEEP", "Basic", "Linux Session 1: System Log Directory (/var/log)", "[Must-Practice Basic MCQ] /var/log contains system event log files in Linux."),
+        }
+        for q in linux_hub_page.questions:
+            qnum = int(q.number or 0)
+            t_name, cat, diff, raw_syl, reason = linux_hub_map.get(
+                qnum,
+                ("Linux Fundamentals & Hub Essentials", "SELECTIVE", "Basic", "Linux Session 1: Linux Fundamentals", "Core Linux overview question."),
+            )
+            register_question(
+                q,
+                src_url=hub_url,
+                sf_topic=t_name,
+                cat=cat,
+                raw_syl=raw_syl,
+                reason=reason,
+                difficulty=diff,
+            )
+
+    # 3. Process unique questions from the 1000 Cloud Computing MCQ hub page (41 Cloud overview MCQs)
+    if cloud_hub_page and cloud_hub_page.questions:
+        chub_url = (cloud_hub_page.url or "https://www.sanfoundry.com/1000-cloud-computing-questions-answers/").rstrip("/")
+        cloud_hub_map: dict[int, tuple[str, str, str, str, str]] = {
+            1: ("Introduction to Cloud Computing", "KEEP", "Basic", "Cloud Session 2: Definition of Cloud Computing", "[Must-Practice Basic MCQ] Cloud computing provides on-demand services (storage, servers, databases, networking) over the Internet."),
+            2: ("Introduction to Cloud Computing", "SELECTIVE", "Basic", "Cloud Session 2: Cloud Computing History (J.C.R. Licklider)", "[Extra Practice — Basic] J.C.R. Licklider pioneered the ARPANET/intergalactic computer network vision behind cloud computing."),
+            3: ("Cloud Models & Types-1 (Deployment vs Service Models, NIST)", "KEEP", "Basic", "Cloud Session 2: Types of Cloud Servers (Public, Private, Dedicated)", "[Must-Practice Basic MCQ] Public, Private, and Dedicated are cloud server types ('Merged Cloud Servers' is invalid)."),
+            4: ("Attributes & Characteristics of Cloud Computing", "KEEP", "Basic", "Cloud Session 2: Features of Cloud Computing (Security, Availability, Large Network Access)", "[Must-Practice Basic MCQ] Core features of cloud computing."),
+            5: ("SaaS — Software as a Service", "KEEP", "Basic", "Cloud Sessions 3 & 4: Software-as-a-Service (SaaS)", "[Must-Practice Basic MCQ] SaaS stands for Software-as-a-Service."),
+            6: ("SaaS — Software as a Service", "SELECTIVE", "Basic", "Cloud Sessions 3 & 4: Cloud Applications (G Suite, Adobe, PayPal)", "[Extra Practice — Basic] Real-world cloud computing applications."),
+            7: ("Introduction to Cloud Computing", "SELECTIVE", "Basic", "Cloud Session 2: Cloud Examples (AWS, Dropbox, WebEx)", "[Extra Practice — Basic] Examples of cloud platforms and services."),
+            9: ("PaaS — Platform as a Service", "KEEP", "Basic", "Cloud Sessions 3 & 4: PaaS Examples (Heroku, AWS Elastic Beanstalk, Windows Azure)", "[Must-Practice Basic MCQ] Heroku, AWS Elastic Beanstalk, and Windows Azure are classic PaaS offerings."),
+            10: ("IaaS — Infrastructure as a Service-1", "KEEP", "Basic", "Cloud Sessions 3 & 4: IaaS Examples (DigitalOcean, Linode, Rackspace)", "[Must-Practice Basic MCQ] DigitalOcean, Linode, and Rackspace are IaaS cloud providers."),
+            36: ("SaaS — Software as a Service", "KEEP", "Basic", "Cloud Sessions 3 & 4: SaaS Examples (Google Workspace, Dropbox, Salesforce)", "[Must-Practice Basic MCQ] Google Workspace, Dropbox, and Salesforce are classic SaaS examples."),
+            41: ("Cloud Models & Types-2 (Public, Private, Community, Hybrid)", "KEEP", "Moderate", "Cloud Session 7: Cloud Bursting (Hybrid Cloud Overflow)", "[Must-Practice Moderate MCQ] Cloud bursting handles transaction overflow from a private system into a public cloud."),
+        }
+        for q in cloud_hub_page.questions:
+            qnum = int(q.number or 0)
+            t_name, cat, diff, raw_syl, reason = cloud_hub_map.get(
+                qnum,
+                ("Introduction to Cloud Computing", "SELECTIVE", "Moderate", "Cloud Session 2: Cloud Computing Overview", "[Extra Practice — Moderate] Cloud computing overview question."),
+            )
+            register_question(
+                q,
+                src_url=chub_url,
+                sf_topic=t_name,
+                cat=cat,
+                raw_syl=raw_syl,
+                reason=reason,
+                difficulty=diff,
+            )
+
+    # Sort questions by consolidated syllabus session order -> priority (KEEP -> SELECTIVE -> REMOVE) -> difficulty (Basic -> Moderate -> Hard)
+    session_order_list = [
+        "Linux Session 1: Linux Fundamentals, Boot/Run Levels, FHS, Users, Processes & Basic Commands",
+        "Linux Session 2: Linux File Management, Permissions (chmod/umask/ACL), Mounting & Vi Editor",
+        "Linux Sessions 3 & 4: Shell Programming (Bash Environment, Variables, Redirection, Loops & Filters)",
+        "Cloud Session 1: Git & GitHub Fundamentals (Version Control & CLI Workflow)",
+        "Cloud Session 2: Introduction to Cloud Computing (Paradigms, Characteristics, Benefits & Types)",
+        "Cloud Sessions 3 & 4: Cloud Service Models (SaaS, PaaS, IaaS), Virtualization & Hypervisors",
+        "Cloud Sessions 5 & 6: Cloud Services, Application Deployment, Monitoring & Cloud Storage",
+        "Cloud Session 7: Cloud Architecture, Scaling, Load Balancing, Security & Shared Responsibility",
+        "Cloud Sessions 8 & 9: AWS (EC2, VPC, S3, EBS, RDS, CloudWatch, EMR) & Microsoft Azure",
+        "Cloud Session 10: Introduction to DevOps, CI/CD & Containerization (Docker)",
+        "Excluded / Out of Syllabus (C System Calls, Kernel Internals, GDB/GCC & Legacy Cloud)",
+    ]
+    order_index = {name: i for i, name in enumerate(session_order_list)}
+    cat_order = {"KEEP": 0, "SELECTIVE": 1, "REMOVE": 2}
+    diff_order = {"Basic": 0, "Moderate": 1, "Hard": 2}
+
+    raw_records.sort(
+        key=lambda r: (
+            order_index.get(r["syllabus_topic"], 99),
+            cat_order.get(r["category"], 9),
+            diff_order.get(r["difficulty"], 9),
+        )
+    )
+
+    topic_counts: Counter[str] = Counter()
+    topic_meta_map: dict[str, dict[str, str]] = {}
+    questions: list[dict[str, Any]] = []
+
+    for idx, rec in enumerate(raw_records, start=1):
+        rec_with_id = {"id": idx, **rec}
+        questions.append(rec_with_id)
+        t = rec["topic"]
+        topic_counts[t] += 1
+        if t not in topic_meta_map or rec["category"] == "KEEP":
+            topic_meta_map[t] = {
+                "category": rec["category"],
+                "reason": rec["reason"],
+                "faculty_alignment": rec["syllabus_detail"],
+                "syllabus_topic": rec["syllabus_topic"],
+            }
+
+    topics = [
+        {
+            "topic": t,
+            "count": c,
+            "category": topic_meta_map[t]["category"],
+            "syllabus_topic": topic_meta_map[t]["syllabus_topic"],
+            "reason": topic_meta_map[t]["reason"],
+            "faculty_alignment": topic_meta_map[t]["faculty_alignment"],
+        }
+        for t, c in sorted(topic_counts.items())
+    ]
+
+    keep_qs = [q for q in questions if q["category"] == "KEEP"]
+    linux_cloud_json_data = {
+        "subject": "Linux Programming & Cloud Computing — Bash, Commands, Permissions, Vi, Git, Virtualization, AWS & Azure",
+        "syllabus": "PGCP-BDA (ACTS, Pune) — Linux Programming (Sessions 1–4) & Cloud Computing (Sessions 1–10)",
+        "source": "Sanfoundry",
+        "total_questions": len(questions),
+        "counts": {
+            "KEEP": len(keep_qs),
+            "SELECTIVE": sum(1 for q in questions if q["category"] == "SELECTIVE"),
+            "REMOVE": sum(1 for q in questions if q["category"] == "REMOVE"),
+        },
+        "difficulty_counts": {
+            "ALL": {
+                "Basic": sum(1 for q in questions if q["difficulty"] == "Basic"),
+                "Moderate": sum(1 for q in questions if q["difficulty"] == "Moderate"),
+                "Hard": sum(1 for q in questions if q["difficulty"] == "Hard"),
+            },
+            "KEEP": {
+                "Basic": sum(1 for q in keep_qs if q["difficulty"] == "Basic"),
+                "Moderate": sum(1 for q in keep_qs if q["difficulty"] == "Moderate"),
+                "Hard": sum(1 for q in keep_qs if q["difficulty"] == "Hard"),
+            },
+        },
+        "topics": topics,
+        "syllabus_markdown": LINUX_CLOUD_SYLLABUS_MD,
+        "questions": questions,
+    }
+
+    out_path = ROOT / "linux_cloud_questions.json"
+    out_path.write_text(json.dumps(linux_cloud_json_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Write standalone Must-Practice Shortlist CSV and Markdown study guide in Resource/
+    res_dir = ROOT / "Resource"
+    res_dir.mkdir(parents=True, exist_ok=True)
+    csv_path = res_dir / "Linux_Cloud_Must_Practice_Shortlist.csv"
+    with csv_path.open("w", encoding="utf-8-sig", newline="") as f_csv:
+        writer = csv.writer(f_csv)
+        writer.writerow(["Question ID", "Difficulty", "Syllabus Session", "Sanfoundry Topic", "Question Stem", "Correct Answer", "Syllabus Alignment"])
+        for q in keep_qs:
+            stem_one_line = " | ".join(ln.strip() for ln in q["question"].splitlines() if ln.strip())
+            writer.writerow([q["id"], q["difficulty"], q["syllabus_topic"], q["topic"], stem_one_line, q["correct_answer"], q["syllabus_detail"]])
+
+    # Also build Resource/Linux_Cloud_Must_Practice_Shortlist.md
+    md_lines = [
+        "# Linux Programming & Cloud Computing — Must-Practice MCQ Shortlist (PGCP-BDA)",
+        "",
+        f"- **Total Unique Questions Extracted:** `{len(questions)}` (from 130 saved HTML pages in `LinuxSaved/` and `LinuxSaved/cloud/`)",
+        f"- **Must-Practice Shortlist (`KEEP`):** `{len(keep_qs)}` hand-picked high-yield MCQs (`{linux_cloud_json_data['difficulty_counts']['KEEP']['Basic']}` Basic • `{linux_cloud_json_data['difficulty_counts']['KEEP']['Moderate']}` Moderate • `{linux_cloud_json_data['difficulty_counts']['KEEP']['Hard']}` Hard)",
+        f"- **Extra Practice (`SELECTIVE`):** `{linux_cloud_json_data['counts']['SELECTIVE']}` secondary/variation drills (`sed`, `awk`, `/proc`, cloud backup/storage extras)",
+        f"- **Excluded (`REMOVE`):** `{linux_cloud_json_data['counts']['REMOVE']}` out-of-syllabus questions (C system call debugging `malloc`/`pthread`/`fork`/`socket`, kernel `sysfs` internals, `gdb`/`gcc`, discontinued 2010 Windows Live / Google consumer apps, and broken image-only questions)",
+        "",
+        "## Session-Wise Shortlist Breakdown",
+        "",
+        "| Syllabus Session | Total | Shortlist (`KEEP`) | Basic | Moderate | Hard | Extra (`SELECTIVE`) |",
+        "|---|---:|---:|---:|---:|---:|---:|",
+    ]
+    for s_name in session_order_list:
+        s_all = [q for q in questions if q["syllabus_topic"] == s_name]
+        if not s_all:
+            continue
+        s_keep = [q for q in s_all if q["category"] == "KEEP"]
+        s_sel = [q for q in s_all if q["category"] == "SELECTIVE"]
+        b_cnt = sum(1 for q in s_keep if q["difficulty"] == "Basic")
+        m_cnt = sum(1 for q in s_keep if q["difficulty"] == "Moderate")
+        h_cnt = sum(1 for q in s_keep if q["difficulty"] == "Hard")
+        md_lines.append(f"| {s_name} | {len(s_all)} | **{len(s_keep)}** | {b_cnt} | {m_cnt} | {h_cnt} | {len(s_sel)} |")
+
+    md_lines.extend(["", "---", ""])
+    for s_name in session_order_list:
+        s_keep = [q for q in keep_qs if q["syllabus_topic"] == s_name]
+        if not s_keep:
+            continue
+        md_lines.append(f"## {s_name} ({len(s_keep)} Must-Practice MCQs)")
+        md_lines.append("")
+        for diff_label in ("Basic", "Moderate", "Hard"):
+            d_qs = [q for q in s_keep if q["difficulty"] == diff_label]
+            if not d_qs:
+                continue
+            id_badges = ", ".join(f"`#{q['id']}`" for q in d_qs)
+            md_lines.append(f"### {diff_label} Level ({len(d_qs)} Qs): {id_badges}")
+            md_lines.append("")
+            for q in d_qs:
+                stem_short = " // ".join(ln.strip() for ln in q["question"].splitlines() if ln.strip())
+                if len(stem_short) > 140:
+                    stem_short = stem_short[:137] + "..."
+                md_lines.append(f"- **#{q['id']}** *({q['topic']})*: {stem_short} — **Ans: `{q['correct_answer']}`**")
+            md_lines.append("")
+
+    (res_dir / "Linux_Cloud_Must_Practice_Shortlist.md").write_text("\n".join(md_lines) + "\n", encoding="utf-8")
+    return out_path
+
+
 
 def build_generic_subject(json_path: Path) -> dict | None:
     """Convert any scraper output `*_questions.json` file into a subject entry."""
@@ -1650,6 +2697,7 @@ def build_generic_subject(json_path: Path) -> dict | None:
     is_hadoop = "hadoop" in subj_id or "big-data" in subj_id
     is_java = json_path.name == "java_questions.json" or subj_id.startswith("java")
     is_python = json_path.name == "python_questions.json" or subj_id.startswith("python")
+    is_linux_cloud = json_path.name == "linux_cloud_questions.json" or subj_id.startswith("linux")
 
     url_syllabus_map: dict[str, dict[str, str]] = {}
     topic_name_map: dict[str, dict[str, str]] = {}
@@ -1670,6 +2718,9 @@ def build_generic_subject(json_path: Path) -> dict | None:
     elif is_python:
         subj_id = "python"
         subj_name = "Python Programming — Fundamentals, Data Structures, Functional, Regex, OOP, Exceptions & File I/O"
+    elif is_linux_cloud:
+        subj_id = "linux-cloud"
+        subj_name = "Linux Programming & Cloud Computing — Bash, Commands, Permissions, Vi, Git, Virtualization, AWS & Azure"
 
     questions = []
     topic_counts: Counter[str] = Counter()
@@ -1766,6 +2817,10 @@ def main() -> None:
     python_out = build_python_questions_json()
     if python_out:
         print(f"Built {python_out.name} from PythonSaved/ HTML files.")
+
+    linux_cloud_out = build_linux_cloud_questions_json()
+    if linux_cloud_out:
+        print(f"Built {linux_cloud_out.name} from LinuxSaved/ and LinuxSaved/cloud/ HTML files.")
 
     subjects = [build_dbms_subject()]
     seen_ids = {"dbms-sql"}

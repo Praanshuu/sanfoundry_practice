@@ -236,7 +236,10 @@
     const subj = getCurrentSubject();
     if (subj.has_priority_categories) {
       const c = subj.counts;
-      const keepLabel = subj.id === "python" ? `Keep — Must-Practice Shortlist (${c.KEEP})` : `Keep — Main Bank (${c.KEEP})`;
+      const keepLabel =
+        subj.id === "python" || subj.id === "linux-cloud"
+          ? `Keep — Must-Practice Shortlist (${c.KEEP})`
+          : `Keep — Main Bank (${c.KEEP})`;
       elScopeSelect.classList.remove("hidden");
       elTopicScopeFilter.classList.remove("hidden");
       elScopeSelect.innerHTML = `
@@ -301,8 +304,10 @@
   function extractTopicOrder(name) {
     const s = String(name || "");
     if (/^(excluded|out of scope)/i.test(s)) return 9999;
+    const isCloud = /^cloud\b/i.test(s);
     const m = s.match(/(\d+)/);
-    return m ? parseInt(m[1], 10) : 999;
+    const num = m ? parseInt(m[1], 10) : 999;
+    return isCloud ? 100 + num : num;
   }
 
   function populateQuickTopicSelect() {
@@ -845,6 +850,11 @@
         ? `
             • <strong>Must-Practice Shortlist (${subj.counts.KEEP} Hand-Picked MCQs)</strong>: Curated across all difficulty levels — <strong>${subj.difficulty_counts.KEEP.Basic} Basic</strong>, <strong>${subj.difficulty_counts.KEEP.Moderate} Moderate</strong>, and <strong>${subj.difficulty_counts.KEEP.Hard} Hard</strong> MCQs — so you can master every PGCP-BDA Python session without getting overwhelmed by all ${subj.total_questions} questions.<br/>
             • <strong>Faculty Material Alignment</strong>: Mapped directly to your Day 1–7 Lecture Notes, Code Demos (<code>stringdemo.py</code>, <code>listdemos.py</code>, <code>dictinarydemo.py</code>, <code>setdemo.py</code>, <code>filtermapdemo.py</code>, <code>regexpdemo.py</code>, <code>studentclass_basic.py</code>, <code>accountclass.py</code>), and Assignments 1–8.
+          `
+        : subj.id === "linux-cloud" && subj.difficulty_counts
+        ? `
+            • <strong>Must-Practice Shortlist (${subj.counts.KEEP} Hand-Picked MCQs)</strong>: Distilled from ${subj.total_questions} extracted questions into <strong>${subj.difficulty_counts.KEEP.Basic} Basic</strong>, <strong>${subj.difficulty_counts.KEEP.Moderate} Moderate</strong>, and <strong>${subj.difficulty_counts.KEEP.Hard} Hard</strong> high-yield MCQs covering both <strong>Part I: Linux Programming (Sessions 1–4)</strong> and <strong>Part II: Cloud Computing &amp; DevOps (Sessions 1–10)</strong>.<br/>
+            • <strong>Smart Scope Filtering</strong>: Low-level C system call debugging (<code>malloc</code>, <code>pthread</code>, <code>sysfs</code>, <code>gdb</code>, <code>gcc</code>) and discontinued 2010 consumer cloud products (Windows Live, iGoogle, broken figure-only questions) are cleanly isolated under <strong>REMOVE (${subj.counts.REMOVE})</strong> so your revision stays 100% focused on your exam syllabus.
           `
         : `
             • <strong>Syllabus Alignment</strong>: Mapped against the PGCP-BDA (ACTS, Pune) course syllabus sessions.

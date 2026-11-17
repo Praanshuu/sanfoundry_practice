@@ -425,8 +425,14 @@ def parse_page(html: bytes | str, url: str = "") -> ParsedPage:
                 return
             is_code_box = "hk1_style-wrap5" in (tag.get("class") or [])
             if is_code_box and not current.options:
-                current.q_lines.extend(lines)
-                return
+                has_full_opts = any(
+                    OPTION_LINE.match(ln) and OPTION_LINE.match(ln).group(1).upper() == "A" for ln in lines
+                ) and any(
+                    OPTION_LINE.match(ln) and OPTION_LINE.match(ln).group(1).upper() == "B" for ln in lines
+                )
+                if not has_full_opts:
+                    current.q_lines.extend(lines)
+                    return
             m_opt = OPTION_LINE.match(first)
             starts_expected_option = bool(m_opt and m_opt.group(1).upper() == current.expected_label())
             has_pre = tag.name == "pre" or tag.find("pre") is not None or is_code_box
@@ -450,7 +456,12 @@ def parse_page(html: bytes | str, url: str = "") -> ParsedPage:
         current.explanation = expl
         current.closed = True
 
+    # Unwrap any wrapper <div style="text-align:justify"> containers that hold multiple answer blocks
     ans_sel = SELECTORS["answer_block"]
+    for wrapper in list(content.find_all("div")):
+        if wrapper.parent is not None and not _matches(wrapper, ans_sel) and len(wrapper.select(ans_sel)) >= 2:
+            wrapper.unwrap()
+
     for child in list(content.children):
         if not isinstance(child, Tag):
             continue
