@@ -10197,7 +10197,7 @@
       "warning": null,
       "question": "What will be the output of the following Python code?\nprint(list(zip((1,2,3),('a'),('xxx','yyy'))))\nprint(list(zip((2,4),('b','c'),('yy','xx'))))",
       "options": {
-        "A": "[(1,2,3),(‘a’),(‘xxx’,’yyy’)]\n[(2,4),(‘b’,’c’),(‘yy’,’xx’)]\n📌 Limited Seats! Register Now - Free AI-ML Certification (November 2026)",
+        "A": "[(1,2,3),(‘a’),(‘xxx’,’yyy’)]\n[(2,4),(‘b’,’c’),(‘yy’,’xx’)]",
         "B": "[(1, 'a', 'xxx'),(2,’ ‘,’yyy’),(3,’ ‘,’ ‘)]\n[(2, 'b', 'yy'), (4, 'c', 'xx')]",
         "C": "Syntax error",
         "D": "[(1, 'a', 'xxx')]\n[(2, 'b', 'yy'), (4, 'c', 'xx')]"
@@ -13451,7 +13451,7 @@
       "warning": null,
       "question": "What will be the output of the following Python code?\ndef sayHello():\n    print('Hello World!')\nsayHello()\nsayHello()",
       "options": {
-        "A": "Hello World!\nHello World!\n📌 Limited Seats! Register Now - Free AI-ML Certification (November 2026)",
+        "A": "Hello World!\nHello World!",
         "B": "'Hello World!'\n'Hello World!'",
         "C": "Hello\nHello",
         "D": "None of the mentioned"

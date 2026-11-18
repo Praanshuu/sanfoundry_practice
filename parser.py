@@ -40,10 +40,11 @@ HUB_LINK_EXCLUDE_PATH_PREFIXES = (
     "/category/",
 )
 
-QUESTION_START = re.compile(r"^\s*(\d{1,4})\s*[\.\)]\s+(\S.*)$", re.S)
+QUESTION_START = re.compile(r"^\s*(\d{1,4})\s*[\.\)](?:\s+(?=\S)|(?=[A-Za-z_\"'“‘]))(\S.*)$", re.S)
 OPTION_LINE = re.compile(r"^\s*\(?([a-hA-H])(?:\)\s*|\.\s+)(.*)$", re.S)
 PROMO_TEXT_RE = re.compile(
-    r"(?:Enroll\s+(?:Now\s+)?for\s+Free|Register\s+Today\s+for\s+Free|Claim\s+Your\s+Free|"
+    r"(?:Enroll\s+(?:Now\s+)?for\s+Free|Register\s+(?:Today|Now)\s*(?:for|[\u2013\u2014\-:])\s*Free|Claim\s+Your\s+Free|"
+    r"Limited\s+Seats!\s*Register\s+Now|Apply\s+Now\s+for\s+Free|"
     r"Hurry!\s+Secure\s+Your\s+Free|Join\s+Sanfoundry|official\s+WhatsApp\s*(?:&|and)\s*Telegram|"
     r"Planning\s+to\s+Study\s+Abroad|Study\s+Abroad\s*[\u2013\u2014\-])",
     re.I,

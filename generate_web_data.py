@@ -2682,6 +2682,942 @@ def build_linux_cloud_questions_json() -> Path | None:
     return out_path
 
 
+R_SYLLABUS_MD = """# R Programming — PGCP-BDA (ACTS, Pune)
+**Module:** II. R-Programming (Sessions 14 to 17 — 8 Theory + 8 Lab + 8 Self Learning = 24 Hours)  
+**Course:** Suggested Teaching Guidelines for *Python and R Programming* (PGCP-BDA, August 2026)  
+**Evaluation:** Theory Exam – 40%, Lab Exam – 40%, Internal Assessment – 20%
+
+---
+
+## Session 14: R Project, Installation, Basics, Help, R GUI/RStudio & Basic Arithmetic (2T + 2L + 2SL)
+- The R project for Statistical Computing (History of R & S language, Ross Ihaka & Robert Gentleman, GNU GPL, R Foundation, CRAN)
+- Introduction & Installation of R (Base packages vs Recommended packages vs Contributed packages)
+- R Basics, Finding Help (`?func`, `help(func)`, `help.search()`, `??`, `args()`, `example()`), Case Sensitivity, Prompts (`>` and `+`), Comments (`#`), Assignment (`<-`), Auto-printing vs Explicit `print()`
+- Code Editors for R (Script Editors, `.R` script files, Emacs with ESS)
+- Exploring R GUI & R Commander (`Rcmdr` point-and-click interface)
+- Exploring RStudio (`.Rproj` projects, Console, Environment/Workspace, `View()`, `options(digits=...)`)
+- Basic Mathematical & Vectorized Arithmetic Operations in R (`+`, `-`, `*`, `/`, vector recycling, element-wise matrix multiplication `*` vs `%*%`, integer sequences `:`, `seq()`, `rep()`, `sqrt()`, `log()`, Date/Time arithmetic `Date`, `POSIXct`, `POSIXlt`, `strptime()`)
+- **Lab:**
+  1. Read Introduction to R, R basics and Scope of R.
+  2. Explore R GUI and RStudio.
+
+## Session 15: Data Objects (Data Types & Structures), Packages, Workspace & Importing/Exporting Data (2T + 2L + 2SL)
+- Data Objects — Data Types & Data Structures:
+  - 6 Atomic vector classes: `logical`, `integer` (explicit `L` suffix, e.g. `5L`), `numeric` (double precision), `complex`, `character`, `raw`
+  - Inspecting objects: `class()`, `typeof()`, `mode()`, `length()`, `attributes()`, `names()`, `dim()`, `dimnames()`, `nrow()`, `ncol()`, `rownames()`, `colnames()`, `row.names()`
+  - Implicit Coercion hierarchy (`logical` → `integer` → `numeric` → `character`) & Explicit Coercion (`as.numeric()`, `as.integer()`, `as.logical()`, `as.character()`, `as.matrix()`, `as.factor()`, `as.list()`, `as.Date()`, `unclass()`)
+  - Missing & Special Values: `NA` vs `NaN` vs `Inf` vs `NULL` (`is.na()`, `is.nan()`, `is.null()`)
+  - Data Structures: Homogeneous (`vector` via `c()`/`vector()`, `matrix` via `matrix()`/`diag()`/`cbind()`/`rbind()`, multi-dimensional `array` via `array()`) vs Heterogeneous (`list` via `list()`, `data.frame` via `data.frame()`) and categorical `factor` (`factor()`, levels, ordered factors, `table()`)
+- Packages in R & Working with Packages (`install.packages()`, `depends = TRUE`, `library()`, `require()`, `.libPaths()`, `search()`, `getOption("defaultPackages")`)
+- Handling Data in R Workspace (`ls()`, `objects()`, `rm(x)`, `rm(list = ls())`, `source()`, `sink()`, `save()`, `save.image()`, `load()`, `.RData`/`.rda`, `dput()`, `dget()`, `dump()`, `serialize()`, `unserialize()`)
+- Reading & Importing Data from Text files, Excel files & Databases (`read.table()`, `read.csv()`, `readLines()`, `scan()`, connections `file()`, `gzfile()`, `bzfile()`, `url()`, `DBI`, built-in datasets `data()`, `airquality`, `iris`, `diamonds`, `ChickWeight`)
+- Exporting Data from R (`write.table()`, `write.csv()`, `writeLines()`, `writexl` package)
+- **Lab:**
+  1. Write R program to compute `sum`, `mean` and `product` (`prod`) of a given vector elements.
+  2. Write R program to call the (built-in) dataset `airquality`.
+  3. Write R program to create a list of dataframes.
+  4. Access each of those data frames from the list (`[`, `[[`, `$`).
+  5. Write R Program to create dataframe:
+     - Get the statistical summary (`summary()`, `str()`) and nature of the data of dataframe.
+     - Add new column in dataframe.
+     - Sort dataframe using multiple columns (`order()`).
+     - Export Dataframe to Excel file using `writexl` package.
+
+## Session 16: Tidyverse (dplyr, ggplot2, reshape2), Data Frame Manipulation, Subsetting & Visualization (2T + 2L + 2SL)
+- Introduction to Tidyverse (group of packages: `dplyr`, `ggplot2`, `tidyr`/`reshape2`, `stringr`, `lubridate`, `data.table`)
+- Manipulating and Processing Data in R with `dplyr`:
+  - Core verbs: `select()` (and column exclusion `select(-col)`), `filter()`, `arrange()` (and `desc()`), `rename()`, `mutate()` (and `transmute()`), `group_by()`, `summarize()`
+  - Pipeline operator `%>%` for chaining left-to-right data transformations
+- Creating, Accessing and Sorting Data Frames:
+  - 3 Indexing/Subsetting operators: `[` (returns same class), `[[` (extracts single element, supports computed variable names `x[[name]]` and nested indices `x[[c(1, 3)]]`), `$` (extracts by literal name with partial matching)
+  - Matrix & Data Frame subsetting: `x[i, j]`, `drop = FALSE` to preserve dimensions, negative indices `old[-n, ]` / `old[, -c(i, j)]`, logical subsetting, `subset()`, `complete.cases()`, `%in%`, sorting rows with `x[order(x$B), ]` and `rev()`
+- Extracting, Combining, Merging & Reshaping Data Frames:
+  - Row/Column binding (`rbind()`, `cbind()`), merging (`merge()`), matrix/dataframe transpose (`t()`), `reshape2` (`melt()` wide-to-long, `dcast()` long-to-wide), grouping split (`split()`)
+- Data Visualization (Base Graphics, Lattice & `ggplot2`):
+  - Base Graphics: high-level (`plot()`, `hist()`, `boxplot()`, `barplot()`, `pie()`, `mosaicplot()`) vs low-level annotation (`lines()`, `points()`, `text()`, `title()`, `legend()`), `par()` parameters (`pch`, `col`, `main`, `mfrow`, `omi`, `fin`, `din`, `ask`, `new`)
+  - `ggplot2` Grammar of Graphics (`geom`, `theme_minimal()`, `theme_classic()`, `ggsave()`, `cut_interval()`, `cut_number()`) & Lattice (`xyplot()`, `bwplot()`, `dotplot()`, `stripplot()`, `panel.abline()`)
+  - Graphics Devices: vector (`pdf()`, `svg()`) vs bitmap (`png()`, `jpeg()`), `quartz()`, `dev.copy2pdf()`, `dev.off()`
+- **Lab:**
+  1. Load one XML file and one JSON file in RStudio, print the data in both files one by one and get statistical summary of data.
+  2. Extract Data from any website using R packages.
+  3. Call the built-in dataset `"diamonds"` in R and plot Pie chart and Bar graph.
+  - Examine the tidy data philosophy and why it simplifies data analysis.
+  - Compare traditional base R data manipulation with tidyverse-style pipelines (`%>%`).
+  - Reflect on why reshaping and merging data is often more critical than modeling itself.
+
+## Session 17: Functions, Control Flow, Loop Functions (apply Family), Built-in Functions & R Markdown (2T + 2L + 2SL)
+- Functions in R:
+  - Defining functions with `function()`, first-class function objects (`class(f) == "function"`), empty return `NULL`, implicit last-expression return, `invisible()`
+  - Formal arguments (`formals()`, `args()`), default argument values, positional & keyword matching, exact matching required after `...`, lazy evaluation
+  - Lexical Scoping & Environments: free variables resolved in the environment where the function was defined, function closures, parent/empty environment, `search()` path, `with()`, `by()`
+  - Control Flow inside Functions: `if-else`, `for`, `while`, `repeat`, `break`, `next`, `switch()` (positional & named dispatch)
+- Built-in Functions in R:
+  - **Numeric:** `sqrt()`, `log()`, `cumsum()`, `cumprod()`, `cummax()`, `cummin()`, `seq()`, `seq_len()`, `seq_along()`, `rep()`, `rev()`, `as.integer()`
+  - **Character & Date/Time:** `paste()`, `cat()`, `nchar()`, `as.Date()`, `Sys.Date()`, `Sys.time()`, `date()`, `weekdays()`, `months()`, `quarters()`, `strptime()`, `POSIXct`, `POSIXlt`
+  - **Statistical & Loop (`apply` Family):** `lapply()`, `sapply()`, `vapply()`, `apply(X, MARGIN, FUN)`, `tapply()`, `mapply()`, `split()`, `rowSums()`, `colMeans()`, `rowsum()`, `which.min()`, `which.max()`, `mean()`, `sd()`, `var()`, `max(..., na.rm=TRUE)`, `quantile()`, `table()`, `prop.table()`, `addmargins()`, `xtabs()`, `cut()`, `ecdf()`, `rnorm()`, `runif()`, `rbinom()`, `dnorm()`, `pnorm()`, `qnorm()`, `pchisq()`, `chisq.test()`, `t.test()`, `fisher.test()`, `qqline()`, `anova()`, `lm()`
+- Interactive Reporting with R Markdown (`knitr`, combining data, code & results into a single reproducible document, package vignettes) & Function Debugging (`traceback()`, `debug()`, `browser()`, `trace()`, `recover()`)
+- **Lab (Case Study — `ChickWeight` Dataset with `split()`):**
+  1. Examine the built-in `ChickWeight` data (`?ChickWeight`). Use `split()` and a script to:
+     - Construct a plot of `weight` against `Time` for chick number `34`.
+     - For chicks in diet group `4`, display box plots (`boxplot()`) for each time point.
+     - Compute the mean weight for chicks in group `4` for each time point and plot against time.
+     - Repeat the mean computation for group `2` and add the curve to the existing plot (`lines()`).
+     - Add a legend (`legend()`) and a title (`title()` / `main`).
+     - Copy and paste the graph into Word.
+"""
+
+
+# Per-page and per-question curation for all 60 saved R Programming HTML pages in RSaved/
+# - "must_practice": Curated high-yield Must-Do Shortlist (assigned category="KEEP")
+# - "basic" / "moderate" / "hard": Per-question difficulty tier
+# - "remove": Out-of-syllabus questions or Sanfoundry answer-key errata that have a clean twin elsewhere
+R_PAGE_CURATION: dict[str, dict[str, set[int]]] = {
+    # --- SESSION 14: History, Overview, Basics, Console Input & Vectorized Operations ---
+    "https://www.sanfoundry.com/r-programming-questions-answers-history/": {
+        "must_practice": {1, 4, 10},
+        "basic": {1, 4, 5, 6, 9, 10},
+        "moderate": {2, 3, 7, 8},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-history-2/": {
+        "must_practice": {3, 5, 6, 7, 10},
+        "basic": {2, 3, 4, 5, 6, 10},
+        "moderate": {1, 7, 8, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-overview/": {
+        "must_practice": {1, 2, 3, 4, 6, 7, 8, 10},
+        "basic": {1, 2, 3, 4, 10},
+        "moderate": {5, 6, 7, 8, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-basics/": {
+        "must_practice": {3, 5, 6, 7, 8, 10},
+        "basic": {1, 3, 4, 6, 8},
+        "moderate": {2, 5, 7, 9, 10},
+        "hard": set(),
+        "remove": {2},  # Sanfoundry erratum: marks "q() is used to quit the R program" as wrong statement
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-basics-3/": {
+        "must_practice": {1, 2, 3, 7, 8, 9},
+        "basic": {1, 2, 3, 4, 5},
+        "moderate": {7, 8, 9, 10},
+        "hard": set(),
+        "remove": {6},  # Erratum duplicate of Overview-1 Q3 (marks Functions instead of Packages)
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-basics-4/": {
+        "must_practice": {2, 3, 4, 5, 8, 9, 10, 15, 16},
+        "basic": {1, 3, 4, 5, 7, 10, 11, 13, 14, 15},
+        "moderate": {2, 6, 8, 9, 12, 16},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-console-input-evaluation/": {
+        "must_practice": {1, 3, 4, 5, 6, 7, 8, 9, 10},
+        "basic": {1, 3, 4, 8, 10},
+        "moderate": {2, 5, 6, 7, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-console-input-evaluation-2/": {
+        "must_practice": {1, 2, 3, 5, 6, 7, 8, 9, 10},
+        "basic": {2, 3, 4, 7, 9, 10},
+        "moderate": {5, 6, 8},
+        "hard": {1},
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-vectorized-operations/": {
+        "must_practice": {1, 2, 3, 4, 5, 7, 8, 9, 10},
+        "basic": {1, 2, 3, 6, 9},
+        "moderate": {4, 5, 7, 8, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-interview-questions-answers-experienced/": {  # Vectorized Operations - 2
+        "must_practice": {1, 2, 4, 5, 7},
+        "basic": {1},
+        "moderate": {2, 3, 4, 5, 7},
+        "hard": {6, 8},
+    },
+
+    # --- SESSION 15: Data Types & Structures, Packages, Workspace & Importing/Exporting Data ---
+    "https://www.sanfoundry.com/r-programming-questions-answers-overview-2/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+        "basic": {2, 4, 5, 6, 7, 8},
+        "moderate": {1, 3, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-overview-3/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+        "basic": {2, 3, 7, 8, 9, 10},
+        "moderate": {1, 4, 5, 6},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-basics-2/": {
+        "must_practice": {2, 5, 6, 7, 8, 9, 10},
+        "basic": {1, 3, 4, 6, 9, 10},
+        "moderate": {2, 5, 7},
+        "hard": {8},
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-data-types/": {
+        "must_practice": {2, 3, 4, 5, 6, 8, 9, 10},
+        "basic": {1, 3, 4, 7, 10},
+        "moderate": {2, 5, 6, 8, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-data-types-4/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8},
+        "basic": {1, 2, 4, 5, 6, 9, 10},
+        "moderate": {3, 7, 8},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-data-types-5/": {
+        "must_practice": {1, 2, 3, 4, 7, 8, 10, 14},
+        "basic": {1, 2, 3, 5, 7, 11, 12, 13, 14, 15},
+        "moderate": {4, 8, 9, 10},
+        "hard": set(),
+        "remove": {6},  # Typo in Sanfoundry option B ("Function()" instead of "factor()"); covered by Reading Datasets-1 Q6
+    },
+    "https://www.sanfoundry.com/r-programming-exam-questions-answers/": {  # Data Types - 6
+        "must_practice": {1, 2, 4, 5, 6, 7, 8},
+        "basic": {1, 2, 3, 4, 5, 8},
+        "moderate": {6, 7, 9, 10, 11},
+        "hard": set(),
+        "remove": {9, 10, 11},  # References unshown external 3D iris array/snames script
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-data-types-7/": {
+        "must_practice": {1, 2, 4, 8, 9, 10},
+        "basic": {1, 2, 3, 4, 5, 6, 7, 9, 10},
+        "moderate": {8, 11, 12, 13, 14, 15},
+        "hard": set(),
+        "remove": {12, 13, 14, 15},  # Obscure spline()/locator() list-return trivia (Q15 erroneously equates spline with density)
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-reading-datasets/": {
+        "must_practice": {2, 3, 4, 6, 7, 8, 10},
+        "basic": {2, 4, 6, 9},
+        "moderate": {3, 5, 7, 8, 10},
+        "hard": set(),
+        "remove": {1},  # Sanfoundry erratum: marks copy() instead of paste()
+    },
+    "https://www.sanfoundry.com/r-programming-interviews-questions-answers-freshers/": {  # Reading Datasets - 2
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+        "basic": {1, 3, 4, 9, 10},
+        "moderate": {2, 5, 6, 7, 8},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-textual-data-formats/": {
+        "must_practice": {1, 3, 4, 5, 6, 7, 8, 10},
+        "basic": {1, 4, 6, 7},
+        "moderate": {3, 5, 8, 10},
+        "hard": {2, 9},
+        "remove": {2},  # Sanfoundry erratum: asks for "wrong statement" when all 3 statements A, B, C are true
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-textual-data-formats-2/": {
+        "must_practice": {1, 2, 3, 6, 8, 9, 10, 11, 15},
+        "basic": {8, 9, 10, 11, 14, 15},
+        "moderate": {1, 2, 3, 4, 6, 7, 12, 13},
+        "hard": set(),
+        "remove": {5},  # Sanfoundry erratum: marks dput() for deparsing multiple objects (dump() is for multiple objects, as in Q6/Q7)
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-connections-interfaces/": {
+        "must_practice": {1, 2, 3, 4, 6, 7, 8, 9},
+        "basic": {1, 4, 6, 7, 8, 9, 10},
+        "moderate": {2, 3, 5},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-commands/": {
+        "must_practice": {1, 2, 3, 4, 5, 7, 9, 10},
+        "basic": {3, 4, 5, 8, 9, 10},
+        "moderate": {1, 2, 6, 7},
+        "hard": set(),
+        "remove": {8},  # Obscure legacy Mac GUI menu command browse.workspace
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-packages/": {
+        "must_practice": {4, 5, 6, 8, 9},
+        "basic": {4, 5},
+        "moderate": {2, 3, 6, 7, 8, 9},
+        "hard": set(),
+        "remove": {1},  # Sanfoundry erratum: marks plyr instead of sqldf for SQL queries on R data frames
+    },
+    "https://www.sanfoundry.com/tough-r-programming-questions/": {  # Packages - 2
+        "must_practice": {1, 2, 3},
+        "basic": {1, 2, 3},
+        "moderate": {5},
+        "hard": set(),
+        "remove": {4, 6, 7, 8, 9, 10},  # Obscure alphabetical CRAN packages (abc, accelerometry, avas, adegenet, aCRM, bayesclust)
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-packages-4/": {
+        "must_practice": {1},
+        "basic": {1, 3, 5},
+        "moderate": {4, 7},
+        "hard": set(),
+        "remove": {2, 6, 8, 9, 10},  # CRAN package authoring internals (.Rbuildignore, source vs bundle)
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-packages-5/": {
+        "must_practice": {2, 3},
+        "basic": {2, 3},
+        "moderate": set(),
+        "hard": set(),
+        "remove": {1, 4, 5, 6, 7, 8, 9, 10, 11, 12},  # CRAN package authoring internals (DESCRIPTION, DCF Debian Control Format, CRAN licensing)
+    },
+
+    # --- SESSION 16: Tidyverse (dplyr, ggplot2), Subsetting & Data Visualization ---
+    "https://www.sanfoundry.com/r-programming-questions-answers-subsetting/": {
+        "must_practice": {1, 2, 3, 4, 6, 7, 8, 9, 10},
+        "basic": {1, 2, 3, 4, 10},
+        "moderate": {5, 6, 7, 8},
+        "hard": {9},
+        "remove": {5},  # Sanfoundry erratum: claims "$ operator is used to extract elements of a list or a data frame" is a wrong statement
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-experienced/": {  # Subsetting - 2
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 9},
+        "basic": {1, 2, 9},
+        "moderate": {3, 4, 6, 7},
+        "hard": {5, 8},
+    },
+    "https://www.sanfoundry.com/tricky-r-programming-questions-answers/": {  # Commands - 2
+        "must_practice": {2, 3, 4, 5, 7, 8, 9, 10},
+        "basic": {5, 7, 9},
+        "moderate": {2, 3, 4, 6, 8, 10},
+        "hard": set(),
+        "remove": {1},  # Sanfoundry erratum: asks to drop nth column but marks old[-n,] (which drops nth row)
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-dplyr-basics/": {
+        "must_practice": {1, 2, 4, 6, 7, 9, 10},
+        "basic": {1, 2, 4, 6, 7, 9},
+        "moderate": {5, 8, 10},
+        "hard": set(),
+        "remove": {3},  # Sanfoundry erratum: marks rename instead of filter (covered accurately by dplyr-2 Q3)
+    },
+    "https://www.sanfoundry.com/r-programming-test/": {  # dplyr - 2
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 9},
+        "basic": {1, 3, 4, 6, 7},
+        "moderate": {2, 5, 8, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-exploratory-data-analysis/": {
+        "must_practice": {2, 3, 4, 5, 9, 10},
+        "basic": {2, 4, 5},
+        "moderate": {1, 3, 6, 8, 9, 10},
+        "hard": set(),
+        "remove": {7},  # Sanfoundry erratum: marks high-level boxplot() instead of low-level lines() for adding elements to an existing plot
+    },
+    "https://www.sanfoundry.com/advanced-r-programming-questions-answers/": {  # Exploratory Data Analysis - 2
+        "must_practice": {1, 2, 3, 6, 8},
+        "basic": {1, 2, 6, 8},
+        "moderate": {3, 4, 5, 7, 9, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-graphics-2/": {
+        "must_practice": {6, 7, 8, 9, 10},
+        "basic": {6, 7, 8, 9, 10},
+        "moderate": {1, 2, 3, 4, 5},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-ggplot2/": {
+        "must_practice": {1, 3, 5},
+        "basic": {1},
+        "moderate": {2, 3, 5},
+        "hard": set(),
+        "remove": {4, 6, 7, 8, 9, 10},  # Defunct ggplot2 v0.8 internals removed in 2012 (translate_qplot_*, ggfluctuation, ggmissing, ggorder)
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-visualizing-data-1/": {
+        "must_practice": {2, 5, 6, 7, 8, 9, 10},
+        "basic": {2, 5, 7, 9},
+        "moderate": {6, 8, 10},
+        "hard": set(),
+        "remove": {1, 3, 4},  # Sanfoundry errata: Q1 marks data() instead of rep(); Q3 marks read instead of xtabs; Q4 obscure psych::factor.model
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-visualizing-data-2/": {
+        "must_practice": {4, 5, 6, 7, 8, 9, 10},
+        "basic": {5, 7, 9},
+        "moderate": {4, 6, 8, 10},
+        "hard": set(),
+        "remove": {1, 2, 3},  # Sanfoundry errata: Q1 marks prop.table instead of addmargins; Q2 marks quantile instead of names; Q3 marks pnorm instead of pchisq
+    },
+
+    # --- SESSION 17: Control Structures, Functions, Scoping, Loop Functions, Built-ins & Debugging ---
+    "https://www.sanfoundry.com/r-programming-questions-answers-control-structures/": {
+        "must_practice": {1, 2, 3, 4, 6, 7, 8, 10},
+        "basic": {1, 3, 5, 6, 7, 8, 10},
+        "moderate": {2, 4, 9},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-quiz/": {  # Control Structures - 2
+        "must_practice": {1, 2, 3, 4, 6, 7, 8, 10},
+        "basic": {2, 3, 5, 6, 8, 9},
+        "moderate": {1, 4, 7, 10},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-mcqs/": {  # Control Structures - 3
+        "must_practice": {1, 3, 4, 5, 6, 7, 8, 9, 10},
+        "basic": {2, 5, 8, 9, 10},
+        "moderate": {1, 3, 4, 7},
+        "hard": {6},
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-functions/": {
+        "must_practice": {2, 3, 4, 5, 6, 7, 8},
+        "basic": {2, 3, 5, 6, 7},
+        "moderate": {1, 4, 8, 9},
+        "hard": set(),
+        "remove": {9},  # Sanfoundry arithmetic erratum: nchar("Hello, world!\n") * 3 is 14 * 3 = 42, but key marks A (32) instead of B (42)
+    },
+    "https://www.sanfoundry.com/r-programming-multiple-choice-questions-answers/": {  # Functions - 2
+        "must_practice": {1, 2, 3, 4, 6, 7, 8, 9},
+        "basic": {2, 3, 6, 9},
+        "moderate": {4, 7, 8},
+        "hard": {1, 10},
+        "remove": {5},  # Sanfoundry erratum: marks true statement A as wrong while explanation states C is the wrong statement
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-functions-3/": {
+        "must_practice": {1, 2, 3, 6, 7, 8, 9, 10},
+        "basic": {1, 3, 4, 7, 10},
+        "moderate": {5, 6, 8, 9},
+        "hard": {2},
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-functions-4/": {
+        "must_practice": {1, 4, 7, 8, 10},
+        "basic": {1, 4, 10},
+        "moderate": {2, 7, 8},
+        "hard": set(),
+        "remove": {3, 5, 6, 9},  # Q3 generic CS sorting, Q5/Q6 Hadoop HDFS/Oozie/Pig, Q9 obscure Adegenet genomics package
+    },
+    "https://www.sanfoundry.com/r-programming-question-papers/": {  # Functions - 5
+        "must_practice": {1, 2, 5, 6, 8, 10},
+        "basic": {1, 2, 5},
+        "moderate": {3, 4, 6, 7, 8, 10},
+        "hard": set(),
+        "remove": {9},  # Generic ML definition (K-Nearest Neighbour vs Travelling Salesman / N-Queen) with no R content
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-functions-6/": {
+        "must_practice": {4, 7, 8, 10},
+        "basic": {7, 8, 9, 10},
+        "moderate": {1, 4, 5, 6},
+        "hard": set(),
+        "remove": {2, 3, 9},  # Q2 & Q3 swap lapply/sapply in answer key (covered accurately in Loop Functions-1/2); Q9 claims every line of R code must start with #
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-scoping-rules/": {
+        "must_practice": {1, 2, 3, 4, 5, 6, 7, 8, 10},
+        "basic": {1, 2, 6, 8},
+        "moderate": {3, 4, 5, 7, 9},
+        "hard": {10},
+    },
+    "https://www.sanfoundry.com/r-programming-online-test/": {  # Scoping Rules - 2
+        "must_practice": {2, 5, 10},
+        "basic": {3},
+        "moderate": {1, 2, 5},
+        "hard": {10},
+        "remove": {4, 6, 7, 8, 9},  # Q4 marks non-existent opt() instead of optimize(); Q6–Q9 depend on unprovided make.NegLogLik(normals) dataset
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-loop-functions/": {
+        "must_practice": {2, 3, 4, 6, 7, 10},
+        "basic": {2, 3, 6, 7},
+        "moderate": {4, 9, 10},
+        "hard": set(),
+        "remove": {1, 5, 8},  # Sanfoundry errata: Q1 marks apply() instead of lapply() for lists; Q5 marks None when A/B/C are true; Q8 marks 4 args while explanation lists 3
+    },
+    "https://www.sanfoundry.com/r-programming-quiz-online/": {  # Loop Functions - 2
+        "must_practice": {1, 2, 3, 4, 6, 7, 8, 10},
+        "basic": {7},
+        "moderate": {1, 2, 3, 4, 5, 8, 9, 10},
+        "hard": {6},
+    },
+    "https://www.sanfoundry.com/tough-r-programming-questions-answers/": {  # Commands - 3
+        "must_practice": {1, 3, 4, 5, 7, 9, 10},
+        "basic": {1, 9, 10},
+        "moderate": {3, 4, 5, 6, 7, 8},
+        "hard": set(),
+        "remove": {2},  # Erroneous duplicate of Q7 on the same page (marks rowMeans instead of rowsum)
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-debugging-tools/": {
+        "must_practice": {1, 2, 4, 5, 6},
+        "basic": {1, 7},
+        "moderate": {2, 4, 5, 6},
+        "hard": set(),
+        "remove": {3},  # Erratum duplicate of Q1: log(c(-1, 2)) produces a Warning, not an Error
+    },
+    "https://www.sanfoundry.com/r-programming-questions-bank/": {  # Debugging Tools - 2
+        "must_practice": {1, 5, 6, 7},
+        "basic": {1, 2, 3},
+        "moderate": {4, 5, 6, 7, 8},
+        "hard": set(),
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-linear-regression/": {
+        "must_practice": {4, 6, 8},
+        "basic": {4, 6},
+        "moderate": {2, 7},
+        "hard": {8},
+        "remove": {1, 3, 5},  # Obscure psych package psychometric functions (phi2poly, count.pairwise, correct.cor)
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-linear-regression-2/": {
+        "must_practice": {6},
+        "basic": {6},
+        "moderate": {3, 7},
+        "hard": set(),
+        "remove": {1, 2, 4, 5, 8},  # Pure regression/statistics theory without R programming content
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-linear-regression-3/": {
+        "must_practice": set(),
+        "basic": {5},
+        "moderate": set(),
+        "hard": set(),
+        "remove": {1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15},  # Pure regression theory without R code
+    },
+    "https://www.sanfoundry.com/r-programming-questions-answers-neural-networks/": {
+        "must_practice": set(),
+        "basic": set(),
+        "moderate": set(),
+        "hard": set(),
+        "remove": {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},  # 100% Out of Syllabus (Biological/ANN trivia)
+    },
+    "https://www.sanfoundry.com/r-programming-puzzles/": {  # Packages - 3
+        "must_practice": set(),
+        "basic": set(),
+        "moderate": set(),
+        "hard": set(),
+        "remove": {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},  # 100% Out of Syllabus (Obscure CRAN domain packages)
+    },
+}
+
+
+def consolidate_r_syllabus_topic(raw_syl: str, sf_topic: str, category: str) -> str:
+    """Map detailed R session labels into the 5 consolidated PGCP-BDA R-Programming Syllabus Session groups."""
+    if category == "REMOVE" or raw_syl.startswith("Excluded"):
+        return "Excluded / Out of Syllabus (Neural Networks, Obscure CRAN Packages, Package Authoring Internals & Errata)"
+    s = raw_syl.lower()
+    t = sf_topic.lower()
+    if any(k in t for k in ("control structures", "functions-", "scoping rules", "loop functions", "commands-3", "debugging", "linear regression")):
+        return "Session 17: Functions, Control Flow, Loop Functions (apply Family), Built-in Functions & R Markdown (2T + 2L + 2SL)"
+    if any(k in t for k in ("subsetting", "dplyr", "exploratory data analysis", "graphics with r", "ggplot2", "visualizing data", "commands-2")):
+        return "Session 16: Tidyverse (dplyr, ggplot2, reshape2), Data Frame Manipulation, Subsetting & Visualization (2T + 2L + 2SL)"
+    if any(k in t for k in ("data types", "reading datasets", "textual data formats", "connection interfaces", "commands-1", "packages-", "overview of r-2", "overview of r-3", "basics-2")):
+        return "Session 15: Data Objects (Data Types & Structures), Packages, Workspace & Importing/Exporting Data (2T + 2L + 2SL)"
+    if "session 17" in s and "session 14" not in s and "session 15" not in s and "session 16" not in s:
+        return "Session 17: Functions, Control Flow, Loop Functions (apply Family), Built-in Functions & R Markdown (2T + 2L + 2SL)"
+    if "session 16" in s and "session 15" not in s:
+        return "Session 16: Tidyverse (dplyr, ggplot2, reshape2), Data Frame Manipulation, Subsetting & Visualization (2T + 2L + 2SL)"
+    if "session 15" in s and "session 14" not in s:
+        return "Session 15: Data Objects (Data Types & Structures), Packages, Workspace & Importing/Exporting Data (2T + 2L + 2SL)"
+    return "Session 14: R Project, Installation, Basics, Help, R GUI/RStudio & Basic Arithmetic (2T + 2L + 2SL)"
+
+
+def infer_r_warning(question_text: str, sf_topic: str, syl_group: str) -> str | None:
+    """Attach a concise R exam tip for classic R gotchas (1-based indexing, typeof vs class, [ vs [[ vs $, NA vs NaN, dplyr verbs, apply family)."""
+    q_low = question_text.lower()
+    if "typeof(" in q_low and "mode(" in q_low:
+        return (
+            "R Exam Gotcha: For x <- 1:3, typeof(x) and class(x) return 'integer', whereas mode(x) returns 'numeric'! "
+            "For x <- 4 (without L), typeof(x), mode(x), and class(x) are all 'double'/'numeric'."
+        )
+    if "is.na(" in q_low or "is.nan(" in q_low:
+        return (
+            "R Exam Gotcha: Every NaN ('Not a Number', e.g. 0/0 or log(-1)) is also treated as NA by is.na() "
+            "(so is.na(c(NA, NaN)) is TRUE TRUE), whereas is.nan(NA) is FALSE!"
+        )
+    if "[[" in question_text or "x$" in question_text or "drop = false" in q_low:
+        return (
+            "Subsetting Tip: '[' returns the same class as the original object (e.g. a sublist); '[[' and '$' extract a single component. "
+            "Use '[[' for computed variable names (x[[name]]), and use drop = FALSE when slicing a matrix row/column to keep it as a 2D matrix."
+        )
+    if any(k in q_low for k in ("lapply", "sapply", "vapply", "tapply", "mapply")):
+        return (
+            "Loop Functions Tip: lapply() ALWAYS returns a list; sapply() simplifies the result to a vector/matrix if possible; "
+            "vapply() requires an explicit FUN.VALUE output template for type safety; tapply() applies a function over vector subsets grouped by a factor."
+        )
+    if "dplyr" in sf_topic.lower() or "%>%" in question_text:
+        return (
+            "Tidyverse (dplyr) Tip: select() picks columns (select(df, -col) drops columns), filter() picks rows by condition, "
+            "arrange(df, desc(col)) sorts rows, mutate() adds/transforms columns, and group_by() + summarize() computes grouped aggregations via %>%."
+        )
+    return None
+
+
+def build_r_questions_json() -> Path | None:
+    """Extract all 60 saved HTML pages in `RSaved/`, map and curate them against the PGCP-BDA R syllabus, and write `r_questions.json`."""
+    r_dir = ROOT / "RSaved"
+    if not r_dir.is_dir():
+        return None
+    html_files = sorted(r_dir.glob("*.html"))
+    if not html_files:
+        return None
+
+    from open_r_pages import TOPIC_SYLLABUS_MAP, get_ordered_topics
+    from parser import parse_page
+    from scraper import normalize_text
+
+    pages_by_url: dict[str, Any] = {}
+    for f in html_files:
+        parsed = parse_page(f.read_bytes(), url=f.as_posix())
+        if not parsed.questions:
+            continue
+        norm_u = (parsed.url or "").rstrip("/") + "/"
+        pages_by_url[norm_u] = parsed
+
+    ordered_urls = [item["url"] for item in get_ordered_topics() if item["url"] in pages_by_url]
+    for u in sorted(pages_by_url.keys()):
+        if u not in ordered_urls:
+            ordered_urls.append(u)
+
+    raw_records: list[dict[str, Any]] = []
+    seen_exact: set[tuple[str, str]] = set()
+    seen_loose: set[tuple[str, frozenset[str]]] = set()
+
+    # Specific explanation notes for removed/erratum questions so students inspecting REMOVE know the exact reason
+    errata_reasons: dict[tuple[str, int], tuple[str, str]] = {
+        ("https://www.sanfoundry.com/r-programming-questions-answers-basics/", 2): (
+            "Excluded: Sanfoundry answer-key erratum (marks 'q() is used to quit the R program' as wrong, even though q() IS the standard R quit function).",
+            "Sanfoundry Erratum: q() (or quit()) IS the standard function to terminate an R session.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-basics-3/", 6): (
+            "Excluded: Duplicate of Overview-1 Q3 with a wrong answer key (marks 'Functions' instead of 'Packages').",
+            "Sanfoundry Erratum: R functionality is divided into Packages (correctly answered in Overview of R-1 Q3).",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-data-types-5/", 6): (
+            "Excluded: Sanfoundry option typo ('Function()' printed instead of 'factor()'); covered accurately by Reading Datasets-1 Q6.",
+            "Sanfoundry Typo: Factors are created using factor(), not Function().",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-reading-datasets/", 1): (
+            "Excluded: Sanfoundry answer-key erratum (marks copy() instead of paste() for concatenating strings); covered accurately by Functions-2 Q9 and Console Input-2 Q5.",
+            "Sanfoundry Erratum: paste() concatenates arguments into character strings, not copy().",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-textual-data-formats/", 2): (
+            "Excluded: Sanfoundry erratum (asks for the 'wrong statement' when all three statements about write.table, writeLines, and dump are true).",
+            "Sanfoundry Erratum: All three statements (write.table, writeLines, dump) are true.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-textual-data-formats-2/", 5): (
+            "Excluded: Sanfoundry answer-key erratum (marks dput() instead of dump() for deparsing multiple R objects at once; see Textual Data Formats-1 Q3 & Q10).",
+            "Sanfoundry Erratum: dput() deparses a single R object, whereas dump() deparses multiple R objects at once.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-packages/", 1): (
+            "Excluded: Sanfoundry answer-key erratum (marks plyr instead of sqldf for running SQL queries on R data frames, contradicting its own explanation).",
+            "Sanfoundry Erratum: sqldf (Option A) runs SQL queries on R data frames; plyr is for split-apply-combine.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-subsetting/", 5): (
+            "Excluded: Sanfoundry erratum (marks '$ operator is used to extract elements of a list or a data frame' as wrong, contradicting Subsetting-2 Q2).",
+            "Sanfoundry Erratum: The $ operator DOES extract named elements from a list or data frame.",
+        ),
+        ("https://www.sanfoundry.com/tricky-r-programming-questions-answers/", 1): (
+            "Excluded: Sanfoundry answer-key erratum (asks how to drop the nth column but marks old[-n,] which drops the nth row; old[,-n] drops the nth column).",
+            "Sanfoundry Erratum: old[, -n] (Option B) drops the nth column; old[-n, ] drops the nth row.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-dplyr-basics/", 3): (
+            "Excluded: Sanfoundry answer-key erratum (marks rename instead of filter for extracting rows by logical condition; covered accurately by dplyr-2 Q3).",
+            "Sanfoundry Erratum: dplyr::filter() (Option B) extracts rows matching a logical condition; rename() renames columns.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-exploratory-data-analysis/", 7): (
+            "Excluded: Sanfoundry answer-key erratum (marks high-level boxplot() instead of low-level lines() for adding elements to an existing base plot).",
+            "Sanfoundry Erratum: lines(), points(), and text() are low-level functions that add elements to an existing plot; boxplot() starts a new plot.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-visualizing-data-1/", 1): (
+            "Excluded: Sanfoundry answer-key erratum (marks data() instead of rep() for making a vector of repeated values; covered accurately by Data Types-6 Q4).",
+            "Sanfoundry Erratum: rep() (Option A) creates a vector of repeated values; data() loads built-in datasets.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-visualizing-data-1/", 3): (
+            "Excluded: Sanfoundry answer-key erratum (marks read instead of xtabs for formula-based cross-tabulation).",
+            "Sanfoundry Erratum: xtabs() (Option C) cross-tabulates tables using formulas.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-visualizing-data-2/", 1): (
+            "Excluded: Sanfoundry answer-key erratum (marks prop.table() instead of addmargins() for adding marginal sums to a table).",
+            "Sanfoundry Erratum: addmargins() (Option C) adds marginal sums to an existing table; prop.table() computes proportions.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-visualizing-data-2/", 2): (
+            "Excluded: Sanfoundry answer-key erratum (marks quantile() instead of names() for listing variable names in a data.frame).",
+            "Sanfoundry Erratum: names() (Option B) lists the variable names of a data.frame.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-visualizing-data-2/", 3): (
+            "Excluded: Sanfoundry answer-key erratum (marks pnorm instead of pchisq() for chi-square distributions).",
+            "Sanfoundry Erratum: pchisq() (Option A) is the distribution function for chi-square; pnorm() is for the normal distribution.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-functions/", 9): (
+            "Excluded: Sanfoundry arithmetic erratum (nchar('Hello, world!\\n') is 14, so 14 * 3 = 42, Option B, but key marks Option A = 32; see Functions-2 Q4 where num=1 gives 14).",
+            "Sanfoundry Erratum: 'Hello, world!\\n' has 14 characters, so f(3) returns 14 * 3 = 42 (Option B), not 32.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-multiple-choice-questions-answers/", 5): (
+            "Excluded: Sanfoundry answer-key erratum (marks statement A as wrong even though its own explanation states C is the wrong statement).",
+            "Sanfoundry Erratum: Statement C ('The value returned by the call to function is not a function') is the wrong statement.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-functions-6/", 2): (
+            "Excluded: Sanfoundry answer-key erratum (marks lapply instead of sapply for returning a vector/data frame, contradicting its own explanation).",
+            "Sanfoundry Erratum: sapply() (Option B) simplifies output to a vector/matrix, whereas lapply() returns a list.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-functions-6/", 3): (
+            "Excluded: Sanfoundry answer-key erratum (marks sapply instead of lapply for returning a list, contradicting its own explanation).",
+            "Sanfoundry Erratum: lapply() (Option A) always returns a list, whereas sapply() returns a simplified vector/matrix.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-functions-6/", 9): (
+            "Excluded: Poorly worded question ('The line of code in R language should begin with a Hash symbol' — # starts a comment line, not executable code).",
+            "Note: In R, '#' starts a comment line (covered accurately in Console Input-1 Q2 and Basics-1 Q8).",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-loop-functions/", 1): (
+            "Excluded: Sanfoundry answer-key erratum (marks apply() instead of lapply() for looping over a list; covered accurately by Loop Functions-1 Q2 & Loop Functions-2 Q1).",
+            "Sanfoundry Erratum: lapply() (Option B) loops over a list and evaluates a function on each element; apply() operates on array/matrix margins.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-loop-functions/", 5): (
+            "Excluded: Sanfoundry answer-key erratum (marks 'None of the mentioned' when statements A, B, and C about lapply() are all true).",
+            "Sanfoundry Erratum: Statements A, B, and C about lapply() are all true.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-loop-functions/", 8): (
+            "Excluded: Sanfoundry answer-key erratum (marks 'four' arguments while its own explanation states lapply(X, FUN, ...) takes three arguments).",
+            "Sanfoundry Erratum: lapply(X, FUN, ...) takes 3 arguments (Option B), as stated in the explanation.",
+        ),
+        ("https://www.sanfoundry.com/tough-r-programming-questions-answers/", 2): (
+            "Excluded: Duplicate of Commands-3 Q7 on the same page with a wrong answer key (marks rowMeans instead of rowsum).",
+            "Sanfoundry Erratum: rowsum(x, group) (Option D, covered in Q7) computes row sums by grouping variable.",
+        ),
+        ("https://www.sanfoundry.com/r-programming-questions-answers-debugging-tools/", 3): (
+            "Excluded: Sanfoundry erratum (marks 'Error in log(c(-1, 2)): NaNs produced' when R actually issues a Warning, as shown in Q1).",
+            "Sanfoundry Erratum: log(c(-1, 2)) returns c(NaN, 0.6931472) with a Warning message ('NaNs produced'), not a fatal Error.",
+        ),
+    }
+
+    for norm_u in ordered_urls:
+        page = pages_by_url[norm_u]
+        meta = TOPIC_SYLLABUS_MAP.get(norm_u, {})
+        base_topic = meta.get("topic") or page.topic or "R Programming"
+        base_cat = meta.get("category", "SELECTIVE")
+        base_syl = meta.get("syllabus_topic", base_topic)
+        base_reason = meta.get("reason", "")
+        curation = R_PAGE_CURATION.get(norm_u)
+
+        for q in page.questions:
+            qnum = int(q.number or 0)
+            # Repair missing Answer: a on Functions-3 Q6 (knitr single document for reproducible research)
+            if norm_u == "https://www.sanfoundry.com/r-programming-questions-answers-functions-3/" and qnum == 6 and not q.correct_answer:
+                q.correct_answer = "A"
+
+            exact_sig = (
+                q.question.strip(),
+                "|".join(f"{k}:{normalize_text(v)}" for k, v in sorted(q.options.items())),
+            )
+            loose_q = re.sub(r"\bthe\b", " ", normalize_text(q.question))
+            loose_q = re.sub(r"\s+", " ", loose_q).strip()
+            loose_sig = (loose_q, frozenset(normalize_text(v) for v in q.options.values()))
+
+            if exact_sig in seen_exact or loose_sig in seen_loose:
+                continue
+            seen_exact.add(exact_sig)
+            seen_loose.add(loose_sig)
+
+            if curation:
+                if qnum in curation.get("hard", set()):
+                    diff = "Hard"
+                elif qnum in curation.get("moderate", set()):
+                    diff = "Moderate"
+                else:
+                    diff = "Basic"
+            else:
+                diff = "Moderate" if "\n" in q.question else "Basic"
+
+            custom_warn = None
+            if (norm_u, qnum) in errata_reasons:
+                q_cat = "REMOVE"
+                q_syl = "Excluded (Sanfoundry Answer-Key Erratum / Covered by Clean Twin)"
+                q_reason, custom_warn = errata_reasons[(norm_u, qnum)]
+            elif curation and qnum in curation.get("remove", set()):
+                q_cat = "REMOVE"
+                q_syl = "Excluded / Out of PGCP-BDA R-Programming Syllabus"
+                q_reason = f"[Excluded — Out of Syllabus] Outside PGCP-BDA R Programming Sessions 14–17 ({base_topic})."
+            elif base_cat == "REMOVE":
+                if norm_u == "https://www.sanfoundry.com/r-programming-questions-answers-linear-regression-3/" and qnum == 5:
+                    q_cat = "SELECTIVE"
+                    q_syl = "Session 17: Built-in Statistical Functions — Analysis of Variance (anova)"
+                    q_reason = "[Extra Practice — Basic] ANOVA stands for Analysis of Variance (computed in R with anova() / aov())."
+                else:
+                    q_cat = "REMOVE"
+                    q_syl = base_syl
+                    q_reason = base_reason
+            elif curation:
+                if qnum in curation.get("must_practice", set()):
+                    q_cat = "KEEP"
+                    q_syl = base_syl
+                    q_reason = f"[Must-Practice {diff} MCQ] {base_reason}"
+                else:
+                    q_cat = "SELECTIVE"
+                    q_syl = base_syl
+                    q_reason = f"[Extra Practice — {diff}] {base_reason}"
+            else:
+                q_cat = base_cat
+                q_syl = base_syl
+                q_reason = base_reason
+
+            syl_group = consolidate_r_syllabus_topic(q_syl, base_topic, q_cat)
+            warn_msg = custom_warn or infer_r_warning(q.question, base_topic, syl_group)
+
+            raw_records.append(
+                {
+                    "topic": base_topic,
+                    "category": q_cat,
+                    "difficulty": diff,
+                    "must_practice": q_cat == "KEEP",
+                    "syllabus_topic": syl_group,
+                    "syllabus_detail": q_syl,
+                    "reason": q_reason,
+                    "faculty_alignment": q_syl,
+                    "warning": warn_msg,
+                    "question": q.question,
+                    "options": q.options,
+                    "correct_answer": q.correct_answer,
+                    "explanation": q.explanation,
+                    "source_url": norm_u.rstrip("/"),
+                }
+            )
+
+    session_order_list = [
+        "Session 14: R Project, Installation, Basics, Help, R GUI/RStudio & Basic Arithmetic (2T + 2L + 2SL)",
+        "Session 15: Data Objects (Data Types & Structures), Packages, Workspace & Importing/Exporting Data (2T + 2L + 2SL)",
+        "Session 16: Tidyverse (dplyr, ggplot2, reshape2), Data Frame Manipulation, Subsetting & Visualization (2T + 2L + 2SL)",
+        "Session 17: Functions, Control Flow, Loop Functions (apply Family), Built-in Functions & R Markdown (2T + 2L + 2SL)",
+        "Excluded / Out of Syllabus (Neural Networks, Obscure CRAN Packages, Package Authoring Internals & Errata)",
+    ]
+    order_index = {name: i for i, name in enumerate(session_order_list)}
+    cat_order = {"KEEP": 0, "SELECTIVE": 1, "REMOVE": 2}
+    diff_order = {"Basic": 0, "Moderate": 1, "Hard": 2}
+
+    raw_records.sort(
+        key=lambda r: (
+            order_index.get(r["syllabus_topic"], 99),
+            cat_order.get(r["category"], 9),
+            diff_order.get(r["difficulty"], 9),
+        )
+    )
+
+    topic_counts: Counter[str] = Counter()
+    topic_meta_map: dict[str, dict[str, str]] = {}
+    questions: list[dict[str, Any]] = []
+
+    for idx, rec in enumerate(raw_records, start=1):
+        rec_with_id = {"id": idx, **rec}
+        questions.append(rec_with_id)
+        t = rec["topic"]
+        topic_counts[t] += 1
+        if t not in topic_meta_map or rec["category"] == "KEEP":
+            topic_meta_map[t] = {
+                "category": rec["category"],
+                "reason": rec["reason"],
+                "faculty_alignment": rec["syllabus_detail"],
+                "syllabus_topic": rec["syllabus_topic"],
+            }
+
+    topics = [
+        {
+            "topic": t,
+            "count": c,
+            "category": topic_meta_map[t]["category"],
+            "syllabus_topic": topic_meta_map[t]["syllabus_topic"],
+            "reason": topic_meta_map[t]["reason"],
+            "faculty_alignment": topic_meta_map[t]["faculty_alignment"],
+        }
+        for t, c in sorted(topic_counts.items())
+    ]
+
+    keep_qs = [q for q in questions if q["category"] == "KEEP"]
+    r_json_data = {
+        "subject": "R Programming — Data Objects, Subsetting, Workspace/File I/O, Tidyverse (dplyr/ggplot2), Functions & apply Family",
+        "syllabus": "PGCP-BDA (ACTS, Pune) — R Programming (Sessions 14–17: 8T + 8L + 8SL)",
+        "source": "Sanfoundry",
+        "total_questions": len(questions),
+        "counts": {
+            "KEEP": len(keep_qs),
+            "SELECTIVE": sum(1 for q in questions if q["category"] == "SELECTIVE"),
+            "REMOVE": sum(1 for q in questions if q["category"] == "REMOVE"),
+        },
+        "difficulty_counts": {
+            "ALL": {
+                "Basic": sum(1 for q in questions if q["difficulty"] == "Basic"),
+                "Moderate": sum(1 for q in questions if q["difficulty"] == "Moderate"),
+                "Hard": sum(1 for q in questions if q["difficulty"] == "Hard"),
+            },
+            "KEEP": {
+                "Basic": sum(1 for q in keep_qs if q["difficulty"] == "Basic"),
+                "Moderate": sum(1 for q in keep_qs if q["difficulty"] == "Moderate"),
+                "Hard": sum(1 for q in keep_qs if q["difficulty"] == "Hard"),
+            },
+        },
+        "topics": topics,
+        "syllabus_markdown": R_SYLLABUS_MD,
+        "questions": questions,
+    }
+
+    out_path = ROOT / "r_questions.json"
+    out_path.write_text(json.dumps(r_json_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Write standalone Must-Practice Shortlist CSV and Markdown study guide in Resource/
+    res_dir = ROOT / "Resource"
+    res_dir.mkdir(parents=True, exist_ok=True)
+    csv_path = res_dir / "R_Programming_Must_Practice_Shortlist.csv"
+    with csv_path.open("w", encoding="utf-8-sig", newline="") as f_csv:
+        writer = csv.writer(f_csv)
+        writer.writerow(["Question ID", "Difficulty", "Syllabus Session", "Sanfoundry Topic", "Question Stem", "Correct Answer", "Syllabus Alignment"])
+        for q in keep_qs:
+            stem_one_line = " | ".join(ln.strip() for ln in q["question"].splitlines() if ln.strip())
+            writer.writerow([q["id"], q["difficulty"], q["syllabus_topic"], q["topic"], stem_one_line, q["correct_answer"], q["syllabus_detail"]])
+
+    md_lines = [
+        "# R Programming — Must-Practice MCQ Shortlist & LLM Question Varieties Guide (PGCP-BDA)",
+        "",
+        f"- **Total Unique Questions Extracted:** `{len(questions)}` (from 60 saved HTML pages in `RSaved/`)",
+        f"- **Must-Practice Shortlist (`KEEP`):** `{len(keep_qs)}` hand-picked high-yield MCQs (`{r_json_data['difficulty_counts']['KEEP']['Basic']}` Basic • `{r_json_data['difficulty_counts']['KEEP']['Moderate']}` Moderate • `{r_json_data['difficulty_counts']['KEEP']['Hard']}` Hard)",
+        f"- **Extra Practice (`SELECTIVE`):** `{r_json_data['counts']['SELECTIVE']}` secondary/variation drills (R history trivia, Lattice plot options, POSIX date extras, interactive debugger tools)",
+        f"- **Excluded (`REMOVE`):** `{r_json_data['counts']['REMOVE']}` out-of-syllabus or broken-key questions (biological Neural Networks, obscure CRAN domain packages like `paleoTS`/`satin`/`adegenet`, CRAN package authoring `.Rbuildignore`/`DCF` internals, defunct 2010 `ggplot2` v0.8 functions, pure regression theory without R code, and Sanfoundry answer-key errata)",
+        "",
+        "## Session-Wise Shortlist Breakdown",
+        "",
+        "| Syllabus Session | Total | Shortlist (`KEEP`) | Basic | Moderate | Hard | Extra (`SELECTIVE`) |",
+        "|---|---:|---:|---:|---:|---:|---:|",
+    ]
+    for s_name in session_order_list:
+        s_all = [q for q in questions if q["syllabus_topic"] == s_name]
+        if not s_all:
+            continue
+        s_keep = [q for q in s_all if q["category"] == "KEEP"]
+        s_sel = [q for q in s_all if q["category"] == "SELECTIVE"]
+        b_cnt = sum(1 for q in s_keep if q["difficulty"] == "Basic")
+        m_cnt = sum(1 for q in s_keep if q["difficulty"] == "Moderate")
+        h_cnt = sum(1 for q in s_keep if q["difficulty"] == "Hard")
+        md_lines.append(f"| {s_name} | {len(s_all)} | **{len(s_keep)}** | {b_cnt} | {m_cnt} | {h_cnt} | {len(s_sel)} |")
+
+    md_lines.extend(["", "---", ""])
+    for s_name in session_order_list:
+        s_keep = [q for q in keep_qs if q["syllabus_topic"] == s_name]
+        if not s_keep:
+            continue
+        md_lines.append(f"## {s_name} ({len(s_keep)} Must-Practice MCQs)")
+        md_lines.append("")
+        for diff_label in ("Basic", "Moderate", "Hard"):
+            d_qs = [q for q in s_keep if q["difficulty"] == diff_label]
+            if not d_qs:
+                continue
+            id_badges = ", ".join(f"`#{q['id']}`" for q in d_qs)
+            md_lines.append(f"### {diff_label} Level ({len(d_qs)} Qs): {id_badges}")
+            md_lines.append("")
+            for q in d_qs:
+                stem_short = " // ".join(ln.strip() for ln in q["question"].splitlines() if ln.strip())
+                if len(stem_short) > 140:
+                    stem_short = stem_short[:137] + "..."
+                md_lines.append(f"- **#{q['id']}** *({q['topic']})*: {stem_short} — **Ans: `{q['correct_answer']}`**")
+            md_lines.append("")
+
+    md_lines.extend([
+        "---",
+        "",
+        "## 12 High-Yield Question Varieties to Practice & Generate from LLMs",
+        "",
+        "Sanfoundry's R pages are heavily theoretical or based on Roger Peng's Coursera book. For your **PGCP-BDA Theory & Lab Exams**, make sure you generate and practice these **12 high-yield code-output & scenario varieties**:",
+        "",
+        "1. **Atomic Coercion Hierarchy & `typeof()` vs `mode()` vs `class()` Traps** (`logical` → `integer` → `numeric` → `character`, `5` vs `5L`, `c(TRUE, 2L, 3.5)`, `c(1, 'a', FALSE)`, `as.numeric(c('12', 'abc'))` producing `NA` with warning).",
+        "2. **Vector Recycling & Element-Wise Matrix Arithmetic** (`c(3, 2, 4) * c(1, 2)` recycling with warning, element-wise `A * B` vs true matrix multiplication `A %*% B`, `1:4 + 6:9`, `sum()`, `mean()`, `prod()` with `na.rm = TRUE`).",
+        "3. **Missing & Special Values Quartet (`NA`, `NaN`, `Inf`, `NULL`)** (`is.na(c(1, NA, NaN))` returning `FALSE TRUE TRUE` vs `is.nan(c(1, NA, NaN))` returning `FALSE FALSE TRUE`, `length(NULL) == 0` vs `length(NA) == 1`, `if (x > 0)` throwing an error when `x` is `NA`).",
+        "4. **1-Based Subsetting & List vs Data Frame Extraction (`[` vs `[[` vs `$`)** (`x[1]` returning a 1-element sublist vs `x[[1]]` extracting the object itself; computed variable names `x[[name]]` vs literal `x$name`; partial matching `x$a` and `x[['a', exact=FALSE]]`; nested list indexing `x[[c(1, 3)]]`; negative indexing `df[-n, ]` vs `df[, -c(i, j)]`; `m[1, , drop = FALSE]`).",
+        "5. **Matrix Construction & Reshaping (`byrow`, `rbind`/`cbind`, `t()`, `reshape2::melt` & `dcast`)** (Default column-wise fill `matrix(1:6, nrow = 2, ncol = 3)` vs `byrow = TRUE`; `dim(x) <- c(3, 2)`; wide-to-long `melt()` vs long-to-wide `dcast()`).",
+        "6. **Factors (`factor()`, `levels`, `table()`, `unclass()`)** (Alphabetical default level ordering vs explicit `levels = c('yes', 'no')`; `as.numeric(factor(c('10', '20')))` returning internal level codes `1, 2` instead of `10, 20`).",
+        "7. **Data Frame Manipulation & Multi-Column Sorting (Base R vs `dplyr` Tidyverse Pipelines)** (`df[order(df$col1, -df$col2), ]`, `subset()`, `complete.cases(df)`, and `dplyr` pipelines `df %>% filter(...) %>% select(-col) %>% mutate(...) %>% group_by(...) %>% summarize(...) %>% arrange(desc(...))`).",
+        "8. **Workspace, File Connections & Data Import/Export (`read.table`, `read.csv`, `writexl`, `jsonlite`, `xml2`)** (`read.table()` vs `read.csv()` default `header` and `sep`; `save()`/`save.image()`/`load()` vs `dput()`/`dget()` vs `dump()`/`source()`; `writexl::write_xlsx()` from Session 15 Lab; XML/JSON loading from Session 16 Lab).",
+        "9. **Function Arguments, Lazy Evaluation & `...` Exact Matching** (Default arguments, unused parameters throwing no error until evaluated due to lazy evaluation, arguments after `...` in `paste(..., sep=':', collapse=',')` requiring exact full names, `invisible()`, `switch()` multi-branch dispatch).",
+        "10. **Lexical Scoping & Function Closures** (Free variables resolved in the environment where the function was *defined*, not where it was called; constructor functions like `make.power(n)`).",
+        "11. **The `apply` Family & `split()` Grouping Paradigm (Session 17 `ChickWeight` Lab)** (`lapply` always returning a `list`, `sapply` simplifying to vector/matrix, `vapply` enforcing output type signature, `apply(m, 1, sum)` row-wise vs `apply(m, 2, max)` column-wise, `tapply(vec, factor, mean)`, and `split(ChickWeight, ChickWeight$Diet)`).",
+        "12. **Base Graphics vs `ggplot2` & Built-in Datasets (`airquality`, `diamonds`, `ChickWeight`)** (High-level `plot()`, `hist()`, `boxplot()`, `barplot()`, `pie()` vs low-level `lines()`, `points()`, `text()`, `title()`, `legend()`; `par(mfrow=c(2,2), pch=19, col='red')`; `ggplot(diamonds, aes(...)) + geom_bar()`).",
+    ])
+
+    (res_dir / "R_Programming_Must_Practice_Shortlist.md").write_text("\n".join(md_lines) + "\n", encoding="utf-8")
+    return out_path
+
+
 
 def build_generic_subject(json_path: Path) -> dict | None:
     """Convert any scraper output `*_questions.json` file into a subject entry."""
@@ -2698,6 +3634,7 @@ def build_generic_subject(json_path: Path) -> dict | None:
     is_java = json_path.name == "java_questions.json" or subj_id.startswith("java")
     is_python = json_path.name == "python_questions.json" or subj_id.startswith("python")
     is_linux_cloud = json_path.name == "linux_cloud_questions.json" or subj_id.startswith("linux")
+    is_r = json_path.name == "r_questions.json" or subj_id.startswith("r-programming")
 
     url_syllabus_map: dict[str, dict[str, str]] = {}
     topic_name_map: dict[str, dict[str, str]] = {}
@@ -2721,6 +3658,9 @@ def build_generic_subject(json_path: Path) -> dict | None:
     elif is_linux_cloud:
         subj_id = "linux-cloud"
         subj_name = "Linux Programming & Cloud Computing — Bash, Commands, Permissions, Vi, Git, Virtualization, AWS & Azure"
+    elif is_r:
+        subj_id = "r-programming"
+        subj_name = "R Programming — Data Objects, Subsetting, Workspace/File I/O, Tidyverse (dplyr/ggplot2), Functions & apply Family"
 
     questions = []
     topic_counts: Counter[str] = Counter()
@@ -2821,6 +3761,10 @@ def main() -> None:
     linux_cloud_out = build_linux_cloud_questions_json()
     if linux_cloud_out:
         print(f"Built {linux_cloud_out.name} from LinuxSaved/ and LinuxSaved/cloud/ HTML files.")
+
+    r_out = build_r_questions_json()
+    if r_out:
+        print(f"Built {r_out.name} from RSaved/ HTML files.")
 
     subjects = [build_dbms_subject()]
     seen_ids = {"dbms-sql"}

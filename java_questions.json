@@ -3067,7 +3067,7 @@
       "reason": "Method overloading and passing data.",
       "faculty_alignment": "Session 4: Method Overloading & Passing Data",
       "warning": null,
-      "question": "What will be the output of the following Java code?\n📌 Limited Seats! Register Now - Free AI-ML Certification (November 2026)\nclass San\n{\n public void m1 (int i,float f)\n {\n  System.out.println(\" int float method\");\n }\n\n public void m1(float f,int i)\n  {\n  System.out.println(\"float int method\");\n  }\n\n  public static void main(String[]args)\n  {\n    San s=new San();\n        s.m1(20,20);\n  }\n}",
+      "question": "What will be the output of the following Java code?\nclass San\n{\n public void m1 (int i,float f)\n {\n  System.out.println(\" int float method\");\n }\n\n public void m1(float f,int i)\n  {\n  System.out.println(\"float int method\");\n  }\n\n  public static void main(String[]args)\n  {\n    San s=new San();\n        s.m1(20,20);\n  }\n}",
       "options": {
         "A": "int float method",
         "B": "float int method",
