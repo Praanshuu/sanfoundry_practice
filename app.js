@@ -236,23 +236,42 @@
     const subj = getCurrentSubject();
     if (subj.has_priority_categories) {
       const c = subj.counts;
+      const hasMustDo = !!subj.has_must_do_shortlist && c.MUST_DO > 0;
       const keepLabel =
-        subj.id === "python" || subj.id === "linux-cloud"
+        subj.id === "python" || subj.id === "linux-cloud" || subj.id === "r-programming"
           ? `Keep — Must-Practice Shortlist (${c.KEEP})`
           : `Keep — Main Bank (${c.KEEP})`;
       elScopeSelect.classList.remove("hidden");
       elTopicScopeFilter.classList.remove("hidden");
       elScopeSelect.innerHTML = `
+        ${hasMustDo ? `<option value="MUST_DO">🔥 Must-Do 150 Shortlist (${c.MUST_DO})</option>` : ""}
         <option value="KEEP">${keepLabel}</option>
         <option value="SELECTIVE">Selective — Priority 2 (${c.SELECTIVE})</option>
         <option value="KEEP_SELECTIVE">Keep + Selective (${c.KEEP + c.SELECTIVE})</option>
         <option value="REMOVE">Remove — Excluded (${c.REMOVE})</option>
         <option value="ALL">All Questions (${subj.total_questions})</option>
       `;
-      if (!["KEEP", "SELECTIVE", "KEEP_SELECTIVE", "REMOVE", "ALL"].includes(state.scope)) {
-        state.scope = "KEEP";
+      elTopicScopeFilter.innerHTML = `
+        <option value="ALL">All Scopes</option>
+        ${hasMustDo ? `<option value="MUST_DO">🔥 Must-Do 150 Only</option>` : ""}
+        <option value="KEEP">Keep Only</option>
+        <option value="SELECTIVE">Selective Only</option>
+        <option value="REMOVE">Remove Only</option>
+      `;
+      const validScopes = hasMustDo
+        ? ["MUST_DO", "KEEP", "SELECTIVE", "KEEP_SELECTIVE", "REMOVE", "ALL"]
+        : ["KEEP", "SELECTIVE", "KEEP_SELECTIVE", "REMOVE", "ALL"];
+      if (!validScopes.includes(state.scope)) {
+        state.scope = hasMustDo ? "MUST_DO" : "KEEP";
+      }
+      if (hasMustDo && state.scope === "KEEP") {
+        state.scope = "MUST_DO";
       }
       elScopeSelect.value = state.scope;
+      if (!validScopes.includes(state.topicScopeFilter)) {
+        state.topicScopeFilter = "ALL";
+      }
+      elTopicScopeFilter.value = state.topicScopeFilter;
     } else {
       state.scope = "ALL";
       elScopeSelect.classList.add("hidden");
@@ -362,6 +381,7 @@
   // Filtering
   function matchesScope(q, scope) {
     if (scope === "ALL") return true;
+    if (scope === "MUST_DO") return !!q.must_practice;
     if (scope === "KEEP_SELECTIVE") return q.category === "KEEP" || q.category === "SELECTIVE";
     return q.category === scope;
   }
@@ -511,6 +531,10 @@
       : "";
 
     const warnHtml = q.warning ? `<div class="note-banner">⚠️ ${escapeHtml(q.warning)}</div>` : "";
+    const mustDoBadge =
+      subj.has_must_do_shortlist && q.must_practice
+        ? `<span class="tag tag-MUST_DO" title="Curated Must-Do 150 High-Yield Question">🔥 MUST_DO</span>`
+        : "";
     const catBadge = subj.has_priority_categories ? `<span class="tag tag-${q.category}">${q.category}</span>` : "";
     const diffBadge = q.difficulty ? `<span class="tag tag-diff-${escapeAttr(q.difficulty)}">${escapeHtml(q.difficulty)}</span>` : "";
     const posBadge =
@@ -523,6 +547,7 @@
             ${posBadge}
             <span class="q-number">#${q.id}</span>
             <span class="tag tag-topic">${escapeHtml(q.topic)}</span>
+            ${mustDoBadge}
             ${catBadge}
             ${diffBadge}
           </div>
@@ -648,7 +673,8 @@
         </div>
       `;
       document.getElementById("btnResetPracticeFilters").addEventListener("click", () => {
-        state.scope = getCurrentSubject().has_priority_categories ? "KEEP" : "ALL";
+        const curSubj = getCurrentSubject();
+        state.scope = curSubj.has_must_do_shortlist ? "MUST_DO" : curSubj.has_priority_categories ? "KEEP" : "ALL";
         state.difficulty = "ALL";
         state.status = "ALL";
         state.topicFilterType = null;
@@ -716,14 +742,16 @@
 
     const groups = new Map();
     for (const q of subj.questions) {
-      if (scopeFilter !== "ALL" && q.category !== scopeFilter) continue;
+      if (scopeFilter === "MUST_DO" && !q.must_practice) continue;
+      if (scopeFilter !== "ALL" && scopeFilter !== "MUST_DO" && q.category !== scopeFilter) continue;
       const key = state.topicGroupMode === "syllabus" ? q.syllabus_topic : q.topic;
       if (!groups.has(key)) {
-        groups.set(key, { name: key, questions: [], categories: new Set() });
+        groups.set(key, { name: key, questions: [], categories: new Set(), mustDoCount: 0 });
       }
       const g = groups.get(key);
       g.questions.push(q);
       g.categories.add(q.category);
+      if (q.must_practice) g.mustDoCount++;
     }
 
     const entries = Array.from(groups.values()).filter((g) => !query || g.name.toLowerCase().includes(query));
@@ -752,6 +780,10 @@
         }
         const pct = total > 0 ? Math.round((done / total) * 100) : 0;
         const primaryCat = g.categories.size === 1 ? Array.from(g.categories)[0] : null;
+        const mustBadge =
+          subj.has_must_do_shortlist && g.mustDoCount > 0
+            ? `<span class="tag tag-MUST_DO">🔥 ${g.mustDoCount} MUST_DO</span>`
+            : "";
         const badgeHtml =
           subj.has_priority_categories && primaryCat
             ? `<span class="tag tag-${primaryCat}">${primaryCat}</span>`
@@ -761,7 +793,7 @@
           <button class="topic-card" data-tmode="${state.topicGroupMode}" data-tname="${escapeAttr(g.name)}">
             <div class="topic-card-top">
               <span class="topic-card-title">${escapeHtml(g.name)}</span>
-              ${badgeHtml}
+              <div style="display:flex;gap:4px;align-items:center;flex-shrink:0;">${mustBadge}${badgeHtml}</div>
             </div>
             <div class="topic-card-sub">
               <span>${done} / ${total} attempted</span>
@@ -843,8 +875,8 @@
           `
         : subj.id === "java"
         ? `
-            • <strong>Java 17 (LTS) Standard</strong>: Mapped against the PGCP-BDA (ACTS, Pune) 17-Session Core Java syllabus.<br/>
-            • <strong>Syllabus Coverage</strong>: Covers JVM/JDK, Data Types &amp; Operators, OOP &amp; Polymorphism, Exception Handling, Strings &amp; Regex, Generics &amp; Collections, Enums &amp; Wrappers, Lambdas &amp; Streams, Multithreading, <code>java.io</code> Serialization, and JDBC.
+            • <strong>🔥 Must-Do 150 Shortlist (${subj.counts.MUST_DO || 150} Hand-Picked MCQs)</strong>: Distilled from ${subj.total_questions} extracted questions into <strong>${subj.difficulty_counts ? subj.difficulty_counts.MUST_DO.Basic : ""} Basic</strong>, <strong>${subj.difficulty_counts ? subj.difficulty_counts.MUST_DO.Moderate : ""} Moderate</strong>, and <strong>${subj.difficulty_counts ? subj.difficulty_counts.MUST_DO.Hard : ""} Hard</strong> high-yield MCQs across all 17 PGCP-BDA Java sessions.<br/>
+            • <strong>Java 17 (LTS) Standard</strong>: Mapped against the PGCP-BDA (ACTS, Pune) 17-Session Core Java syllabus (JVM/JDK, Data Types &amp; Operators, OOP &amp; Polymorphism, Exception Handling, Strings &amp; Regex, Generics &amp; Collections, Enums &amp; Wrappers, Lambdas &amp; Streams, Multithreading, <code>java.io</code> Serialization, and JDBC).
           `
         : subj.id === "python" && subj.difficulty_counts
         ? `

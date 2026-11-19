@@ -12976,8 +12976,10 @@ window.PRACTICE_BANK = {
       "has_priority_categories": true,
       "has_syllabus_mapping": true,
       "has_difficulty_levels": false,
+      "has_must_do_shortlist": false,
       "total_questions": 808,
       "counts": {
+        "MUST_DO": 0,
         "KEEP": 354,
         "SELECTIVE": 129,
         "REMOVE": 325
@@ -29734,9 +29736,11 @@ window.PRACTICE_BANK = {
       "name": "Java Programming — Core Java, OOP, Collections, Streams, Multithreading, I/O & JDBC",
       "has_priority_categories": true,
       "has_syllabus_mapping": true,
-      "has_difficulty_levels": false,
+      "has_difficulty_levels": true,
+      "has_must_do_shortlist": true,
       "total_questions": 766,
       "counts": {
+        "MUST_DO": 152,
         "KEEP": 744,
         "SELECTIVE": 12,
         "REMOVE": 10
@@ -30365,7 +30369,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "JDK is a core component of Java Environment and provides all the tools, executables and binaries required to compile, debug and execute a Java Program.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 2,
@@ -30385,7 +30391,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "JVM (Java Virtual Machine) is responsible for interpreting bytecode into machine-specific code. It executes the bytecode and manages memory, security, and platform independence.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 3,
@@ -30405,7 +30413,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "JRE is the implementation of JVM, it provides platform to execute java programs.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 4,
@@ -30425,7 +30435,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "JIT optimizes bytecode to machine specific language code by compiling similar bytecodes at the same time. This reduces overall time taken for compilation of bytecode to machine specific language.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 5,
@@ -30445,7 +30457,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Java is called ‘Platform Independent Language’ as it primarily works on the principle of ‘compile once, run everywhere’.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 6,
@@ -30465,7 +30479,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "main method cannot be private as it is invoked by external method. Other identifier are valid with main method.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 7,
@@ -30485,7 +30501,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Java files have .java extension.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 8,
@@ -30505,7 +30523,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The compiled java files have .class extension.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 9,
@@ -30525,7 +30545,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The Java source file contains a header that declares the type of class or interface, its visibility with respect to other classes, its name and any superclass it may extend, or interface it implements.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 10,
@@ -30545,7 +30567,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Interpreters read high level language (interprets it) and execute the program. Interpreters are normally not passing through byte-code and jit compilation.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-jdk-jre-jit-jvm",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 11,
@@ -30565,7 +30589,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "In Java, the short data type is a 16-bit signed integer. It uses 2 bytes of memory, and the range it can store is from -215 to 215 – 1, which is -32768 to 32767.\nTo find the range of signed integer we use, -2n-1 to 2n-1-1 , where the n is the number of bits occupied.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 12,
@@ -30585,7 +30611,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "In Java, the byte data type is an 8-bit signed integer that occupies 1 byte of memory. It can store values in the range from -27 to 27 – 1, which is from -128 to 127.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 13,
@@ -30605,7 +30633,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Statements (1), (2), (3), and (4) are correct. (1) is correct because when a floating-point number (a double in this case) is cast to an int, it simply loses the digits after the decimal. (2) and (4) are correct because a long can be cast into a byte. If the long is over 127, it loses its precision due to narrowing of the conversion. (3) actually works, even though a cast is not necessary, because a long can store a byte.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 14,
@@ -30625,7 +30655,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "An expression involving bytes, ints, shorts, literal numbers, the entire expression is promoted to int before any calculation is done.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 15,
@@ -30645,7 +30677,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The range of the float data type in Java is approximately -3.4e38 to +3.4e38. This range applies to single-precision floating-point numbers, which typically use 32 bits for storage, consisting of a 1 sign bit, an 8-bit exponent, and a 23-bit mantissa.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 16,
@@ -30665,7 +30699,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Only double data type value is returned by all transcendental math functions. Transcendental math functions don’t return int or long, because in most of the cases the transcendental math functions produce are not whole numbers. So, the double data type is used as a return type.\nNote: float is not used because of its less precision than double.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 17,
@@ -30685,7 +30721,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The program calculates the average of six numbers stored in a double array. It sums all the elements, resulting in 98.8, then divides by 6 to get the average. The final output is 16.46666666666667.\n\nThe discrepancy between 16.46666666666666 and 16.46666666666667 when representing floating-point numbers is due to the way computers store and represent decimal values. Computers use a finite number of bits to represent numbers, which can lead to slight inaccuracies, especially when dealing with non-terminating decimal fractions or values beyond the precision limit.\nIn such cases, the compiler limits the precision and rounds off the extra digits to fit within the available memory, leading to small differences in the final result.\noutput:\n$ javac average.java\n$ java average\n16.46666666666667",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 18,
@@ -30705,7 +30743,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "For floating point literals, we have constant value to represent (10/0.0) infinity either positive or negative and also have NaN (not a number for undefined like 0/0.0), but for the integral type, we don’t have any constant that’s why we get an arithmetic exception.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 19,
@@ -30725,7 +30765,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Operator ++ has more preference than *, thus g becomes 4 and when multiplied by 8 gives 32.\n\noutput:\n\n$ javac increment.java\n$ java increment\n32",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 20,
@@ -30745,7 +30787,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The program calculates the area of a circle using the formula pi * r * r, with r = 9.8 and pi = 3.14. The result is 3.14 × 9.8 × 9.8 = 301.5656. Hence, the output is 301.5656.\n\nJava displays “301.5656” instead of “301.565600” due to the default formatting behavior of floating-point numbers. By default, Java omits trailing zeros after the decimal point when converting a double or float to a string. This formatting is designed to produce a more concise and human-readable output.\noutput:\n$ javac area.java\n$ java area\n301.5656",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-integer-floating-data-types",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 21,
@@ -30765,7 +30809,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "In Java, the char data type is a 16-bit unsigned integer. It uses 2 bytes of memory, The char is used to store unicode character in java such as special characters, emoji,..etc, and the range it can store is from 0 to 216 – 1, which is 0 to 65535. The unsigned data type doubles the upper limit of the data type by omitting the -ve integers from its range.\nTo find the range of signed integer we use, 0 to 2n-1, where the n is the number of bits occupied.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 22,
@@ -30785,7 +30831,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Unicode defines fully international character set that can represent all the characters found in all human languages. Its range is from 0 to 65536.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 23,
@@ -30805,7 +30853,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Boolean variable can contain only one of two possible values, true and false. Everything in lowercase. Capitalized True and False are not boolean values in Java.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 24,
@@ -30825,7 +30875,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "ASCII covers characters from 0 to 127. ISO-LATIN-1 is a superset of ASCII and includes characters from 0 to 255. Unicode is a superset of ISO-LATIN-1 and covers 0 to 65535. Since the first 128 Unicode characters match both ASCII and ISO-LATIN-1, both are valid for the 0–127 range.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 25,
@@ -30845,7 +30897,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Boolean can only be assigned true or false literals.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 26,
@@ -30865,7 +30919,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The program creates a char array of size 10. Inside the for loop, the loop index i is incremented twice — once in the loop control (i++) and once manually inside the loop (i++). This makes i increase by 2 on each iteration, assigning ‘i’ (a character, not related to index i) to every alternate index (0, 2, 4, 6, 8).\n\nSo, it prints ‘i’ five times, resulting in the output:\n\n\n\n$ javac array_output.java\n$ java array_output\ni i i i i",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 27,
@@ -30885,7 +30941,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "ASCII value of ‘A’ is 65, on using ++ operator character value increments by one.\n\noutput:\n\n$ javac mainclass.java\n$ java mainclass\n66",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 28,
@@ -30905,7 +30963,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The boolean is a primitive data type in Java that can hold only two values: true or false. These boolean values cannot be converted to int directly, even through typecasting.\n\noutput:\n\n$ javac mainclass.java\n$ java mainclass\ntrue",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 29,
@@ -30925,7 +30985,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "boolean ‘&’ operator always returns true or false. It returns true when both the values are true and false otherwise. Since, var1 is defined true and var2 is defined false hence their ‘&’ operator result is false.\n\noutput:\n$ javac booloperators.java\n$ java booloperators\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 30,
@@ -30945,7 +31007,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "ASCII code for ‘A’ is 65 and for ‘a’ is 97.\n\noutput:\n\n$ javac asciicodes.java\n$ java asciicodes\n65 97",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-boolean-data-types",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 31,
@@ -30965,7 +31029,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Data type long literals are appended by an upper or lowercase L. 0x99fffL is hexadecimal long literal. Because without the l or L in suffix the compiler will consider it as int.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 32,
@@ -30985,7 +31051,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "We can use binary ampersand operator on integers/chars (and it returns an integer) or on booleans (and it returns a boolean).",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 33,
@@ -31005,7 +31073,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Data type long literals are appended by an upper or lowercase L.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 34,
@@ -31025,7 +31095,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "int, float, boolean, short, long, etc, are the primitive data type in java.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 35,
@@ -31045,7 +31117,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Keywords are specially reserved words which can not be used for naming a user defined variable, example: class, int, for etc.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 36,
@@ -31065,7 +31139,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The program defines an integer array a[] = {1, 2, 3, 4, 5} and another array d that references the same array. It uses a loop from j = 0 to 2, and in each iteration, it adds:\n\n\n\nsum+=(a[j]∗d[j+1])+(a[j+1]∗d[j])\n\nStep-by-step Execution:\n\nAt j = 0: sum += (1 * 2) + (2 * 1) = 2 + 2 = 4\n\nAt j = 1: sum += (2 * 3) + (3 * 2) = 6 + 6 = 12; sum = 4 + 12 = 16\n\nAt j = 2: sum += (3 * 4) + (4 * 3) = 12 + 12 = 24; sum = 16 + 24 = 40\n\n\noutput:\n$ javac evaluate.java\n$ java evaluate\n40",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 37,
@@ -31085,7 +31161,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "When an array is declared using new operator then all of its elements are initialized to 0 automatically. for loop body is executed 5 times as whenever controls comes in the loop i value is incremented twice, first by i++ in body of loop then by ++i in increment condition of for loop.\n\noutput:\n\n$ javac array_output.java\n$ java array_output\n1 2 3 4 5",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 38,
@@ -31105,7 +31183,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Second print statement doesn’t have access to y , scope y was limited to the block defined after initialization of x.\n\noutput:\n\n$ javac variable_scope.java\nException in thread \"main\" java.lang.Error: Unresolved compilation problem: y cannot be resolved to a variable",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 39,
@@ -31125,7 +31205,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "All string literals must begin and end in the same line.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 40,
@@ -31145,7 +31227,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "In the given expression a * a + b * b, the values of a and b are taken as 3.0 and 4.0, respectively. When the expression is evaluated, it becomes 3.0 * 3.0 + 4.0 * 4.0, which results in 9.0 + 16.0 = 25.0. To find the square root of this result, the Math.sqrt() method is used. This method returns the square root of 25.0, which is 5.0. Since most methods in the Math class return a value of type double, the result is stored in a variable of type double to ensure accuracy and prevent any data type errors. Therefore, the final result 5.0 is dynamically stored in the double variable c.\n\noutput:\n$ javac dynamic_initialization.java\n$ java dynamic_initialization\n5.0",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-literals-variables",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 41,
@@ -31165,7 +31249,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Assignment of a smaller data type to a larger data type allows the compiler to automatically perform type casting without any issues. However, assigning a larger data type to a smaller one may lead to data loss, and therefore, the compiler raises an error or warning to prevent this. This is because the smaller data type may not have the capacity to store the larger value. In contrast, when a value of a smaller data type is assigned to a larger data type, the operation works fine because there is no risk of data loss.\nNote: It is important to note that both size and range matter in automatic type conversion. For example, even though a long occupies 8 bytes and a float only 4 bytes, a long can be automatically type cast to a float because float has a larger range that can represent the value of long. Only similar numeric data types—such as byte, short, char, int, long, float, and double—can be type cast to each other using automatic or explicit conversion.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 42,
@@ -31185,7 +31271,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Since for the class we specified a public access specifier, which means we can use it from outside the environment, i.e., from other packages, it is necessary to define the constructor as public to allow initialization from anywhere. A non-public constructor works only within the same package, but raises exceptions when accessed from outside the current source file.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 43,
@@ -31205,7 +31293,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "While evaluating an expression containing int,  bytes or shorts, the whole expression is converted to int then evaluated and the result is also of type int.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 44,
@@ -31225,7 +31315,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "If any operand is double the result of an expression is double.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 45,
@@ -31245,7 +31337,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Truncate means to trim some digits of a floating type number or a double type number from right. We can also truncate the decimal portion completely making it an integer type number.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 46,
@@ -31265,7 +31359,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Operator ++ increments the value of character by 1. c1 and c2 are given values D and 84, when we use ++ operator their values increments by 1, c1 and c2 becomes E and U respectively.\n\noutput:\n\n$ javac char_increment.java\n$ java char_increment\nE U",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 47,
@@ -31285,7 +31381,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Type casting a larger variable into a smaller variable results in modulo of larger variable by range of smaller variable. b contains 300 which is larger than byte’s range i:e -128 to 127 hence d contains 300 modulo 256 i:e 44.\n\noutput:\n\n$ javac conversion.java\n$ java conversion\n39 44",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 48,
@@ -31305,7 +31403,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The code does not compile because the method calculate() in class A is final and so cannot be overridden by method of class b.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 49,
@@ -31325,7 +31425,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "In argument[0] = args;, the reference variable arg[0], which was referring to an array with two elements, is reassigned to an array (args) with three elements.\n\nOutput:\n\n$ javac main_arguments.java\n$ java main_arguments\n1 2 3",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 50,
@@ -31345,7 +31447,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "A runtime error will occur owning to the main method of the code fragment not being declared static.\n\nOutput:\n\n$ javac c.java\nException in thread \"main\" java.lang.NoSuchMethodError: main",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-casting-conversion-promotions",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 51,
@@ -31365,7 +31469,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The operand of arithmetic operators can be any of numeric or character type, But not boolean.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 52,
@@ -31385,7 +31491,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Modulus operator can be applied to both integers and floating point numbers.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 53,
@@ -31405,7 +31513,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Operator ++ increases value of variable by 1. x = x + 1 can also be written in shorthand form as x += 1. Also x =+ 1 will set the value of x to 1.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 54,
@@ -31425,7 +31535,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "None.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 55,
@@ -31445,7 +31557,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Assignment operators in Java can also be used with other data types like boolean, objects, and more, not just numeric and character types.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 56,
@@ -31465,7 +31579,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Since the variable var2 is of double type, when it is converted to a string, it will be printed with a single trailing zero after the decimal point, i.e., “.0”. On the other hand, var4 is of int data type, so when it is converted to a string, it will contain only the integer (floor) value without any decimal part.\n\noutput:\n\n$ javac increment.java\n$ java increment\n1.5 1",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 57,
@@ -31485,7 +31601,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Modulus operator returns the remainder of a division operation on the operand. a = a % 10 returns 25.64 % 10 i:e 5.640000000000001. Similarly b = b % 10 returns 5.\n\noutput:\n\n$ javac Modulus.java\n$ java Modulus\n5.640000000000001 5",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 58,
@@ -31505,7 +31623,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Operator ++ has more preference than *, thus g becomes 4 and when multiplied by 8 gives 32.\n\noutput:\n\n$ javac increment.java\n$ java increment\n32",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 59,
@@ -31523,7 +31643,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Both data types have different memory representation that’s why 8-byte integral data type can be stored to 4-byte floating point data type.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 60,
@@ -31543,7 +31665,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "In the given source code, a = 1 and b = 2;\n\n\nc = ++b; — Since ++ is used in the prefix form, b is first incremented to 3, and then assigned to c, so c = 3 (the updated value of b).\n\nd = a++; — Here, the current value of a (which is 1) is first assigned to d, and then a is incremented. So, d = 1.\n\nAfter the statements c++, a++, and b++ are executed, the variables are incremented by 1:\n\na = 3, b = 4, c = 4, d = 1\n\n\noutput:\n$ javac Output.java\n$ java Output\n3 4 4 1",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arithmetic-operators",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 61,
@@ -31563,7 +31687,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "<= is a relational operator.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 62,
@@ -31583,7 +31709,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Unary not operator, ~, inverts all of the bits of its operand in binary representation.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 63,
@@ -31603,7 +31731,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The left shift operator shifts all of the bits in a value to the left specified number of times. For each shift left, the high order bit is shifted out and lost, zero is brought in from the right. When a left shift is applied to an integer operand, bits are lost once they are shifted past the bit position 31.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 64,
@@ -31623,7 +31753,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Bitwise shift operators in Java allow you to shift the bits of a number left or right, and can be used for efficient mathematical operations. Here’s a breakdown of these operators:\n<< (Left Shift): Shifts bits to the left, filling the right with 0s. This operation is equivalent to multiplying the number by 2n, where n is the number of positions the bits are shifted.\n>> (Right Shift): Shifts bits to the right while preserving the sign bit (Arithmetic shift). This operation is equivalent to dividing the number by 2n, where n is the number of positions the bits are shifted.\n>>> (Unsigned Right Shift): Shifts bits to the right, filling the left with 0s (Logical shift). This operation does not preserve the sign bit, unlike the arithmetic shift.\n<<=: This is a shorthand for the left shift assignment. For example, x <<= no_bits is equivalent to x = x << no_bits.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 65,
@@ -31643,7 +31775,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The right shift operator automatically fills the higher order bit with its previous contents each time a shift occurs. This also preserves the sign of the value.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 66,
@@ -31663,7 +31797,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Unary not operator, ~, inverts all of the bits of its operand. 42 in binary is 00101010 in using ~ operator on var1 and assigning it to var2 we get inverted value of 42 i:e 11010101 which is -43 in decimal.\n\noutput:\n\n\n\n$ javac bitwise_operator.java\n$ java bitwise_operator\n42 -43",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 67,
@@ -31683,7 +31819,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The AND operator (&) produces a 1 bit only if both corresponding bits of the operands are 1. The OR operator (|) produces a 1 bit if any of the corresponding bits in the operands is 1.\n\nFor example, let’s consider the binary representations of two numbers:\n\na = (0011)2\n\nb = (0110)2\n\n\nAND (&):\na = (0011)₂\nb = (0110)₂\na & b = (0010)₂ = (2)₁₀\n\nOR (|):\na = (0011)₂\nb = (0110)₂\na | b = (0111)₂ = (7)₁₀\n\noutput:\n$ javac bitwise_operator.java\n$ java bitwise_operator\n7 2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 68,
@@ -31703,7 +31841,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "A variable of type int can store values within 32 bits, while a byte can only store values within 8 bits. For example, when performing the operation (64 << 2), the result is 256, which requires at least 9 bits to store.\n\n\n\nFor byte: The 9th bit is lost due to the limited size, and the remaining bits are filled with zeros (0).\n\nFor int: It has enough bits (32 bits) to store the value 256 without any loss.\n\n\noutput:\n$ javac leftshift_operator.java\n$ java leftshift_operator\n256 0",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 69,
@@ -31723,7 +31863,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The number 10 is represented in binary as 1010, or written as (1010)₂. Shifting the bits to the right by one position results in:\n\n\n(1 0 1 0)  ← Original number\n  ↘ ↘ ↘ ↘\n(0 1 0 1)  0  ← The leftmost bit is lost, and a new bit (0) is added from the right.\n\nThis gives us the binary number (0101)2, which equals (5)10 in decimal.\n\noutput:\n$ javac rightshift_operator.java\n$ java rightshift_operator\n5",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 70,
@@ -31743,7 +31885,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The values of variables a, b, and c are initially set to 1, 2, and 3, respectively, which are represented in binary as (0001)2, (0010)2, and (0011)2.\n\n\na |= 4: a is set to (0001)2 bitwise OR (0100)2, resulting in (0101)2, which is equal to (5)10.\n\n\nb >>= 1: b is right-shifted by 1 position. The binary value (0010)2 becomes (0001)2, which is equal to (1)10.\n\n\nc <<= 1: c is left-shifted by 1 position. The binary value (0011)2 becomes (0110)2, which is equal to (6)10.\n\n\na ^= c: a is bitwise XOR’d with c. The binary value (0101)2 XOR (0110)2 results in (0011)2, which is equal to (3)10.\n\n\n\nHence, the final values of a, b, and c are 3, 1, and 6, respectively.\noutput:\n$ javac Output.java\n$ java Output\n3 1 6",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-bitwise-operator",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 71,
@@ -31763,7 +31907,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Switch statements checks for equality between the controlling variable and its constant cases.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 72,
@@ -31783,7 +31929,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Continue and break are jump statements, and for is a looping statement.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 73,
@@ -31803,7 +31951,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The do-while loop is also known as exit control loops, because it executes the code of the block before checking the conditional statement.\n\n\n\nSyntax:\ndo{\n\t// statements\n}while(/* conditional statement*/);",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 74,
@@ -31823,7 +31973,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The continue statement skips the remaining code in the loop body for the current iteration and moves to the next one. It doesn’t exit the loop, just skips that specific pass.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 75,
@@ -31843,7 +31995,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "No two case constants in the same switch can have identical values.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 76,
@@ -31863,7 +32017,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "var2 is initialised to 1. The conditional statement returns false and the else part gets executed.\n\noutput:\n\n$ javac selection_statements.java\n$ java selection_statements\n2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 77,
@@ -31883,7 +32039,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Using comma operator, we can include more than one statement in the initialization and iteration portion of the for loop. Therefore both ++i and j = i + 1 is executed i gets the value – 0,1,2,3,4 & j gets the values -0,1,2,3,4,5.\n\noutput:\n\n$ javac comma_operator.java\n$ java comma_operator\n6",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 78,
@@ -31903,7 +32061,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Whenever y is divisible by x remainder body of loop is skipped by continue statement, therefore if condition y == 8 is never true as when y is 8, remainder body of loop is skipped by continue statements of first if. Control comes to print statement only in cases when y is odd.\n\noutput:\n\n$ javac jump_statments.java\n$ java jump_statments\n1 3 5 7 9",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 79,
@@ -31923,7 +32083,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Every final variable is compile time constant, So, once they define they cannot be changed this results in an unreachable statement inside the program, because the while loop never terminates is the cause of error.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 80,
@@ -31943,7 +32105,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "b >> 1 in if returns 5 which is equal to a i:e 5, therefore body of if is executed and block second is exited.  Control  goes to end of the block second executing the last print statement, printing 10.\n\noutput:\n\n$ javac Output.java\n$ java Output\n10",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-control-statements",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 81,
@@ -31963,7 +32127,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Java programming was developed by James Gosling at Sun Microsystems in 1995. James Gosling is well known as the father of Java.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 82,
@@ -31983,7 +32149,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Java is called ‘Platform Independent Language’ as it primarily works on the principle of ‘compile once, run everywhere’.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 83,
@@ -32003,7 +32171,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "JDK is a core component of Java Environment and provides all the tools, executables and binaries required to compile, debug and execute a Java Program.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 84,
@@ -32023,7 +32193,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Pointers is not a Java feature. Java provides an efficient abstraction layer for developing without using a pointer in Java. Features of Java Programming are Portable, Architectural Neutral, Object-Oriented, Robust, Secure, Dynamic and Extensible, etc.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 85,
@@ -32043,7 +32215,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Keywords are specially reserved words that can not be used for naming a user-defined variable, for example: class, int, for, etc.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 86,
@@ -32063,7 +32237,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "For floating point literals, we have constant value to represent (10/0.0) infinity either positive or negative and also have NaN (not a number for undefined like 0/0.0), but for the integral type, we don’t have any constant that’s why we get an arithmetic exception.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 87,
@@ -32083,7 +32259,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Truncation refers to the removal of digits after the decimal point. When a floating-point value (float, double, etc.) is assigned to an integer type (int, long, etc.), the fractional part after the decimal point is discarded.\nNote: This operation requires explicit type casting.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 88,
@@ -32103,7 +32281,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Memory leak is like holding a strong reference to an object although it would never be needed anymore. Objects that are reachable but not live are considered memory leaks. Various tools help us to identify memory leaks.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 89,
@@ -32123,7 +32303,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Operator new allocates a block of memory specified by the size of an array, and gives the reference of memory allocated to the array variable.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 90,
@@ -32143,7 +32325,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Operator new must be succeeded by array type and array size.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 91,
@@ -32163,7 +32347,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "If we trying to print any reference variable internally, toString() will be called which is implemented to return the String in following form:\nclassname@hashcode in hexadecimal form",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 92,
@@ -32183,7 +32369,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Array can be initialized using both new and comma separated expressions surrounded by curly braces example : int arr[5] = new int[5]; and int arr[] = { 0, 1, 2, 3, 4};",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 93,
@@ -32203,7 +32391,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "It is necessary to give the row size when initializing a multidimensional array because, in Java, we can later define the sizes of the other dimensions. For example, when a 2-D array is declared with a row size of 3, it means an array with 3 reference pointers to arrays is created. These pointers can then be assigned to actual array rows later, with their respective column sizes.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 94,
@@ -32223,7 +32413,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "When an array is declared using new operator then all of its elements are initialized to 0 automatically. for loop body is executed 5 times as whenever controls comes in the loop i value is incremented twice, first by i++ in body of loop then by ++i in increment condition of for loop.\n\noutput:\n\n$ javac array_output.java\n$ java array_output\n0 2 4 6 8",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 95,
@@ -32243,7 +32435,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "arr[][] is a 2D array, array has been allotted memory in parts. 1st row contains 1 element, 2nd row contains 2 elements and 3rd row contains 3 elements. each element of array is given i + j value in loop. sum contains addition of all the elements of the array.\n\noutput:\n\n$ javac multidimention_array.java\n$ java multidimention_array\n10",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 96,
@@ -32263,7 +32457,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Array arr contains 10 elements. n contains 6 thus in next line n is given value 3 printing arr[3]/2 i:e 3/2 = 1 because of int Value, by int values there is no rest. If this values would be float the result would be 1.5.\n\noutput:\n\n$ javac evaluate.java\n$ java evaluate\n1",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 97,
@@ -32283,7 +32479,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "When an array is declared using the new operator, all of its elements are automatically initialized to default values—0 for numeric types, null for reference types, and ‘\\0’ (null character) for char. In a for loop, the loop body is executed 10 times. Each time the control enters the loop, the ith element of the array is set to the value of i, and then it is printed on the screen.\n\noutput:\n$ javac array_output.java\n$ java array_output\ni i i i i i i i i i",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 98,
@@ -32303,7 +32501,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The program creates a 3×3 matrix and calculates the sum of all its elements, which is 45. It then divides the sum by 5 and prints the result. Since 45 / 5 = 9, the final output is 9.\n\noutput:\n$ javac array_output.java\n$ java array_output\n9",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-arrays-2",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 99,
@@ -32323,7 +32523,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "In Java, arrays are implemented as objects. Even arrays of primitive types (like int[], char[]) are considered objects, and they inherit methods from the Object class.",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 100,
@@ -32343,7 +32545,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "A variable can be declared final, doing so prevents its content from being modified. Final variables must be initialized when it is declared.",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 101,
@@ -32363,7 +32567,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "static statements are run as soon as class containing then is loaded, prior to any object declaration.",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 102,
@@ -32383,7 +32589,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "All objects of class share same static variable, when object of a class are declared, all the objects share same copy of static members, no copy of static variables are made.",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 103,
@@ -32403,7 +32611,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "A final variable in Java must be initialized only once, but it doesn’t have to be done at the time of declaration—it can also be initialized in a constructor. Arrays in Java are objects and have a length attribute to store the number of elements.",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 104,
@@ -32423,7 +32633,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "main() method must be declared static, main() method is called by Java runtime system before any object of any class exists.",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 105,
@@ -32443,7 +32655,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "x is an instance variable, so obj1 and obj2 have separate copies. y is static, shared by all objects; its value is updated by both obj1 and obj2. Final values: obj1.x = 1, y = 5, so output is 1 5.\n\noutput:\n$ javac static_specifier.java\n$ java static_specifier\n1 5",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 106,
@@ -32463,7 +32677,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "All objects of class share same static variable, all the objects share same copy of static members, obj1.x and obj2.x refer to same element of class which has been incremented twice and its value is 2.\n\noutput:\n\n$ javac static_use.java\n$ java static_use\n2 2",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 107,
@@ -32483,7 +32699,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "In this program, both x and y are declared as static variables, meaning they are shared among all instances of the static_out class. When obj1.add(2, 3) is called, it sets x = 2 + 3 = 5 and y = 5 + 3 = 8. Then, when obj2.add(5, 2) is called, it overwrites the previous values: x = 5 + 2 = 7 and y = 7 + 2 = 9. Since both obj1.x and obj2.y refer to the same static variables, the output is 7 9.\n\noutput:\n$ javac static_use.java\n$ java static_use\n7 9",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 108,
@@ -32503,7 +32721,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "arr.length() is 5, so the loop is executed for three times.\n\noutput:\n\n$ javac Output.java\n$ java Output\n1 2 3",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 109,
@@ -32523,7 +32743,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Arrays in java are implemented as objects, they contain an attribute that is length which contains the number of elements that can be stored in the array. Hence a1.length gives 10 and a2.length gives 5.\n\noutput:\n\n$ javac Output.java\n$ java Output\n10 5",
-          "source_url": "https://www.sanfoundry.com/java-questions-bank"
+          "source_url": "https://www.sanfoundry.com/java-questions-bank",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 110,
@@ -32543,7 +32765,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "JAVA_HOME is used to store a path to the java installation.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 111,
@@ -32563,7 +32787,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "There are 4 OOPS concepts in Java. Inheritance, Encapsulation, Polymorphism and Abstraction.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 112,
@@ -32583,7 +32809,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "“this” is an important keyword in java. It helps to distinguish between local variable and variables passed in the method as parameters.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 113,
@@ -32603,7 +32831,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The variables length, breadth, and height are default (friendly) instance variables of the Box class. Therefore, they can be accessed directly by the object. The variable y stores the product of these three variables, resulting in an output of 200.\n\noutput:\n\n$ javac main.java\n$ java main\n200",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 114,
@@ -32623,7 +32853,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Explanation: Since, arr.length() is 5, then the loop is iterate for 0, 1, 2. Which prints the 1, 2, 3, respectively.\n\noutput:\n\n$ javac Output.java\n$ java Output\n1 2 3",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 115,
@@ -32643,7 +32875,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Two or more methods can have same name as long as their parameters declaration is different, the methods are said to be overloaded and process is called method overloading. Method overloading is a way by which Java implements polymorphism.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 116,
@@ -32663,7 +32897,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Overloading is a very powerful feature of java, which allows the developer to declare multiple methods or constructors with the same name but different functionality, which improves readability and flexibility of the program.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 117,
@@ -32683,7 +32919,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "When we pass an argument by call-by-value a copy of argument is made into the formal parameter of the subroutine and changes made on parameters of subroutine have no effect on original argument, they remain the same.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 118,
@@ -32703,7 +32941,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Recursion is the process where a method calls itself to solve a problem by breaking it down into smaller subproblems. This technique is commonly used in algorithms like factorial calculation, Fibonacci sequence, and tree traversals.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 119,
@@ -32723,7 +32963,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "While resolving overloaded method, compiler automatically promotes if exact match is not found. But in this case, which one to promote is an ambiguity.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 120,
@@ -32743,7 +32985,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Due to method overloading when the add() method is called with a single argument the value of x is set to argument passed i.e. 6 + 1 is returned. Hence the result is 7.\n\noutput:\n$ javac Overload_methods.java\n$ java Overload_methods\n7",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 121,
@@ -32763,7 +33007,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Due to method overloading when the add() method is called with two arguments the value of x is set to the first argument passed i.e. 6 + 2 is returned. Hence the result is 8.\n\noutput:\n$ javac Overload_methods.java\n$ java Overload_methods\n8",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 122,
@@ -32783,7 +33029,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "For obj.add(a,a); ,the function in line number 4 gets executed and value of x is 4. For the next function call, the function in line number 7 gets executed and value of y is 6.4\n\noutput:\n\n$ javac Overload_methods.java\n$ java Overload_methods\n4 6.4",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 123,
@@ -32803,7 +33051,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Variables a & b are passed by value, copy of their values are made on formal parameters of function meth() that is i & j. Therefore changes done on i & j are not reflected back on original arguments. a & b remain 10 & 20 respectively.\n\noutput:\n\n$ javac Output.java\n$ java Output\n10 20",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 124,
@@ -32823,7 +33073,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Class objects are always passed by reference, therefore changes done are reflected back on original arguments. obj.meth(obj) sends object obj as parameter whose variables a & b are multiplied and divided by 2 respectively  by meth() function of class test. a & b becomes 20 & 10 respectively.\n\noutput:\n\n$ javac Output.java\n$ java Output\n20 10",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-overloading-methods-argument-passing",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 125,
@@ -32843,7 +33095,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "If a static method is present in the program then it will be executed first, then main will be executed.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 126,
@@ -32863,7 +33117,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Function overloading is a process of defining more than one method in a class with same name differentiated by function signature i:e return type or parameters type and number. Example –  int volume(int length, int width) & int volume(int length , int width , int height) can be used to calculate volume.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 127,
@@ -32883,7 +33139,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "To differentiate between two or more methods having the same name, they can have different parameter data types or a different number of parameters.\nNote: Changing only the return type of a method is not sufficient to distinguish between methods.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 128,
@@ -32903,7 +33161,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "A method that includes a return statement must return a value matching its declared return type. So, if a method returns an int or a float, the return type must be int or float respectively. Hence, both int and float can be used. void is used when the method does not return any value.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 129,
@@ -32923,7 +33183,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Even if a method is returning a value, it is not necessary to store that value.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 130,
@@ -32943,7 +33205,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The method volume(int height, int length, int width) is called with arguments (3, 2, 1). It calculates volume = width * height * length = 1 * 3 * 2 = 6. So, System.out.println(obj.volume); prints 6.\n\n\n\noutput:\n$ Prameterized_method.java\n$ Prameterized_method\n6",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 131,
@@ -32963,7 +33227,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The instance variables a and y are set to 5 and 5 by the object. The isEqual() method returns the boolean result of the expression 5 == 5, which is true in this case.\n\noutput:\n$ javac Output.java\n$ java Output\ntrue",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 132,
@@ -32983,7 +33249,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Since the volume() method is overloaded. So, when one parameter of int type is passed the method set the instance variable equal to the value of parameter passed i.e. 5.\n\noutput:\n$ javac Output.java\n$ java Output\n5",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 133,
@@ -33003,7 +33271,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "main() method must be made public. Without main() being public java run time system will not be able to access main() and will not be able to execute the code.\n\noutput:\n\n$ javac Output.java\nError: Main method not found in class Output, please define the main method as:\n   public static void main(String[] args)",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 134,
@@ -33023,7 +33293,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "While creating the object of area class the default constructor set the value of variable width, length, height to be 5, 6, 1 respectively. The volume() method calls set the attribute volume to the product of length, width, height i.e. 30.\n\noutput:\n$ javac cons_method.java\n$ java cons_method\n30",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-entrance-exams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 135,
@@ -33043,7 +33315,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "main() method must be specified public as it called by Java run time system, outside of the program. If no access specifier is used then by default member is public within its own package & cannot be accessed by Java run time system.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 136,
@@ -33063,7 +33337,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The static keyword allows access to class members (variables or methods) without creating an object of that class. Static members belong to the class itself rather than any specific instance.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 137,
@@ -33083,7 +33359,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "If no access specifier is used, the member has default (package-private) access, meaning it is accessible by any class within the same package but not outside it. This is sometimes called “package-private” or “default” access.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 138,
@@ -33103,7 +33381,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Encapsulation is the process of wrapping data (variables) and methods that operate on the data into a single unit (class), and controlling access to the class members using access specifiers like private, public, and protected. This helps protect the internal state and hides implementation details.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 139,
@@ -33123,7 +33403,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "private members of a class can not be inherited by a subclass.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 140,
@@ -33143,7 +33425,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The code will cause a compilation error because y is declared as private in class access, and it cannot be accessed directly outside the class, as in System.out.println(obj.y);. Accessing a private member from another class (here, access_specifier) is not allowed, causing the compilation to fail.\n\n\n\noutput:\n$ javac access_specifier.java\nException in thread \"main\" java.lang.Error: Unresolved compilation problem:\n\tThe field access.y is not visible",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 141,
@@ -33163,7 +33447,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The method cal() sets x to 3 and y to 3. Printing obj.x outputs 3 and obj.print() prints a space followed by 3, so the final output is 3 3 on the same line.\n\noutput:\n$ javac access_specifier.java\n$ java access_specifier\n3 3",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 142,
@@ -33183,7 +33469,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Since x and y are static, they are shared by all objects. The last call obj2.add(5, 2) sets x = 7 and y = 9. So, printing obj1.x and obj2.y outputs 7 9.\n\noutput:\n$ javac static_use.java\n$ java static_use\n7 9",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 143,
@@ -33203,7 +33491,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "For a class to be inherited by another subclass (even in a different package), it must be declared public. If a class has default (no modifier) access, it can only be inherited within the same package. Private classes cannot be inherited.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-access-control",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 144,
@@ -33223,7 +33513,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Public, private, protected and default are the access modifiers.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 145,
@@ -33243,7 +33535,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The variables should be private and should be accessed with get and set methods.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 146,
@@ -33263,7 +33557,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Private variables are accessible only within the class.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 147,
@@ -33283,7 +33579,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The protected access modifier is accessible within package and outside the package but only through inheritance. The protected access modifier can be used with data member, method and constructor. It cannot be applied in the class.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 148,
@@ -33303,7 +33601,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "If we make any class constructor private, we cannot create the instance of that class from outside the class.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 149,
@@ -33323,7 +33623,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Variables of an interface are public, static and final by default because the interfaces cannot be instantiated, final ensures the value assigned cannot be changed with the implementing class and public for it to be accessible by all the implementing classes.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 150,
@@ -33343,7 +33645,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Final class cannot be inherited. This helps when we do not want classes to provide extension to these classes.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 151,
@@ -33363,7 +33667,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Only one copy of static variables are created when a class is loaded. Each object instantiated has its own copy of instance variables.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 152,
@@ -33381,7 +33687,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Protected class member (method or variable) is like package-private (default visibility), except that it also can be accessed from subclasses. Since there is no such concept as ‘subpackage’ or ‘package-inheritance’ in Java, declaring class protected or package-private would be the same thing.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 153,
@@ -33401,7 +33709,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Default is the access modifier when none is defined explicitly. It means the member (method or variable) can be accessed within the same package.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 154,
@@ -33421,7 +33731,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The super keyword is used to access members of the superclass using the dot (.) operator, while super() is used to call the constructor of the superclass from a subclass.\nNote: The super() call can take the same number of parameters as required by the parent class constructor.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 155,
@@ -33441,7 +33753,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The method overriding is the process of redeclaration of a parent’s method in the child class with the same name and method signature.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 156,
@@ -33461,7 +33775,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "To disallow a method from being overridden, specify final as a modifier at the start of its declaration. Methods declared as final cannot be overridden.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 157,
@@ -33481,7 +33797,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "In Java, when a subclass wants to explicitly call the no-argument constructor of its superclass, it uses super();. This must be the first statement in the subclass constructor.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 158,
@@ -33501,7 +33819,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Every interface variable is implicitly public static and final.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 159,
@@ -33521,7 +33841,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Method overriding in Java supports polymorphism, which allows objects to behave differently based on their specific class type.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 160,
@@ -33541,7 +33863,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Both x,and y are pointing to the same array.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 161,
@@ -33561,7 +33885,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "class A has been declared final hence it cannot be inherited by any other class. Hence class B does not have member i, giving compilation error.\n\noutput:\n\n$ javac inheritance.java\nException in thread \"main\" java.lang.Error: Unresolved compilation problem:\n\ti cannot be resolved or is not a field",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 162,
@@ -33581,7 +33907,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The ternary operator (elements.length > 0) ? elements[0] : null checks whether the elements array contains any items. Since elements.length is 3, the condition is true, so elements[0] (“for”) is assigned to the variable first. The program compiles and runs without error, and first will hold the value “for”, which is elements[0].",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 163,
@@ -33601,7 +33929,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "r is reference of type A, the program assigns a reference of object obj2 to r and uses that reference to call function display() of class B.\n\noutput:\n\n$ javac Dynamic_dispatch.java\n$ java Dynamic_dispatch\n2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-method-overriding",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 164,
@@ -33621,7 +33951,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Object class is superclass of every class in Java.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 165,
@@ -33641,7 +33973,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "In Java, the clone() method is defined in the Object class and is used to create and return a copy (clone) of the object. To use it, the class must implement the Cloneable interface, or else CloneNotSupportedException will be thrown. The correct syntax is object.clone(). The other options are not valid Java methods.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 166,
@@ -33661,7 +33995,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The getClass() method returns the runtime class of the object. It is defined in the Object class and helps in reflection and type-checking.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 167,
@@ -33681,7 +34017,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Declaring a class final implicitly declared all of its methods final, and makes the class inheritable.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 168,
@@ -33701,7 +34039,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "A abstract class is incomplete by itself and relies upon its subclasses to provide a complete implementation. If we declare a class final then no class can inherit that class, an abstract class needs its subclasses hence both final and abstract cannot be used for a same class.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 169,
@@ -33721,7 +34061,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "An abstract class is incomplete by itself and relies upon its subclasses to provide a complete implementation. The object of abstract classes are not created, we have to inherit it and then create the object of its subclass.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 170,
@@ -33741,7 +34083,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "class A is an abstract class, it contains a abstract function display(), the full implementation of display() method is given in its subclass B, Both the display functions are the same. Prototype of display() is defined in class A and its implementation is given in class B.\n\noutput:\n\n$ javac Abstract_demo.java\n$ java Abstract_demo\n2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 171,
@@ -33761,7 +34105,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "obj1 and obj2 are two different objects. equals() is a method of Object class, Since Object class is superclass of every class it is available to every object.\n\noutput:\n\n$ javac Output.java\n$ java Output\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 172,
@@ -33781,7 +34127,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The obj is created a new instance of class Object, and in line 6 we are printing the class of obj instance.\n\noutput:\n\n$ javac Output.java\n$ java Output\nclass java.lang.Object",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 173,
@@ -33801,7 +34149,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "toString() is a method of class Object, since it is a superclass of every class, every object has this method. toString() returns the string associated with the calling object, which is object reference in this case i.e. ClassNaem@HexCode.\n\noutput:\n\n$ javac Output.java\n$ java Output\nA@1cd2e5f",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-object-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 174,
@@ -33821,7 +34171,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The abstract keyword is used to define an abstract class in Java. It must be placed before the class keyword (e.g., abstract class ClassName).",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 175,
@@ -33841,7 +34193,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Thread is not an abstract class.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 176,
@@ -33861,7 +34215,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Any subclass of an abstract class must either implement all of the abstract method in the superclass or be itself declared abstract.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 177,
@@ -33881,7 +34237,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Abstract class cannot be directly initiated with new operator, Since abstract class does not contain any definition of implementation it is not possible to create an abstract object.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 178,
@@ -33901,7 +34259,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The abstract keyword is part of the Java language and is included in the java.lang package, which is automatically imported into every Java program.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 179,
@@ -33921,7 +34281,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Class contains a private member variable j, this cannot be inherited by subclass B and does not have access to it.\n\noutput:\n\n\n\n$ javac inheritance.java\nException in thread \"main\" java.lang.Error: Unresolved compilation problem:\n\tThe field A.j is not visible",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 180,
@@ -33941,7 +34303,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Keyword super is used to call constructor of class A by constructor of class B. Constructor of a initializes i & j to 1 & 2 respectively.\n\noutput:\n\n$ javac super_use.java\n$ java super_use\n1 2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 181,
@@ -33961,7 +34325,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "class A & class B both contain display() method, class B inherits class A, when display() method is called by object of class B, display() method of class B is executed rather than that of Class A.\n\noutput:\n\n$ javac method_overriding.java\n$ java method_overriding\n2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 182,
@@ -33981,7 +34347,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Both class A & B have member with same name that is j, member of class B will be called by default if no specifier is used. I contains 1 & j contains 2, printing 1 2.\n\noutput:\n\n$ javac Output.java\n$ java Output\n1 2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance-abstract-and-super",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 183,
@@ -34001,7 +34369,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The extends keyword is used in Java to inherit a class. It allows a subclass to acquire the properties and methods of a superclass.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 184,
@@ -34021,7 +34391,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "In Java, a protected member of a class is accessible within the same package and also to subclasses, even if they are defined in a different package. When such a member is inherited by a subclass, it remains protected and retains its access scope. It does not automatically change to public or private. Therefore, in the subclass, it continues to behave as a protected member unless explicitly overridden with a different access modifier.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 185,
@@ -34041,7 +34413,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The correct syntax for inheritance in Java is class B extends A {}. The extends keyword is used, and we refer to the superclass by name, not with the keyword class.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 186,
@@ -34063,7 +34437,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "If one is extending any class, then they should use the extends keyword, not implements. {for A, D, F}\nClasses cannot have a declaration of a method without a body if it is not abstract. {for C}",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 187,
@@ -34083,7 +34459,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Class A & class B both contain display() method, class B inherits class A, when display() method is called by object of class B, display() method of class B is executed rather than that of Class A.\n\noutput:\n\n$ javac inheritance_demo.java\n$ java inheritance_demo\n2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 188,
@@ -34103,7 +34481,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Class A and Class B both contain a display() method. Class B inherits Class A. When the display() method is called by an object of Class B, the display() method of Class B is executed rather than that of Class A. The value of i is updated in the display() method using the super keyword.\n\noutput:\n\n$ javac inheritance.java\n$ java inheritance\n2 3",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 189,
@@ -34123,7 +34503,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Keyword super is used to call constructor of class A by constructor of class B. Constructor of a initializes i & j to 1 & 2 respectively.\n\noutput:\n\n$ javac super_use.java\n$ java super_use\n1 2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-inheritance",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 190,
@@ -34143,7 +34525,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Inheritance is a way of acquiring attributes and methods of parent class. Java supports hierarchical inheritance directly.\nThere are only 5 types of Inheritance Exists.\nSingle Inheritance\nMultilevel Inheritance\nHierarchical Inheritance\nMultiple Inheritance (using interfaces, not classes.)\nHybrid Inheritance",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 191,
@@ -34163,7 +34547,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Multiple inheritance in java is implemented using interfaces. Multiple interfaces can be implemented by a class.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 192,
@@ -34183,7 +34569,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "All classes in java are inherited from Object class. Interfaces are not inherited from Object Class.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 193,
@@ -34203,7 +34591,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "By declaring variable private, the variable will not be available in inherited to subclass.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 194,
@@ -34223,7 +34613,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Super keyword is used to access hidden super class variable in subclass.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 195,
@@ -34241,7 +34633,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Static members are also inherited to subclasses.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 196,
@@ -34261,7 +34655,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Interface is implemented using implements keyword. A concrete class must implement all the methods of an interface, else it must be declared abstract.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 197,
@@ -34281,7 +34677,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Class can be extended using extends keyword. One class can extend only one class. A final class cannot be extended.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 198,
@@ -34301,7 +34699,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "In case of such conflict, compiler will not be able to link a method call due to ambiguity. It will throw compile time error.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 199,
@@ -34319,7 +34719,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Yes, Java supports multilevel inheritance. In Java, a class can inherit from another class, which itself inherits from another class, and so on. Kindly note that this is different than Multiple inheritance which is not supported natively in Java; however, it can be implemented using multiple interfaces.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-freshers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 200,
@@ -34339,7 +34741,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The interface keyword (all lowercase) is used in Java to define an interface. Interfaces in Java specify a set of methods that a class can implement. The other options are invalid as Java is case-sensitive, and such keywords do not exist.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 201,
@@ -34359,7 +34763,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The concept of fully abstracting a class from its implementation is commonly achieved using interfaces.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 202,
@@ -34379,7 +34785,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Access specifier of an interface is either public or no specifier. When no access specifier is used then default access specifier is used due to which interface is available only to other members of the package in which it is declared, when declared public it can be used by any code.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 203,
@@ -34399,7 +34807,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "interface is inherited by a class using implements.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 204,
@@ -34417,9 +34827,11 @@ window.PRACTICE_BANK = {
             "C": "class manager imports salary {}",
             "D": "none of the mentioned"
           },
-          "correct_answer": null,
-          "explanation": null,
-          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces"
+          "correct_answer": "B",
+          "explanation": "The keyword 'implements' is used by a class to implement an interface: class manager implements salary {}.",
+          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 205,
@@ -34439,7 +34851,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "All methods and variables are implicitly public if interface is declared public.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 206,
@@ -34459,7 +34873,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The cal() method is overridden in the Display class, which inherits from Calculate. This method sets the instance variable x to the square of the passed value, i.e., 2 * 2 = 4. Therefore, arr.x is 4.\n\nOutput:\n\n$ javac interfaces.java\n$ java interfaces\n4",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 207,
@@ -34479,7 +34895,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "class displayA implements the interface calculate by doubling the value of item, where as class displayB implements the interface by dividing item by item, therefore variable x of class displayA stores 4 and variable x of class displayB stores 1.\n\nOutput:\n\n$ javac interfaces.java\n$ java interfaces\n4 1",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 208,
@@ -34499,7 +34917,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "According to the overridden cal() method in the Display class, the method sets the instance variable x to VAR if the argument passed is less than 2; otherwise, it sets x to the square of the argument passed.\n\noutput:\n\n$ javac interfaces.java\n$ java interfaces\n0 0 4",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-interfaces",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 209,
@@ -34519,7 +34939,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Interface can have either public access specifier or no specifier. The reason is they need to be implemented by other classes.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 210,
@@ -34539,7 +34961,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Concrete class implements an interface. They can be instantiated. implements keyword is used to inherit an interface in a class.\n\nSyntax:\n\nclass <ClassName> implements <InterfaceName>\n{           // body\t\t}",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 211,
@@ -34557,7 +34981,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Concrete classes must implement all methods in an interface. Through interface multiple inheritance is possible.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 212,
@@ -34577,7 +35003,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "variable defined in an interface is implicitly final and static. They are usually written in capital letters.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 213,
@@ -34597,7 +35025,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "An interface in Java usually contains method declarations (without bodies) that are meant to be implemented by classes. It does not contain method definitions or constructors.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 214,
@@ -34617,7 +35047,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "By default, interface contains abstract methods. The abstract methods need to be implemented by concrete classes.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 215,
@@ -34637,7 +35069,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "If a method in an interface has a concrete implementation (using the default or static keyword), then any class implementing the interface is not required to provide its own implementation of that method. The class can use the interface’s provided implementation or override it if needed.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 216,
@@ -34657,7 +35091,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Constructor is not provided by interface as objects cannot be instantiated.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 217,
@@ -34677,7 +35113,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The JVM needs to distinctly know which value of variable it needs to use. To avoid confusion to the JVM interfaceName.variableName is mandatory.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 218,
@@ -34695,7 +35133,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "No, Constructor, Static Initialization Block, Instance Initialization Block and variables cannot be abstract.",
-          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-interview-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 219,
@@ -34715,7 +35155,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "There are two types of polymorphism in Java. Compile time polymorphism (overloading) and runtime polymorphism (overriding).",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 220,
@@ -34735,7 +35177,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Object class is superclass of every class in Java.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 221,
@@ -34755,7 +35199,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "For the method call obj.add(a, a), since a is of type int, the method defined at line 5 is executed. Similarly, for the call obj.add(b, b), since b is of type double, the method defined at line 9 is invoked. As a result, the values of x and y are set to 4 and 6.4, respectively.\n\nNote: This behavior demonstrates polymorphism in Java, where method overloading allows different methods to be invoked based on parameter types.\n\noutput:\n\n$ javac Overload_methods.java\n$ java Overload_methods\n4 6.4",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 222,
@@ -34775,7 +35221,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Exceptions in Java are run-time errors.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 223,
@@ -34795,7 +35243,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Exceptional handling is managed via 5 keywords – try, catch, throws, throw and finally.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 224,
@@ -34815,7 +35265,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The keyword try must be used. The try keyword defines a block of code that might throw an exception.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 225,
@@ -34835,7 +35287,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "If an exception occurs within the try block, it is thrown and cached by catch block for processing.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 226,
@@ -34855,7 +35309,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The throw keyword is used to explicitly throw an exception within a method or block of code, allowing the programmer to deliberately indicate that an unexpected runtime error has occurred.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 227,
@@ -34875,7 +35331,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "System.out.print() function first converts the whole parameters into a string and then prints, before “Hello” goes to output stream 1 / 0 error is encountered which is cached by catch block printing just “World”.\n\nOutput:\n\n\n\n$ javac exception_handling.java\n$ java exception_handling\nWorld",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 228,
@@ -34895,7 +35353,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The variable a is set to 0, in expression b = 5/a refers to dividing an int{5} with an int{0} which results in an ArithmeticException, which is caught by the catch statement and “B” is printed.\n\nOutput:\n\n$ javac exception_handling.java\n$ java exception_handling\nB",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 229,
@@ -34915,7 +35375,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The variable a is set to 0, in expression b = 5/a refers to dividing an int{5} with an int{0} which results in an ArithmeticException, which is caught by the catch statement and “B” is printed. Since the final block must be executed in any case . Hence “C” also prints after “B”.\n\nOutput:\n\n$ javac exception_handling.java\n$ java exception_handling\nBC",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 230,
@@ -34935,7 +35397,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Value of variable sum is printed outside of try block, sum is declared only in try block, outside try block it is undefined.\n\nOutput:\n\n$ javac exception_handling.java\nException in thread \"main\" java.lang.Error: Unresolved compilation problem:\n\tsum cannot be resolved to a variable",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exceptional-handling-basics",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 231,
@@ -34955,7 +35419,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "“throw’ keyword is used for throwing exception manually in java program. User defined exceptions can be thrown too.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 232,
@@ -34975,7 +35441,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Runtime errors cannot be caught generally. Error class is used to catch such errors/exceptions.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 233,
@@ -34995,7 +35463,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Throwable is built in class and all exception types are subclass of this class. It is the super class of all exceptions.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 234,
@@ -35015,7 +35485,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "new operator is used to create instance of an exception. Exceptions may have parameter as a String or have no parameter.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 235,
@@ -35035,7 +35507,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "In Java, the “try” keyword is used in conjunction with the “catch” and/or “finally” blocks to handle exceptions. The “try” block contains the code that may potentially throw an exception. If an exception is thrown within the “try” block, it is caught and handled by the corresponding “catch” block.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 236,
@@ -35055,7 +35529,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Default handler is used to handle all the exceptions if catch is not used to handle exception. Finally is called in any case.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 237,
@@ -35075,7 +35551,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Finally block of the code gets executed regardless exception is caught or not. File close, database connection close, etc are usually done in finally.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 238,
@@ -35095,7 +35573,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The throw statement should be assignable to the throwable type. Throwable is the super class of all exceptions.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 239,
@@ -35113,7 +35593,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Error is not recoverable at runtime. The control is lost from the application.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-experienced",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 240,
@@ -35133,7 +35615,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "All the exception types are subclasses of the built in class Throwable.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 241,
@@ -35153,7 +35637,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Error class is related to java run time error that can’t be caught usually, RuntimeExecption is subclass of Exception class which contains all the exceptions that can be caught.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 242,
@@ -35173,7 +35659,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Error class is related to java run time error that can’t be caught usually, RuntimeExecption is subclass of Exception class which contains all the exceptions that can be caught.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 243,
@@ -35193,7 +35681,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "When an exception is not caught using a catch block, the Java Runtime System handles it by invoking the default exception handler. This handler prints the exception details and stack trace, then terminates the program.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 244,
@@ -35213,7 +35703,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "parseInt() method parses input into integer. The exception thrown by this method is NumberFormatException.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 245,
@@ -35233,7 +35725,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The finally block executes first and prints the world and then the Exception is thrown which is handled by the default handler.\n\nOutput:\n\n\n\nWorldERROR!\nException in thread \"main\" java.lang.ArithmeticException: / by zero\nat exception_handling.main(Main.java:7)",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 246,
@@ -35253,7 +35747,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "For the 1st iteration -1 is displayed. The 2nd exception is caught in catch block and 0 is displayed.\n\nOutput:\n\n$ javac exception_handling.java\n$ java exception_handling\n-10",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-exception-types",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 247,
@@ -35273,7 +35769,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The throw keyword is used to explicitly throw either a checked or unchecked exception. The object being thrown must be an instance of Throwable or one of its subclasses.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 248,
@@ -35293,7 +35791,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The Exception class represents all exceptions that can be explicitly thrown, while Throwable is the superclass of all exceptions and errors in Java, covering both checked and unchecked exceptions. Therefore, Throwable can be used to catch any type of exception.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 249,
@@ -35313,7 +35813,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "new is used to create an instance of an exception. All of java’s built in run-time exceptions have two constructors: one with no parameters and one that takes a string parameter.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 250,
@@ -35333,7 +35835,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "If a method is capable of causing an exception that it does not handle. It must specify this behaviour the behaviour so that callers of the method can guard themselves against that exception. This is done by using throws clause in methods declaration.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 251,
@@ -35353,7 +35857,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Because ArrayIndexOutOfBoundException is not a valid Exception. ArrayIndexOutOfBoundsException is a valid exception.\nNote: there is s missing in Bounds.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 252,
@@ -35373,7 +35879,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Since a NullPointerException object is thrown in line 8, but the catch block is designed to catch an ArithmeticException, the exception remains unhandled, resulting in a runtime exception.\n\nOutput:\n\n$ javac exception_handling.java\n$ java exception_handling\nException in thread \"main\" java.lang.NullPointerException: Hello\n\tat exception_handling.main",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 253,
@@ -35393,7 +35901,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Because finally will execute always.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 254,
@@ -35413,7 +35923,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The statement written inside the try block executed first, since the finally block is executed followed by try block.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-throw-throws-nested-try",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 255,
@@ -35433,7 +35945,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "finally keyword is used to define a set of instructions that will be executed irrespective of the exception found or not.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 256,
@@ -35453,7 +35967,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "try block can be followed by any of finally or catch block, try block checks for exceptions and work is performed by finally and catch block as per the exception.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 257,
@@ -35473,7 +35989,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The exception that handles the divide by zero error is the ArithmeticException. This exception is thrown when there is an issue with arithmetic operations, such as division by zero.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 258,
@@ -35493,7 +36011,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "ArrayIndexOutOfBoundsException is a built in exception that is caused when we try to access an index location which is beyond the length of an array.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 259,
@@ -35513,7 +36033,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Since no command-line arguments are provided, the value of a is 0. As a result, the expression 10 / a throws an ArithmeticException, which is caught, and the value 1 is printed.\n\nOutput:\n\n\n\n$ javac exception_handling.java\n$ java exception_handling\n1",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 260,
@@ -35533,7 +36055,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Try block is throwing NullPointerException but the catch block is used to counter Arithmetic Exception. Hence NullPointerException occurs since no catch is there which can handle it, runtime error occurs.\n\nOutput:\n\n$ javac exception_handling.java\n$ java exception_handling\nException in thread \"main\" java.lang.NullPointerException: Hello",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 261,
@@ -35553,7 +36077,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The inner try block does not have a catch which can tackle ArrayIndexOutOfBoundException hence finally is executed which prints ‘A’ the outer try block does have catch for ArrayIndexOutOfBoundException exception but no such exception occurs in it hence its catch is never executed and only ‘A’ is printed.\n\nOutput:\n\n$ javac exception_handling.java\n$ java exception_handling\nA",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 262,
@@ -35573,7 +36099,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "try without catch or finally\n\nOutput:\n\n$ javac exception_handling.java\n$ java exception_handling\nMain.java:9: error: 'try' without 'catch', 'finally' or resource declarations",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-finally-built-in-exceptions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 263,
@@ -35593,7 +36121,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The Exception class is used to define exceptions in Java. It is a subclass of Throwable and represents conditions that a reasonable application might want to catch. While Throwable is the superclass of all errors and exceptions, the Exception class specifically deals with exceptions that can be caught and handled by the application.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 264,
@@ -35613,7 +36143,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "getMessage() returns a description of the exception.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 265,
@@ -35633,7 +36165,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The printStackTrace() method is used to print the stack trace of an exception to the standard error stream. This helps in debugging by showing the sequence of method calls that led to the exception. The method getStackTrace() returns the stack trace elements but does not print them directly. The other options are invalid method names in Java exception handling.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 266,
@@ -35653,7 +36187,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The method getLocalizedMessage() returns a localized description of an exception.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 267,
@@ -35673,7 +36209,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The Throwable class is the direct superclass of both Exception and Error classes in Java. All exceptions and errors in Java derive from Throwable. This allows any object that is an instance of Throwable (or its subclasses) to be thrown or caught as an exception.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 268,
@@ -35693,7 +36231,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Myexception is self defined exception.\n\nOutput:\n\n\n\n$ javac Output.java\njava Output\nException",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 269,
@@ -35713,7 +36253,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Since DevideByZeroException is not a valid or user defined Exception.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 270,
@@ -35733,7 +36275,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Since, System.out.print(“A”); statement is never reached. So, the compiler throws a compile time Exception.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 271,
@@ -35753,7 +36297,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Myexception is self defined exception.\n\nOutput:\n\n$ javac Output.javac\njava Output\nException",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 272,
@@ -35773,7 +36319,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "try without catch or finally\n\nOutput:\n\n$ javac exception_handling.java\n$ java exception_handling one\nerror: 'try' without 'catch', 'finally' or resource declarations",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-exceptions",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 273,
@@ -35793,7 +36341,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The Xms flag has no default value, and Xmx typically has a default value of 256MB. A common use for these flags is when you encounter a java.lang.OutOfMemoryError.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 274,
@@ -35813,7 +36363,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The exception Stack Overflow in Java is actually called StackOverflowError and it is located in the java.lang.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 275,
@@ -35833,7 +36385,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "try is used for the block that needs to checked for exception.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 276,
@@ -35853,7 +36407,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "In Java, String is a class that is part of the java.lang package. It is used to create and manipulate strings (sequences of characters). While a String object is created from the String class, the String itself refers to the class, not the object.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 277,
@@ -35873,7 +36429,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "charAt() is a predefined method of string class which returns the character of specified index passed to it. Java does not support traditional [ ] to access the character at specified index.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 278,
@@ -35893,7 +36451,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Whenever a subclass needs to refer to its immediate superclass, it can do so by use of the keyword super.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 279,
@@ -35913,7 +36473,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The equals() method in the String class is used to compare the contents of two strings. It returns true if the strings have the same sequence of characters, otherwise false.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 280,
@@ -35933,7 +36495,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Strings in Java are immutable that is they can not be modified.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 281,
@@ -35953,7 +36517,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Java defines an operator +, it is used to concatenate strings.\n\noutput:\n\n\n\n$ javac string_demo.java\n$ java string_demo\nIlikeJava",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 282,
@@ -35973,7 +36539,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "charAt() is a method of class String which gives the character specified by the index. obj.charAt(3) gives 4th character i:e I.\n\noutput:\n\n$ javac string_class.java\n$ java string_class\nI",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 283,
@@ -35993,7 +36561,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The string “I LIKE JAVA” contains 11 characters, including the spaces. The length() method returns the total number of characters in the string. So, the output is 11.\n\noutput:\n$ javac string_class.java\n$ java string_class\n11",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 284,
@@ -36013,7 +36583,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The object obj is referencing the “hello”  and the object obj2 is referencing the  String “world”. Hence the obj+” “+obj2 is “hello world”.\n\noutput:\n$ javac string_class.java\n$ java string_class\nhello world",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 285,
@@ -36033,7 +36605,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "equals() is method of class String, it is used to check equality of two String objects, if they are equal, true is retuned else false.\n\noutput:\n\n$ javac string_class.java\n$ java string_class\nfalse true",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-class",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 286,
@@ -36053,7 +36627,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "String and StringBuffer are part of the java.lang package, which means they inherit from the Object class, the root of the Java class hierarchy.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 287,
@@ -36073,7 +36649,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Operator + is used to concatenate strings, Example String s = “i ” + “like ” + “java”; String s contains “I like java”.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 288,
@@ -36093,7 +36671,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Method length() of string class is used to get the length of the object which invoked method length().",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 289,
@@ -36113,7 +36693,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "charAt() is a predefined method of String class which returns the character at the given index.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 290,
@@ -36133,7 +36715,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The String() invokes the default constructor of String class and returns the object of NULL String.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 291,
@@ -36153,7 +36737,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "StringBuffer class is used to create strings that can be modified after they are created.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 292,
@@ -36173,7 +36759,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "String(chars) is a constructor of class string, it initializes string s with the values stored in character array chars, therefore s contains “abc”.\n\noutput:\n\n$ javac String_demo.java\n$ java String_demo\nabc",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 293,
@@ -36193,7 +36781,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "ascii is an array of  integers which contains ascii codes of Characters A, B, C, D. String(ascii, 1, 3) is an constructor which initializes s with Characters corresponding to ascii codes stored in array ascii, starting position being given by 1 & ending position by 3, Thus s stores BCD.\n\noutput:\n\n$ javac String_demo.java\n$ java String_demo\nBCD",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 294,
@@ -36213,7 +36803,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The String s is created by passing the array of characters, while String s1 is created using auto unboxing with 4 characters, Because the length() method returns the no. of character in the string. Hence output is 4 3.\n\noutput:\n$ javac String_demo.java\n$ java String_demo\n4 3",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-handling-basics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 295,
@@ -36233,7 +36825,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "getChars() is a predefined method which returns the sequence of characters. It Can be used in exchange of getChar() when multiple chars are needed.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 296,
@@ -36253,7 +36847,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "getBytes() stores the character in an array of bytes. It uses default character to byte conversions provided by the platform.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 297,
@@ -36273,7 +36869,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The variable is defined public so it can be used anywhere, But the class is not public so its scope is limited to the current package i.e. test.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 298,
@@ -36293,7 +36891,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Because we are performing an operation on i which is a reference variable pointing to null because it is not initialized yet.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 299,
@@ -36313,7 +36913,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The toCharArray() method directly converts the entire string into a new character array. The getChars() method allows copying characters from the string into an existing character array. The charAt() method only accesses a single character at a specified index and cannot be used to convert the whole string into a character array.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 300,
@@ -36333,7 +36935,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "getChars(start,end,s,0) returns an array from the string c, starting index of array is pointed by start and ending index is pointed by end. s is the target character array where the new string of letters is going to be stored and the new string will be stored from 0th position in s.\n\nOutput:\n\n$ javac output.java\n$ java output\nllo i l",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 301,
@@ -36353,7 +36957,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "indexof(‘c’) and lastIndexof(‘c’) are pre defined function which are used to get the index of first and last occurrence of\n\nthe character pointed by c in the given array.\n\nOutput:\n\n$ javac output.java\n$ java output\n6 4 6 9",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 302,
@@ -36373,7 +36979,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Character.isDigit(c[i]),Character.isUpperCase(c[i]),Character.isWhitespace(c[i]) are the function of library java.lang. They are used to find weather the given character is of specified type or not. They return true or false i:e Boolean variable.\n\nOutput:\n\n$ javac output.java\n$ java output\na is a lower case Letter\nA is an Upper Case Letter",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 303,
@@ -36393,7 +37001,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "“hello” is a String literal, method charAt() returns the character specified at the index position. Character at index position 1 is e of hello, hence ch contains e.\n\noutput:\n\n$ javac output.java\n$ java output\ne",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-extraction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 304,
@@ -36413,7 +37023,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The equals() method compares the values of two String objects and returns a boolean result: true if both are equal, otherwise false.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 305,
@@ -36433,7 +37045,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The regionMatches() method in Java’s String class compares specific regions of two strings and can perform either case-sensitive or case-insensitive comparisons.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 306,
@@ -36453,7 +37067,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Method startsWith() of string class is used to check whether the String in question starts with a specified string. It is a specialized form of method regionMatches().",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 307,
@@ -36473,7 +37089,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "compareTo() function returns zero when both the strings are equal, it returns a value less than zero if the invoking string is less than the other string being compared and value greater than zero when invoking string is greater than the string compared to.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 308,
@@ -36493,7 +37111,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "equals() method of string class returns boolean value true if both the string are equal and false if they are unequal.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 309,
@@ -36513,7 +37133,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "startsWith() method is case sensitive “hello” and “Hello” are treated differently, hence false is stored in var.\n\nOutput:\n\n\n\n$ javac output.java\n$ java output\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 310,
@@ -36533,7 +37155,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The == operator compares two object references to see whether they refer to the same instance, where as equals() compares the content of the two objects.\n\nOutput:\n\n$ javac output.java\n$ java output\nfalse true",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 311,
@@ -36553,7 +37177,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The string s2 is created using the value of s1, so both have the same value: “Hello”. However, s3 contains the same text in uppercase: “HELLO”. Since the equals() method is case-sensitive, s1 and s2 are considered equal, but s3 is not equal to them.\n\nOutput:\n\n$ javac output.java\n$ java output\ntrue false",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 312,
@@ -36573,7 +37199,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Since StringBuffer is mutable, we can add “abc” using the append() method. But in the case of String, which is immutable, we use the concat() method (or + operator) and reassign the result to a new string, effectively replacing the old one.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 313,
@@ -36593,7 +37221,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "compareTo() function returns zero when both the strings are equal, it returns a value less than zero if the invoking string is less than the other string being compared and value greater than zero when invoking string is greater than the string compared to.\n\noutput:\n\n$ javac output.java\n$ java output\nac",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-string-comparision",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 314,
@@ -36613,7 +37243,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The substring() method is a predefined method in the String class that returns a portion of the string based on the given arguments.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 315,
@@ -36633,7 +37265,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Two strings can be concatenated by using concat() method.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 316,
@@ -36653,7 +37287,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The trim() method is a predefined method that removes leading and trailing whitespace characters such as newline (\\n), tab (\\t), and space ( ).",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 317,
@@ -36673,7 +37309,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": ":  compareTo() method returns the int value\n-ve when comparing string is smaller than comparing string.\n+ve when comparing string is greater than comparing string.\n0  when comparing strings are equal.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 318,
@@ -36693,7 +37331,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "replace() method replaces all occurrences of one character in invoking string with another character.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 319,
@@ -36713,7 +37353,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "trim() method is used to remove leading and trailing whitespaces in a string.\n\nOutput:\n\n$ javac output.java\n$ java output\n\"Hello World\"",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 320,
@@ -36733,7 +37375,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The expression s1 + ” two” performs string concatenation, resulting in “one two”, which is assigned to s2. The System.out.println(s2); statement then prints “one two” to the console.\n\nOutput:\n\n$ javac output.java\n$ java output\none two",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 321,
@@ -36753,7 +37397,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "replace() method replaces all occurrences of one character in invoking string with another character. s1.replace(‘l’,’w’)  replaces every occurrence of ‘l’ in Hello by ‘w’, giving Hewwo.\n\nOutput:\n\n$ javac output.java\n$ java output\nHewwo",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 322,
@@ -36773,7 +37419,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "substring(0,4) returns the character from 0 th position to 3 rd position.\n\noutput:\n\n$ javac output.java\n$ java output\nHell",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 323,
@@ -36793,7 +37441,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "indexOf() method returns  the index of first occurrence of the character where as lastIndexOf() returns the index of last occurrence of the character.\n\noutput:\n\n$ javac output.java\n$ java output\n4 9",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-seraching-modifying-string",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 324,
@@ -36813,7 +37463,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "StringBuffer represents growable and writable character sequence.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 325,
@@ -36833,7 +37485,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The StringBuffer object is mutable, so the append() method concatenates the given string to the existing one without changing the original reference.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 326,
@@ -36853,7 +37507,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "length() method returns the no of character present in the string. It works on both String and StringBuffer.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 327,
@@ -36873,7 +37529,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "deleteCharAt() method deletes the character at the specified index location and returns the resulting StringBuffer object.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 328,
@@ -36893,7 +37551,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "reverse() method reverses all characters. It returns the reversed object on which it was called.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 329,
@@ -36913,7 +37573,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The indexOf(‘c’) and lastIndexOf(‘c’) methods are predefined and are used to find the index of the first and last occurrence of the character ‘c’ in a string, respectively.\n\nOutput:\n\n$ javac output.java\n$ java output\n1 14 8 15",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 330,
@@ -36933,7 +37595,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The delete(0, 2) method deletes the substring from the first argument i.e. 0 to the one less than the second argument.\n\nOutput:\n\n$ javac output.java\n$ java output\nllo",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 331,
@@ -36953,7 +37617,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "append() method of class StringBuffer is used to concatenate the string representation to the end of invoking string.\n\nOutput:\n\n$ javac output.java\n$ java output\nHello World",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 332,
@@ -36973,7 +37639,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "reverse() method reverses all characters. It returns the reversed object on which it was called.\n\nOutput:\n\n$ javac output.java\n$ java output\nolleH",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 333,
@@ -36993,7 +37661,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Character.isDigit(c[i]), Character.isUpperCase(c[i]), Character.isWhitespace(c[i]) are the function of library java.lang they are used to find whether the given character is of specified type or not. They return true or false i:e Boolean variable.\n\nOutput:\n\n$ javac output.java\n$ java output\n1 is a digit\na is a lower case Letter",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 334,
@@ -37013,7 +37683,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "substring() is a predefined method which is used to get the substring of the invoking string between the specified index.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 335,
@@ -37033,7 +37705,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Two strings can be concatenated by using append() method.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 336,
@@ -37053,7 +37727,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "reverse() method reverses all characters. It returns the reversed object on which it was called.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 337,
@@ -37073,7 +37749,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "length()- returns the length of String the StringBuffer would create whereas capacity() returns a total number of characters that can be supported before it is grown.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 338,
@@ -37093,7 +37771,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The StringBuffer class has three valid constructors: one with no arguments, one with an integer (capacity), and one with a string. A constructor with both an int and a String does not exist, so it’s invalid.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 339,
@@ -37113,7 +37793,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "length() method is used to obtain length of StringBuffer object, length of “Hello” is 5.\n\nOutput:\n\n$ javac output.java\n$ java output\n5",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 340,
@@ -37133,7 +37815,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The replace() method replaces the given string from the specified beginIndex and endIndex.\n\n$ javac output.java\n$ java output\nHJavalo",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 341,
@@ -37153,7 +37837,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "setChatAt() method is used to set/change the character at the specified index of the object of StringBuffer class.\n\nOutput:\n\n$ javac output.java\n$ java output\nHxllo",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 342,
@@ -37173,7 +37859,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The insert() method inserts one string into another. It is overloaded to accept values of all simple types, plus String and Objects. Sting is inserted into invoking object at specified position. “Good ” is inserted in “Hello World” T index 6 giving “Hello Good World”.\n\noutput:\n\n$ javac output.java\n$ java output\nHello Good World",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 343,
@@ -37193,7 +37881,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "insert() method is used to insert the substring after the specified index by shifting the characters forward.\n\nOutput:\n\n$ javac output.java\n$ java output\nHJavaello",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-stringbuffer-methods",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 344,
@@ -37213,7 +37903,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "java.util.regex consists 3 classes. PatternSyntaxException indicates syntax error in regex.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 345,
@@ -37233,7 +37925,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "macther() method is invoked using matcher object which interpretes pattern and performs match operations in the input string.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 346,
@@ -37253,7 +37947,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "object of Pattern class can represent compiled regular expression.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 347,
@@ -37273,7 +37969,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Group 0 is a special group which represents the entire expression.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 348,
@@ -37291,7 +37989,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "groupCount reports total number of Capturing groups. this does not include special group, group 0.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 349,
@@ -37311,7 +38011,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "\\W matches nonword characters. [0-9], [A-Z] and _ (underscore) are word characters. All other than these characters are nonword characters.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 350,
@@ -37331,7 +38033,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "\\z is used to match end of the entire string in regular expression in java.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 351,
@@ -37351,7 +38055,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "public int end(int group) returns offset from the last character of the subsequent group.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 352,
@@ -37371,7 +38077,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "replaceAll method replaces every subsequence of the sequence that matches pattern with a replacement string.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 353,
@@ -37391,7 +38099,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "public int start() returns index of the previous match in the input string.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-regular-expression",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 354,
@@ -37411,7 +38121,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "String(chars) is a constructor of class string, it initializes string s with the values stored in character array chars, therefore s contains “abc”.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 355,
@@ -37431,7 +38143,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "reverse() method reverses all characters. It returns the reversed object on which it was called.\n\nOutput:\n\n$ javac output.java\n$ java output\nziuQ",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 356,
@@ -37451,7 +38165,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "As no argument is passed to the code, the length of args is 0. So the code will not print.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 357,
@@ -37471,7 +38187,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The genericstack implements the stack logic , the push() method pushes the “Hello” to stack and pop() method returns the top element of the stack.\n\nNote : The type String for the stack is restricted.\n\nOutput:\n\n\n\n$ javac Output.javac\n$ java Output\nHello",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 358,
@@ -37491,7 +38209,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The genericstack implements the stack logic , the push() method pushes the “Hello” to stack and pop() method returns the top element of the stack.\n\nNote : The type String for the stack is restricted.\n\nOutput:\n\n\n\n$ javac Output.javac\n$ java Output\n36",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 359,
@@ -37511,7 +38231,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The name gs for both the String and an Integer type stack raise a compilation error.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 360,
@@ -37531,7 +38253,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "generic stack object gs is defined to contain a string parameter  but we are sending an integer parameter, which results in compilation error.\n\nOutput:\n\n$ javac Output.javac\nerror: incompatible types: int cannot be converted to String\ngs.push(36);",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 361,
@@ -37551,7 +38275,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "we cannot Create, Catch, or Throw Objects of Parameterized Types as generic class cannot extend the Throwable class directly or indirectly.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 362,
@@ -37571,7 +38297,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Cannot Overload a Method Where the Formal Parameter Types of Each Overload Erase to the Same Raw Type.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 363,
@@ -37591,7 +38319,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Generic methods are methods that introduce their own type parameters. This is similar to declaring a generic type, but the type parameter scope is limited to the method where it is declared. Static and non-static generic methods are allowed, as well as generic class constructors.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 364,
@@ -37611,7 +38341,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "T is used for type, A type variable can be any non-primitive type you specify: any class type, any interface type, any array type, or even another type variable.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 365,
@@ -37631,7 +38363,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "N is used for Number.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 366,
@@ -37651,7 +38385,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The syntax for a generic method includes a type parameter, inside angle brackets, and appears before the method’s return type. For static generic methods, the type parameter section must appear before the method’s return type.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 367,
@@ -37671,7 +38407,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Type inference, allows you to invoke a generic method as an ordinary method, without specifying a type between angle brackets.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 368,
@@ -37691,7 +38429,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The genericstack implements the stack logic , the push() method pushes the “Hello” to stack and pop() method returns the top element of the stack.\n\nNote : The type String for the stack is restricted.\n\nOutput:\n\n\n\n$ javac Output.javac\n$ java Output\nHello",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 369,
@@ -37711,7 +38451,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The genericstack implements the stack logic , the push() method pushes the “Hello” to stack and pop() method returns the top element of the stack.\n\nNote : The type String for the stack is restricted.\n\nOutput:\n\n$ javac Output.javac\n$ java Output\n36",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 370,
@@ -37731,7 +38473,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The gs is a stack of String type and push the data “Hello” and gss is of Integer type pushed value 36, and the pop from gs and gss results the “Hello 36”.\n\nOutput:\n\n$ javac Output.javac\n$ java Output\nHello 36",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-generics-methods",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 371,
@@ -37751,7 +38495,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "In generic code, the question mark (?), called the wildcard, represents an unknown type.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 372,
@@ -37771,7 +38517,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The wildcard can be used in a variety of situations: as the type of a parameter, field, or local variable; sometimes as a return type (though it is better programming practice to be more specific). The wildcard is never used as a type argument for a generic method invocation, a generic class instance creation, or a supertype.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 373,
@@ -37791,7 +38539,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The keyword used to upper bound a wildcard in Java is “extends”. This is evident from the context where it is mentioned that to declare an upper-bounded wildcard, the wildcard character (‘?’), is followed by the extends keyword, followed by its upper bound.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 374,
@@ -37811,7 +38561,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "the syntax List<? extends Number>. This syntax allows the list to accept any type that is a subclass of Number, such as Integer, Double, or Float. The wildcard character (?) represents an unknown type, and the extends keyword specifies the upper bound of the wildcard.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 375,
@@ -37831,7 +38583,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "A lower bounded wildcard is expressed using the wildcard character (‘?’), following by the super keyword, followed by its lower bound: .",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 376,
@@ -37851,7 +38605,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The sumOfList() is a static method which uses enhance for loop to calculate the sum and return the sum. Since, the return type is double so it will automatically type casted to a double.\n\nOutput:\n\n\n\n$ javac Output.javac\n$ java Output\n6.0",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 377,
@@ -37871,7 +38627,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The sumOfList() is a static method which uses enhance for loop to calculate the sum and return the sum. Since, the return type is double so it will automatically type casted to a double.\n\nOutput:\n\n$ javac Output.javac\n$ java Output\n7.0",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 378,
@@ -37891,7 +38649,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "In this program, a generic stack object gs of type Integer is created. The integer value 36 is pushed onto the stack using the push() method and then retrieved using the pop() method. Therefore, the output of the program is 36.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-wildcards",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 379,
@@ -37911,7 +38671,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Primitive types such as int, float, and char cannot be used directly as type parameters in generic classes or methods.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 380,
@@ -37931,7 +38693,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "It is not possible to create generic type instances. Example – “E obj = new E()” will give a compilation error.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 381,
@@ -37951,7 +38715,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The Array class provides static methods to dynamically create and access Java arrays.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 382,
@@ -37971,7 +38737,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The program creates a Box containing the value 10 and adds it to a list. The outputBoxes method prints the contents of each box in the list. Since there is only one box, the output is: Box #0 contains [10].",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 383,
@@ -37991,7 +38759,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "In this program, two instances of the generic stack are created: one for String and one for Integer, using different variable names (gs1 and gs2). The first stack stores and prints “Hello”, while the second stores and prints 36. Thus, the output is “Hello 36”.\n\nOutput:\n\n$ javac Output.java\n$ java Output\nHello 36",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 384,
@@ -38011,7 +38781,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The 1 is printed inside the print statement.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n1",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-rsetrictions-on-generics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 385,
@@ -38031,7 +38803,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The package that contains all the collection classes and interfaces in the Java Collection Framework is java.util.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 386,
@@ -38051,7 +38825,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Array is not a part of collection framework.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 387,
@@ -38071,7 +38847,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "SortedList is not a part of collection framework.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 388,
@@ -38091,7 +38869,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "clear() method removes all the elements from invoking collection.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 389,
@@ -38111,7 +38891,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "A collection is a group of objects, it is similar to String Template Library (STL) of C++ programming language.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 390,
@@ -38131,7 +38913,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "array was containing 5,4,3,2,1 but when method Arrays.fill(array, 1, 4, 8) is called it fills the index location starting with 1 to 4 by value 8 hence array becomes 5,8,8,8,1.\n\nOutput:\n\n\n\n$ javac Array.java\n$ java Array\n58881",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 391,
@@ -38151,7 +38935,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The clear(int bitIndex) method sets the bit at the given index to false; for example, calling clear(2) will reset the bit at index 2 to 0.\n\nOutput:\n$ javac Bitset.java\n$ java Bitset\n{0, 1, 3, 4}",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-framework-overview",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 392,
@@ -38171,7 +38957,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Collection interfaces defines core methods that all the collections like set, map, arrays etc will have.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 393,
@@ -38191,7 +38979,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The List interface handles sequences as it allows ordered collections of elements. Lists can contain duplicate elements and provide precise control over the position of each element. On the other hand, Set does not allow duplicates and does not guarantee order, Comparator is used for sorting and comparing, and Collection is a more general interface that doesn’t specifically handle sequencing.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 394,
@@ -38211,7 +39001,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Set interface extends collection interface to handle sets, which must contain unique elements.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 395,
@@ -38231,7 +39023,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Collection interface is inherited by all other interfaces like Set, Array, Map etc. It defines core methods that all the collections like set, map, arrays etc will have",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 396,
@@ -38251,7 +39045,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The Collections class has only these three static variables.\nEMPTY_LIST\t=>\tThe empty list (immutable).\nEMPTY_MAP\t=>\tThe empty map (immutable).\nEMPTY_SET\t=>\tThe empty set (immutable).",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 397,
@@ -38271,7 +39067,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Arrays.sort(array) method sorts the array into 1,2,3,4,5.\n\nOutput:\n\n\n\n$ javac Array.java\n$ java Array\n12345",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 398,
@@ -38291,7 +39089,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Collections.sort(list) sorts the given list, the list was 2->8->5->1 after sorting it became 1->2->5->8.\n\nOutput:\n\n$ javac Collection_Algos.java\n$ java Collection_Algos\n1 2 5 8",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 399,
@@ -38311,7 +39111,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "shuffle – randomizes all the elements in a list.\n\nOutput:\n\n$ javac Collection_Algos.java\n$ java Collection_Algos\n1 5 2 8\n\n(output will be different on your system)",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-interface",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 400,
@@ -38331,7 +39133,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "There are 2 ways to remove an object from ArrayList. We can use overloaded method remove(int index) or remove(Object obj). We can also use an Iterator to remove the object.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 401,
@@ -38351,7 +39155,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Duplicate elements are allowed in List. Set contains unique objects.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 402,
@@ -38371,7 +39177,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Collections provides a method to sort the list. The order of sorting can be defined using Comparator.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 403,
@@ -38391,7 +39199,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "ArrayList is not synchronized. Vector is the synchronized data structure.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 404,
@@ -38411,7 +39221,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "List returned by Arrays.asList() is a fixed length list which doesn’t allow us to add or remove element from it.add() and remove() method will throw UnSupportedOperationException if used.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 405,
@@ -38431,7 +39243,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "length() is not defined for ArrayList in Java. size() returns the actual number of elements currently stored in the ArrayList.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 406,
@@ -38451,7 +39265,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "CopyOnWriteArrayList is a concurrent collection class. Its very efficient if ArrayList is mostly used for reading purpose because it allows multiple threads to read data without locking, which was not possible with synchronized ArrayList.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 407,
@@ -38471,7 +39287,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "SessionList is not an implementation of List interface. The others are concrete classes of List.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 408,
@@ -38491,7 +39309,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "ArrayList has O(1) complexity for accessing an element in ArrayList. O(n) is the complexity for accessing an element from LinkedList.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 409,
@@ -38509,7 +39329,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "If we make a copy of array before any changes to the array the content will not change. Else the content of the array will undergo changes.\n\npublic void setMyArray(String[] myArray)\n{\n\tif(myArray == null)\n        {\n\t\tthis.myArray = new String[0];\n\t}\n        else\n        {\n\t\tthis.myArray = Arrays.copyOf(myArray, myArray.length);\n\t}\n}",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-list",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 410,
@@ -38529,7 +39351,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "ArrayList class implements a dynamic array by extending AbstractList class.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 411,
@@ -38549,7 +39373,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "ArrayList() class implements a resizable array, allowing it to dynamically adjust its size as elements are added or removed.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 412,
@@ -38569,7 +39395,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "When we add an element, the capacity of ArrayList object increases automatically, but we can increase it manually to specified length x by using function ensureCapacity(x);",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 413,
@@ -38589,7 +39417,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The method used to obtain the present size of an ArrayList object is the size() method. This method returns the number of elements currently in the list. Unlike arrays, which use the length property to indicate their size, the ArrayList class specifically uses the size() method to return the current number of elements.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 414,
@@ -38609,7 +39439,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "toArray() returns an array containing all of the elements in this list in proper sequence (from first to last element).",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 415,
@@ -38629,7 +39461,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "trimTosize() is used to reduce the size of the array that underlines an ArrayList object.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 416,
@@ -38649,7 +39483,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "obj is an object of class ArrayList hence it is an dynamic array which can increase and decrease its size. obj.add(“X”) adds to the array element X and obj.add(1,”X”) adds element x at index position 1 in the list, Hence obj.add(1,”D”) stores D at index position 1 of obj and shifts the previous value stored at that position by 1.\n\nOutput:\n\n$ javac Arraylist.java\n$ java Arraylist\n[A, D, B, C].",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 417,
@@ -38669,7 +39505,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "This method returns the number of elements currently in the list.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 418,
@@ -38689,7 +39527,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Although obj.ensureCapacity(3); has manually increased the capacity of obj to 3 but the value is stored only at index 0, therefore obj.size() returns the total number of elements stored in the obj i:e 1, it has nothing to do with ensureCapacity().\n\nOutput:\n\n$ javac Output.java\n$ java Output\n1",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 419,
@@ -38709,7 +39549,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "trimTosize() is used to reduce the size of the array that underlines an ArrayList object.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-arraylist-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 420,
@@ -38729,7 +39571,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Default clone() method uses shallow copy. The internal elements are not cloned. A shallow copy only copies the reference object.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 421,
@@ -38747,7 +39591,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "get(Object o) method is useful when we want to compare objects based on the comparison of values. HashSet does not provide any way to compare objects. It just guarantees unique objects stored in the collection.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 422,
@@ -38767,7 +39613,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Immutable Set is useful in multithreaded environment. One does not need to declare generic type collection. It is inferred by the context of method call.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 423,
@@ -38787,7 +39635,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "We should not set the initial capacity too high and load factor too low if iteration performance is needed.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 424,
@@ -38807,7 +39657,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "HashSet is implemented to provide uniqueness feature which is not provided by HashMap. This also reduces code duplication and provides the memory efficient behavior of HashMap.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 425,
@@ -38827,7 +39679,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Integer and Long are two different data types and different objects. So they will be treated as unique elements and not overridden.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 426,
@@ -38845,7 +39699,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Set has contains(Object o) method instead of get(Object o) method as get is needed for comparing object and getting corresponding value.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 427,
@@ -38865,7 +39721,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "SortedSet is an interface. It maintains an ordered set of elements. TreeSet is an implementation of SortedSet.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 428,
@@ -38885,7 +39743,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "TreeSet provides fail-fast iterator. Hence when concurrently modifying TreeSet it throws ConcurrentModificationException.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 429,
@@ -38905,7 +39765,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Set is a collection of unique elements.HashSet has the behavior of Set and stores key value pairs. The LinkedHashSet stores the key value pairs in the order of insertion.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-structures-set",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 430,
@@ -38925,7 +39787,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The standard collection class that implements a linked list data structure is LinkedList. This class is part of the Java Collections Framework and provides a linked list implementation of the List interface.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 431,
@@ -38945,7 +39809,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "HashSet and TreeSet implements Set interface where as LinkedList and ArrayList implements List interface.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 432,
@@ -38965,7 +39831,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The method used to add an element to the start of a LinkedList object is addFirst(). addFirst() adds an element to the start of a LinkedList object. Other options such as change(), set(), and redo() are not used to add elements to the start of a LinkedList object.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 433,
@@ -38985,7 +39853,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The add() method of the HashSet class is used to add elements to the set. It adds the specified element only if it is not already present. The method returns true if the element was added successfully, indicating that it was not already in the set. If the element is already present, it returns false, and the set remains unchanged.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 434,
@@ -39005,7 +39875,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "removeLast() and removeFirst() methods are used to remove elements in end and beginning of a linked list.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 435,
@@ -39025,7 +39897,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "An element in a LinkedList object can be changed by first using get() to obtain the index or location of that object and the passing that location to method set() along with its new value.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 436,
@@ -39045,7 +39919,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "obj.addFirst(“D”) method is used to add ‘D’ to the start of a LinkedList object obj.\n\nOutput:\n\n$ javac Linkedlist.java\n$ java Linkedlist\n[D, A, B, C].",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 437,
@@ -39065,7 +39941,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "removeFirst() removes the first element from the LinkList. So, A is removed and [B, C] are left.\n\nOutput:\n\n$ javac Linkedlist.java\n$ java Linkedlist\n[B, C]",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 438,
@@ -39085,7 +39963,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "HashSet obj creates an hash object which implements Set interface, obj.size() gives the number of elements stored in the object obj which in this case is 3.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n[A, B, C] 3",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 439,
@@ -39105,7 +39985,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "TreeSet class uses set to store the values added by function add in ascending order using tree for storage.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n[1, 3, 4, 8, 9].",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-quiz",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 440,
@@ -39125,7 +40007,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "In Java, the Map interface represents a collection that maps keys to values. It stores key-value pairs, where each key is unique. Implementations of Map include HashMap, TreeMap, and Hashtable.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 441,
@@ -39145,7 +40029,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "AbstractMap, WeakHashMap, HashMap and TreeMap provide implementation of map interface.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 442,
@@ -39165,7 +40051,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The clear() method is used to remove all key-value pairs from the invoking map. Methods like delete(), remove(), and removeAll() are not valid for removing all entries from a map in a single operation.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 443,
@@ -39185,7 +40073,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The get(Object key) method returns the value associated with the specified key in the map, or null if the map contains no mapping for that key.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 444,
@@ -39205,7 +40095,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "keySet() methods is used to get a set containing all the keys used in a map. This method provides set view of the keys in the invoking map.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 445,
@@ -39225,7 +40117,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Maps revolve around two basic operations – get() and put(). to put a value into a map, use put(), specifying the key and the value. To obtain a value, call get() , passing the key as an argument. The value is returned.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 446,
@@ -39245,7 +40139,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "HashMap is used to store the data in the form of Key-Value pairs. So, in the given case the String is Key and integer is Value.\n\nOutput:\n\n$ javac Maps.java\n$ java Maps\n{A=1, B=2, C=3}",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 447,
@@ -39265,7 +40161,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "keySet() method returns a set containing all the keys used in the invoking map. Here keys are characters A, B & C. 1, 2, 3 are the values given to these keys.\n\nOutput:\n\n$ javac Maps.java\n$ java Maps\n[A, B, C].",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 448,
@@ -39285,7 +40183,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "obj.get(“B”) method is used to obtain the value associated with key “B”, which is 2.\n\nOutput:\n\n$ javac Maps.java\n$ java Maps\n2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 449,
@@ -39305,7 +40205,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "obj.entrySet() method is used to obtain a set that contains the entries in the map. This method provides set view of the invoking map.\n\nOutput:\n\n$ javac Maps.java\n$ java Maps\n[A=1, B=2, C=3].",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-maps",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 450,
@@ -39325,7 +40227,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "hasNext() returns boolean values true or false.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 451,
@@ -39345,7 +40249,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "To obtain an iterator to the start of the start of the collection we use iterator() method.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 452,
@@ -39365,7 +40271,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The next() method returns the next element in the iteration. If no more elements are present, it throws a NoSuchElementException.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 453,
@@ -39385,7 +40293,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The ListIterator can be used only with objects of type List. It allows bidirectional traversal of elements and supports modification of the list during iteration.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 454,
@@ -39405,7 +40315,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "previousIndex() returns index of previous element. if there is no previous element then -1 is returned.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 455,
@@ -39425,7 +40337,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "It throws an IllegalStateException if neither next() nor previous() have been called, or if remove() or add() have been invoked after the last call to next() or previous().",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 456,
@@ -39445,7 +40359,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Since the ListIterator is initially at the beginning element of ArrayList. So, it does not have the previous index; it means previousIndex() returns -1 which produce false {-1  != -1}. Hence the else statement is executed and EMPTY is printed.\n\nOutput:\n\n$ javac Collection_iterators.java\n$ java Collection_iterators\nEMPTY",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 457,
@@ -39465,7 +40381,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Collections.reverse(list) reverses the given list, the list was 2->8->5->1 after reversing it became 1->5->8->2.\n\nOutput:\n\n$ javac Collection_iterators.java\n$ java Collection_iterators\n1 5 8 2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 458,
@@ -39485,7 +40403,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Collections.sort(list) sorts the given list, the list was 2->8->5->1 after sorting it became 1->2->5->8.\n\nOutput:\n\n$ javac Collection_iterators.java\n$ java Collection_iterators\n1 2 5 8",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 459,
@@ -39505,7 +40425,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "i.next() returns the next element in the iteration. i.remove() removes from the underlying collection the last element returned by this iterator (optional operation). This method can be called only once per call to next(). The behavior of an iterator is unspecified if the underlying collection is modified while the iteration is in progress in any way other than by calling this method.\nNote: Since, the shuffle method is used we cannot predict what is the new order of the elements. So, either from 1, 2, 5, 8 one is removed and the remaining three are printed.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-iterators",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 460,
@@ -39525,7 +40447,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "obj is an object of class ArrayLists hence it is an dynamic array which can increase and decrease its size. obj.add(“X”) adds to the array element X and obj.add(1,”X”) adds element x at index position 1 in the list, Hence obj.add(1,”D”) stores D at index position 1 of obj and shifts the previous value stored at that position by 1.\n\nOutput:\n\n$ javac Arraylist.java\n$ java Arraylist\n[A, D, B, C].",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 461,
@@ -39545,7 +40469,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Its illegal to call max() only with comparator, we need to give the collection to be searched into.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 462,
@@ -39565,7 +40491,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "fill() method assigns a value to all the elements in an array, in other words, it fills the array with specified value.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 463,
@@ -39585,7 +40513,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "shuffle – randomizes all the elements in a list.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 464,
@@ -39605,7 +40535,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "singletonList() returns the object as an immutable List. This is an easy way to convert a single object into a list. This was added by Java 2.0.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 465,
@@ -39625,7 +40557,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "unmodifiableCollection() is available for al collections, Set, Map, List etc.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 466,
@@ -39645,7 +40579,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The Iterator class is used to perform any operations on sequences such as add, remove or update.\n\n\nhasNext()  => \treturns true if the next item is present inside the iterable.\n\nnext()        =>\t returns the current item and moves to the next item.\n\n\n\n\nOutput:\n$ javac Collection_Algos.java\n$ java Collection_Algos\n2 8 5 1",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 467,
@@ -39665,7 +40601,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Collections.reverse(list) reverses the given list, the list was 2->8->5->1 after reversing it became 1->5->8->2.\n\nOutput:\n\n$ javac Collection_Algos.java\n$ java Collection_Algos\n1 5 8 2",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-collection-algorithms",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 468,
@@ -39685,7 +40623,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "LinkedList implements the List interface and supports all standard list operations such as insertion, deletion, traversal, and access to elements.\nArrayList also implements List, but the question specifies classes that implement all standard list operations including efficient insertions and deletions at both ends, which LinkedList does.\nHashSet and AbstractSet are designed for sets, not lists.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 469,
@@ -39705,7 +40645,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "fill() method assigns a value to all the elements in an array, in other words, it fills the array with specified value.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 470,
@@ -39725,7 +40667,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The sort() method is provided by the Arrays class, not Array. You can use Arrays.sort() to sort a complete array or a specified range within an array. The Collections class provides sorting for collections like List, but not directly for arrays.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 471,
@@ -39745,7 +40689,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "binaryserach() method uses binary search to find a specified value. This method must be applied to sorted arrays.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 472,
@@ -39765,7 +40711,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "obj1 and obj2 are an object of class ArrayList hence it is a dynamic array which can increase and decrease its size. obj.add(“X”) adds to the array element X and obj.add(1,”X”) adds element x at index position 1 in the list, Both the objects obj1 and obj2 contain same elements i:e A & B thus obj1.equals(obj2) method returns true.\n\nOutput:\n\n\n\n$ javac Arraylist.java\n$ java Arraylist\ntrue",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 473,
@@ -39785,7 +40733,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "binarySearch(int[] a, int key) Searches the specified array of ints for the specified value using the binary search algorithm.\n\nNote : binary search algorithm only works on the sorted arrays or list.\n\nOutput:\n\n$ javac Array.java\n$ java Array\n3",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-array-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 474,
@@ -39805,7 +40755,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The order of appearance of variables in Enum is their natural order (the natural order means the order in which they are declared inside Enum type). However, the compareTo() method is implemented to order the variable in ascending order.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 475,
@@ -39823,7 +40775,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "No, instances of Enum cannot be created outside of Enum boundary, because Enum does not have a public constructor.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 476,
@@ -39843,7 +40797,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The ordinal() method retrieves the ordinal value of an enum constant, which represents its position within the enum declaration, starting from 0.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 477,
@@ -39863,7 +40819,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Tree Set will sort the values in the order in which Enum constants are declared.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 478,
@@ -39883,7 +40841,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Enum types cannot extend class.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 479,
@@ -39903,7 +40863,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Enum cannot have any modifiers. They are public, static and final by default.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 480,
@@ -39923,7 +40885,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The constructor of Enums is called which prints 10.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 481,
@@ -39943,7 +40907,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "getEnumConstants() returns the elements of this enum class or null if this Class object does not represent an enum type.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 482,
@@ -39963,7 +40929,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "All enums implicitly extend java.lang.Enum. Since Java does not support multiple inheritance, an enum cannot extend anything else.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 483,
@@ -39981,7 +40949,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Enums are type-safe as they have own name-space.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-enums",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 484,
@@ -40001,7 +40971,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Array class is a member of java.util.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 485,
@@ -40021,7 +40993,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "In Java, for the dynamic implementation of data, we cannot use primitive data types directly. Therefore, Java introduced wrapper classes to store primitive data types as objects. For example:\nint → Integer\nfloat → Float\nand so on.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 486,
@@ -40041,7 +41015,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Number is an abstract class containing subclasses Double, Float, Byte, Short, Integer and Long.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 487,
@@ -40061,7 +41037,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Since Java follows Pascal casing for class names, the wrapper class names are similar to their primitive counterparts, with the first letter capitalized. For example:\nint → Integer\nfloat → Float\nand so on.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 488,
@@ -40081,7 +41059,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The byte is return type and because java follows the camel casing for methods. So V is capitalized in byteValues().",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 489,
@@ -40101,7 +41081,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "isinfinite() method returns true is the value being tested is infinitely large or small in magnitude.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 490,
@@ -40121,7 +41103,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "java.lang is the root/default package of java that contains all the essential and core components of a java source code.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 491,
@@ -40141,7 +41125,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "isInfinite() method returns true is the value being tested is infinitely large or small in magnitude. 1/0. is infinitely large in magnitude hence true is stored in x.\n\nOutput:\n\n$ javac isinfinite_output.java\n$ java isinfinite_output\ntrue",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 492,
@@ -40161,7 +41147,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "isisNaN() method returns true is the value being tested is a number. 1/0. is infinitely large in magnitude, which cannot be defined as a number hence false is stored in x.\n\nOutput:\n\n$ javac isNaN_output.java\n$ java isNaN_output\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 493,
@@ -40181,7 +41169,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "toBinary() is a static method of Integer class{it is a wrapper class} which returns the binary value{base 2} of a given Integer or int.\n\noutput:\n\n$ javac binary.java\n$ java binary\n10001",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-introduction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 494,
@@ -40201,7 +41191,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Integer is the wrapper class for the primitive data type int. Wrapper classes in Java provide a way to use primitives as objects.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 495,
@@ -40221,7 +41213,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "hashCode() is an predefined method of Integer class which returns int equivalent hash value of Integer object.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 496,
@@ -40241,7 +41235,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Number is an abstract class containing subclasses Double, Float, Byte, Short, Integer and Long.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 497,
@@ -40261,7 +41257,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Character is the wrapper class for the primitive type char. It allows character values to be treated as objects, enabling features like storage in collections and method usage.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 498,
@@ -40281,7 +41279,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "intValue() is a predefined method of Integer class which has return type int{primitive data type}. So, it will return the int equivalent value of Integer object.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 499,
@@ -40301,7 +41301,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "long longValue() is used to obtain value of invoking object as a long.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 500,
@@ -40321,7 +41323,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Character.isDigit(a[0]) checks for a[0], whether it is a digit or not, since a[0] i:e ‘a’ is a character false is returned. a[3] is a whitespace hence Character.isWhitespace(a[3]) returns a true. a[2] is an uppercase letter i:e ‘A’ hence Character.isUpperCase(a[2]) returns true.\n\nOutput:\n\n$ javac Output.java\n$ java Output\nfalse true true",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 501,
@@ -40341,7 +41345,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "i.byteValue() method returns the value of wrapper i as a byte value. i is 257, range of byte is 256 therefore i value exceeds byte range by 1 hence 1 is returned and stored in x.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n1",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 502,
@@ -40361,7 +41367,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "When a float data type is converted to a String, it is printed with a trailing zero if there are no floating point digits. For example, 257 becomes “257.0”.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n257.0",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 503,
@@ -40381,7 +41389,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Actually, the longValue() and hashCode() methods in wrapper classes are similar in that they both return the primitive data type equivalent value, including negative values.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n256",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-integer-long-charcter-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 504,
@@ -40401,7 +41411,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Number is an abstract class containing subclasses Double, Float, Byte, Short, Integer and Long.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 505,
@@ -40421,7 +41433,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "doubleValue() is a predefined method of Double class which returns the double equivalent of Double Wrapper class.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 506,
@@ -40441,7 +41455,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "isNaN() methods returns true if num specified is not a number, otherwise it returns false.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 507,
@@ -40461,7 +41477,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "isInfinite() methods returns true if the specified value is an infinite value otherwise it returns false.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 508,
@@ -40481,7 +41499,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "compareTo() methods compare the specified object to be double, if it is not then ClassCastException is thrown.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 509,
@@ -40501,7 +41521,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "i.isNaN() method returns returns true if i is not a number and false when i is a number. Here false is returned because i is a number i:e 257.5.\n\nOutput:\n\n\n\n$ javac Output.java\n$ java Output\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 510,
@@ -40521,7 +41543,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "i.intValue() method returns the value of wrapper i as a Integer. i is 257.578 is double number when converted to an integer data type its value is 257.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n257",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 511,
@@ -40541,7 +41565,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "floatValue() converts the value of wrapper i into float, since float can measure till 5 places after decimal hence 257.57812 is stored in floating point variable x.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n257.57812",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 512,
@@ -40561,7 +41587,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "i.compareTo() methods two double values, if they are equal then 0 is returned and if not equal then 1 is returned, here 257.57812 and 257.578123456789 are not equal hence 1 is returned and stored in x.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n1",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-double-float-wrappers",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 513,
@@ -40581,7 +41609,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "decode() methods returns a Byte object that contains the value specified by string.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 514,
@@ -40601,7 +41631,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "doubleValue() returns the value of invoking object as double.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 515,
@@ -40621,7 +41653,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Number is an abstract class containing subclasses Double, Float, Byte, Short, Integer and Long.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 516,
@@ -40641,7 +41675,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "isInfinite() methods is defined in Integer and Long Wrappers, returns true if specified value is an infinite value otherwise it returns false.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 517,
@@ -40661,7 +41697,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The Double class defines the constant MAX_VALUE above which a number is considered to be infinity. MAX_VALUE is 1.7976931348623157E308.\n\n\n\nIn the given code, we are using an instance variable i to get the MAX_VALUE, instead of the using the class name itself i.e., Double.MAX_VALUE. So, while the code will compile and run, it’s generally considered better practice to access static constants in Java through the class name rather than through an instance of the class.\nOutput:\n$ javac Output.java\n$ java Output\n1.7976931348623157E308",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 518,
@@ -40681,7 +41719,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The Double class defines the constant MIN_VALUE which represents the smallest positive nonzero value that can be represented by a double primitive type. MIN_VALUE is 4.9E-324.\n\nIn the given code, we are using an instance variable i to get the MIN_VALUE, instead of the using the class name itself i.e., Double.MIN_VALUE. So, while the code will compile and run, it’s generally considered better practice to access static constants in Java through the class name rather than through an instance of the class.\n\nOutput:\n$ javac Output.java\n$ java Output\n4.9E-324",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 519,
@@ -40701,7 +41741,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "floatValue() converts the value of wrapper i into float, since float can measure till 5 places after decimal hence 257.57812 is stored in floating point variable x.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n257.57812",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-byte-and-short-wrappers",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 520,
@@ -40721,7 +41763,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "To obtain the char value contained in a Character object, we use charValue() method.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 521,
@@ -40741,7 +41785,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Character wrapper defines 5 constants – MAX_RADIX, MIN_RADIX, MAX_VALUE, MIN_VALUE & TYPE.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 522,
@@ -40761,7 +41807,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Number is an abstract class containing subclasses Double, Float, Byte, Short, Character, Integer and Long.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 523,
@@ -40781,7 +41829,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The method used to know whether a given character is part of Java’s Identifiers, other than the first character, is isJavaIdentifierPart().\nThis method checks if the specified character can be part of a Java identifier, excluding the first character rule.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 524,
@@ -40801,7 +41851,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "isDefined() returns true if ch is defined by Unicode. Otherwise, it returns false.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 525,
@@ -40821,7 +41873,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Character.MAX_VALUE returns the largest character value,  which is of character ‘?’.\n\nOutput:\n\n\n\n$ javac Output.java\n$ java Output\n?",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 526,
@@ -40841,7 +41895,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Character.MIN_VALUE returns the smallest character value, which is of space character ‘ ‘. and this is an special character having code{UNICODE value} 0;\n\nOutput:\n\n$ javac Output.java\n$ java Output",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 527,
@@ -40861,7 +41917,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Character.isDigit(a[0]) checks for a[0], whether it is a digit or not, since a[0] i:e ‘a’ is a character false is returned. a[3] is a whitespace hence Character.isWhitespace(a[3]) returns a true. a[2] is an uppercase letter i:e ‘A’ hence Character.isUpperCase(a[2]) returns true.\n\nOutput:\n\n$ javac Output.java\n$ java Output\nfalse true true",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 528,
@@ -40881,7 +41939,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "toUpperCase() method is a static method of Character class which returns the uppercase character of the given character.\n\nOutput:\n\n$ javac Output.java\n$ java Output\nB",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 529,
@@ -40901,7 +41961,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "isLetter() method is a static method of Character class which returns the boolean value true if a given character is a letter else it returns false.\n\nOutput:\n\n$ javac Output.java\n$ java Output\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-character-wrappers-advance",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 530,
@@ -40921,7 +41983,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The booleanValue() method of the Boolean wrapper class in Java returns the primitive boolean value of the object. None of the other methods are defined in the Java API.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 531,
@@ -40941,7 +42005,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Boolean wrapper defines 3 constants – TRUE, FALSE & TYPE.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 532,
@@ -40961,7 +42027,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "toString() is a method of Boolean class which returns the String equivalent of an Boolean object.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 533,
@@ -40981,7 +42049,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "valueOf() returns true if the specified string contains “true” in lower or uppercase and false otherwise.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 534,
@@ -41001,7 +42071,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Void class has only one field – TYPE, which holds a reference to the Class object for type void. We do not create an instance of this class.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 535,
@@ -41021,7 +42093,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "valueOf() is a static method that returns the Boolean value of the object passed to it. If the input is the string “true” (in any casing, such as “TRUE”, “True”, or “true”), it returns true; otherwise, it returns false.\n\n\n\nOutput:\n$ javac Output.java\n$ java Output\ntrue",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 536,
@@ -41041,7 +42115,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The valueOf() is a static method that returns the boolean value of an object passed to it. If the input is “true” in any casing (uppercase, lowercase, etc.), then it returns true; otherwise, it returns false.\n\nOutput:\n\n$ javac Output.java\n$ java Output\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 537,
@@ -41061,7 +42137,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The valueOf() is a static method that returns the boolean value of an object passed to it. If the object is the string “true” in any casing (capital, lowercase, etc.), it returns true; otherwise, it returns false.\n\nOutput:\n$ javac Output.java\n$ java Output\ntrue",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 538,
@@ -41081,7 +42159,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "parseBoolean() Parses the string argument as a boolean. The boolean returned represents the value true if the string argument is not null and is equal, ignoring case, to the string “true”.\n\nExample: Boolean.parseBoolean(“True”) returns true.\n\nExample: Boolean.parseBoolean(“yes”) returns false.\n\nOutput:\n\n$ javac Output.java\n$ java Output\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 539,
@@ -41101,7 +42181,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "toString() Returns a String object representing the specified boolean. If the specified boolean is true, then the string “true” will be returned, otherwise the string “false” will be returned.\n\nOutput:\n\n$ javac Output.java\n$ java Output\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-boolean-wrappers-advance",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 540,
@@ -41121,7 +42203,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The object class class is a superclass of all other classes.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 541,
@@ -41141,7 +42225,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The clone() method creates a new instance of the same class as the object and copies all the fields to the new instance, performing a “shallow copy”.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 542,
@@ -41161,7 +42247,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The E refers to the mathematical constant e, which has an approximate value of 2.718281828459045 (approximately 2.72).\nNote: In Java, all constants are written in uppercase letters.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 543,
@@ -41181,7 +42269,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "max(), min() and abs() are all rounding functions.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 544,
@@ -41201,7 +42291,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Math class contains all the floating point functions that are used for geometry, trigonometry, as well as several general purpose methods. Example : sin(), cos(), exp(), sqrt() etc.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 545,
@@ -41221,7 +42313,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The Object class encapsulates the runtime state of an object or an interface. The Class class is used to manipulate objects and interfaces at runtime. The Runtime class can encapsulate the entire executing program.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 546,
@@ -41241,7 +42335,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The Math.random() method returns a number greater than or equal to 0 and less than 1. For example, if the number generated is 2.5, it will be greater than or equal to 2.5 and less than 3.5. Since Math.round() will round this number to 3, and because we use the double data type, we consider the trailing zero, so the value becomes 3.0.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 547,
@@ -41261,7 +42357,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Since both x and y are of type int, the floating-point digits are truncated, leaving the value 3. Typecasting is required; otherwise, it will raise an exception.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n3",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 548,
@@ -41281,7 +42379,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "max() is an overloaded method of Math class. So, it will works on most of the primitive data types.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n4.5",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 549,
@@ -41301,7 +42401,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Math.pow(x, y) methods returns value of y to the power x, i:e x ^ y, 2.0 ^ 3.0 = 8.0.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n8.0",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-lang-object-math-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 550,
@@ -41321,7 +42423,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The java.util.Random class is used to generate random numbers in Java. It provides methods such as nextInt(), nextDouble(), and nextFloat() to generate different types of random values. The other options are either incorrect class names or unrelated to random number generation.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 551,
@@ -41341,7 +42445,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "nextBoolean() method of java.util.Random class is used to generate random numbers.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 552,
@@ -41361,7 +42467,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Math.random() method returns floating point number or precisely a double.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 553,
@@ -41379,7 +42487,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Random is not a final class and can be extended to implement the algorithm as per requirement.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 554,
@@ -41399,7 +42509,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Math.random() returns only double value greater than or equal to 0.0 and less than 1.0.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 555,
@@ -41419,7 +42531,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Random number can accept 64 bits but it only uses 48 bits for generating random numbers.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 556,
@@ -41439,7 +42553,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "random.nextInt(15) + 1; returns random numbers between 1 to 15 including 1 and 15.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 557,
@@ -41459,7 +42575,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "random.nextInd(7) + 4; returns random numbers between 4 to 10 including 4 and 10. it follows “nextInt(max – min +1) + min” formula.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 558,
@@ -41477,7 +42595,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Math.random() doesn’t guarantee uniqueness. To guarantee uniqueness we must store the generated value in the database and compare against already generated values.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 559,
@@ -41497,7 +42617,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "public static double random() is the utility method provided by Math class which returns double.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-random-number",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 560,
@@ -41517,7 +42639,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Annotation were introduced with Java 5 version.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 561,
@@ -41537,7 +42661,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Annotation type definition is similar to an interface definition in which the keyword interface is preceded by the sign @.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 562,
@@ -41557,7 +42683,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "@Overriden is not a pre defined annotation in Java. @Depricated, @Override, @SuppressWarnings, @SafeVarags and @FunctionInterface are the pre defined annotations.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 563,
@@ -41575,7 +42703,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Annotations which are applied to other annotations are called meta annotations.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 564,
@@ -41595,7 +42725,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Object is the parent class of annotation class.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 565,
@@ -41615,7 +42747,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "i.byteValue() method returns the value of wrapper i as a byte value. i is 257, range of byte is 256 therefore i value exceeds byte range by 1 hence 1 is returned and stored in x.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n1",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 566,
@@ -41635,7 +42769,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "ciel(double X) returns the smallest whole number greater than or equal to variable x.\n\nOutput:\n\n$ javac Output.java\n$ java Output\n4",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 567,
@@ -41655,7 +42791,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Bitset class creates a special type of array that holds bit values. This array can increase in size as needed.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 568,
@@ -41675,7 +42813,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The clear(int index) method in Java’s BitSet class is used to set the bit at the specified index to false (0).\nset(int index) sets a bit to true (1).\nremove() and put() are not valid methods for modifying bits in a BitSet.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 569,
@@ -41695,7 +42835,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The method length() is used to calculate the number of bits required to hold the BitSet object.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 570,
@@ -41715,7 +42857,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "get(int bitIndex) Returns the value of the bit with the specified index. The value is true if the bit with the index bitIndex is currently set in this BitSet; otherwise, the result is false.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 571,
@@ -41735,7 +42879,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "clear(int bitIndex) Sets the bit specified by the index to false. So, the 2 from index 2 is removed.\n\nParameters: bitIndex – the index of the bit to be cleared.\n\nOutput:\n\n\n\n$ javac Bitset.java\n$ java Bitset\n{0, 1, 3, 4}",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 572,
@@ -41755,7 +42901,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "obj.length() returns the length allotted to object obj at time of initialization and obj.size() returns the size of current object obj, each BitSet element is given 16 bits therefore the size is 4 * 16 = 64, whereas length is still 5.\n\nOutput:\n\n$ javac Bitset.java\n$ java Bitset\n5 64",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 573,
@@ -41775,7 +42923,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "get(int bitIndex) Returns the value of the bit with the specified index that is true if the bit with the index bitIndex is currently set in this BitSet; otherwise, the result is false.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 574,
@@ -41795,7 +42945,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "obj1.and(obj2) returns an BitSet object which contains elements common to both the object obj1 and obj2 and stores this BitSet in invoking object that is obj1. Hence obj1 contains 3 & 4.\n\nOutput:\n\n$ javac Bitset.java\n$ java Bitset\n{3, 4}",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 575,
@@ -41815,7 +42967,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "BooleanSupplier function interface represents supplier of Boolean-valued results.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 576,
@@ -41835,7 +42989,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Lambda expression enables us to pass functionality as an argument to another method, such as what action should be taken when someone clicks a button.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 577,
@@ -41855,7 +43011,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Traversing through forEach method of Iterable with anonymous class.\n\nStringList.forEach(new Consumer<Integer>()\n{\n\tpublic void accept(Integer t)\n        {\n\t}\n});\n//Traversing with Consumer interface implementation\nMyConsumer action = new MyConsumer();\nStringList.forEach(action);\n\t}\n}",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 578,
@@ -41875,7 +43033,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "SAM Interface stands for Single Abstract Method Interface. Functional Interface is also known as SAM Interface because it contains only one abstract method.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 579,
@@ -41895,7 +43055,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Executors newWorkStealingPool() method to create a work-stealing thread pool using all available processors as its target parallelism level.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 580,
@@ -41915,7 +43077,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Nashorn provides 2 to 10 times faster in terms of performance, as it directly compiles the code in memory and passes the bytecode to JVM. Nashorn uses invoke dynamic feature.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 581,
@@ -41935,7 +43099,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "before() returns true if the invoking Date object contains a date that is earlier than one specified by date, otherwise it returns false.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 582,
@@ -41955,7 +43121,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "when a Date object is created with default constructor it will take the current time of instance. Hence, the obj prints the current date time.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-util-bitset-date-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 583,
@@ -41975,7 +43143,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "SimpleDateFormat can be used as\n\n\nimport java.text.*; // to use SimpleDateFormat\nimport java.util.*; // to use Date\nclass Main\n{\n    public static void main(String args[])\n    {\n        Date now = new Date();\n        SimpleDateFormat sdf = new SimpleDateFormat (\"yyyy-mm-dd'T'hh:MM:ss\");\n        String nowStr = sdf.format(now);\n        System.out.println(\"Current Date: \" +nowStr );// Current Date:2025-52-24T10:05:00\n    }\n}",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 584,
@@ -41995,7 +43165,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "SimpleDateFormat takes a string containing pattern. sdf.format converts the Date object to String.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 585,
@@ -42015,7 +43187,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "SimpleDateFormat takes a string containing pattern. sdf.parse converts the String to Date object.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 586,
@@ -42033,7 +43207,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "SimpleDateFormat is not thread safe. In the multithreaded environment, we need to manage threads explicitly.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 587,
@@ -42053,7 +43229,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "public abstract boolean useDaylightTime() is provided in TimeZone class.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 588,
@@ -42073,7 +43251,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "In java 8, we are asked to migrate to java.time (JSR-310) which is a core part of the JDK which replaces joda library project.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 589,
@@ -42093,7 +43273,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "java.sql.Date is the datatype of Date stored in database.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 590,
@@ -42113,7 +43295,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "LocalTime of joda library represents time without date.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 591,
@@ -42133,7 +43317,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Java 8 provides a method called between which provides Duration between two times.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 592,
@@ -42153,7 +43339,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "In java 8, Instant.now() provides current time in UTC/GMT.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-data-type-date-timezone",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 593,
@@ -42173,7 +43361,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Serialization is not introduced with Java 8. It was introduced with an earlier version of Java.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 594,
@@ -42191,9 +43381,11 @@ window.PRACTICE_BANK = {
             "C": "parallel and random",
             "D": "random and synchronized"
           },
-          "correct_answer": null,
-          "explanation": null,
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
+          "correct_answer": "A",
+          "explanation": "Java 8 Stream API provides two types of streams: sequential streams (stream()) and parallel streams (parallelStream()).",
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 595,
@@ -42213,7 +43405,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Files.lines(Path path) that reads all lines from a file as a Stream.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 596,
@@ -42233,7 +43427,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Optional object is used to represent null with absent value. This class has various utility methods to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-java8-features",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 597,
@@ -42253,7 +43449,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Multithreaded programming a process in which two or more parts of the same process run simultaneously.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 598,
@@ -42273,7 +43471,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "There are two types of multitasking: Process based multitasking and Thread based multitasking.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 599,
@@ -42293,7 +43493,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Java assigns to each thread a priority that determines hoe that thread should be treated with respect to others. Thread priority is integers that specify relative priority of one thread to another.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 600,
@@ -42313,7 +43515,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "In cases where two or more thread with same priority are competing for CPU cycles, different operating system handle this situation differently. Some execute them in time sliced manner some depending on the thread they call.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 601,
@@ -42333,7 +43537,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Thread exist in several states, a thread can be running, suspended, blocked, terminated & ready to run.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 602,
@@ -42353,7 +43559,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Since, the current thread is main thread, having the default name main with priority 5. So, when t is printed the detail of the current thread is printed.\n\nOutput:\n\n\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nThread[main,5,main]",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 603,
@@ -42373,7 +43581,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The output of program is Thread[main,5,main], in this priority assigned to the thread is 5. It’s the default value. Since we have not named the thread they are named by the group to they belong i:e main method.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\n5",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 604,
@@ -42393,7 +43603,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The output of program is Thread[main,5,main], Since we have not explicitly named the thread they are named by the group to they belong i:e main method. Hence they are named ‘main’.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nmain",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-multithreading-basics",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 605,
@@ -42413,7 +43625,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Thread is a lightweight and requires less resources to create and exist in the process. Thread shares the process resources.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 606,
@@ -42433,7 +43647,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Daemon thread runs in the background and does not prevent JVM from terminating. Child of daemon thread is also daemon thread.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 607,
@@ -42453,7 +43669,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Thread scheduler decides the priority of the thread execution. This cannot guarantee that higher priority thread will be executed first, it depends on thread scheduler implementation that is OS dependent.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 608,
@@ -42473,7 +43691,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Time slicing is the process to divide the available CPU time to available runnable thread.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 609,
@@ -42491,7 +43711,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Deadlock is java programming situation where one thread waits for an object lock that is acquired by other thread and vice-versa.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 610,
@@ -42511,7 +43733,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "To avoid deadlock situation in Java programming do not execute foreign code while holding a lock.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 611,
@@ -42531,7 +43755,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "start() eventually calls run() method. Start() method creates thread and calls the code written inside run method.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 612,
@@ -42551,7 +43777,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Thread(Runnable a, String str) is a valid constructor for thread. Thread() is also a valid constructor.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 613,
@@ -42571,7 +43799,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "notify() wakes up a single thread which is waiting for this object.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 614,
@@ -42591,7 +43821,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "wait() always causes the current thread to go into the object’s wait pool. Hence, using this in a thread will keep it in running state.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-quiz",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 615,
@@ -42611,7 +43843,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The synchronized keyword is used to implement synchronization, ensuring that only one thread can access a shared resource at a time.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 616,
@@ -42631,7 +43865,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Polling is a usually implemented by looping in CPU is wastes CPU time, one thread being executed depends on other thread output and the other thread depends on the response on the data given to the first thread. In such situation CPU time is wasted, in Java this is avoided by using methods wait(), notify() and notifyAll().",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 617,
@@ -42651,7 +43887,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "wait() method is used to tell the calling thread to give up a monitor and go to sleep until some other thread enters the same monitor. This helps in avoiding polling and minimizes CPU idle time.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 618,
@@ -42671,7 +43909,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The notify() method wakes up a single thread that is waiting on the object’s monitor (the first thread that called wait()). If multiple threads are waiting, the choice of which thread to notify is arbitrary. The notifyAll() method wakes up all waiting threads, start() is used to begin thread execution, and there is no method called wake() in Java’s threading mechanism.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 619,
@@ -42691,7 +43931,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "notifyAll() wakes up all the threads that called wait() on the same object. The highest priority thread will run first.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 620,
@@ -42711,7 +43953,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "When two or more threads need to access the same shared resource, they need some way to ensure that the resource will be used by only one thread at a time, the process by which this is achieved is called synchronization.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 621,
@@ -42731,7 +43975,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "obj1.t.wait() causes main thread to go out of processing in sleep state hence causes exception and “Main thread interrupted” is printed.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nMain thread interrupted",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 622,
@@ -42751,7 +43997,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Thread.sleep(1000) has caused all the threads to be suspended for some time, hence onj1.t.isAlive() returns false.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 623,
@@ -42771,7 +44019,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Both obj1 and obj2 have threads with different name that is “one” and “two” hence obj1.t.equals(obj2.t) returns false.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nfalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 624,
@@ -42791,7 +44041,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "This program was previously done by using Runnable interface, here we have used Thread class. This shows both the method are equivalent, we can use any of them to create a thread.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nfalsefalse",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-creating-threads",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 625,
@@ -42811,7 +44063,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The method getPriority() of the Thread class is used to find out the priority given to a thread. This method returns an integer value representing the priority of the thread, which can range from 1 (lowest) to 10 (highest).",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 626,
@@ -42831,7 +44085,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The method of the Thread class that is used to suspend a thread for a period of time is called sleep().",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 627,
@@ -42851,7 +44107,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "isAlive() function is defined in class Thread, it is used for implementing multithreading and to check whether the thread called upon is still running or not.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 628,
@@ -42869,9 +44127,11 @@ window.PRACTICE_BANK = {
             "C": "Thread[main,5,main]",
             "D": "Thread[New Thread,5,main]"
           },
-          "correct_answer": null,
-          "explanation": null,
-          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class"
+          "correct_answer": "D",
+          "explanation": "Thread.toString() prints Thread[name,priority,groupName], which outputs Thread[New Thread,5,main] after setName(\"New Thread\").",
+          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 629,
@@ -42891,7 +44151,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The getName() function is used to obtain the name of the thread, in this code the name given to thread is ‘New Thread’.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nNew Thread",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 630,
@@ -42911,7 +44173,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The default priority given to a thread is 5.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\n5",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 631,
@@ -42931,7 +44195,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Thread t is seeded to currently program, hence when you run the program the thread becomes active & code ‘t.isAlive’ returns true.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\ntrue",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-thread-class",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 632,
@@ -42951,7 +44217,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "To implement Runnable interface, a class needs only to implement a single method called run().",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 633,
@@ -42971,7 +44239,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The method used to begin the execution of a thread in Java is the start() method. This method creates a new thread and executes the run() method on the newly created thread.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 634,
@@ -42991,7 +44261,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "run() method is used to define the code that constitutes the new thread, it contains the code to be executed. start() method is used to begin execution of the thread that is execution of run(). run() itself is never used for starting execution of the thread.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 635,
@@ -43011,7 +44283,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The getName() method returns the name of the thread invoking with. Since, “My Thread” is the name given to the Thread object at the time of object initialization.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 636,
@@ -43031,7 +44305,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "When t is printed it displays all the details of the thread.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nThread[My Thread,5,main]",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 637,
@@ -43051,7 +44327,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Thread t has been made by using Runnable interface, hence it is necessary to use inherited abstract method run() method to specify instructions to be implemented on the thread, since no run() method is used it gives a compilation error.\n\nOutput:\n\n$ javac multithreaded_programing.java\nThe type newthread must implement the inherited abstract method Runnable.run()",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 638,
@@ -43071,7 +44349,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Thread t has been made with default priority value 5 but in run method the priority has been explicitly changed to MAX_PRIORITY of class thread, that is 10 by code ‘t.setPriority(Thread.MAX_PRIORITY);’ using the setPriority function of thread t.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nThread[New Thread,10,main]",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 639,
@@ -43091,7 +44371,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Threads t1 & t2 are created by class newthread that is implementing runnable interface, hence both the threads are provided their own run() method specifying the actions to be taken. When constructor of newthread class is called first the run() method of t1 executes than the run method of t2 printing 2 times “false” as both the threads are not equal one is having different priority than other, hence falsefalse is printed.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nfalsefalse",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-mcqs",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 640,
@@ -43111,7 +44393,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "By calling sleep() within main(), with long enough delay to ensure that all child threads terminate prior to the main thread.",
-          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 641,
@@ -43131,7 +44415,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The isAlive( ) method returns true if the thread upon which it is called is still running. It returns false otherwise.",
-          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 642,
@@ -43151,7 +44437,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The default priority of a thread in Java is 5 (NORM_PRIORITY). While MIN_PRIORITY is 1, MAX_PRIORITY is 10. These values are used to set the priority of a thread within a range from 1 to 10.",
-          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 643,
@@ -43171,7 +44459,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The join() method allows one thread to wait for the completion of another thread, ensuring that the calling thread pauses execution until the specified thread has finished running.",
-          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 644,
@@ -43191,7 +44481,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The default value of priority given to a thread is 5 but we can explicitly change that value between the permitted values 1 & 10, this is done by using the method setPriority().",
-          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 645,
@@ -43211,7 +44503,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "When two or more threads need to access the same shared resource, they need some way to ensure that the resource will be used by only one thread at a time, the process by which this is achieved is called synchronization",
-          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 646,
@@ -43231,7 +44525,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Although we have not created any object of thread class still we can make a thread pointing to main method, we can refer it by using this.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nThread[My Thread,5,main].",
-          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 647,
@@ -43251,7 +44547,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "There is a semicolon{ ; } is missing after t,join() statement. Hence, it will cause compilation error.",
-          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 648,
@@ -43271,7 +44569,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "isAlive() method is used to check whether the thread being called is running or not, here thread is the main() method which is running till the program is terminated hence it returns true.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\ntrue",
-          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 649,
@@ -43291,7 +44591,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "This program was previously done by using Runnable interface, here we have used Thread class. This shows both the method are equivalent, we can use any of them to create a thread.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nfalsefalse",
-          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers"
+          "source_url": "https://www.sanfoundry.com/java-assessment-questions-answers",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 650,
@@ -43311,7 +44613,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Runnable interfaces have abstract methods for a Thread implementation.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 651,
@@ -43331,7 +44635,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Thread class is used to make threads in java, Thread encapsulates a thread of execution. To create a new thread the program will either extend Thread or implement the Runnable interface.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 652,
@@ -43351,7 +44657,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Runnable interfaces have abstract methods for a Thread implementation. Which is implemented by the Thread class.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 653,
@@ -43371,7 +44679,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Thread has a static method called sleep(), which suspends the program for the given no. of time in milliseconds and throws InterruptedException.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 654,
@@ -43391,7 +44701,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Threads t1 & t2 are created by class newthread that is implementing runnable interface, hence both the threads are provided their own run() method specifying the actions to be taken. When constructor of newthread class is called first the run() method of t1 executes than the run method of t2 printing 2 times “false” as both the threads are not equal one is having different priority than other, hence falsefalse is printed.\n\nOutput:\n\n\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nfalsefalse",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 655,
@@ -43411,7 +44723,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Thread t has been made with default priority value 5 but in run method the priority has been explicitly changed to MAX_PRIORITY of class thread, that is 10 by code ‘t.setPriority(Thread.MAX_PRIORITY);’ using the setPriority function of thread t.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nThread[New Thread,10,main]",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 656,
@@ -43431,7 +44745,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Thread t has been made by using Runnable interface, hence it is necessary to use inherited abstract method run() method to specify instructions to be implemented on the thread, since no run() method is used it gives a compilation error.\n\nOutput:\n\n$ javac multithreaded_programing.java\nThe type newthread must implement the inherited abstract method Runnable.run()",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 657,
@@ -43451,7 +44767,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "During object initialization, we pass the second argument “My Thread”, which sets the name of the thread we created.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nMy Thread",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 658,
@@ -43471,7 +44789,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "During object initialization, we pass the second argument “My Thread”, which sets the name of the thread we created. So, when we print the thread object, its name appears as “My Thread” instead of the default “Thread-0” or “New Thread”.\n\nOutput:\n\n$ javac multithreaded_programing.java\n$ java multithreaded_programing\nThread[My Thread,5,main]",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-online-test",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 659,
@@ -43491,7 +44811,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "run() method is used to define the code that constitutes the new thread, it contains the code to be executed. start() method is used to begin execution of the thread that is execution of run(). run() itself is never used for starting execution of the thread.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 660,
@@ -43511,7 +44833,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The java.io package contains all the required classes and interfaces for performing input and output operations in Java, such as InputStream, OutputStream, Reader, and Writer.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 661,
@@ -43531,7 +44855,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The String class is part of the java.lang package, used for handling text data. Only StringReader, Writer, and File are part of the java.io package for input/output operations.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 662,
@@ -43551,7 +44877,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "ObjectFilter is not a part of the java.io package. It belongs to the java.io.ObjectInputFilter API but is introduced as a nested interface in later Java versions. The others (DataInput, ObjectInput, FileFilter) are valid interfaces in java.io.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 663,
@@ -43571,7 +44899,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "A File describes properties of a file, a File object is used to obtain or manipulate the information associated with a disk file, such as the permissions, time date, and directories path, and to navigate subdirectories.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction",
+          "difficulty": "Moderate",
+          "must_practice": true
         },
         {
           "id": 664,
@@ -43591,7 +44921,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "A File object specifies a file in disk, directory path, or a directory in disk. It does not contain the actual file data but holds information about a disk file or a disk directory and provides methods to interact with the file or directory.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 665,
@@ -43611,7 +44943,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "isFile() returns true if called on a file and returns false when called on a directory.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 666,
@@ -43631,7 +44965,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "obj.getName() returns the name of the file.\n\nOutput:\n\n$ javac files.java\n$ java files\nsystem",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 667,
@@ -43651,7 +44987,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The path “c:/java/system” is provided using forward slashes (/) which are valid in Java. However, when getAbsolutePath() is called, Java returns the path in the OS-specific format. On Windows, this format uses backslashes (\\), so the output becomes: c:\\java\\system\n\nNote: Even though the path was provided with forward slashes, Java automatically converts it to the system’s default path separator when calling getAbsolutePath().\nOutput:\n$ javac files.java\n$ java files\nc:\\java\\system",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 668,
@@ -43671,7 +45009,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Since the file has permission only for the read operation, the canRead() method returns true, while canWrite() returns false because the operating system has denied write access.\n\nNote: Always check the file’s permissions before performing operations.\n\nOutput:\n\n$ javac files.java\n$ java files\nfalse true",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 669,
@@ -43691,7 +45031,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "getparent() giver the parent directory of the file and isfile() checks weather the present file is a directory or a file in the disk.\n\nOutput:\n\n$ javac files.java\n$ java files\n\\java false",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-introduction",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 670,
@@ -43711,7 +45053,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "InputStream & OutputStream are designed for byte stream. Reader and writer are designed for character stream.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 671,
@@ -43731,7 +45075,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The FileInputStream class in Java is used for reading streams of raw bytes such as image data.\nNote: OutputStreamReader writes bytes to the File.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 672,
@@ -43751,7 +45097,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "read() method reads the next byte of data from the input stream and returns it as an integer in the range 0 to 255. If no byte is available because the end of the stream has been reached, the value -1 is returned.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 673,
@@ -43771,7 +45119,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Every method of OutputStream returns void and throws an IOExeption in case of errors.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 674,
@@ -43791,7 +45141,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The method to clear all the data present in output buffers is flush(). This method ensures that any buffered data is written immediately to the output device.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 675,
@@ -43811,7 +45163,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "write() method is specifically designed for writing bytes to an OutputStream where as printf() method is primarily used for formatted data to a stream. put() is not there.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 676,
@@ -43831,7 +45185,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "obj.available() returns the number of bytes.\n\nOutput:\n\n$ javac filesinputoutput.java\n$ java filesinputoutput\n1422\n\n(Output will be different in your case)",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 677,
@@ -43851,7 +45207,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The getBytes() returns the string character as the sequence of bytes ByteArrayInputStream reads that sequence and sequence and readed by read() method which is later printed i.e. “abc”.\n\nOutput:\n\n$ javac filesinputoutput.java\n$ java filesinputoutput\nabc",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 678,
@@ -43871,7 +45229,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The getBytes() method converts the string characters into a sequence of bytes. ByteArrayInputStream reads that sequence, and the read() method reads the bytes one by one. Finally, the characters are printed using the toUpperCase() method, which converts “abc” to “ABC”.\n\nOutput:\n\n$ javac filesinputoutput.java\n$ java filesinputoutput\nABC",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 679,
@@ -43891,7 +45251,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Since the obj2 is not declared in the program.\n\nOutput:\n\n$ javac filesinputoutput.java\nFilesinputoutput.java:17: error: cannot find symbol",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-byte-streams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 680,
@@ -43911,7 +45273,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "InputStream & OutputStream classes under byte stream they are not streams. Character Stream contains all the classes which can work with Unicode.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 681,
@@ -43931,7 +45295,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "FileReader is a specialized class which is use to perform the read operation of a file. FileWriter is use to write data in a file.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 682,
@@ -43951,7 +45317,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The read() method of the FileReader class is used to read characters one at a time from a file. The other options (scanf(), get(), getInteger()) are not part of Java’s FileReader class.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 683,
@@ -43971,7 +45339,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "CharArrayReader is an implementation of an input stream that uses character array as a source. Here array is the input source.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 684,
@@ -43991,7 +45361,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "PushbackReader  class allows one or more characters to be returned to the input stream. This allows looking ahead in input stream and performing action accordingly.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 685,
@@ -44011,7 +45383,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "GetChars(int index, long fieldOffset, char[] buffer, int bufferOffset, int length), This method populates the provided character array with up to the maximum number of characters, from the specified offset (in characters) of the column.\n\nOutput:\n\n\n\n$ javac Chararrayinput.java\n$ java Chararrayinput\nabcdef",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 686,
@@ -44031,7 +45405,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The input2 is the object of this CharArrayReader(c, 3. 0) read the character from the array c beginning of the index 0 to end of 2nd. Since we are reading the data from object input2 that contains only 3 characters.\n\nOutput:\n\n$ javac Chararrayinput.java\n$ java Chararrayinput\nabc",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 687,
@@ -44051,7 +45427,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "No output is printed. CharArrayReader object input1 contains string “abcdefgh” whereas object input2 contains string “bcde”, when while((i=input1.read())==(j=input2.read())) is executed the starting character of each object is compared since they are unequal control comes out of loop and nothing is printed on the screen.\n\nOutput:\n\n$ javac Chararrayinput.java\n$ java Chararrayinput",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-java-io-character-streams",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 688,
@@ -44071,7 +45449,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "AWT stands for Abstract Window Toolkit, it is used by applets to interact with the user.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 689,
@@ -44091,7 +45471,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Like in any other language, streams are used for input and output operations.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 690,
@@ -44111,7 +45493,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Java defines only two types of streams – Byte stream and character stream.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 691,
@@ -44131,7 +45515,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Byte stream uses InputStream and OutputStream classes for input and output operation.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 692,
@@ -44151,7 +45537,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Character streams uses Writer and Reader classes for input & output operations.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 693,
@@ -44171,7 +45559,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "ByteArrayInputStream: This class is designed to allow reading byte streams from a byte array. It provides methods to read bytes from the array, such as read() which reads the next byte of the ByteArrayInputStream.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 694,
@@ -44191,7 +45581,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The do-while loop in the program only prints the output from the stream from the beginning to the q character including q.\n\nOutput:\n\n$ javac Input_Output.java\n$ java Input_Output\nabcq",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 695,
@@ -44211,7 +45603,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Since / is used to terminate the loop to print the character from stream. And the ‘ use in the statement without \\ it will not be recognized without an escape sequence.\n\nOutput:\n\n$ javac Input_Output.java\n$ java Input_Output\nabc'",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 696,
@@ -44231,7 +45625,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "length() method is used to obtain length of StringBuffer object, length of “Hello” is 5.\n\nOutput:\n\n$ javac output.java\n$ java output\n5",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-input-output-basics",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 697,
@@ -44251,7 +45647,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "BufferedOutputStream Provides buffering for output streams, which helps to improve efficiency by reducing the number of write operations to the underlying file.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 698,
@@ -44271,7 +45669,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "In cases when the file specified is not found, then FileNotFoundException is thrown by java run-time system, earlier versions of java used to throw IOException but after Java 2.0 they throw FileNotFoundException.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 699,
@@ -44291,7 +45691,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Each time read() is called, it reads a single byte from the file and returns the byte as an integer value. read() returns -1 when the end of the file is encountered.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 700,
@@ -44311,7 +45713,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Each time read() is called, it reads a single byte from the file and returns the byte as an integer value. read() returns -1 when the end of the file is encountered.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 701,
@@ -44331,7 +45735,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Both close() and read() method throw IOException.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 702,
@@ -44351,7 +45757,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The write() method is used to write data into a file. Specifically, the write() method of the FileWriter class is commonly used for this purpose.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 703,
@@ -44371,7 +45779,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "obj.available() returns the number of bytes.\n\nOutput:\n\n$ javac filesinputoutput.java\n$ java filesinputoutput\n1422\n\n(Output will be different in your case)",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 704,
@@ -44391,7 +45801,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "The String object is converted to array of bytes and create a object of ByteArrayInputStream and read from the object byte by byte in an integer and printed by parsing the character to uppercase followed by lowercase.\n\nOutput:\n\n$ javac filesinputoutput.java\n$ java filesinputoutput\nAaBaaCaaa",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 705,
@@ -44411,7 +45823,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The input2 object contains the first three characters from the character array; later, each of these characters is printed one by one.\n\nOutput:\n\n$ javac Chararrayinput.java\n$ java Chararrayinput\nabc",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 706,
@@ -44431,7 +45845,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "No output is printed. CharArrayReader object input1 contains string “abcdefgh” whereas object input2 contains string “bcde”, when while((i=input1.read())==(j=input2.read())) is executed the starting character of each object is compared since they are unequal control comes out of loop and nothing is printed on the screen.\n\nOutput:\n\n$ javac Chararrayinput.java\n$ java Chararrayinput",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-reading-writing-files",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 707,
@@ -44451,7 +45867,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The createDirectory() method performs an atomic operation that checks for the existence of the directory and creates it if it does not exist, ensuring that this check-and-create action is indivisible with respect to other file system operations.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 708,
@@ -44471,7 +45889,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "File accessibilty can be checked using  isReadable(Path), isWritable(Path), and isExecutable(Path).",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 709,
@@ -44491,7 +45911,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The delete(Path) method deletes the file or throws an exception if the deletion fails. If file does not exist a NoSuchFileException is thrown.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 710,
@@ -44511,7 +45933,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Files.copy(source, target) is used to copy a file from one location to another. There are various options available like REPLACE_EXISTING, COPY_ATTRIBUTES and NOFOLLOW_LINKS.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 711,
@@ -44531,7 +45955,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "size(Path) returns the size of the specified file in bytes.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 712,
@@ -44551,7 +45977,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Java 8 provides Files.readAllLines() which allows us to read entire file in one task. We do not need to worry about readers and writers.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 713,
@@ -44571,7 +45999,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "To create a symbolic link to a file in Java, you can use the Files.createSymbolicLink() method from the java.nio.file package. This method allows you to create a symbolic link that points to another file or directory.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 714,
@@ -44591,7 +46021,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "lines.filter(line -> line.contains(“===—> Loaded package”)) can be used to filter out.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 715,
@@ -44611,7 +46043,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "The FileUtils class, part of the org.apache.commons.io package, provides various methods for performing file operations and is included in the Apache Commons IO library.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 716,
@@ -44631,7 +46065,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The try-with-resources statement allows automatic closing of resources that implement the AutoCloseable interface, ensuring proper release of resources such as files or sockets without the need for an explicit close() call.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-file-directory",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 717,
@@ -44651,7 +46087,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "A Java object is serializable if class or any its superclass implements java.io.Serializable or its subinterface java.io.Externalizable.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 718,
@@ -44671,7 +46109,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Serialization in Java is the process of turning object in memory into stream of bytes.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 719,
@@ -44691,7 +46131,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Deserialization is the reverse process of serialization which is turning stream of bytes into an object in memory.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 720,
@@ -44711,7 +46153,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Serializable interface does not have any method. It is also called a marker interface.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 721,
@@ -44731,7 +46175,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "All static and transient variables are not serialized.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 722,
@@ -44751,7 +46197,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "If member of a class does not implement serialization, NotSerializationException will be thrown.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 723,
@@ -44769,7 +46217,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Default serialization process can be overridden.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 724,
@@ -44789,7 +46239,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "writeObject() and readObject() methods should be implemented to avoid Java serialization.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 725,
@@ -44809,7 +46261,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "Using readObject(), writeObject(), readExternal() and writeExternal() methods Serialization and DeSerialization are implemented.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 726,
@@ -44827,7 +46281,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Serialized object can be transferred via network because Java serialized object remains in form of bytes which can be transmitted over network.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-serialization",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 727,
@@ -44847,7 +46303,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Deserialization is a process by which the data written in the stream can be extracted out from the stream.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 728,
@@ -44867,7 +46325,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Serialization, deserialization and Memory allocation occur automatically by java run time system.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 729,
@@ -44887,7 +46347,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "ObjectInput interface extends the DataInput interface and supports object serialization.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 730,
@@ -44907,7 +46369,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "The method of the ObjectInput interface used to deserialize an object from a stream is Object readObject(). This method allows for the reconstruction of an object from the stream, enabling the retrieval of serialized objects.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 731,
@@ -44927,7 +46391,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "ObjectInputStream class extends the InputStream class and implements the ObjectInput interface.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 732,
@@ -44947,7 +46413,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "oos.writeInt(5); writes integer 5 in the Output stream which is extracted by z = ois.readInt(); and stored in z hence z contains 5.\n\nOutput:\n\n\n\n$ javac streams.java\n$ java streams\n5",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 733,
@@ -44967,7 +46435,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "x = ois.readInt(); will try to read an integer value from the stream ‘serial’ created before, since stream contains an object of Myclass hence error will occur and it will be catched by catch printing deserialization.\n\nOutput:\n\n$ javac serialization.java\n$ java serialization\ndeserialization",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 734,
@@ -44987,7 +46457,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "New input stream is linked to steal ‘serials’, an object ‘ois’ of ObjectInputStream is used to access this newly created stream, ois.close(); closes the stream hence we can’t access the stream and ois.available() returns 0.\n\nOutput:\n\n$ javac streams.java\n$ java streams\n0",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization",
+          "difficulty": "Hard",
+          "must_practice": true
         },
         {
           "id": 735,
@@ -45007,7 +46479,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "oos.writeFloat(3.5); writes 3.5 in output stream. A new input stream is linked to stream ‘serials’, an object ‘ois’ of ObjectInputStream is used to access this newly created stream, ois.available() gives the total number of byte in the input stream since a float was written in the stream thus the stream contains 4 byte, hence 4 is returned and printed.\n\nOutput:\n\n$ javac streams.java\n$ java streams\n4",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 736,
@@ -45027,7 +46501,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "First, it will print “Success” and besides that it will write “Welcome to Sanfoundry” to the file sanfoundry.txt.",
-          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization"
+          "source_url": "https://www.sanfoundry.com/java-mcqs-serialization-deserialization",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 737,
@@ -45047,7 +46523,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Java 7 introduced autocloseable interface.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 738,
@@ -45067,7 +46545,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Autocloseable interface provides close() method to close this resource and any other underlying resources.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 739,
@@ -45087,7 +46567,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "A closeable interface extends autocloseable interface. A Closeable is a source or destination of data that can be closed.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 740,
@@ -45107,7 +46589,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "InterruptedException interacts with a thread’s interrupted status and runtime misbehavior is likely to occur if an InterruptedException is suppressed.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 741,
@@ -45127,7 +46611,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Using java 7 and above, AutoCloseable objects can be opened in the try-block (within the ()) and will be automatically closed instead of using the finally block.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 742,
@@ -45147,7 +46633,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Closeable extends AutoCloseable and both are interfaces. Closeable throws IOException and AutoCloseable throws Exception.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 743,
@@ -45167,7 +46655,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Flushable interface provides flush() method which Flushes this stream by writing any buffered output to the underlying stream.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 744,
@@ -45187,7 +46677,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Flushable and Closeable interface are added in java SE 5.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 745,
@@ -45205,7 +46697,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "close() closes the stream but it flushes it first.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 746,
@@ -45225,7 +46719,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Autocloseable is a part of java.lang; Flushable is a part of java.io.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-autocloseable-closeable-flushable-interfaces",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 747,
@@ -45245,7 +46741,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "java.util.date contains both date and time. Whereas, java.sql.date contains only date.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 748,
@@ -45265,7 +46763,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "Since the JDBC connection takes time to establish. Creating connection at the application start-up and reusing at the time of requirement, helps performance of the application.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 749,
@@ -45285,7 +46785,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "PreparedStatement in Java improves performance and also prevents from SQL injection.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 750,
@@ -45305,7 +46807,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "java.sql.Time contains only time. Whereas, java.sql.TimeStamp contains both time and date.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 751,
@@ -45325,7 +46829,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "setAutoCommit(false) does not commit transaction automatically after each query. That saves a lot of time of the execution and hence improves performance.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 752,
@@ -45345,7 +46851,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "C",
           "explanation": "CallableStatement is used in JDBC to call stored procedure from Java program.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 753,
@@ -45365,7 +46873,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "setMaxRows(int i) method is used to limit the number of rows that the database returns from the query.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 754,
@@ -45385,7 +46895,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "addBatch() is a method of JDBC batch process. It is faster in processing than executing one statement at a time.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 755,
@@ -45405,7 +46917,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "rollback() method is used to rollback the transaction. It will rollback all the changes made by the transaction.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc",
+          "difficulty": "Basic",
+          "must_practice": true
         },
         {
           "id": 756,
@@ -45425,7 +46939,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "TRANSACTION_NONREPEATABLE_READ is not a JDBC connection isolation level.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-jdbc",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 757,
@@ -45445,7 +46961,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "@Query is not an annotation used in Hibernate.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 758,
@@ -45465,7 +46983,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Auto, Table, Identity and Sequence are the ID generating strategies using @GeneratedValue annotation.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 759,
@@ -45485,7 +47005,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "@Test, @Before, @BeforeClass, @After, @AfterClass and @Ignores are the annotations used by Junit with Junit4.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 760,
@@ -45505,7 +47027,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "Using @VisibleForTesting annotation private or non visible method can be tested.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 761,
@@ -45525,7 +47049,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "In JUnit, the @Ignore annotation is used to prevent a test method or an entire test class from being executed. This is typically applied when a test is under development or temporarily disabled.",
-          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations"
+          "source_url": "https://www.sanfoundry.com/advanced-java-questions-answers-annotations",
+          "difficulty": "Basic",
+          "must_practice": false
         },
         {
           "id": 762,
@@ -45545,7 +47071,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The base case returns the value 1 for each call, which is stored in 1 and returned inside the main() where it is called.\n\nOutput:\n\n$ javac Output.javac\n$ java Output\n1",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 763,
@@ -45565,7 +47093,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "A",
           "explanation": "The getContentLength() method returns the content length of the resource referenced by the URL of this connection. If the content length is unknown or exceeds Integer.MAX_VALUE, the method returns -1.\n\nOutput:\n\n$ javac networking.java\n$ java networking\n127",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Hard",
+          "must_practice": false
         },
         {
           "id": 764,
@@ -45585,7 +47115,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "toExternalForm() is used to know the full URL of an URL object.\n\nOutput:\n\n$ javac networking.java\n$ java networking\nhttps://www.sanfoundry.com/javamcq",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 765,
@@ -45605,7 +47137,9 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "D",
           "explanation": "ServerSocket is a java.net class which provides system independent implementation of server side socket connection.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Moderate",
+          "must_practice": false
         },
         {
           "id": 766,
@@ -45625,9 +47159,28 @@ window.PRACTICE_BANK = {
           },
           "correct_answer": "B",
           "explanation": "Servlets execute within the address space of a web server. Since it is written in java it is platform independent. The full functionality is available through libraries.",
-          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced"
+          "source_url": "https://www.sanfoundry.com/java-questions-answers-freshers-experienced",
+          "difficulty": "Basic",
+          "must_practice": false
         }
-      ]
+      ],
+      "difficulty_counts": {
+        "ALL": {
+          "Basic": 396,
+          "Moderate": 191,
+          "Hard": 179
+        },
+        "KEEP": {
+          "Basic": 384,
+          "Moderate": 187,
+          "Hard": 173
+        },
+        "MUST_DO": {
+          "Basic": 101,
+          "Moderate": 31,
+          "Hard": 20
+        }
+      }
     },
     {
       "id": "linux-cloud",
@@ -45635,8 +47188,10 @@ window.PRACTICE_BANK = {
       "has_priority_categories": true,
       "has_syllabus_mapping": true,
       "has_difficulty_levels": true,
+      "has_must_do_shortlist": false,
       "total_questions": 1378,
       "counts": {
+        "MUST_DO": 512,
         "KEEP": 512,
         "SELECTIVE": 422,
         "REMOVE": 444
@@ -76865,6 +78420,11 @@ window.PRACTICE_BANK = {
           "Basic": 259,
           "Moderate": 239,
           "Hard": 14
+        },
+        "MUST_DO": {
+          "Basic": 259,
+          "Moderate": 239,
+          "Hard": 14
         }
       }
     },
@@ -76874,8 +78434,10 @@ window.PRACTICE_BANK = {
       "has_priority_categories": true,
       "has_syllabus_mapping": true,
       "has_difficulty_levels": true,
+      "has_must_do_shortlist": false,
       "total_questions": 908,
       "counts": {
+        "MUST_DO": 398,
         "KEEP": 398,
         "SELECTIVE": 490,
         "REMOVE": 20
@@ -97386,6 +98948,11 @@ window.PRACTICE_BANK = {
           "Basic": 127,
           "Moderate": 189,
           "Hard": 82
+        },
+        "MUST_DO": {
+          "Basic": 127,
+          "Moderate": 189,
+          "Hard": 82
         }
       }
     },
@@ -97395,8 +98962,10 @@ window.PRACTICE_BANK = {
       "has_priority_categories": true,
       "has_syllabus_mapping": true,
       "has_difficulty_levels": true,
+      "has_must_do_shortlist": false,
       "total_questions": 614,
       "counts": {
+        "MUST_DO": 378,
         "KEEP": 378,
         "SELECTIVE": 122,
         "REMOVE": 114
@@ -111341,6 +112910,11 @@ window.PRACTICE_BANK = {
           "Hard": 17
         },
         "KEEP": {
+          "Basic": 207,
+          "Moderate": 159,
+          "Hard": 12
+        },
+        "MUST_DO": {
           "Basic": 207,
           "Moderate": 159,
           "Hard": 12

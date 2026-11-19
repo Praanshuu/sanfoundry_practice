@@ -650,8 +650,69 @@ def build_java_questions_json() -> Path | None:
     topic_meta_map: dict[str, dict[str, str]] = {}
     questions: list[dict[str, Any]] = []
 
+    # Fix 3 missing Sanfoundry answer keys and mark the curated 150 Must-Do question IDs
+    java_missing_answers: dict[int, tuple[str, str]] = {
+        204: (
+            "B",
+            "The keyword 'implements' is used by a class to implement an interface: class manager implements salary {}.",
+        ),
+        594: (
+            "A",
+            "Java 8 Stream API provides two types of streams: sequential streams (stream()) and parallel streams (parallelStream()).",
+        ),
+        628: (
+            "D",
+            "Thread.toString() prints Thread[name,priority,groupName], which outputs Thread[New Thread,5,main] after setName(\"New Thread\").",
+        ),
+    }
+
+    java_must_do_150_ids: set[int] = {
+        # Sessions 1 & 2: Getting Started with Java (15 Qs)
+        1, 2, 4, 6, 110, 14, 18, 21, 27, 38, 43, 45, 52, 56, 64, 73, 75,
+        # Session 3: Introduction to OOP (6 Qs)
+        112, 113, 91, 93, 100, 106,
+        # Session 4: Pillars of OOP (23 Qs)
+        137, 139, 147, 148, 150, 116, 119, 123, 124, 184, 191, 194, 198,
+        156, 157, 160, 163, 176, 177, 212, 214, 216, 168,
+        # Session 5: Exception Handling (13 Qs)
+        228, 230, 233, 237, 239, 244, 273, 250, 251, 256, 257, 264, 268,
+        # Session 6: Strings, StringBuffer/Builder & Regular Expressions (15 Qs)
+        280, 285, 293, 304, 307, 310, 311, 312, 299, 316, 322, 324, 329, 345, 346,
+        # Sessions 7 & 8: Generics and Collections (20 Qs)
+        361, 366, 379, 380, 374, 375, 392, 394, 402, 403, 404, 408, 416,
+        421, 423, 424, 429, 439, 444, 455,
+        # Session 9: Enums, Wrapper Classes, Annotations & java.lang / java.util (15 Qs)
+        475, 476, 478, 480, 482, 561, 562, 563, 486, 498, 506, 533, 466, 470, 552,
+        # Sessions 10, 11, 12 & 13: Functional Programming, Streams & Date-Time API (12 Qs)
+        575, 577, 578, 594, 595, 596, 581, 586, 588, 590, 591, 592,
+        # Session 14: Multithreading (13 Qs)
+        602, 606, 609, 611, 659, 615, 617, 618, 619, 632, 652, 641, 643,
+        # Session 15: File Handling & Object Serialization (12 Qs)
+        663, 698, 700, 712, 716, 717, 720, 721, 722, 730, 734, 742,
+        # Sessions 16 & 17: JDBC (6 Qs)
+        748, 749, 751, 752, 754, 755,
+    }
+
     for idx, rec in enumerate(raw_records, start=1):
-        rec_with_id = {"id": idx, **rec}
+        if idx in java_missing_answers and not rec.get("correct_answer"):
+            rec["correct_answer"], rec["explanation"] = java_missing_answers[idx]
+
+        q_txt = rec.get("question") or ""
+        is_code = "class " in q_txt or "System.out" in q_txt or "\n" in q_txt
+        if is_code and ("Compilation" in str(rec.get("options", {}).values()) or len(q_txt.splitlines()) >= 12):
+            diff = "Hard"
+        elif is_code:
+            diff = "Moderate"
+        else:
+            diff = "Basic"
+
+        is_must = idx in java_must_do_150_ids
+        rec_with_id = {
+            "id": idx,
+            **rec,
+            "difficulty": diff,
+            "must_practice": is_must,
+        }
         questions.append(rec_with_id)
         t = rec["topic"]
         topic_counts[t] += 1
@@ -675,15 +736,29 @@ def build_java_questions_json() -> Path | None:
         for t, c in sorted(topic_counts.items())
     ]
 
+    must_do_qs = [q for q in questions if q.get("must_practice")]
     java_json_data = {
         "subject": "Java Programming — Core Java, OOP, Collections, Streams, Multithreading, I/O & JDBC",
         "syllabus": "PGCP-BDA (ACTS, Pune) — Java Programming (Java 17 LTS)",
         "source": "Sanfoundry",
         "total_questions": len(questions),
         "counts": {
+            "MUST_DO": len(must_do_qs),
             "KEEP": sum(1 for q in questions if q["category"] == "KEEP"),
             "SELECTIVE": sum(1 for q in questions if q["category"] == "SELECTIVE"),
             "REMOVE": sum(1 for q in questions if q["category"] == "REMOVE"),
+        },
+        "difficulty_counts": {
+            "ALL": {
+                "Basic": sum(1 for q in questions if q["difficulty"] == "Basic"),
+                "Moderate": sum(1 for q in questions if q["difficulty"] == "Moderate"),
+                "Hard": sum(1 for q in questions if q["difficulty"] == "Hard"),
+            },
+            "MUST_DO": {
+                "Basic": sum(1 for q in must_do_qs if q["difficulty"] == "Basic"),
+                "Moderate": sum(1 for q in must_do_qs if q["difficulty"] == "Moderate"),
+                "Hard": sum(1 for q in must_do_qs if q["difficulty"] == "Hard"),
+            },
         },
         "topics": topics,
         "syllabus_markdown": JAVA_SYLLABUS_MD,
@@ -692,6 +767,81 @@ def build_java_questions_json() -> Path | None:
 
     out_path = ROOT / "java_questions.json"
     out_path.write_text(json.dumps(java_json_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Write standalone Must-Do 150 JSON, CSV, and printable Markdown sheet
+    must_do_json_path = ROOT / "java_must_do_150.json"
+    must_do_json_data = {
+        "subject": "Java Programming — Curated Must-Do 150 High-Yield Questions",
+        "syllabus": "PGCP-BDA (ACTS, Pune) — Java Programming (Java 17 LTS)",
+        "total_questions": len(must_do_qs),
+        "difficulty_counts": java_json_data["difficulty_counts"]["MUST_DO"],
+        "questions": must_do_qs,
+    }
+    must_do_json_path.write_text(json.dumps(must_do_json_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    res_dir = ROOT / "Resource"
+    res_dir.mkdir(parents=True, exist_ok=True)
+    csv_path = res_dir / "Java_Must_Practice_Shortlist.csv"
+    with csv_path.open("w", encoding="utf-8-sig", newline="") as f_csv:
+        writer = csv.writer(f_csv)
+        writer.writerow(["Question ID", "Difficulty", "Syllabus Session", "Sanfoundry Topic", "Question Stem", "Correct Answer", "Syllabus Alignment"])
+        for q in must_do_qs:
+            stem_one_line = " | ".join(ln.strip() for ln in q["question"].splitlines() if ln.strip())
+            writer.writerow([q["id"], q["difficulty"], q["syllabus_topic"], q["topic"], stem_one_line, q["correct_answer"], q["syllabus_detail"]])
+
+    md_lines = [
+        "# Java Programming — Curated Must-Do 150 Questions & Full Solutions (PGCP-BDA, Java 17 LTS)",
+        "",
+        f"- **Total Questions in Main Bank:** `{len(questions)}`",
+        f"- **Curated Must-Do Shortlist (`MUST_DO`):** `{len(must_do_qs)}` high-yield MCQs (`{java_json_data['difficulty_counts']['MUST_DO']['Basic']}` Basic • `{java_json_data['difficulty_counts']['MUST_DO']['Moderate']}` Moderate • `{java_json_data['difficulty_counts']['MUST_DO']['Hard']}` Hard)",
+        "",
+        "## Session-Wise Must-Do Breakdown",
+        "",
+        "| Syllabus Session | Total in Bank | Must-Do Shortlist | Basic | Moderate | Hard |",
+        "|---|---:|---:|---:|---:|---:|",
+    ]
+    for s_name in session_order_list:
+        s_all = [q for q in questions if q["syllabus_topic"] == s_name]
+        if not s_all:
+            continue
+        s_must = [q for q in s_all if q.get("must_practice")]
+        b_cnt = sum(1 for q in s_must if q["difficulty"] == "Basic")
+        m_cnt = sum(1 for q in s_must if q["difficulty"] == "Moderate")
+        h_cnt = sum(1 for q in s_must if q["difficulty"] == "Hard")
+        md_lines.append(f"| {s_name} | {len(s_all)} | **{len(s_must)}** | {b_cnt} | {m_cnt} | {h_cnt} |")
+
+    md_lines.extend(["", "---", ""])
+    for s_name in session_order_list:
+        s_must = [q for q in must_do_qs if q["syllabus_topic"] == s_name]
+        if not s_must:
+            continue
+        md_lines.append(f"## {s_name} ({len(s_must)} Must-Do MCQs)")
+        md_lines.append("")
+        for idx_s, q in enumerate(s_must, start=1):
+            q_lines = q["question"].splitlines()
+            stem_first = q_lines[0].strip() if q_lines else ""
+            code_part = "\n".join(q_lines[1:]) if len(q_lines) > 1 else ""
+            md_lines.append(f"### {idx_s}. Question #{q['id']} — *{q['topic']}* `[{q['difficulty']}]`")
+            md_lines.append(f"**{stem_first}**")
+            if code_part.strip():
+                md_lines.append("")
+                md_lines.append("```java")
+                md_lines.append(code_part)
+                md_lines.append("```")
+            md_lines.append("")
+            for opt_k, opt_v in q["options"].items():
+                md_lines.append(f"- **{opt_k})** `{opt_v}`" if "\n" not in str(opt_v) else f"- **{opt_k})**\n```java\n{opt_v}\n```")
+            ans_k = q.get("correct_answer") or ""
+            ans_v = q["options"].get(ans_k, "")
+            md_lines.append("")
+            md_lines.append(f"> **Correct Answer:** **{ans_k}** (`{ans_v}`)  ")
+            if q.get("explanation"):
+                md_lines.append(f"> **Explanation:** {q['explanation']}")
+            if q.get("warning"):
+                md_lines.append(f"> **⚠️ Note:** {q['warning']}")
+            md_lines.append("")
+
+    (res_dir / "Java_Must_Practice_Shortlist.md").write_text("\n".join(md_lines) + "\n", encoding="utf-8")
     return out_path
 
 
@@ -3717,14 +3867,18 @@ def build_generic_subject(json_path: Path) -> dict | None:
     ]
 
     has_diff = any(q.get("difficulty") for q in questions)
+    must_do_count = sum(1 for q in questions if q.get("must_practice"))
+    has_must_do = is_java and must_do_count > 0
     subj_obj: dict[str, Any] = {
         "id": subj_id,
         "name": subj_name,
         "has_priority_categories": is_hadoop or any(q["category"] != "KEEP" for q in questions),
         "has_syllabus_mapping": is_hadoop or any(q["syllabus_topic"] != q["topic"] for q in questions),
         "has_difficulty_levels": has_diff,
+        "has_must_do_shortlist": has_must_do,
         "total_questions": len(questions),
         "counts": {
+            "MUST_DO": must_do_count,
             "KEEP": sum(1 for q in questions if q["category"] == "KEEP"),
             "SELECTIVE": sum(1 for q in questions if q["category"] == "SELECTIVE"),
             "REMOVE": sum(1 for q in questions if q["category"] == "REMOVE"),
@@ -3744,6 +3898,11 @@ def build_generic_subject(json_path: Path) -> dict | None:
                 "Basic": sum(1 for q in questions if q["category"] == "KEEP" and q.get("difficulty") == "Basic"),
                 "Moderate": sum(1 for q in questions if q["category"] == "KEEP" and q.get("difficulty") == "Moderate"),
                 "Hard": sum(1 for q in questions if q["category"] == "KEEP" and q.get("difficulty") == "Hard"),
+            },
+            "MUST_DO": {
+                "Basic": sum(1 for q in questions if q.get("must_practice") and q.get("difficulty") == "Basic"),
+                "Moderate": sum(1 for q in questions if q.get("must_practice") and q.get("difficulty") == "Moderate"),
+                "Hard": sum(1 for q in questions if q.get("must_practice") and q.get("difficulty") == "Hard"),
             },
         }
     return subj_obj
